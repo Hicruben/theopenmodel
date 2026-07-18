@@ -1,0 +1,69 @@
+name: Daily build & deploy
+
+# 03:30 UTC: after the last European kickoffs finish, before the next matchday.
+# The build locks pre-kickoff probabilities into the daily snapshot and scores
+# finished results — committing them back is what makes the record verifiable:
+# the git timestamp proves each prediction existed before the match.
+on:
+  schedule:
+    - cron: "30 3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency: deploy
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: Build (fetch data, lock snapshot, static export)
+        env:
+          API_FOOTBALL_KEY: ${{ secrets.API_FOOTBALL_KEY }}
+        run: npm run build
+
+      - name: Commit snapshot + data back to the public record
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/ public/data/
+          git diff --cached --quiet || git commit -m "record: daily snapshot & results $(date -u +%F)"
+          git push
+
+      - name: Deploy static export to server
+        env:
+          DEPLOY_HOST: ${{ secrets.DEPLOY_HOST }}
+        run: |
+          install -m 600 /dev/null ~/deploy_key
+          printf '%s\n' "${{ secrets.DEPLOY_SSH_KEY }}" > ~/deploy_key
+          mkdir -p ~/.ssh && ssh-keyscan -H "$DEPLOY_HOST" >> ~/.ssh/known_hosts 2>/dev/null
+          REL="gh-$(date -u +%Y%m%d%H%M%S)"
+          rsync -az --delete --exclude '._*' --exclude '.DS_Store' \
+            -e "ssh -i ~/deploy_key -o IdentitiesOnly=yes" \
+            out/ "root@$DEPLOY_HOST:/srv/theopenmodel/releases/$REL/"
+          ssh -i ~/deploy_key -o IdentitiesOnly=yes "root@$DEPLOY_HOST" "
+            set -e
+            REL=/srv/theopenmodel/releases/$REL
+            ln -sfn /srv/theopenmodel/shared/portal-live.json \$REL/data/portal-live.json
+            ln -sfn /srv/theopenmodel/shared/news-live.json \$REL/data/news-live.json
+            ln -sfn \$REL /srv/theopenmodel/current
+            cd /srv/theopenmodel/releases && ls -1dt gh-* | tail -n +8 | xargs -r rm -rf
+            echo \"current -> \$(readlink /srv/theopenmodel/current)\"
+          "
+
+      - name: Verify site is up
+        run: |
+          for path in / /record/ /data/season-forecast.csv; do
+            code=$(curl -s -o /dev/null -w '%{http_code}' "https://theopenmodel.com$path")
+            echo "$path -> $code"; [ "$code" = "200" ] || exit 1
+          done
