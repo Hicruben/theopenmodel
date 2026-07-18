@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "provider": "fixtures-fallback",
+  "asOf": "2026-07-15T00:00:00.000Z",
+  "updatedAt": "2026-07-15T00:00:00.000Z",
+  "coverage": {
+    "dateFrom": null,
+    "dateTo": null,
+    "fixtureCount": 0,
+    "liveFixtureCount": 0,
+    "finishedFixtureCount": 0,
+    "leagueCount": 0,
+    "standingTableCount": 0,
+    "requestedIncludes": [],
+    "features": {
+      "fixtures": true,
+      "scores": false,
+      "statuses": false,
+      "events": false,
+      "lineups": false,
+      "injuries": false,
+      "standings": false
+    },
+    "rateLimit": null,
+    "warnings": [
+      "API_FOOTBALL_KEY is not configured. Existing data/fixtures-2026.json schedules are used at build time."
+    ]
+  },
+  "fixtures": [],
+  "standings": []
+}

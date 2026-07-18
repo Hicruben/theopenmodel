@@ -1,0 +1,28 @@
+{
+  "name": "theopenmodel",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 3100",
+    "build": "next build",
+    "data:elo": "node scripts/fetch-clubelo.mjs",
+    "data:fixtures": "node scripts/fetch-fixtures.mjs",
+    "data:portal": "node scripts/fetch-api-football.mjs",
+    "prebuild": "node scripts/fetch-api-football.mjs; node scripts/fetch-news.mjs; tsx scripts/snapshot.ts"
+  },
+  "dependencies": {
+    "@react-three/drei": "^10.7.7",
+    "@react-three/fiber": "^9.6.1",
+    "@react-three/postprocessing": "^3.0.4",
+    "next": "^15.0.3",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "three": "^0.185.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22",
+    "@types/react": "^19",
+    "tsx": "^4.23.1",
+    "typescript": "^5.6.3"
+  }
+}

@@ -1,0 +1,17 @@
+.env
+.env.local
+.server-access.env
+.next/
+out/
+node_modules/
+*.log
+
+# local-only: contain server/deployment details — never publish
+CLAUDE.md
+ops/
+.claude/
+
+# noise
+.DS_Store
+._*
+tsconfig.tsbuildinfo

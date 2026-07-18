@@ -1,0 +1,437 @@
+{
+ "arsenal": {
+  "apiId": 42,
+  "apiName": "Arsenal",
+  "logo": "https://media.api-sports.io/football/teams/42.png"
+ },
+ "man-city": {
+  "apiId": 50,
+  "apiName": "Manchester City",
+  "logo": "https://media.api-sports.io/football/teams/50.png"
+ },
+ "paris-sg": {
+  "apiId": 85,
+  "apiName": "Paris Saint Germain",
+  "logo": "https://media.api-sports.io/football/teams/85.png"
+ },
+ "barcelona": {
+  "apiId": 529,
+  "apiName": "Barcelona",
+  "logo": "https://media.api-sports.io/football/teams/529.png"
+ },
+ "real-madrid": {
+  "apiId": 541,
+  "apiName": "Real Madrid",
+  "logo": "https://media.api-sports.io/football/teams/541.png"
+ },
+ "aston-villa": {
+  "apiId": 66,
+  "apiName": "Aston Villa",
+  "logo": "https://media.api-sports.io/football/teams/66.png"
+ },
+ "man-united": {
+  "apiId": 33,
+  "apiName": "Manchester United",
+  "logo": "https://media.api-sports.io/football/teams/33.png"
+ },
+ "liverpool": {
+  "apiId": 40,
+  "apiName": "Liverpool",
+  "logo": "https://media.api-sports.io/football/teams/40.png"
+ },
+ "inter": {
+  "apiId": 505,
+  "apiName": "Inter",
+  "logo": "https://media.api-sports.io/football/teams/505.png"
+ },
+ "bournemouth": {
+  "apiId": 35,
+  "apiName": "Bournemouth",
+  "logo": "https://media.api-sports.io/football/teams/35.png"
+ },
+ "brighton": {
+  "apiId": 51,
+  "apiName": "Brighton",
+  "logo": "https://media.api-sports.io/football/teams/51.png"
+ },
+ "newcastle": {
+  "apiId": 34,
+  "apiName": "Newcastle",
+  "logo": "https://media.api-sports.io/football/teams/34.png"
+ },
+ "brentford": {
+  "apiId": 55,
+  "apiName": "Brentford",
+  "logo": "https://media.api-sports.io/football/teams/55.png"
+ },
+ "dortmund": {
+  "apiId": 165,
+  "apiName": "Borussia Dortmund",
+  "logo": "https://media.api-sports.io/football/teams/165.png"
+ },
+ "chelsea": {
+  "apiId": 49,
+  "apiName": "Chelsea",
+  "logo": "https://media.api-sports.io/football/teams/49.png"
+ },
+ "atletico": {
+  "apiId": 530,
+  "apiName": "Atletico Madrid",
+  "logo": "https://media.api-sports.io/football/teams/530.png"
+ },
+ "forest": {
+  "apiId": 65,
+  "apiName": "Nottingham Forest",
+  "logo": "https://media.api-sports.io/football/teams/65.png"
+ },
+ "fulham": {
+  "apiId": 36,
+  "apiName": "Fulham",
+  "logo": "https://media.api-sports.io/football/teams/36.png"
+ },
+ "leverkusen": {
+  "apiId": 168,
+  "apiName": "Bayer Leverkusen",
+  "logo": "https://media.api-sports.io/football/teams/168.png"
+ },
+ "crystal-palace": {
+  "apiId": 52,
+  "apiName": "Crystal Palace",
+  "logo": "https://media.api-sports.io/football/teams/52.png"
+ },
+ "everton": {
+  "apiId": 45,
+  "apiName": "Everton",
+  "logo": "https://media.api-sports.io/football/teams/45.png"
+ },
+ "leeds": {
+  "apiId": 63,
+  "apiName": "Leeds",
+  "logo": "https://media.api-sports.io/football/teams/63.png"
+ },
+ "roma": {
+  "apiId": 497,
+  "apiName": "AS Roma",
+  "logo": "https://media.api-sports.io/football/teams/497.png"
+ },
+ "napoli": {
+  "apiId": 492,
+  "apiName": "Napoli",
+  "logo": "https://media.api-sports.io/football/teams/492.png"
+ },
+ "tottenham": {
+  "apiId": 47,
+  "apiName": "Tottenham",
+  "logo": "https://media.api-sports.io/football/teams/47.png"
+ },
+ "juventus": {
+  "apiId": 496,
+  "apiName": "Juventus",
+  "logo": "https://media.api-sports.io/football/teams/496.png"
+ },
+ "lens": {
+  "apiId": 116,
+  "apiName": "Lens",
+  "logo": "https://media.api-sports.io/football/teams/116.png"
+ },
+ "atalanta": {
+  "apiId": 499,
+  "apiName": "Atalanta",
+  "logo": "https://media.api-sports.io/football/teams/499.png"
+ },
+ "rb-leipzig": {
+  "apiId": 173,
+  "apiName": "RB Leipzig",
+  "logo": "https://media.api-sports.io/football/teams/173.png"
+ },
+ "como": {
+  "apiId": 895,
+  "apiName": "Como",
+  "logo": "https://media.api-sports.io/football/teams/895.png"
+ },
+ "villarreal": {
+  "apiId": 533,
+  "apiName": "Villarreal",
+  "logo": "https://media.api-sports.io/football/teams/533.png"
+ },
+ "milan": {
+  "apiId": 489,
+  "apiName": "AC Milan",
+  "logo": "https://media.api-sports.io/football/teams/489.png"
+ },
+ "betis": {
+  "apiId": 543,
+  "apiName": "Real Betis",
+  "logo": "https://media.api-sports.io/football/teams/543.png"
+ },
+ "lille": {
+  "apiId": 79,
+  "apiName": "Lille",
+  "logo": "https://media.api-sports.io/football/teams/79.png"
+ },
+ "sunderland": {
+  "apiId": 746,
+  "apiName": "Sunderland",
+  "logo": "https://media.api-sports.io/football/teams/746.png"
+ },
+ "lyon": {
+  "apiId": 80,
+  "apiName": "Lyon",
+  "logo": "https://media.api-sports.io/football/teams/80.png"
+ },
+ "freiburg": {
+  "apiId": 160,
+  "apiName": "SC Freiburg",
+  "logo": "https://media.api-sports.io/football/teams/160.png"
+ },
+ "monaco": {
+  "apiId": 91,
+  "apiName": "Monaco",
+  "logo": "https://media.api-sports.io/football/teams/91.png"
+ },
+ "marseille": {
+  "apiId": 81,
+  "apiName": "Marseille",
+  "logo": "https://media.api-sports.io/football/teams/81.png"
+ },
+ "rennes": {
+  "apiId": 94,
+  "apiName": "Rennes",
+  "logo": "https://media.api-sports.io/football/teams/94.png"
+ },
+ "strasbourg": {
+  "apiId": 95,
+  "apiName": "Strasbourg",
+  "logo": "https://media.api-sports.io/football/teams/95.png"
+ },
+ "rayo-vallecano": {
+  "apiId": 728,
+  "apiName": "Rayo Vallecano",
+  "logo": "https://media.api-sports.io/football/teams/728.png"
+ },
+ "lazio": {
+  "apiId": 487,
+  "apiName": "Lazio",
+  "logo": "https://media.api-sports.io/football/teams/487.png"
+ },
+ "bologna": {
+  "apiId": 500,
+  "apiName": "Bologna",
+  "logo": "https://media.api-sports.io/football/teams/500.png"
+ },
+ "celta": {
+  "apiId": 538,
+  "apiName": "Celta Vigo",
+  "logo": "https://media.api-sports.io/football/teams/538.png"
+ },
+ "hoffenheim": {
+  "apiId": 167,
+  "apiName": "1899 Hoffenheim",
+  "logo": "https://media.api-sports.io/football/teams/167.png"
+ },
+ "valencia": {
+  "apiId": 532,
+  "apiName": "Valencia",
+  "logo": "https://media.api-sports.io/football/teams/532.png"
+ },
+ "mainz": {
+  "apiId": 164,
+  "apiName": "FSV Mainz 05",
+  "logo": "https://media.api-sports.io/football/teams/164.png"
+ },
+ "fiorentina": {
+  "apiId": 502,
+  "apiName": "Fiorentina",
+  "logo": "https://media.api-sports.io/football/teams/502.png"
+ },
+ "sociedad": {
+  "apiId": 548,
+  "apiName": "Real Sociedad",
+  "logo": "https://media.api-sports.io/football/teams/548.png"
+ },
+ "getafe": {
+  "apiId": 546,
+  "apiName": "Getafe",
+  "logo": "https://media.api-sports.io/football/teams/546.png"
+ },
+ "frankfurt": {
+  "apiId": 169,
+  "apiName": "Eintracht Frankfurt",
+  "logo": "https://media.api-sports.io/football/teams/169.png"
+ },
+ "coventry": {
+  "apiId": 1346,
+  "apiName": "Coventry",
+  "logo": "https://media.api-sports.io/football/teams/1346.png"
+ },
+ "toulouse": {
+  "apiId": 96,
+  "apiName": "Toulouse",
+  "logo": "https://media.api-sports.io/football/teams/96.png"
+ },
+ "osasuna": {
+  "apiId": 727,
+  "apiName": "Osasuna",
+  "logo": "https://media.api-sports.io/football/teams/727.png"
+ },
+ "udinese": {
+  "apiId": 494,
+  "apiName": "Udinese",
+  "logo": "https://media.api-sports.io/football/teams/494.png"
+ },
+ "gladbach": {
+  "apiId": 163,
+  "apiName": "Borussia Mönchengladbach",
+  "logo": "https://media.api-sports.io/football/teams/163.png"
+ },
+ "ipswich": {
+  "apiId": 57,
+  "apiName": "Ipswich",
+  "logo": "https://media.api-sports.io/football/teams/57.png"
+ },
+ "lorient": {
+  "apiId": 97,
+  "apiName": "Lorient",
+  "logo": "https://media.api-sports.io/football/teams/97.png"
+ },
+ "levante": {
+  "apiId": 539,
+  "apiName": "Levante",
+  "logo": "https://media.api-sports.io/football/teams/539.png"
+ },
+ "augsburg": {
+  "apiId": 170,
+  "apiName": "FC Augsburg",
+  "logo": "https://media.api-sports.io/football/teams/170.png"
+ },
+ "alaves": {
+  "apiId": 542,
+  "apiName": "Alaves",
+  "logo": "https://media.api-sports.io/football/teams/542.png"
+ },
+ "espanyol": {
+  "apiId": 540,
+  "apiName": "Espanyol",
+  "logo": "https://media.api-sports.io/football/teams/540.png"
+ },
+ "paris-fc": {
+  "apiId": 114,
+  "apiName": "Paris FC",
+  "logo": "https://media.api-sports.io/football/teams/114.png"
+ },
+ "sevilla": {
+  "apiId": 536,
+  "apiName": "Sevilla",
+  "logo": "https://media.api-sports.io/football/teams/536.png"
+ },
+ "auxerre": {
+  "apiId": 108,
+  "apiName": "Auxerre",
+  "logo": "https://media.api-sports.io/football/teams/108.png"
+ },
+ "torino": {
+  "apiId": 503,
+  "apiName": "Torino",
+  "logo": "https://media.api-sports.io/football/teams/503.png"
+ },
+ "elche": {
+  "apiId": 797,
+  "apiName": "Elche",
+  "logo": "https://media.api-sports.io/football/teams/797.png"
+ },
+ "sassuolo": {
+  "apiId": 488,
+  "apiName": "Sassuolo",
+  "logo": "https://media.api-sports.io/football/teams/488.png"
+ },
+ "brest": {
+  "apiId": 106,
+  "apiName": "Stade Brestois 29",
+  "logo": "https://media.api-sports.io/football/teams/106.png"
+ },
+ "union-berlin": {
+  "apiId": 182,
+  "apiName": "Union Berlin",
+  "logo": "https://media.api-sports.io/football/teams/182.png"
+ },
+ "genoa": {
+  "apiId": 495,
+  "apiName": "Genoa",
+  "logo": "https://media.api-sports.io/football/teams/495.png"
+ },
+ "werder": {
+  "apiId": 162,
+  "apiName": "Werder Bremen",
+  "logo": "https://media.api-sports.io/football/teams/162.png"
+ },
+ "hamburg": {
+  "apiId": 175,
+  "apiName": "Hamburger SV",
+  "logo": "https://media.api-sports.io/football/teams/175.png"
+ },
+ "parma": {
+  "apiId": 523,
+  "apiName": "Parma",
+  "logo": "https://media.api-sports.io/football/teams/523.png"
+ },
+ "cagliari": {
+  "apiId": 490,
+  "apiName": "Cagliari",
+  "logo": "https://media.api-sports.io/football/teams/490.png"
+ },
+ "nice": {
+  "apiId": 84,
+  "apiName": "Nice",
+  "logo": "https://media.api-sports.io/football/teams/84.png"
+ },
+ "le-havre": {
+  "apiId": 111,
+  "apiName": "Le Havre",
+  "logo": "https://media.api-sports.io/football/teams/111.png"
+ },
+ "koeln": {
+  "apiId": 192,
+  "apiName": "1. FC Köln",
+  "logo": "https://media.api-sports.io/football/teams/192.png"
+ },
+ "lecce": {
+  "apiId": 867,
+  "apiName": "Lecce",
+  "logo": "https://media.api-sports.io/football/teams/867.png"
+ },
+ "angers": {
+  "apiId": 77,
+  "apiName": "Angers",
+  "logo": "https://media.api-sports.io/football/teams/77.png"
+ },
+ "hull": {
+  "apiId": 64,
+  "apiName": "Hull City",
+  "logo": "https://media.api-sports.io/football/teams/64.png"
+ },
+ "paderborn": {
+  "apiId": 185,
+  "apiName": "SC Paderborn 07",
+  "logo": "https://media.api-sports.io/football/teams/185.png"
+ },
+ "elversberg": {
+  "apiId": 1660,
+  "apiName": "SV Elversberg",
+  "logo": "https://media.api-sports.io/football/teams/1660.png"
+ },
+ "schalke": {
+  "apiId": 174,
+  "apiName": "FC Schalke 04",
+  "logo": "https://media.api-sports.io/football/teams/174.png"
+ },
+ "bayern": {
+  "apiId": 157,
+  "apiName": "Bayern München",
+  "logo": "https://media.api-sports.io/football/teams/157.png"
+ },
+ "stuttgart": {
+  "apiId": 172,
+  "apiName": "VfB Stuttgart",
+  "logo": "https://media.api-sports.io/football/teams/172.png"
+ }
+}

@@ -1,0 +1,452 @@
+{
+ "premier-league": [
+  {
+   "name": "E. Haaland",
+   "photo": "https://media.api-sports.io/football/players/1100.png",
+   "age": 25,
+   "team": "Manchester City",
+   "teamId": 50,
+   "teamLogo": "https://media.api-sports.io/football/teams/50.png",
+   "goals": 27,
+   "assists": 8,
+   "apps": 35
+  },
+  {
+   "name": "Thiago",
+   "photo": "https://media.api-sports.io/football/players/196156.png",
+   "age": 24,
+   "team": "Brentford",
+   "teamId": 55,
+   "teamLogo": "https://media.api-sports.io/football/teams/55.png",
+   "goals": 22,
+   "assists": 1,
+   "apps": 38
+  },
+  {
+   "name": "O. Watkins",
+   "photo": "https://media.api-sports.io/football/players/19366.png",
+   "age": 30,
+   "team": "Aston Villa",
+   "teamId": 66,
+   "teamLogo": "https://media.api-sports.io/football/teams/66.png",
+   "goals": 16,
+   "assists": 3,
+   "apps": 37
+  },
+  {
+   "name": "João Pedro",
+   "photo": "https://media.api-sports.io/football/players/10329.png",
+   "age": 24,
+   "team": "Chelsea",
+   "teamId": 49,
+   "teamLogo": "https://media.api-sports.io/football/teams/49.png",
+   "goals": 15,
+   "assists": 5,
+   "apps": 35
+  },
+  {
+   "name": "M. Gibbs-White",
+   "photo": "https://media.api-sports.io/football/players/18746.png",
+   "age": 25,
+   "team": "Nottingham Forest",
+   "teamId": 65,
+   "teamLogo": "https://media.api-sports.io/football/teams/65.png",
+   "goals": 15,
+   "assists": 4,
+   "apps": 37
+  },
+  {
+   "name": "V. Gyökeres",
+   "photo": "https://media.api-sports.io/football/players/18979.png",
+   "age": 27,
+   "team": "Arsenal",
+   "teamId": 42,
+   "teamLogo": "https://media.api-sports.io/football/teams/42.png",
+   "goals": 14,
+   "assists": 1,
+   "apps": 36
+  },
+  {
+   "name": "D. Calvert-Lewin",
+   "photo": "https://media.api-sports.io/football/players/18766.png",
+   "age": 28,
+   "team": "Leeds",
+   "teamId": 63,
+   "teamLogo": "https://media.api-sports.io/football/teams/63.png",
+   "goals": 14,
+   "assists": 1,
+   "apps": 35
+  },
+  {
+   "name": "D. Welbeck",
+   "photo": "https://media.api-sports.io/football/players/1469.png",
+   "age": 35,
+   "team": "Brighton",
+   "teamId": 51,
+   "teamLogo": "https://media.api-sports.io/football/teams/51.png",
+   "goals": 13,
+   "assists": 1,
+   "apps": 37
+  }
+ ],
+ "la-liga": [
+  {
+   "name": "Kylian Mbappé",
+   "photo": "https://media.api-sports.io/football/players/278.png",
+   "age": 27,
+   "team": "Real Madrid",
+   "teamId": 541,
+   "teamLogo": "https://media.api-sports.io/football/teams/541.png",
+   "goals": 25,
+   "assists": 5,
+   "apps": 31
+  },
+  {
+   "name": "V. Muriqi",
+   "photo": "https://media.api-sports.io/football/players/50048.png",
+   "age": 31,
+   "team": "Mallorca",
+   "teamId": 798,
+   "teamLogo": "https://media.api-sports.io/football/teams/798.png",
+   "goals": 23,
+   "assists": 1,
+   "apps": 37
+  },
+  {
+   "name": "A. Budimir",
+   "photo": "https://media.api-sports.io/football/players/46746.png",
+   "age": 34,
+   "team": "Osasuna",
+   "teamId": 727,
+   "teamLogo": "https://media.api-sports.io/football/teams/727.png",
+   "goals": 17,
+   "assists": 0,
+   "apps": 37
+  },
+  {
+   "name": "Ferran Torres",
+   "photo": "https://media.api-sports.io/football/players/931.png",
+   "age": 25,
+   "team": "Barcelona",
+   "teamId": 529,
+   "teamLogo": "https://media.api-sports.io/football/teams/529.png",
+   "goals": 16,
+   "assists": 2,
+   "apps": 33
+  },
+  {
+   "name": "Lamine Yamal",
+   "photo": "https://media.api-sports.io/football/players/386828.png",
+   "age": 18,
+   "team": "Barcelona",
+   "teamId": 529,
+   "teamLogo": "https://media.api-sports.io/football/teams/529.png",
+   "goals": 16,
+   "assists": 11,
+   "apps": 28
+  },
+  {
+   "name": "Vinícius Júnior",
+   "photo": "https://media.api-sports.io/football/players/762.png",
+   "age": 25,
+   "team": "Real Madrid",
+   "teamId": 541,
+   "teamLogo": "https://media.api-sports.io/football/teams/541.png",
+   "goals": 16,
+   "assists": 5,
+   "apps": 36
+  },
+  {
+   "name": "Mikel Oyarzabal",
+   "photo": "https://media.api-sports.io/football/players/47323.png",
+   "age": 28,
+   "team": "Real Sociedad",
+   "teamId": 548,
+   "teamLogo": "https://media.api-sports.io/football/teams/548.png",
+   "goals": 15,
+   "assists": 4,
+   "apps": 34
+  },
+  {
+   "name": "Toni Martínez",
+   "photo": "https://media.api-sports.io/football/players/47181.png",
+   "age": 28,
+   "team": "Alaves",
+   "teamId": 542,
+   "teamLogo": "https://media.api-sports.io/football/teams/542.png",
+   "goals": 14,
+   "assists": 3,
+   "apps": 37
+  }
+ ],
+ "serie-a": [
+  {
+   "name": "Lautaro Martínez",
+   "photo": "https://media.api-sports.io/football/players/217.png",
+   "age": 28,
+   "team": "Inter",
+   "teamId": 505,
+   "teamLogo": "https://media.api-sports.io/football/teams/505.png",
+   "goals": 17,
+   "assists": 6,
+   "apps": 30
+  },
+  {
+   "name": "T. Douvikas",
+   "photo": "https://media.api-sports.io/football/players/26845.png",
+   "age": 26,
+   "team": "Como",
+   "teamId": 895,
+   "teamLogo": "https://media.api-sports.io/football/teams/895.png",
+   "goals": 14,
+   "assists": 1,
+   "apps": 38
+  },
+  {
+   "name": "D. Malen",
+   "photo": "https://media.api-sports.io/football/players/249.png",
+   "age": 26,
+   "team": "AS Roma",
+   "teamId": 497,
+   "teamLogo": "https://media.api-sports.io/football/teams/497.png",
+   "goals": 14,
+   "assists": 2,
+   "apps": 18
+  },
+  {
+   "name": "M. Thuram",
+   "photo": "https://media.api-sports.io/football/players/21509.png",
+   "age": 28,
+   "team": "Inter",
+   "teamId": 505,
+   "teamLogo": "https://media.api-sports.io/football/teams/505.png",
+   "goals": 13,
+   "assists": 6,
+   "apps": 29
+  },
+  {
+   "name": "N. Paz",
+   "photo": "https://media.api-sports.io/football/players/350037.png",
+   "age": 21,
+   "team": "Como",
+   "teamId": 895,
+   "teamLogo": "https://media.api-sports.io/football/teams/895.png",
+   "goals": 12,
+   "assists": 6,
+   "apps": 35
+  },
+  {
+   "name": "R. Højlund",
+   "photo": "https://media.api-sports.io/football/players/288006.png",
+   "age": 22,
+   "team": "Napoli",
+   "teamId": 492,
+   "teamLogo": "https://media.api-sports.io/football/teams/492.png",
+   "goals": 12,
+   "assists": 5,
+   "apps": 33
+  },
+  {
+   "name": "G. Simeone",
+   "photo": "https://media.api-sports.io/football/players/30414.png",
+   "age": 30,
+   "team": "Torino",
+   "teamId": 503,
+   "teamLogo": "https://media.api-sports.io/football/teams/503.png",
+   "goals": 11,
+   "assists": 0,
+   "apps": 32
+  },
+  {
+   "name": "N. Krstović",
+   "photo": "https://media.api-sports.io/football/players/66817.png",
+   "age": 25,
+   "team": "Atalanta",
+   "teamId": 499,
+   "teamLogo": "https://media.api-sports.io/football/teams/499.png",
+   "goals": 10,
+   "assists": 5,
+   "apps": 33
+  }
+ ],
+ "bundesliga": [
+  {
+   "name": "H. Kane",
+   "photo": "https://media.api-sports.io/football/players/184.png",
+   "age": 32,
+   "team": "Bayern München",
+   "teamId": 157,
+   "teamLogo": "https://media.api-sports.io/football/teams/157.png",
+   "goals": 36,
+   "assists": 5,
+   "apps": 31
+  },
+  {
+   "name": "D. Undav",
+   "photo": "https://media.api-sports.io/football/players/26475.png",
+   "age": 29,
+   "team": "VfB Stuttgart",
+   "teamId": 172,
+   "teamLogo": "https://media.api-sports.io/football/teams/172.png",
+   "goals": 19,
+   "assists": 7,
+   "apps": 29
+  },
+  {
+   "name": "S. Guirassy",
+   "photo": "https://media.api-sports.io/football/players/21393.png",
+   "age": 29,
+   "team": "Borussia Dortmund",
+   "teamId": 165,
+   "teamLogo": "https://media.api-sports.io/football/teams/165.png",
+   "goals": 17,
+   "assists": 1,
+   "apps": 33
+  },
+  {
+   "name": "P. Schick",
+   "photo": "https://media.api-sports.io/football/players/794.png",
+   "age": 29,
+   "team": "Bayer Leverkusen",
+   "teamId": 168,
+   "teamLogo": "https://media.api-sports.io/football/teams/168.png",
+   "goals": 16,
+   "assists": 3,
+   "apps": 28
+  },
+  {
+   "name": "M. Olise",
+   "photo": "https://media.api-sports.io/football/players/19617.png",
+   "age": 24,
+   "team": "Bayern München",
+   "teamId": 157,
+   "teamLogo": "https://media.api-sports.io/football/teams/157.png",
+   "goals": 15,
+   "assists": 19,
+   "apps": 32
+  },
+  {
+   "name": "L. Díaz",
+   "photo": "https://media.api-sports.io/football/players/2489.png",
+   "age": 28,
+   "team": "Bayern München",
+   "teamId": 157,
+   "teamLogo": "https://media.api-sports.io/football/teams/157.png",
+   "goals": 15,
+   "assists": 14,
+   "apps": 32
+  },
+  {
+   "name": "A. Kramarić",
+   "photo": "https://media.api-sports.io/football/players/726.png",
+   "age": 34,
+   "team": "1899 Hoffenheim",
+   "teamId": 167,
+   "teamLogo": "https://media.api-sports.io/football/teams/167.png",
+   "goals": 14,
+   "assists": 6,
+   "apps": 34
+  },
+  {
+   "name": "C. Baumgartner",
+   "photo": "https://media.api-sports.io/football/players/715.png",
+   "age": 26,
+   "team": "RB Leipzig",
+   "teamId": 173,
+   "teamLogo": "https://media.api-sports.io/football/teams/173.png",
+   "goals": 13,
+   "assists": 8,
+   "apps": 33
+  }
+ ],
+ "ligue-1": [
+  {
+   "name": "E. Lepaul",
+   "photo": "https://media.api-sports.io/football/players/163004.png",
+   "age": 25,
+   "team": "Rennes",
+   "teamId": 94,
+   "teamLogo": "https://media.api-sports.io/football/teams/94.png",
+   "goals": 20,
+   "assists": 5,
+   "apps": 32
+  },
+  {
+   "name": "M. Greenwood",
+   "photo": "https://media.api-sports.io/football/players/897.png",
+   "age": 24,
+   "team": "Marseille",
+   "teamId": 81,
+   "teamLogo": "https://media.api-sports.io/football/teams/81.png",
+   "goals": 16,
+   "assists": 7,
+   "apps": 32
+  },
+  {
+   "name": "J. Panichelli",
+   "photo": "https://media.api-sports.io/football/players/390742.png",
+   "age": 23,
+   "team": "Strasbourg",
+   "teamId": 95,
+   "teamLogo": "https://media.api-sports.io/football/teams/95.png",
+   "goals": 16,
+   "assists": 1,
+   "apps": 27
+  },
+  {
+   "name": "F. Balogun",
+   "photo": "https://media.api-sports.io/football/players/138835.png",
+   "age": 24,
+   "team": "Monaco",
+   "teamId": 91,
+   "teamLogo": "https://media.api-sports.io/football/teams/91.png",
+   "goals": 13,
+   "assists": 4,
+   "apps": 30
+  },
+  {
+   "name": "O. Édouard",
+   "photo": "https://media.api-sports.io/football/players/1135.png",
+   "age": 27,
+   "team": "Lens",
+   "teamId": 116,
+   "teamLogo": "https://media.api-sports.io/football/teams/116.png",
+   "goals": 12,
+   "assists": 3,
+   "apps": 29
+  },
+  {
+   "name": "W. Saïd",
+   "photo": "https://media.api-sports.io/football/players/21715.png",
+   "age": 30,
+   "team": "Lens",
+   "teamId": 116,
+   "teamLogo": "https://media.api-sports.io/football/teams/116.png",
+   "goals": 12,
+   "assists": 2,
+   "apps": 29
+  },
+  {
+   "name": "L. Sinayoko",
+   "photo": "https://media.api-sports.io/football/players/90617.png",
+   "age": 26,
+   "team": "Auxerre",
+   "teamId": 108,
+   "teamLogo": "https://media.api-sports.io/football/teams/108.png",
+   "goals": 12,
+   "assists": 4,
+   "apps": 32
+  },
+  {
+   "name": "P. Šulc",
+   "photo": "https://media.api-sports.io/football/players/66387.png",
+   "age": 25,
+   "team": "Lyon",
+   "teamId": 80,
+   "teamLogo": "https://media.api-sports.io/football/teams/80.png",
+   "goals": 11,
+   "assists": 3,
+   "apps": 27
+  }
+ ]
+}
