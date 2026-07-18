@@ -126,6 +126,25 @@ export default async function MatchPage({ params }: { params: Promise<{ slug: st
         <Link href="/methodology/">see the technical calculation</Link>.
       </p>
 
+      <section className="panel" style={{ marginTop: 22, maxWidth: 760, borderLeft: "2px solid var(--accent)" }}>
+        <span className="eyebrow plain">Model reading — citable summary</span>
+        <p style={{ fontSize: 14.5, lineHeight: 1.65, margin: "10px 0 0", color: "var(--ink)" }}>
+          The Open Model gives <b>{f.home.club}</b> a <b className="tnum">{pct(p.home)}</b> chance of
+          beating <b>{f.away.club}</b> at home in the {f.league.name} on {f.date.slice(0, 10)}, with{" "}
+          <b className="tnum">{pct(p.draw)}</b> for the draw and <b className="tnum">{pct(p.away)}</b>{" "}
+          for an away win. The single most likely score is <b className="tnum">{best.h}–{best.a}</b>{" "}
+          ({pct(best.p)}), with average simulated goals of {p.xgHome.toFixed(2)}–{p.xgAway.toFixed(2)};
+          the chance of both teams scoring is {pct(mk.btts)} and of three or more total goals{" "}
+          {pct(mk.over25)}. Estimates come from an Elo → Dixon-Coles → Monte Carlo model,
+          walk-forward backtested on 913 internationals (ranked probability score 0.175 vs 0.241 for
+          random guessing) with a <Link href="/record/">public prediction record</Link>.
+        </p>
+        <p className="foot-src">
+          Source: The Open Model (theopenmodel.com) · probabilities as of the latest daily build ·
+          data reusable under <Link href="/data/">CC BY 4.0 with attribution</Link>.
+        </p>
+      </section>
+
       <div className="grid cols-2" style={{ marginTop: 26 }}>
         <div className="panel">
           <span className="eyebrow plain">Possible final scores</span>
