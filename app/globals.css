@@ -115,7 +115,59 @@ nav.main a.cta {
 }
 nav.main a.cta:hover { background: var(--accent-solid); border-color: var(--accent-solid); color: var(--button-ink); box-shadow: none; }
 nav.main a:active { transform: translateY(1px); }
-@media (max-width: 860px) { nav.main a.hide-sm { display: none; } }
+@media (min-width: 981px) and (max-width: 1160px) { nav.main a.hide-sm { display: none; } }
+
+/* ── Mobile navigation (hamburger drawer) ───────────────── */
+.nav-toggle { display: none; }
+.nav-scrim { display: none; }
+@media (max-width: 980px) {
+  nav.main {
+    position: fixed; inset: 0 0 0 auto; z-index: 60;
+    width: min(82vw, 320px); margin: 0;
+    flex-direction: column; align-items: stretch; justify-content: flex-start; gap: 0;
+    padding: 76px 0 24px; background: var(--panel);
+    border-left: 1px solid var(--rule-strong); box-shadow: -18px 0 50px rgba(2,10,24,.5);
+    transform: translateX(100%); transition: transform .28s cubic-bezier(.16,1,.3,1);
+    overflow-y: auto; overscroll-behavior: contain;
+  }
+  nav.main.is-open { transform: translateX(0); }
+  nav.main a {
+    font-size: 16px; padding: 15px 22px; border-bottom: 1px solid var(--rule);
+    display: flex; align-items: center; min-height: 52px;
+  }
+  nav.main a.hide-sm { display: flex; }
+  nav.main a:hover, nav.main a.is-active { box-shadow: none; background: var(--panel-2); }
+  nav.main a.is-active { color: var(--accent); font-weight: 600; }
+  nav.main a.cta {
+    margin: 16px 22px 0; padding: 15px 20px; border-radius: 8px; justify-content: center;
+    min-height: 52px; border-bottom: 1px solid var(--accent);
+  }
+  .nav-toggle {
+    display: inline-flex; align-items: center; justify-content: center; position: relative; z-index: 61;
+    width: 44px; height: 44px; margin-left: auto; padding: 0;
+    background: transparent; border: 1px solid var(--rule-strong); border-radius: 8px; cursor: pointer;
+  }
+  .nav-toggle-bars { position: relative; width: 18px; height: 12px; display: block; }
+  .nav-toggle-bars i {
+    position: absolute; left: 0; width: 100%; height: 2px; background: var(--ink); border-radius: 2px;
+    transition: transform .25s ease, opacity .2s ease, top .25s ease;
+  }
+  .nav-toggle-bars i:nth-child(1) { top: 0; }
+  .nav-toggle-bars i:nth-child(2) { top: 5px; }
+  .nav-toggle-bars i:nth-child(3) { top: 10px; }
+  .nav-toggle-bars.is-open i:nth-child(1) { top: 5px; transform: rotate(45deg); }
+  .nav-toggle-bars.is-open i:nth-child(2) { opacity: 0; }
+  .nav-toggle-bars.is-open i:nth-child(3) { top: 5px; transform: rotate(-45deg); }
+  .nav-scrim {
+    display: block; position: fixed; inset: 0; z-index: 55;
+    background: rgba(2,10,24,.55); border: 0; cursor: pointer;
+    animation: scrim-in .2s ease both;
+  }
+  header.site .inner { gap: 12px; }
+  header.site .header-model-status { display: none; }
+  .brand .word { font-size: 16px; }
+}
+@keyframes scrim-in { from { opacity: 0; } }
 
 /* Data strip */
 .datastrip {
@@ -3006,4 +3058,41 @@ a.portal-live-row:hover { background: var(--accent-dim); }
 @media (max-width: 560px) {
   .ls-row { grid-template-columns: 42px minmax(0,1fr) 40px minmax(0,1fr); gap: 6px; padding: 8px 10px; }
   .ls-side img, .ls-mono { display: none; }
+}
+
+/* ══ Mobile refinements (≤720px) ══════════════════════════ */
+@media (max-width: 720px) {
+  /* Hero data card: stack its internal multi-column grids */
+  .forecast-pulse-head { flex-direction: column; gap: 10px; padding: 14px 16px; }
+  .forecast-pulse-stage { padding: 16px; }
+  .forecast-pulse-teams { gap: 12px; padding: 18px 0 16px; }
+  .forecast-pulse-team h3 { font-size: clamp(20px, 6vw, 30px); }
+  .forecast-pulse-reading { grid-template-columns: 1fr; gap: 12px; padding: 14px 0; }
+  .forecast-pulse-reading dl { flex-wrap: wrap; gap: 12px; }
+  .forecast-pulse-tabs button { min-height: 58px; padding: 9px 7px; }
+  .forecast-pulse-probabilities b { font-size: clamp(22px, 7vw, 30px); }
+
+  /* Tap targets ≥44px on interactive pills/links */
+  .subtabs a { padding: 11px 15px; min-height: 44px; display: inline-flex; align-items: center; }
+  .date-rail a, .date-nav-arrow { padding: 11px 13px; min-height: 44px; display: inline-flex; align-items: center; }
+  .round-jump a { min-width: 40px; min-height: 40px; padding: 8px; display: inline-flex; align-items: center; justify-content: center; }
+  .league-card-links a { padding: 14px 8px; min-height: 48px; display: inline-flex; align-items: center; justify-content: center; }
+  .tabs a { padding: 12px 14px 11px; }
+
+  /* Section headings: the condensed uppercase display face can get huge on phones */
+  .portal-section-header h2 { font-size: clamp(30px, 8.5vw, 42px); }
+  .pagetitle { font-size: clamp(26px, 7vw, 34px); }
+
+  /* Stat rows and player grids breathe better at 2-up */
+  .statrow { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+  .players { gap: 10px; }
+
+  /* Keep long tables usable: comfortable tap rows, momentum scroll */
+  table.data td, table.data th { padding-block: 11px; }
+  .box, .panel { border-radius: 10px; }
+}
+
+/* Never let the page scroll sideways on any device */
+@media (max-width: 720px) {
+  html, body { overflow-x: hidden; }
 }
