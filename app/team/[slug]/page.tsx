@@ -175,7 +175,7 @@ export default async function TeamPage({ params }: { params: Promise<{ slug: str
         <>
           <div className="lg-head" style={{ marginTop: 34 }}>
             <h2>2026-27, opponent by opponent</h2>
-            <span className="updated">model win probability · shading ∝ probability</span>
+            {league && <Link href={`/league/${league.slug}/table/`} style={{ fontFamily: "var(--font-mono)", fontSize: 11, color: "var(--accent)" }}>Full {league.name} table →</Link>}
           </div>
           <div style={{ marginTop: 12, overflowX: "auto" }}>
             <table className="data forecast">

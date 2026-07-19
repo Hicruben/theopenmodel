@@ -2950,3 +2950,16 @@ a.portal-live-row:hover { background: var(--accent-dim); }
   .fixture-row { grid-template-columns: 52px minmax(0,1fr) 16px minmax(0,1fr) 78px; gap: 6px; padding: 9px 10px; }
   .fixture-row .fx-team .crest.sm { display: none; }
 }
+
+/* ── Leagues index cards with section links ─────────────── */
+.league-card { display: grid; gap: 0; padding: 0; overflow: hidden; }
+.league-card-head { display: flex; align-items: center; gap: 16px; padding: 18px 20px; text-decoration: none; color: var(--ink); transition: background .15s ease; }
+.league-card-head:hover { background: var(--panel-2); text-decoration: none; color: var(--ink); }
+.league-card-links { display: flex; gap: 2px; border-top: 1px solid var(--rule); }
+.league-card-links a {
+  flex: 1; text-align: center; padding: 10px 8px; font-family: var(--font-mono); font-size: 11px;
+  font-weight: 600; letter-spacing: .04em; text-transform: uppercase; color: var(--muted); text-decoration: none;
+  transition: color .15s ease, background .15s ease;
+}
+.league-card-links a + a { border-left: 1px solid var(--rule); }
+.league-card-links a:hover { color: var(--accent); background: var(--panel-2); }

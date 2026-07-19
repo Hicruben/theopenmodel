@@ -21,8 +21,8 @@ export default function Leagues() {
           const clubs = leagueClubs(l);
           const fav = seasonOdds(l.slug, clubs)[0];
           return (
-            <Link key={l.slug} href={`/league/${l.slug}/`} className="panel panel-link">
-              <div style={{ display: "flex", alignItems: "center", gap: 16 }}>
+            <div key={l.slug} className="panel league-card">
+              <Link href={`/league/${l.slug}/`} className="league-card-head">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img className="flag" src={flagUrl(l.flagCode, 80)} width={42} height={32} alt="" />
                 <div>
@@ -31,8 +31,13 @@ export default function Leagues() {
                     {clubs.length} clubs · most likely champion {fav.club} <b style={{ color: "var(--ink)" }}>{(fav.title * 100).toFixed(0)}%</b>
                   </p>
                 </div>
+              </Link>
+              <div className="league-card-links">
+                <Link href={`/league/${l.slug}/table/`}>Table</Link>
+                <Link href={`/league/${l.slug}/fixtures/`}>Fixtures</Link>
+                <Link href={`/league/${l.slug}/scorers/`}>Top scorers</Link>
               </div>
-            </Link>
+            </div>
           );
         })}
       </div>
