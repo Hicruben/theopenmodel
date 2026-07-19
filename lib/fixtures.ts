@@ -66,6 +66,30 @@ export function seasonOpener(): Fixture {
   return allFixtures()[0];
 }
 
+// ── Match-centre helpers (browse by calendar date, all leagues) ──
+const dateKey = (iso: string) => iso.slice(0, 10);
+
+// Every distinct UTC date that has at least one fixture, ascending.
+export function fixtureDates(): string[] {
+  const set = new Set<string>();
+  for (const f of allFixtures()) set.add(dateKey(f.date));
+  return [...set].sort();
+}
+
+// All fixtures kicking off on a given YYYY-MM-DD (UTC), in kickoff order.
+export function fixturesOn(date: string): Fixture[] {
+  return allFixtures()
+    .filter((f) => dateKey(f.date) === date)
+    .sort((a, b) => a.date.localeCompare(b.date));
+}
+
+// The fixture date on/after today (for "today's matches" default), else the last date.
+export function nextFixtureDate(): string {
+  const today = new Date().toISOString().slice(0, 10);
+  const dates = fixtureDates();
+  return dates.find((d) => d >= today) ?? dates[dates.length - 1] ?? today;
+}
+
 // Fixtures for a club, in date order.
 export function clubFixtures(clubSlug: string, n = 10): Fixture[] {
   return allFixtures().filter((f) => f.home.slug === clubSlug || f.away.slug === clubSlug).slice(0, n);

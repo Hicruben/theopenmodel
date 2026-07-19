@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 export const dynamic = "force-static";
 import { LEAGUES, leagueClubs } from "@/lib/data";
-import { allFixtures } from "@/lib/fixtures";
+import { allFixtures, fixtureDates } from "@/lib/fixtures";
 import { allBriefs } from "@/lib/briefs";
 
 const SITE = "https://theopenmodel.com";
@@ -50,5 +50,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     .map((f) => ({
       url: `${SITE}/match/${f.slug}/`, changeFrequency: "daily" as const, priority: 0.8, lastModified: now,
     }));
-  return [...core, ...leagues, ...news, ...teams, ...matches];
+  // Match-centre by date: only near-term days (same window as match pages).
+  const today = now.toISOString().slice(0, 10);
+  const horizon = new Date(now.getTime() + INDEX_WINDOW_DAYS * 86400_000).toISOString().slice(0, 10);
+  const matchDates = fixtureDates()
+    .filter((d) => d >= today && d <= horizon)
+    .map((d) => ({ url: `${SITE}/matches/${d}/`, changeFrequency: "daily" as const, priority: 0.75, lastModified: now }));
+  return [...core, ...leagues, ...news, ...teams, ...matches, ...matchDates];
 }

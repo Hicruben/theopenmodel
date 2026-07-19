@@ -2963,3 +2963,20 @@ a.portal-live-row:hover { background: var(--accent-dim); }
 }
 .league-card-links a + a { border-left: 1px solid var(--rule); }
 .league-card-links a:hover { color: var(--accent); background: var(--panel-2); }
+
+/* ── Match-centre date navigation ───────────────────────── */
+.date-nav { display: flex; align-items: center; gap: 8px; margin-top: 18px; flex-wrap: nowrap; overflow-x: auto; -ms-overflow-style: none; scrollbar-width: none; }
+.date-nav::-webkit-scrollbar { display: none; }
+.date-nav-arrow {
+  flex: none; font-family: var(--font-mono); font-size: 11px; font-weight: 600; color: var(--ink-soft);
+  text-decoration: none; padding: 8px 12px; border: 1px solid var(--rule); border-radius: 8px; white-space: nowrap;
+}
+.date-nav-arrow:hover { border-color: var(--accent); color: var(--accent); text-decoration: none; }
+.date-nav-arrow.is-off { color: var(--faint); border-color: var(--rule); opacity: .4; pointer-events: none; }
+.date-rail { display: flex; gap: 4px; flex: 1; justify-content: center; min-width: 0; }
+.date-rail a {
+  font-family: var(--font-mono); font-size: 11px; color: var(--muted); text-decoration: none;
+  padding: 8px 12px; border: 1px solid transparent; border-radius: 8px; white-space: nowrap;
+}
+.date-rail a:hover { color: var(--ink); border-color: var(--rule); }
+.date-rail a.on { color: var(--button-ink); background: var(--accent); border-color: var(--accent); font-weight: 600; }

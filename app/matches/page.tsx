@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { upcomingFixtures } from "@/lib/fixtures";
+import { upcomingFixtures, nextFixtureDate } from "@/lib/fixtures";
 import { MatchCard } from "../components/MatchCard";
 
 export const metadata = {
@@ -8,6 +8,7 @@ export const metadata = {
 };
 
 export default function Matches() {
+  const centreDate = nextFixtureDate();
   const fx = upcomingFixtures(48);
   const byDate = new Map<string, typeof fx>();
   for (const f of fx) {
@@ -23,6 +24,11 @@ export default function Matches() {
         Every match has three possible results: the home team wins, the teams draw, or the away team wins.
         The percentages add to 100% and show what may happen, not what will happen.{" "}
         <Link href="/guide/">Read the simple guide →</Link>
+      </p>
+      <p style={{ margin: "4px 0 0" }}>
+        <Link href={`/matches/${centreDate}/`} className="btn" style={{ fontSize: 12.5, padding: "9px 16px" }}>
+          Open match centre — browse by date →
+        </Link>
       </p>
       {[...byDate.entries()].map(([date, list]) => (
         <section key={date} data-reveal>
