@@ -18,7 +18,7 @@ const LINKS = [
 // On desktop these lower-priority links collapse first; on mobile all show in the drawer.
 const COMPACT = new Set(["/tools/", "/guide/", "/record/"]);
 
-export function MainNav() {
+export function MainNav({ snapshotHref, snapshotLabel }: { snapshotHref?: string; snapshotLabel?: string } = {}) {
   const pathname = usePathname();
   const currentPath = pathname.replace(/\/$/, "");
   const [open, setOpen] = useState(false);
@@ -66,6 +66,11 @@ export function MainNav() {
           </Link>
         ))}
         <Link href="/#live" className="cta">Try a prediction <span aria-hidden>↗</span></Link>
+        {snapshotHref && snapshotLabel && (
+          <Link href={snapshotHref} className="drawer-only nav-snapshot">
+            Forecast saved <time>{snapshotLabel}</time>
+          </Link>
+        )}
       </nav>
     </>
   );

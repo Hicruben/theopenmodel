@@ -42,7 +42,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <span className="mark" aria-hidden><i /><i /></span>
               <span className="word">The Open Model</span>
             </Link>
-            <MainNav />
+            <MainNav
+              snapshotHref={LATEST_SNAPSHOT ? `/snapshot/${LATEST_SNAPSHOT}/` : undefined}
+              snapshotLabel={SNAPSHOT_LABEL ?? undefined}
+            />
             {LATEST_SNAPSHOT && SNAPSHOT_LABEL && (
               <Link className="header-model-status" href={`/snapshot/${LATEST_SNAPSHOT}/`}>
                 <span>Forecast saved</span><time dateTime={LATEST_SNAPSHOT}>{SNAPSHOT_LABEL}</time>

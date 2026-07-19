@@ -120,6 +120,7 @@ nav.main a:active { transform: translateY(1px); }
 /* ── Mobile navigation (hamburger drawer) ───────────────── */
 .nav-toggle { display: none; }
 .nav-scrim { display: none; }
+.drawer-only { display: none; }
 @media (max-width: 980px) {
   nav.main {
     position: fixed; inset: 0 0 0 auto; z-index: 60;
@@ -166,6 +167,12 @@ nav.main a:active { transform: translateY(1px); }
   header.site .inner { gap: 12px; }
   header.site .header-model-status { display: none; }
   .brand .word { font-size: 16px; }
+  nav.main a.drawer-only.nav-snapshot {
+    display: flex; justify-content: space-between; margin-top: auto;
+    color: var(--muted); font-family: var(--font-mono); font-size: 12px; letter-spacing: .04em;
+    border-top: 1px solid var(--rule-strong); border-bottom: 0;
+  }
+  nav.main a.drawer-only.nav-snapshot time { color: var(--accent); }
 }
 @keyframes scrim-in { from { opacity: 0; } }
 
