@@ -2896,3 +2896,57 @@ a.portal-live-row:hover { background: var(--accent-dim); }
   [data-reveal].in .simbar i { animation: none !important; }
   .live-ticker-track { animation-play-state: paused !important; }
 }
+
+/* ── League sub-navigation ──────────────────────────────── */
+.subtabs { display: flex; gap: 4px; margin-top: 12px; overflow-x: auto; -ms-overflow-style: none; scrollbar-width: none; }
+.subtabs::-webkit-scrollbar { display: none; }
+.subtabs a {
+  font-family: var(--font-mono); font-size: 11px; font-weight: 600; letter-spacing: .04em; text-transform: uppercase;
+  color: var(--muted); text-decoration: none; white-space: nowrap;
+  padding: 7px 13px; border: 1px solid var(--rule); border-radius: 999px; background: var(--panel);
+  transition: color .15s ease, border-color .15s ease, background .15s ease;
+}
+.subtabs a:hover { color: var(--ink); border-color: var(--rule-strong); }
+.subtabs a.on { color: var(--button-ink); background: var(--accent); border-color: var(--accent); }
+
+/* ── League table (standings) ───────────────────────────── */
+.leaguetable td, .leaguetable th { white-space: nowrap; }
+.leaguetable tbody tr.zone-cl  .zone-bar { background: var(--win); }
+.leaguetable tbody tr.zone-el  .zone-bar { background: var(--hot); }
+.leaguetable tbody tr.zone-rel .zone-bar { background: var(--loss); }
+.leaguetable .zone-bar { position: absolute; left: 0; top: 6px; bottom: 6px; width: 3px; border-radius: 0 2px 2px 0; }
+.tablekey { display: flex; gap: 18px; flex-wrap: wrap; font-family: var(--font-mono); font-size: 11px; color: var(--muted); }
+.tablekey .k { display: inline-flex; align-items: center; gap: 7px; }
+.tablekey .sw { width: 10px; height: 10px; border-radius: 3px; display: inline-block; }
+.tablekey .sw.cl { background: var(--win); }
+.tablekey .sw.el { background: var(--hot); }
+.tablekey .sw.rel { background: var(--loss); }
+
+/* ── Matchday jump nav + fixture rows ───────────────────── */
+.round-jump { display: flex; gap: 4px; flex-wrap: wrap; }
+.round-jump a {
+  min-width: 30px; text-align: center; font-family: var(--font-mono); font-size: 11px;
+  color: var(--muted); text-decoration: none; padding: 5px 8px; border: 1px solid var(--rule); border-radius: 6px;
+}
+.round-jump a:hover { color: var(--ink); border-color: var(--rule-strong); }
+.round-jump a.on { color: var(--button-ink); background: var(--accent); border-color: var(--accent); }
+
+.fixture-rows { display: grid; gap: 2px; }
+.fixture-row {
+  display: grid; grid-template-columns: 64px minmax(0, 1fr) 20px minmax(0, 1fr) 96px;
+  align-items: center; gap: 10px; padding: 10px 14px; text-decoration: none; color: var(--ink);
+  border: 1px solid var(--rule); border-radius: 8px; background: var(--panel);
+  transition: border-color .15s ease, transform .15s ease;
+}
+.fixture-row:hover { border-color: var(--rule-strong); transform: translateY(-1px); text-decoration: none; }
+.fixture-row .fx-date { font-size: 10px; color: var(--muted); text-align: center; line-height: 1.35; }
+.fixture-row .fx-team { display: inline-flex; align-items: center; gap: 8px; min-width: 0; font-size: 14px; }
+.fixture-row .fx-team b { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.fixture-row .fx-home { justify-content: flex-end; text-align: right; }
+.fixture-row .fx-vs { color: var(--faint); font-size: 10px; text-align: center; }
+.fixture-row .fx-odds { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; font-size: 12px; text-align: right; }
+.fixture-row .fx-odds .fx-p { text-align: center; }
+@media (max-width: 640px) {
+  .fixture-row { grid-template-columns: 52px minmax(0,1fr) 16px minmax(0,1fr) 78px; gap: 6px; padding: 9px 10px; }
+  .fixture-row .fx-team .crest.sm { display: none; }
+}

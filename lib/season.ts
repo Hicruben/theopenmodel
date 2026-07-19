@@ -23,6 +23,10 @@ function poisson(lambda: number, rng: () => number): number {
 }
 
 export interface SeasonOdds {
+  avgRank?: number;   // mean finishing position (1 = top)
+  europe?: number;    // P(top 6)
+  ptsLo?: number;     // 10th-percentile points
+  ptsHi?: number;     // 90th-percentile points
   slug: string;
   club: string;
   elo: number;
@@ -37,8 +41,12 @@ export function simulateSeason(clubs: ClubRow[], sims = 5000, seed = 26): Season
   const rng = mulberry32(seed);
   const titleCt = new Array(n).fill(0);
   const top4Ct = new Array(n).fill(0);
+  const europeCt = new Array(n).fill(0);
   const relegCt = new Array(n).fill(0);
   const ptsSum = new Array(n).fill(0);
+  const rankSum = new Array(n).fill(0);
+  // per-club points across every sim, for percentile ranges
+  const ptsDist: number[][] = Array.from({ length: n }, () => new Array(sims));
 
   // precompute λ for every ordered pair (home i vs away j)
   const lamH: number[][] = [], lamA: number[][] = [];
@@ -69,9 +77,16 @@ export function simulateSeason(clubs: ClubRow[], sims = 5000, seed = 26): Season
     order.sort((x: number, y: number) => pts[y] - pts[x] || rng() - 0.5);
     titleCt[order[0]]++;
     for (let k = 0; k < 4; k++) top4Ct[order[k]]++;
+    for (let k = 0; k < 6; k++) europeCt[order[k]]++;
     for (let k = n - 3; k < n; k++) relegCt[order[k]]++;
-    for (let i = 0; i < n; i++) ptsSum[i] += pts[i];
+    for (let k = 0; k < n; k++) rankSum[order[k]] += k + 1;
+    for (let i = 0; i < n; i++) { ptsSum[i] += pts[i]; ptsDist[i][s] = pts[i]; }
   }
+
+  const pctile = (arr: number[], q: number) => {
+    const sorted = [...arr].sort((a, b) => a - b);
+    return sorted[Math.min(sorted.length - 1, Math.floor(q * sorted.length))];
+  };
 
   return clubs.map((c, i) => ({
     slug: c.slug,
@@ -79,8 +94,12 @@ export function simulateSeason(clubs: ClubRow[], sims = 5000, seed = 26): Season
     elo: c.elo,
     title: titleCt[i] / sims,
     top4: top4Ct[i] / sims,
+    europe: europeCt[i] / sims,
     releg: relegCt[i] / sims,
     avgPts: ptsSum[i] / sims,
+    avgRank: rankSum[i] / sims,
+    ptsLo: pctile(ptsDist[i], 0.1),
+    ptsHi: pctile(ptsDist[i], 0.9),
   })).sort((a, b) => b.avgPts - a.avgPts);
 }
 

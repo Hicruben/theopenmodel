@@ -27,9 +27,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${SITE}/privacy/`, changeFrequency: "yearly", priority: 0.2 },
     { url: `${SITE}/record/`, changeFrequency: "weekly", priority: 0.8 },
   ];
-  const leagues = LEAGUES.map((l) => ({
-    url: `${SITE}/league/${l.slug}/`, changeFrequency: "daily" as const, priority: 0.9,
-  }));
+  const leagues = LEAGUES.flatMap((l) => [
+    { url: `${SITE}/league/${l.slug}/`, changeFrequency: "daily" as const, priority: 0.9 },
+    { url: `${SITE}/league/${l.slug}/table/`, changeFrequency: "daily" as const, priority: 0.85 },
+    { url: `${SITE}/league/${l.slug}/fixtures/`, changeFrequency: "daily" as const, priority: 0.7 },
+    { url: `${SITE}/league/${l.slug}/scorers/`, changeFrequency: "weekly" as const, priority: 0.65 },
+  ]);
   const teams = LEAGUES.flatMap((l) => leagueClubs(l)).map((c) => ({
     url: `${SITE}/team/${c.slug}/`, changeFrequency: "weekly" as const, priority: 0.6,
   }));

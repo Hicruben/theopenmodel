@@ -5,6 +5,7 @@ import { seasonOdds } from "@/lib/season";
 import { pct } from "@/lib/ui";
 import { topScorers } from "@/lib/players";
 import { LeagueTabs } from "../../components/LeagueTabs";
+import { LeagueSubnav } from "../../components/LeagueSubnav";
 import { ForecastTable } from "../../components/ForecastTable";
 
 export function generateStaticParams() {
@@ -52,6 +53,7 @@ export default async function LeaguePage({ params }: { params: Promise<{ slug: s
           Last updated {BUILT} · ClubElo ratings → Dixon-Coles goals → 5,000 season simulations
         </p>
         <LeagueTabs current={league.slug} />
+        <LeagueSubnav slug={league.slug} current="forecast" />
       </section>
 
       <div style={{ marginTop: 18, overflowX: "auto" }}>
