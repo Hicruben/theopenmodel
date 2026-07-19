@@ -4,7 +4,6 @@ import { LEAGUES, leagueBySlug, flagUrl } from "@/lib/data";
 import { allFixtures } from "@/lib/fixtures";
 import { matchProb } from "@/lib/model";
 import { pct } from "@/lib/ui";
-import { Kickoff } from "../../../components/Kickoff";
 import { Crest } from "../../../components/Crest";
 import { LeagueTabs } from "../../../components/LeagueTabs";
 import { LeagueSubnav } from "../../../components/LeagueSubnav";
@@ -25,6 +24,10 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 
 const dayLabel = (iso: string) =>
   new Date(iso).toLocaleDateString("en-GB", { weekday: "short", day: "numeric", month: "short", timeZone: "UTC" });
+// Server-rendered kickoff time (UTC) — keeps this 380-row page free of per-row client
+// components; the individual match pages localise the time for the visitor.
+const timeLabel = (iso: string) =>
+  new Date(iso).toLocaleTimeString("en-GB", { hour: "2-digit", minute: "2-digit", timeZone: "UTC" });
 
 export default async function LeagueFixturesPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
@@ -89,7 +92,7 @@ export default async function LeagueFixturesPage({ params }: { params: Promise<{
               const p = matchProb(f.home.elo, f.away.elo);
               return (
                 <Link key={f.id} href={`/match/${f.slug}/`} className="fixture-row">
-                  <span className="fx-date mono">{dayLabel(f.date)}<br /><Kickoff iso={f.date} style="time" /></span>
+                  <span className="fx-date mono">{dayLabel(f.date)}<br />{timeLabel(f.date)}</span>
                   <span className="fx-team fx-home"><b>{f.home.club}</b><Crest club={f.home.club} slug={f.home.slug} size="sm" /></span>
                   <span className="fx-vs mono">v</span>
                   <span className="fx-team fx-away"><Crest club={f.away.club} slug={f.away.slug} size="sm" /><b>{f.away.club}</b></span>
@@ -106,8 +109,8 @@ export default async function LeagueFixturesPage({ params }: { params: Promise<{
       ))}
 
       <p className="foot-src" style={{ marginTop: 20 }}>
-        Kick-off times from API-Football; result probabilities from the model. Data reusable under{" "}
-        <Link href="/data/">CC BY 4.0</Link>.
+        Kick-off times shown in UTC (each match page shows your local time); result probabilities
+        from the model. Data reusable under <Link href="/data/">CC BY 4.0</Link>.
       </p>
     </main>
   );
