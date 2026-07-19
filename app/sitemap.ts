@@ -16,6 +16,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const core: MetadataRoute.Sitemap = [
     { url: `${SITE}/`, changeFrequency: "daily", priority: 1, lastModified: now },
     { url: `${SITE}/matches/`, changeFrequency: "daily", priority: 0.9, lastModified: now },
+    { url: `${SITE}/scores/`, changeFrequency: "daily", priority: 0.85, lastModified: now },
     { url: `${SITE}/tools/`, changeFrequency: "weekly", priority: 0.8 },
     { url: `${SITE}/tools/scenario/`, changeFrequency: "weekly", priority: 0.75 },
     { url: `${SITE}/leagues/`, changeFrequency: "weekly", priority: 0.7, lastModified: now },

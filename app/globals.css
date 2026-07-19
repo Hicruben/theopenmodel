@@ -2980,3 +2980,30 @@ a.portal-live-row:hover { background: var(--accent-dim); }
 }
 .date-rail a:hover { color: var(--ink); border-color: var(--rule); }
 .date-rail a.on { color: var(--button-ink); background: var(--accent); border-color: var(--accent); font-weight: 600; }
+
+/* ── Live scores page ───────────────────────────────────── */
+.ls-livebadge { display: inline-flex; align-items: center; gap: 6px; color: var(--loss); font-weight: 600; }
+.ls-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--loss); display: inline-block; animation: livepulse 1.3s ease-in-out infinite; }
+.ls-comp { display: flex; align-items: center; gap: 8px; margin: 0 0 6px; font-family: var(--font-mono); font-size: 11px; letter-spacing: .04em; text-transform: uppercase; color: var(--muted); }
+.ls-comp img { object-fit: contain; }
+.ls-rows { display: grid; gap: 2px; }
+.ls-row {
+  display: grid; grid-template-columns: 52px minmax(0,1fr) 48px minmax(0,1fr); align-items: center; gap: 10px;
+  padding: 9px 14px; text-decoration: none; color: var(--ink);
+  border: 1px solid var(--rule); border-radius: 8px; background: var(--panel);
+  transition: border-color .15s ease;
+}
+.ls-row:hover { border-color: var(--rule-strong); text-decoration: none; }
+.ls-state { display: inline-flex; align-items: center; gap: 5px; font-family: var(--font-mono); font-size: 10px; color: var(--muted); white-space: nowrap; }
+.ls-state.is-live { color: var(--loss); font-weight: 600; }
+.ls-state.is-ft { color: var(--faint); }
+.ls-side { display: inline-flex; align-items: center; gap: 8px; min-width: 0; font-size: 14px; }
+.ls-side img { object-fit: contain; flex: none; }
+.ls-mono { flex: none; width: 20px; height: 20px; display: inline-grid; place-items: center; font-family: var(--font-mono); font-size: 8px; color: var(--muted); border: 1px solid var(--rule); border-radius: 4px; }
+.ls-name { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.ls-score { font-family: var(--font-head); font-size: 16px; font-weight: 700; text-align: center; white-space: nowrap; }
+.ls-score.is-live { color: var(--loss); }
+@media (max-width: 560px) {
+  .ls-row { grid-template-columns: 42px minmax(0,1fr) 40px minmax(0,1fr); gap: 6px; padding: 8px 10px; }
+  .ls-side img, .ls-mono { display: none; }
+}

@@ -5,10 +5,11 @@ import { usePathname } from "next/navigation";
 
 const LINKS = [
   { href: "/", label: "Today" },
+  { href: "/scores/", label: "Scores" },
   { href: "/matches/", label: "Predictions" },
   { href: "/news/", label: "News" },
   { href: "/leagues/", label: "Leagues" },
-  { href: "/tools/", label: "Tools" },
+  { href: "/tools/", label: "Tools", compact: true },
   { href: "/guide/", label: "How it works", compact: true },
   { href: "/record/", label: "Past results", compact: true },
 ];
