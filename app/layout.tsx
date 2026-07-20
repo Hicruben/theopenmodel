@@ -91,7 +91,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <ul>
                 <li><a href="https://github.com/Hicruben/world-cup-2026-prediction-model">GitHub (open source)</a></li>
                 <li><a href="https://t.me/world26ai">Telegram</a></li>
-                <li><a href="https://cup26matches.com">World Cup 2026 archive</a></li>
+                <li><Link href="/world-cup-2026/">World Cup 2026 archive</Link></li>
               </ul>
             </div>
           </div>

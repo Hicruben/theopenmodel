@@ -29,6 +29,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${SITE}/about/`, changeFrequency: "monthly", priority: 0.5 },
     { url: `${SITE}/privacy/`, changeFrequency: "yearly", priority: 0.2 },
     { url: `${SITE}/record/`, changeFrequency: "daily", priority: 0.8, lastModified: now },
+    { url: `${SITE}/world-cup-2026/`, changeFrequency: "monthly", priority: 0.6 },
   ];
   const leagues = LEAGUES.flatMap((l) => [
     { url: `${SITE}/league/${l.slug}/`, changeFrequency: "daily" as const, priority: 0.9, lastModified: now },

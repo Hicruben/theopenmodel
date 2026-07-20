@@ -1,0 +1,186 @@
+{
+ "champion": "Spain",
+ "runnerUp": "Argentina",
+ "finalScore": "1–0",
+ "thirdPlace": "England",
+ "finished": 104,
+ "modelRecord": "71/104",
+ "knockout": [
+  {
+   "date": "2026-07-04",
+   "round": "Round of 16",
+   "t1": "Paraguay",
+   "t2": "France",
+   "g1": 0,
+   "g2": 1,
+   "pick": "France",
+   "pTop": 74,
+   "correct": true
+  },
+  {
+   "date": "2026-07-04",
+   "round": "Round of 16",
+   "t1": "Canada",
+   "t2": "Morocco",
+   "g1": 0,
+   "g2": 3,
+   "pick": "Morocco",
+   "pTop": 52,
+   "correct": true
+  },
+  {
+   "date": "2026-07-05",
+   "round": "Round of 16",
+   "t1": "Brazil",
+   "t2": "Norway",
+   "g1": 1,
+   "g2": 2,
+   "pick": "Brazil",
+   "pTop": 44,
+   "correct": false
+  },
+  {
+   "date": "2026-07-06",
+   "round": "Round of 16",
+   "t1": "Mexico",
+   "t2": "England",
+   "g1": 2,
+   "g2": 3,
+   "pick": "England",
+   "pTop": 55,
+   "correct": true
+  },
+  {
+   "date": "2026-07-06",
+   "round": "Round of 16",
+   "t1": "Portugal",
+   "t2": "Spain",
+   "g1": 0,
+   "g2": 1,
+   "pick": "Spain",
+   "pTop": 43,
+   "correct": true
+  },
+  {
+   "date": "2026-07-07",
+   "round": "Round of 16",
+   "t1": "USA",
+   "t2": "Belgium",
+   "g1": 1,
+   "g2": 4,
+   "pick": "Belgium",
+   "pTop": 42,
+   "correct": true
+  },
+  {
+   "date": "2026-07-07",
+   "round": "Round of 16",
+   "t1": "Argentina",
+   "t2": "Egypt",
+   "g1": 3,
+   "g2": 2,
+   "pick": "Argentina",
+   "pTop": 69,
+   "correct": true
+  },
+  {
+   "date": "2026-07-07",
+   "round": "Round of 16",
+   "t1": "Switzerland",
+   "t2": "Colombia",
+   "g1": 0,
+   "g2": 0,
+   "pick": "Colombia",
+   "pTop": 43,
+   "correct": false
+  },
+  {
+   "date": "2026-07-09",
+   "round": "Quarter-final",
+   "t1": "France",
+   "t2": "Morocco",
+   "g1": 2,
+   "g2": 0,
+   "pick": "France",
+   "pTop": 52,
+   "correct": true
+  },
+  {
+   "date": "2026-07-10",
+   "round": "Quarter-final",
+   "t1": "Spain",
+   "t2": "Belgium",
+   "g1": 2,
+   "g2": 1,
+   "pick": "Spain",
+   "pTop": 51,
+   "correct": true
+  },
+  {
+   "date": "2026-07-11",
+   "round": "Quarter-final",
+   "t1": "Norway",
+   "t2": "England",
+   "g1": 1,
+   "g2": 2,
+   "pick": "England",
+   "pTop": 49,
+   "correct": true
+  },
+  {
+   "date": "2026-07-12",
+   "round": "Quarter-final",
+   "t1": "Argentina",
+   "t2": "Switzerland",
+   "g1": 3,
+   "g2": 1,
+   "pick": "Argentina",
+   "pTop": 55,
+   "correct": true
+  },
+  {
+   "date": "2026-07-14",
+   "round": "Semi-final",
+   "t1": "France",
+   "t2": "Spain",
+   "g1": 0,
+   "g2": 2,
+   "pick": "Spain",
+   "pTop": 36,
+   "correct": true
+  },
+  {
+   "date": "2026-07-15",
+   "round": "Semi-final",
+   "t1": "England",
+   "t2": "Argentina",
+   "g1": 1,
+   "g2": 2,
+   "pick": "England",
+   "pTop": 37,
+   "correct": false
+  },
+  {
+   "date": "2026-07-18",
+   "round": "Match for third place",
+   "t1": "France",
+   "t2": "England",
+   "g1": 4,
+   "g2": 6,
+   "pick": "France",
+   "pTop": 37,
+   "correct": false
+  },
+  {
+   "date": "2026-07-19",
+   "round": "Final",
+   "t1": "Spain",
+   "t2": "Argentina",
+   "g1": 1,
+   "g2": 0,
+   "pick": "Spain",
+   "pTop": 39,
+   "correct": true
+  }
+ ]
+}
