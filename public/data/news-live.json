@@ -1,19 +1,180 @@
 {
- "updated": "2026-07-24T06:10:36.681Z",
+ "updated": "2026-07-25T06:01:46.846Z",
  "items": [
   {
-   "title": "What's working - and what's not - for WSL fans?",
-   "link": "https://www.bbc.co.uk/sport/football/articles/cj0plpe7eq6o?at_medium=RSS&at_campaign=rss",
-   "date": "2026-07-24T05:45:20.000Z",
+   "title": "Who am I? Guess Premier League star No 5",
+   "link": "https://www.bbc.co.uk/sport/football/articles/c3v0kv2ggq3o?at_medium=RSS&at_campaign=rss",
+   "date": "2026-07-25T05:51:21.000Z",
    "src": "BBC Sport",
-   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/2fd2/live/9e4eb740-8723-11f1-bee8-53ce494e1abc.jpg"
+   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/f47e/live/2e0294b0-85b2-11f1-bee8-53ce494e1abc.png"
   },
   {
-   "title": "Who am I? Guess Premier League star No 4",
-   "link": "https://www.bbc.co.uk/sport/football/articles/cx2d52rr559o?at_medium=RSS&at_campaign=rss",
-   "date": "2026-07-24T05:34:02.000Z",
+   "title": "How do Manchester City manage the Rodri dilemma?",
+   "link": "https://www.bbc.co.uk/sport/football/articles/cd9w2qp8pwxo?at_medium=RSS&at_campaign=rss",
+   "date": "2026-07-25T05:36:46.000Z",
    "src": "BBC Sport",
-   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/0bd9/live/088569b0-85b2-11f1-926f-c90d1bcfbc84.png"
+   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/fb06/live/b18077c0-8761-11f1-84de-b90328819e7a.jpg"
+  },
+  {
+   "title": "Austin FC academy players under investigation by police and FBI for allegations of youth-on-youth sexual abuse",
+   "link": "https://www.theguardian.com/football/2026/jul/24/austin-fc-academy-investigation-sexual-abuse-mls",
+   "date": "2026-07-24T21:45:26.000Z",
+   "src": "The Guardian",
+   "img": "https://i.guim.co.uk/img/media/db835f345b8d837ba3de977fbfcf85ccf73e642e/84_0_3333_2667/master/3333.jpg?width=700&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=e16ba9499f8d230231e73b6edb0d1613"
+  },
+  {
+   "title": "Real Madrid confident of signing Rodri  - Saturday's gossip",
+   "link": "https://www.bbc.co.uk/sport/football/articles/cdx7qq6nkddo?at_medium=RSS&at_campaign=rss",
+   "date": "2026-07-24T20:37:28.000Z",
+   "src": "BBC Sport",
+   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/c62b/live/2ffc6a50-879e-11f1-b2ab-0dd01740f9f6.png"
+  },
+  {
+   "title": "Transfer news: Newcastle sign Monaco’s Bamba, Summerville joins Al-Hilal",
+   "link": "https://www.theguardian.com/football/2026/jul/24/transfers-newcastle-sign-aladji-bamba-monaco",
+   "date": "2026-07-24T20:10:41.000Z",
+   "src": "The Guardian",
+   "img": "https://i.guim.co.uk/img/media/f176f71629fa6bc2b0d4c029ba2be18ba02add4b/0_232_1512_1209/master/1512.jpg?width=700&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=0e7ce8e21472509c6be785458d5003c4"
+  },
+  {
+   "title": "Dismissed solicitor is still acting for footballers in brain injury court case",
+   "link": "https://www.theguardian.com/sport/2026/jul/24/discarded-solicitor-still-acting-for-footballers-over-brin-injuries",
+   "date": "2026-07-24T19:39:31.000Z",
+   "src": "The Guardian",
+   "img": "https://i.guim.co.uk/img/media/ba257b240bffeb647762f51401153667deae92f3/291_0_2918_2334/master/2918.jpg?width=700&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=00edc96636446101191215c5032fa5bd"
+  },
+  {
+   "title": "West Ham winger Summerville joins Al-Hilal",
+   "link": "https://www.bbc.co.uk/sport/football/articles/cevmx0y88vwo?at_medium=RSS&at_campaign=rss",
+   "date": "2026-07-24T19:29:18.000Z",
+   "src": "BBC Sport",
+   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/7968/live/94159260-8793-11f1-9d55-0b6742729f5d.jpg"
+  },
+  {
+   "title": "‘You need to evolve’: Enzo Maresca plots life after Pep at Manchester City",
+   "link": "https://www.theguardian.com/football/2026/jul/24/enzo-maresco-manchester-city-pep-guardiola",
+   "date": "2026-07-24T18:13:47.000Z",
+   "src": "The Guardian",
+   "img": "https://i.guim.co.uk/img/media/e049e72e60d7fee6e2f76de517ee34ed4d68eba8/817_0_4084_3267/master/4084.jpg?width=700&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=e92c4b298f750a0453d2df2104205574"
+  },
+  {
+   "title": "IOC says Infantino complaint outside its scope",
+   "link": "https://www.bbc.co.uk/sport/football/articles/c07rzz54jyro?at_medium=RSS&at_campaign=rss",
+   "date": "2026-07-24T16:07:14.000Z",
+   "src": "BBC Sport",
+   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/0386/live/123e63e0-8778-11f1-b430-afa19a42b819.jpg"
+  },
+  {
+   "title": "Scottish sides in Europe postpone league matches",
+   "link": "https://www.bbc.co.uk/sport/football/articles/cy4kvvx28d1o?at_medium=RSS&at_campaign=rss",
+   "date": "2026-07-24T15:31:09.000Z",
+   "src": "BBC Sport",
+   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/fc96/live/e67b2e50-8772-11f1-b430-afa19a42b819.jpg"
+  },
+  {
+   "title": "Senegal appeal date set after Afcon win overturned",
+   "link": "https://www.bbc.co.uk/sport/football/articles/ce9788dmyndo?at_medium=RSS&at_campaign=rss",
+   "date": "2026-07-24T15:14:21.000Z",
+   "src": "BBC Sport",
+   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/d8d6/live/1779b300-876e-11f1-b430-afa19a42b819.jpg"
+  },
+  {
+   "title": "Feeling lost without the World Cup? Six ways to survive the weekend",
+   "link": "https://www.theguardian.com/football/2026/jul/24/feeling-lost-without-the-world-cup-six-ways-to-survive-the-weekend",
+   "date": "2026-07-24T14:36:08.000Z",
+   "src": "The Guardian",
+   "img": "https://i.guim.co.uk/img/media/8ef2c1538fe297a5d80e185891cdf700b78896dd/194_0_1935_1548/master/1935.jpg?width=700&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=a5977ff259204f08350d82f56d014e85"
+  },
+  {
+   "title": "Rodri to have back surgery but Maresca brushes off transfer speculation",
+   "link": "https://www.bbc.co.uk/sport/football/articles/c36dw0nwexxo?at_medium=RSS&at_campaign=rss",
+   "date": "2026-07-24T14:24:53.000Z",
+   "src": "BBC Sport",
+   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/16ca/live/b2714390-8765-11f1-84de-b90328819e7a.jpg"
+  },
+  {
+   "title": "Football Daily | Manchester United and the quest to make mythical midfield a reality",
+   "link": "https://www.theguardian.com/football/2026/jul/24/manchester-united-midfield-football-daily-newsletter",
+   "date": "2026-07-24T14:02:33.000Z",
+   "src": "The Guardian",
+   "img": "https://i.guim.co.uk/img/media/bc90c50e8e4288df78da7f58d0210a904126463e/392_0_6290_5032/master/6290.jpg?width=700&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=edb856157d75a60d56ee8fbd0319dcd2"
+  },
+  {
+   "title": "Jürgen Klopp vows to change Germany but threatens to quit if family hounded by media",
+   "link": "https://www.theguardian.com/football/2026/jul/24/germany-confirm-jurgen-klopp-new-head-coach",
+   "date": "2026-07-24T12:08:39.000Z",
+   "src": "The Guardian",
+   "img": "https://i.guim.co.uk/img/media/c8be2bf85b593ecdc7bac3ec4f2acd19a467562c/411_0_4865_3892/master/4865.jpg?width=700&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=e7847b9117fd010bb5334f2721b167cd"
+  },
+  {
+   "title": "Andoni Iraola backs backroom staff to help cure Liverpool’s set-piece ills",
+   "link": "https://www.theguardian.com/football/2026/jul/24/andoni-iraola-backs-backroom-staff-to-help-cure-liverpool-set-piece-ills",
+   "date": "2026-07-24T11:00:13.000Z",
+   "src": "The Guardian",
+   "img": "https://i.guim.co.uk/img/media/f5389dc15ccea4bcc4c6f289619592cfe111fb96/423_20_2083_1667/master/2083.jpg?width=700&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=5865714055dd941cba4ab3d5cd8b93e0"
+  },
+  {
+   "title": "Argentina behaviour after World Cup final was ‘intolerable’, says De la Fuente",
+   "link": "https://www.theguardian.com/football/2026/jul/24/argentina-behaviour-world-cup-final-intolerable-de-la-fuente",
+   "date": "2026-07-24T10:56:36.000Z",
+   "src": "The Guardian",
+   "img": "https://i.guim.co.uk/img/media/2976b2188908411e2a820c9394212a1ec316190e/599_203_2145_1716/master/2145.jpg?width=700&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=7d29e64cb8a8c3713918121b8ca489fb"
+  },
+  {
+   "title": "Klopp starts Germany reign by threatening to quit",
+   "link": "https://www.bbc.co.uk/sport/football/articles/cqjxd0n4gd2o?at_medium=RSS&at_campaign=rss",
+   "date": "2026-07-24T10:40:05.000Z",
+   "src": "BBC Sport",
+   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/6a61/live/077e1fd0-8747-11f1-80f4-b5921bc87065.jpg"
+  },
+  {
+   "title": "David Squires on … the notable people and big moments from World Cup 2026",
+   "link": "https://www.theguardian.com/football/picture/2026/jul/24/david-squires-on-the-notable-people-and-big-moments-from-world-cup-2026",
+   "date": "2026-07-24T10:10:30.000Z",
+   "src": "The Guardian",
+   "img": "https://i.guim.co.uk/img/media/286b967b17047216a8b7dae18debe32af2ee7b6d/0_1816_3968_3173/master/3968.jpg?width=700&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=f82ad5370c2e88b9fd31bb63b8cdbb27"
+  },
+  {
+   "title": "Guardiola turns down Italy manager job",
+   "link": "https://www.bbc.co.uk/sport/football/articles/cd7len4lvy9o?at_medium=RSS&at_campaign=rss",
+   "date": "2026-07-24T09:47:25.000Z",
+   "src": "BBC Sport",
+   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/88f9/live/81e5a190-8741-11f1-bee8-53ce494e1abc.jpg"
+  },
+  {
+   "title": "Kane set for talks with Bayern Munich over new deal",
+   "link": "https://www.bbc.co.uk/sport/football/articles/cly5d2n2879o?at_medium=RSS&at_campaign=rss",
+   "date": "2026-07-24T09:38:26.000Z",
+   "src": "BBC Sport",
+   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/53b9/live/a31396b0-8741-11f1-a10e-a5d4f08bc20c.jpg"
+  },
+  {
+   "title": "Messiah or papering over cracks? Klopp must sway doubters in Germany rebuild",
+   "link": "https://www.bbc.co.uk/sport/football/articles/cn8k8llpz2mo?at_medium=RSS&at_campaign=rss",
+   "date": "2026-07-24T09:33:22.000Z",
+   "src": "BBC Sport",
+   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/c0e4/live/c1e5d8d0-8752-11f1-b8ee-9b3c26ad07bb.jpg"
+  },
+  {
+   "title": "Newcastle seal £34m move for Monaco's Bamba",
+   "link": "https://www.bbc.co.uk/sport/football/articles/cr593z81lqno?at_medium=RSS&at_campaign=rss",
+   "date": "2026-07-24T09:30:06.000Z",
+   "src": "BBC Sport",
+   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/4771/live/107a3170-8682-11f1-b60e-a7e0943a9c78.jpg"
+  },
+  {
+   "title": "Chelsea agree deal to sign Palace defender Lacroix",
+   "link": "https://www.bbc.co.uk/sport/football/articles/cp9eyz14y7jo?at_medium=RSS&at_campaign=rss",
+   "date": "2026-07-24T09:14:32.000Z",
+   "src": "BBC Sport",
+   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/dd09/live/db2fbe10-873d-11f1-a10e-a5d4f08bc20c.jpg"
+  },
+  {
+   "title": "Socceroos star Cristian Volpato allegedly tests positive for cocaine during roadside test",
+   "link": "https://www.theguardian.com/football/2026/jul/24/cristian-volpato-socceroos-allegedly-tests-positive-cocaine-speeding",
+   "date": "2026-07-24T05:33:23.000Z",
+   "src": "The Guardian",
+   "img": "https://i.guim.co.uk/img/media/b08129167dc127f281e496a4fa5ff71f8bf657af/169_411_3313_2650/master/3313.jpg?width=700&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=e7b6f3bad2ec5419844afc2ad34641cc"
   },
   {
    "title": "Why Rogers and Palmer will thrive together in Alonso's Chelsea",
@@ -23,32 +184,11 @@
    "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/1999/live/4dbe9450-86a4-11f1-a0b6-435e4178a497.jpg"
   },
   {
-   "title": "Man Utd handed Tchouameni boost - Friday's gossip",
-   "link": "https://www.bbc.co.uk/sport/football/articles/cedjnz7wxy6o?at_medium=RSS&at_campaign=rss",
-   "date": "2026-07-23T21:50:22.000Z",
-   "src": "BBC Sport",
-   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/925e/live/284d2420-86db-11f1-926f-c90d1bcfbc84.png"
-  },
-  {
-   "title": "Defoe leaves Woking after 'eye-opening' first managerial role",
-   "link": "https://www.bbc.co.uk/sport/football/articles/c304d47ql6jo?at_medium=RSS&at_campaign=rss",
-   "date": "2026-07-23T21:02:11.000Z",
-   "src": "BBC Sport",
-   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/3ef2/live/a5dd9620-86d3-11f1-8749-89447c313de6.jpg"
-  },
-  {
    "title": "From Popp to Diani: 10 women’s transfers you may have missed during the men’s World Cup",
    "link": "https://www.theguardian.com/football/2026/jul/23/from-popp-to-diani-10-womens-transfers-you-may-have-missed-during-the-mens-world-cup",
    "date": "2026-07-23T19:00:52.000Z",
    "src": "The Guardian",
    "img": "https://i.guim.co.uk/img/media/0e4b9a5efa81b2ec586d5d1c801c550bd750454f/0_0_5000_4000/master/5000.jpg?width=700&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=0b353b372228d361f00230e29de1ca1e"
-  },
-  {
-   "title": "Italy confirm Ancelotti approach before Guardiola",
-   "link": "https://www.bbc.co.uk/sport/football/articles/c36d0291z6no?at_medium=RSS&at_campaign=rss",
-   "date": "2026-07-23T18:57:04.000Z",
-   "src": "BBC Sport",
-   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/7165/live/7fa81240-86c0-11f1-9d73-41a48912c4b7.jpg"
   },
   {
    "title": "Chelsea paid Aston Villa £117m for Morgan Rogers. Is he the right fit?",
@@ -58,27 +198,6 @@
    "img": "https://i.guim.co.uk/img/media/4ee1ab61dfff187f51fb12e575e5baadaa215b5c/53_85_5674_4539/master/5674.jpg?width=700&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=48a7decde442dd232bf979e0ceba249c"
   },
   {
-   "title": "Modric, 40, signs new AC Milan deal",
-   "link": "https://www.bbc.co.uk/sport/football/articles/cn0nypykzr7o?at_medium=RSS&at_campaign=rss",
-   "date": "2026-07-23T17:48:56.000Z",
-   "src": "BBC Sport",
-   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/b414/live/a014d710-86bc-11f1-bb58-d3ffca85db6d.png"
-  },
-  {
-   "title": "Anderson's journey to England star and  Man City record signing",
-   "link": "https://www.bbc.co.uk/sport/football/articles/c1eyjvzeg8qo?at_medium=RSS&at_campaign=rss",
-   "date": "2026-07-23T17:16:34.000Z",
-   "src": "BBC Sport",
-   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/ac02/live/30042b00-86b8-11f1-bb58-d3ffca85db6d.jpg"
-  },
-  {
-   "title": "Arsenal set to make £70m bid for Newcastle's Guimaraes",
-   "link": "https://www.bbc.co.uk/sport/football/articles/cpq8lpj530po?at_medium=RSS&at_campaign=rss",
-   "date": "2026-07-23T16:56:18.000Z",
-   "src": "BBC Sport",
-   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/d4d4/live/c251d6c0-86b2-11f1-bb58-d3ffca85db6d.jpg"
-  },
-  {
    "title": "Elliot Anderson lauds City as ‘kings of Manchester’ after £116m Forest transfer",
    "link": "https://www.theguardian.com/football/2026/jul/23/elliot-anderson-manchester-city-116m-nottingham-forest-transfer-premier-league",
    "date": "2026-07-23T16:00:48.000Z",
@@ -86,46 +205,11 @@
    "img": "https://i.guim.co.uk/img/media/3813bdbd504cb4a8774e203aba2cec99e4a6a6ae/499_0_5249_4200/master/5249.jpg?width=700&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=bc32edd841eca835ec4e410791710b7d"
   },
   {
-   "title": "Newcastle and Liverpool plan Keegan tribute at season opener",
-   "link": "https://www.bbc.co.uk/sport/football/articles/c5yw69d1v37o?at_medium=RSS&at_campaign=rss",
-   "date": "2026-07-23T15:37:52.000Z",
-   "src": "BBC Sport",
-   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/e415/live/c146f770-86a7-11f1-9191-f734856583ed.jpg"
-  },
-  {
-   "title": "Police call on English football clubs to ease security burden on taxpayers",
-   "link": "https://www.theguardian.com/football/2026/jul/23/arrests-football-matches-police-home-office",
-   "date": "2026-07-23T15:30:58.000Z",
-   "src": "The Guardian",
-   "img": "https://i.guim.co.uk/img/media/2f6279d04c2bca087794c7da80b8253469a57d8a/0_320_4485_3588/master/4485.jpg?width=700&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=8d2bb08dc25fb9e14210bcc2b5b4123e"
-  },
-  {
-   "title": "Aston Villa seal loan signing of Alejandro Garnacho from Chelsea",
-   "link": "https://www.theguardian.com/football/2026/jul/23/aston-villa-loan-signing-alejandro-garnacho-chelsea-transfer-latest",
-   "date": "2026-07-23T15:02:56.000Z",
-   "src": "The Guardian",
-   "img": "https://i.guim.co.uk/img/media/14f6ed9b895ee9ccce6a5993f6a1723b7733c304/552_78_4341_3474/master/4341.jpg?width=700&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=e7acf884db37020018c05237ff1ce368"
-  },
-  {
    "title": "Maldini confirms crisis-hit Italy have held talks with Guardiola and Ancelotti",
    "link": "https://www.theguardian.com/football/2026/jul/23/paolo-maldini-italy-pep-guardiola-carlo-ancelotti-world-cup-new-manager",
    "date": "2026-07-23T14:41:53.000Z",
    "src": "The Guardian",
    "img": "https://i.guim.co.uk/img/media/2977c2054f4618cdd261a2aa29716f73a018b575/345_0_4731_3784/master/4731.jpg?width=700&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=ac9acfb0e6dcf4c7af04db3732e2ceb1"
-  },
-  {
-   "title": "Arsenal sign Greece forward Tzolis for £34m",
-   "link": "https://www.bbc.co.uk/sport/football/articles/cp8xk0x902do?at_medium=RSS&at_campaign=rss",
-   "date": "2026-07-23T14:32:50.000Z",
-   "src": "BBC Sport",
-   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/37da/live/4b9b4450-8692-11f1-9208-a113fc71626f.jpg"
-  },
-  {
-   "title": "Garnacho joins Villa on loan from Chelsea",
-   "link": "https://www.bbc.co.uk/sport/football/articles/c1d1g6k51l7o?at_medium=RSS&at_campaign=rss",
-   "date": "2026-07-23T14:22:21.000Z",
-   "src": "BBC Sport",
-   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/d128/live/341501b0-869f-11f1-926f-c90d1bcfbc84.jpg"
   },
   {
    "title": "Football Daily | Back to the playground of the disgustingly rich: it’s club football!",
@@ -142,95 +226,11 @@
    "img": "https://i.guim.co.uk/img/media/4ce8ffe3c3431ebb334572d26adb448071ea5643/275_534_2485_1987/master/2485.jpg?width=700&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=b1780b6b9639d21a1ddcb0524c5e7817"
   },
   {
-   "title": "Gabriel, 15, gets first senior Man Utd call-up",
-   "link": "https://www.bbc.co.uk/sport/football/articles/ce85j3mgl06o?at_medium=RSS&at_campaign=rss",
-   "date": "2026-07-23T13:36:37.000Z",
-   "src": "BBC Sport",
-   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/55f0/live/0bb97940-867b-11f1-8c77-df97511a6b05.jpg"
-  },
-  {
-   "title": "Arsenal sign Greece forward Christos Tzolis from Club Brugge for £34m",
-   "link": "https://www.theguardian.com/football/2026/jul/23/arsenal-sign-greece-forward-christos-tzolis-from-club-brugge-for-34m",
-   "date": "2026-07-23T13:00:13.000Z",
-   "src": "The Guardian",
-   "img": "https://i.guim.co.uk/img/media/25cf9938bfc862755c8792946c48b3887d345c64/0_1881_5504_4403/master/5504.jpg?width=700&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=369b561638a268cc395da7a9db4f8cfd"
-  },
-  {
-   "title": "Norway consider complaint over Balogun World Cup ban suspension",
-   "link": "https://www.bbc.co.uk/sport/football/articles/c1l1vz4n484o?at_medium=RSS&at_campaign=rss",
-   "date": "2026-07-23T12:43:30.000Z",
-   "src": "BBC Sport",
-   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/8e89/live/41ca33b0-868c-11f1-a8a9-6d36c8f2857e.jpg"
-  },
-  {
-   "title": "Can Emery work his magic again at Villa?",
-   "link": "https://www.bbc.co.uk/sport/football/articles/czxevl7vgz6o?at_medium=RSS&at_campaign=rss",
-   "date": "2026-07-23T12:35:35.000Z",
-   "src": "BBC Sport",
-   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/c3b7/live/a20aebc0-853d-11f1-ab57-69b83adbeeff.jpg"
-  },
-  {
-   "title": "Transfer roundup: Barcelona sign Adeyemi, Monaco’s Bamba set for Newcastle",
-   "link": "https://www.theguardian.com/football/2026/jul/23/transfer-roundup-barcelona-sign-karim-adeyemi-newcastle-aladji-bamba-monaco",
-   "date": "2026-07-23T12:09:38.000Z",
-   "src": "The Guardian",
-   "img": "https://i.guim.co.uk/img/media/15388a3e9aea65905bc385531d7ba24e138a0fa7/728_367_3200_2559/master/3200.jpg?width=700&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=7faff2149246c59c7a4e92e56c7de830"
-  },
-  {
-   "title": "Manchester United consider Camavinga and Berge as midfield overhaul continues",
-   "link": "https://www.theguardian.com/football/2026/jul/23/manchester-united-consider-eduardo-camavinga-sander-berge-midfield-overhaul",
-   "date": "2026-07-23T11:41:48.000Z",
-   "src": "The Guardian",
-   "img": "https://i.guim.co.uk/img/media/0c73a9557381a0a62bf1ef1e196c0aee0c3b9bdf/344_163_3210_2568/master/3210.jpg?width=700&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=f4d6b6081a19a2aa1f61b0c8c9b0bd79"
-  },
-  {
-   "title": "‘Don’t become the protagonist’: Andoni Iraola on the secret of Spain’s success and his role at Liverpool",
-   "link": "https://www.theguardian.com/football/2026/jul/23/andoni-iraola-liverpool-interview-spain",
-   "date": "2026-07-23T11:00:42.000Z",
-   "src": "The Guardian",
-   "img": "https://i.guim.co.uk/img/media/05a4c677b7e2c83207eb515fea4b8af5f8dc4b28/1138_612_1730_1383/master/1730.jpg?width=700&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=b49fc9c32bbbe7f90df04ecebfaae2b5"
-  },
-  {
-   "title": "‘Everyone is hooked on football’: Indian league seeks to ride World Cup wave",
-   "link": "https://www.theguardian.com/football/2026/jul/23/everyone-is-hooked-on-football-indian-league-seeks-to-ride-world-cup-wave",
-   "date": "2026-07-23T11:00:42.000Z",
-   "src": "The Guardian",
-   "img": "https://i.guim.co.uk/img/media/4f374e8eb7a997d747b058c4d95283836fa0b92e/0_0_5031_4024/master/5031.jpg?width=700&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=d66c75b264071718ef4ca08355c16e99"
-  },
-  {
-   "title": "Blow for Manchester City with Rodri out for extended period due to back injury",
-   "link": "https://www.theguardian.com/football/2026/jul/23/blow-for-manchester-city-with-rodri-out-for-extended-period-due-to-back-injury",
-   "date": "2026-07-23T09:10:48.000Z",
-   "src": "The Guardian",
-   "img": "https://i.guim.co.uk/img/media/1eef0a8a143c79d51112c43b92f8e4ccf49dc450/205_41_3985_3187/master/3985.jpg?width=700&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=e26f2c679010e3d35142e1216cc81c4f"
-  },
-  {
-   "title": "Arsenal reveal William Saliba out for ‘extended period’ with back injury",
-   "link": "https://www.theguardian.com/football/2026/jul/22/arsenal-william-saliba-back-injury-france-world-cup",
-   "date": "2026-07-22T21:05:57.000Z",
-   "src": "The Guardian",
-   "img": "https://i.guim.co.uk/img/media/6ebd1aca95d0359361ec91e1ee80dc9c7998bc03/384_0_3333_2667/master/3333.jpg?width=700&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=ebf4acb21be1a231b8c9c9c88233bc1d"
-  },
-  {
    "title": "A host of issues: World Cup focus turns to Morocco with costs and legacy topping agenda",
    "link": "https://www.theguardian.com/football/2026/jul/22/host-morocco-2030-world-cup-costs-infrastructure-legacy",
    "date": "2026-07-22T18:00:21.000Z",
    "src": "The Guardian",
    "img": "https://i.guim.co.uk/img/media/85e91c45e3b3358548a780d0b360c70cb42b5bf7/688_0_6880_5504/master/6880.jpg?width=700&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=26236411a93ffe12f5ea68c7eaf8ec01"
-  },
-  {
-   "title": "New faces, gulfs in class and flawed drama: how 48 teams changed the World Cup",
-   "link": "https://www.theguardian.com/football/2026/jul/22/how-48-teams-changed-the-world-cup",
-   "date": "2026-07-22T12:26:12.000Z",
-   "src": "The Guardian",
-   "img": "https://i.guim.co.uk/img/media/77803819668ef82e32e02b61224a52a8799d5392/0_0_2500_2000/master/2500.jpg?width=700&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=be2294d74d61f82dfc8c7b59f0089563"
-  },
-  {
-   "title": "World Cup 2026 awards: the Guardian team give their final tournament verdicts",
-   "link": "https://www.theguardian.com/football/2026/jul/22/world-cup-awards-guardian-team-2026-tournament-verdicts",
-   "date": "2026-07-22T09:01:34.000Z",
-   "src": "The Guardian",
-   "img": "https://i.guim.co.uk/img/media/6410bd8c7c4437be3adbe8581b881d80a0843b1e/11_9_2489_1991/master/2489.jpg?width=700&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=57b6ba009cff40e62ec98a94e0c63125"
   },
   {
    "title": "The defining moments of the 2026 World Cup",
