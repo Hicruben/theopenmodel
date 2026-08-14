@@ -40,26 +40,10 @@ jobs:
           git diff --cached --quiet || git commit -m "record: daily snapshot & results $(date -u +%F)"
           git push
 
-      - name: Deploy static export to server
+      - name: Deploy static export to Cloudflare Workers
         env:
-          DEPLOY_HOST: ${{ secrets.DEPLOY_HOST }}
-        run: |
-          install -m 600 /dev/null ~/deploy_key
-          printf '%s\n' "${{ secrets.DEPLOY_SSH_KEY }}" > ~/deploy_key
-          mkdir -p ~/.ssh && ssh-keyscan -H "$DEPLOY_HOST" >> ~/.ssh/known_hosts 2>/dev/null
-          REL="gh-$(date -u +%Y%m%d%H%M%S)"
-          rsync -az --delete --exclude '._*' --exclude '.DS_Store' \
-            -e "ssh -i ~/deploy_key -o IdentitiesOnly=yes" \
-            out/ "root@$DEPLOY_HOST:/srv/theopenmodel/releases/$REL/"
-          ssh -i ~/deploy_key -o IdentitiesOnly=yes "root@$DEPLOY_HOST" "
-            set -e
-            REL=/srv/theopenmodel/releases/$REL
-            ln -sfn /srv/theopenmodel/shared/portal-live.json \$REL/data/portal-live.json
-            ln -sfn /srv/theopenmodel/shared/news-live.json \$REL/data/news-live.json
-            ln -sfn \$REL /srv/theopenmodel/current
-            cd /srv/theopenmodel/releases && ls -1dt gh-* | tail -n +8 | xargs -r rm -rf
-            echo \"current -> \$(readlink /srv/theopenmodel/current)\"
-          "
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+        run: npx wrangler deploy
 
       - name: Verify site is up
         run: |

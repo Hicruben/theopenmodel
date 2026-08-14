@@ -1,0 +1,22 @@
+{
+  // Cloudflare Worker that hosts the static export (./out) and proxies the two
+  // analytics routes the old nginx used to handle. Deploy: `npx wrangler deploy`.
+  "name": "theopenmodel",
+  "account_id": "6eda98d8aeedcf5b071ede1488ea1053",
+  "main": "worker.js",
+  "compatibility_date": "2025-01-01",
+  "workers_dev": true,
+  "routes": [
+    { "pattern": "theopenmodel.com", "custom_domain": true },
+    { "pattern": "www.theopenmodel.com", "custom_domain": true }
+  ],
+  "assets": {
+    "directory": "./out",
+    "binding": "ASSETS",
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "404-page",
+    // Worker is the single entry point (it owns /stats.js, /api/send and the GSC
+    // verification file); everything else it hands to env.ASSETS.fetch.
+    "run_worker_first": true
+  }
+}
