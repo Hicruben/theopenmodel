@@ -51,3 +51,32 @@ jobs:
             code=$(curl -s -o /dev/null -w '%{http_code}' "https://theopenmodel.com$path")
             echo "$path -> $code"; [ "$code" = "200" ] || exit 1
           done
+
+      # Runs only once the new pages are actually live, so the engines fetch today's
+      # numbers rather than yesterday's.
+      - name: Submit URLs to IndexNow (Bing/Yandex)
+        run: node scripts/indexnow-ping.mjs
+
+      # Posting stays off until TELEGRAM_ENABLED is set to "1" in repo variables, even
+      # if the token is present — broadcasting to subscribers should be a deliberate
+      # switch, not a side effect of adding a secret. Without credentials the script
+      # prints the posts and sends nothing.
+      - name: Post matchday preview & scorecard to Telegram
+        if: vars.TELEGRAM_ENABLED == '1'
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHANNEL: ${{ secrets.TELEGRAM_CHANNEL }}
+        run: |
+          npx tsx scripts/telegram-post.ts scorecard
+          npx tsx scripts/telegram-post.ts preview
+
+      # The dedup locks the posting script writes are only meaningful if they survive
+      # the runner, so they get their own commit after the posts have gone out.
+      - name: Commit posting state
+        if: vars.TELEGRAM_ENABLED == '1'
+        run: |
+          git add data/state/ 2>/dev/null || true
+          git diff --cached --quiet || {
+            git commit -m "telegram: posting state $(date -u +%F)"
+            git push
+          }

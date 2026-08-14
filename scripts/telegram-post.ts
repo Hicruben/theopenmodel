@@ -1,29 +1,49 @@
-// Telegram post generator for the club season.
+// Telegram broadcasting for the club season.
 //
-// Turns the model's own data into the two posts that make up the retention loop:
+// The retention loop is a pair of posts: the model commits to predictions before a
+// matchday, then gets scored on them afterwards. Publishing a call and then grading
+// it is the one thing the big score sites don't do, and the running accuracy figure
+// is what gives someone a reason to come back.
 //
-//   preview   — before a matchday: what the model is committing to, with confidence
-//   scorecard — after a matchday: what it got right and wrong, plus the running record
+//   preview    — the next matchday's slate, most-confident picks and the coin flip
+//   results    — full-time posts with the model's verdict on each match
+//   scorecard  — what the last matchday cost us, plus the season record
+//   poll       — "Who wins?" for matches kicking off soon (needs a sub-daily schedule)
 //
-// The pairing is the point. A prediction published beforehand and scored afterwards
-// is the one thing the big score sites don't do, and the running accuracy number is
-// what gives someone a reason to come back.
+// Adapted from the World Cup channel's posting script, which learned these rules the
+// expensive way during the tournament — they are not optional:
+//   · one post per slate per UTC day, enforced by a lock file. A stray re-run once
+//     quadruple-posted the daily slate.
+//   · lock/state files live in data/ so CI commits them back. GitHub Actions runners
+//     are ephemeral; state kept anywhere else means no deduplication at all. (On the
+//     old server the equivalent bug was keeping locks in /tmp, and a reboot re-fired
+//     eight stale full-time posts.)
+//   · groups get match essentials only. Relaying everything into groups got the bot
+//     kicked out of the two biggest ones in a single evening.
+//   · escape &, < and > — club names like "Brighton & Hove Albion" 400 otherwise.
+//   · channel polls must be anonymous; Telegram rejects them otherwise.
 //
-// DRY RUN ONLY: this prints posts to stdout. It never contacts Telegram. Sending is a
-// separate, deliberate step — posts get reviewed before anything reaches subscribers.
-//
-//   npx tsx scripts/telegram-post.ts preview
-//   npx tsx scripts/telegram-post.ts scorecard
-//   npx tsx scripts/telegram-post.ts both
-import { readdirSync, readFileSync } from "node:fs";
+// Without TELEGRAM_BOT_TOKEN/TELEGRAM_CHANNEL this prints the posts and sends nothing,
+// which is also how you preview copy: `npx tsx scripts/telegram-post.ts preview`.
+// DRY_RUN=1 forces that behaviour even when credentials are present.
+import { existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync, appendFileSync } from "node:fs";
 import { join } from "node:path";
 import { LEAGUES } from "../lib/data";
 import { clubRecord, type ScoredMatch } from "../lib/record";
 
 const SITE = "https://theopenmodel.com";
+const TOKEN = process.env.TELEGRAM_BOT_TOKEN;
+const CHANNEL = process.env.TELEGRAM_CHANNEL;
+const DRY = !TOKEN || !CHANNEL || process.env.DRY_RUN === "1";
+const FORCE = process.env.FORCE === "1";
 
-// Every link is tagged so Umami can attribute traffic (and its quality) back to
-// Telegram. Posting without measurement is how the World Cup channel ran blind.
+const STATE_DIR = join(process.cwd(), "data", "state");
+// The relay daemon fans channel posts out to subscriber groups by reading appended
+// message ids. "|nofan" keeps a post channel-only.
+const OUTBOX = join(STATE_DIR, "relay-outbox");
+
+// Every link is tagged so Umami can attribute traffic — and its quality — back to
+// Telegram. The World Cup channel posted for a month without ever measuring this.
 const link = (path: string, campaign: string) =>
   `${SITE}${path}?utm_source=telegram&utm_medium=social&utm_campaign=${campaign}`;
 
@@ -44,148 +64,287 @@ function latestSnapshot(): Snapshot {
 }
 
 const pct = (x: number) => `${Math.round(x * 100)}%`;
-
-function topPick(m: LockedMatch) {
-  const opts = [
-    { side: "home" as const, label: m.home, p: m.p.h },
-    { side: "draw" as const, label: "Draw", p: m.p.d },
-    { side: "away" as const, label: m.away, p: m.p.a },
-  ];
-  return opts.sort((a, b) => b.p - a.p)[0];
-}
-
+const esc = (s: string) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 const dayLabel = (iso: string) =>
   new Intl.DateTimeFormat("en-GB", { weekday: "long", day: "numeric", month: "long", timeZone: "UTC" })
     .format(new Date(iso));
+const timeLabel = (iso: string) =>
+  `${new Intl.DateTimeFormat("en-GB", { hour: "2-digit", minute: "2-digit", hour12: false, timeZone: "UTC" })
+    .format(new Date(iso))} UTC`;
+
+function topPick(m: LockedMatch) {
+  return [
+    { side: "home" as const, label: m.home, p: m.p.h },
+    { side: "draw" as const, label: "Draw", p: m.p.d },
+    { side: "away" as const, label: m.away, p: m.p.a },
+  ].sort((a, b) => b.p - a.p)[0];
+}
+const spread = (m: LockedMatch) => {
+  const s = [m.p.h, m.p.d, m.p.a].sort((x, y) => y - x);
+  return s[0] - s[1];
+};
+
+// ── state ───────────────────────────────────────────────────
+function readState<T>(file: string, fallback: T): T {
+  try { return JSON.parse(readFileSync(join(STATE_DIR, file), "utf8")); } catch { return fallback; }
+}
+function writeState(file: string, value: unknown) {
+  mkdirSync(STATE_DIR, { recursive: true });
+  writeFileSync(join(STATE_DIR, file), JSON.stringify(value, null, 1));
+}
+
+// ── telegram ────────────────────────────────────────────────
+type Button = { text: string; url: string };
+
+async function api(method: string, body: Record<string, unknown>) {
+  const res = await fetch(`https://api.telegram.org/bot${TOKEN}/${method}`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(body),
+  });
+  const j = await res.json();
+  if (!j.ok) console.error(`✗ telegram ${method}:`, JSON.stringify(j).slice(0, 200));
+  return j;
+}
+
+// `fan` decides whether subscriber groups get a copy. Match essentials only —
+// anything else stays in the channel.
+async function send(
+  text: string,
+  { buttons, silent = true, fan = true }: { buttons?: Button[][]; silent?: boolean; fan?: boolean } = {},
+) {
+  if (DRY) {
+    const chars = text.length;
+    console.log(`\n${"─".repeat(64)}\n${chars} chars${chars > 4096 ? "  ⚠ OVER TELEGRAM'S 4096 LIMIT" : ""}${fan ? "" : "  · channel-only"}\n${"─".repeat(64)}`);
+    console.log(text.replace(/<\/?[bi]>/g, "").replace(/&amp;/g, "&").replace(/&lt;/g, "<").replace(/&gt;/g, ">"));
+    if (buttons?.length) console.log(`\n[buttons] ${buttons.flat().map((b) => b.text).join("  |  ")}`);
+    return { ok: true, result: { message_id: 0 } };
+  }
+  const j = await api("sendMessage", {
+    chat_id: CHANNEL,
+    text,
+    parse_mode: "HTML",
+    disable_web_page_preview: true,
+    disable_notification: silent,
+    ...(buttons?.length ? { reply_markup: { inline_keyboard: buttons } } : {}),
+  });
+  if (j.ok && j.result?.message_id) {
+    mkdirSync(STATE_DIR, { recursive: true });
+    try { appendFileSync(OUTBOX, `${j.result.message_id}${fan ? "" : "|nofan"}\n`); } catch { /* outbox is best-effort */ }
+  }
+  return j;
+}
 
 // ── preview ─────────────────────────────────────────────────
-// Leads with conviction (what the model is most sure of) and then the game it
-// genuinely can't call — the honest bit is what makes the confident bit credible.
-function preview(): string {
+// Leads with conviction, then names the game the model genuinely can't call. The
+// honest half is what makes the confident half worth believing.
+async function preview() {
   const snap = latestSnapshot();
-  const now = new Date();
+  const now = Date.now();
   const upcoming = (snap.matches ?? [])
-    .filter((m) => new Date(m.date) > now)
+    .filter((m) => new Date(m.date).getTime() > now)
     .sort((a, b) => a.date.localeCompare(b.date));
+  if (!upcoming.length) { console.log("ℹ preview: no upcoming locked predictions."); return; }
 
-  if (!upcoming.length) return "(no upcoming locked predictions in the latest snapshot)";
-
-  // The next matchday = every match sharing the earliest upcoming date.
   const day = upcoming[0].date.slice(0, 10);
   const slate = upcoming.filter((m) => m.date.slice(0, 10) === day);
 
-  const byConfidence = [...slate].sort((a, b) => topPick(b).p - topPick(a).p);
-  const confident = byConfidence.slice(0, 3);
-  // Closest match = smallest gap between the top two outcomes.
-  const tightest = [...slate].sort((a, b) => {
-    const gap = (m: LockedMatch) => {
-      const s = [m.p.h, m.p.d, m.p.a].sort((x, y) => y - x);
-      return s[0] - s[1];
-    };
-    return gap(a) - gap(b);
-  })[0];
+  const lock = readState<{ day?: string }>("tg-preview.json", {});
+  if (!FORCE && lock.day === day) {
+    console.log(`ℹ preview: already posted the ${day} slate — skipping (FORCE=1 to override).`);
+    return;
+  }
 
-  const leagues = [...new Set(slate.map((m) => m.league))];
-  const header = leagues.map((l) => `${LEAGUE_FLAG.get(l) ?? ""} ${LEAGUE_NAME.get(l) ?? l}`).join(" · ");
+  const confident = [...slate].sort((a, b) => topPick(b).p - topPick(a).p).slice(0, 3);
+  const tightest = [...slate].sort((a, b) => spread(a) - spread(b))[0];
+  const header = [...new Set(slate.map((m) => m.league))]
+    .map((l) => `${LEAGUE_FLAG.get(l) ?? ""} ${LEAGUE_NAME.get(l) ?? l}`)
+    .join(" · ");
 
-  const lines: string[] = [];
-  lines.push(`⚽ ${header} — ${dayLabel(slate[0].date)}`);
-  lines.push("");
-  lines.push(`The model has locked ${slate.length} prediction${slate.length === 1 ? "" : "s"} for this matchday. Published now, scored after full time.`);
-  lines.push("");
-  lines.push("🔒 Most confident:");
+  const lines = [
+    `⚽ <b>${esc(header)}</b> — ${dayLabel(slate[0].date)}`,
+    "",
+    `${slate.length} prediction${slate.length === 1 ? "" : "s"} locked and published now. Every one gets scored after full time.`,
+    "",
+    "🔒 <b>Most confident</b>",
+  ];
   for (const m of confident) {
     const t = topPick(m);
-    lines.push(`• ${m.home} v ${m.away} — ${t.label} ${pct(t.p)}`);
+    lines.push(`• ${esc(m.home)} v ${esc(m.away)} — <b>${esc(t.label)} ${pct(t.p)}</b>`);
   }
   lines.push("");
-  const tp = topPick(tightest);
-  const tGap = (() => {
-    const s = [tightest.p.h, tightest.p.d, tightest.p.a].sort((x, y) => y - x);
-    return s[0] - s[1];
-  })();
-  lines.push(`🎲 Closest call: ${tightest.home} v ${tightest.away}`);
-  lines.push(`   ${tightest.home} ${pct(tightest.p.h)} · Draw ${pct(tightest.p.d)} · ${tightest.away} ${pct(tightest.p.a)}`);
-  // Below ~1pt the rounded percentages print identically, so claiming a "lean"
-  // reads as self-contradictory. Say it's a coin flip instead — the honesty is
-  // the product.
+  lines.push(`🎲 <b>Closest call</b> — ${esc(tightest.home)} v ${esc(tightest.away)}`);
+  lines.push(`${esc(tightest.home)} ${pct(tightest.p.h)} · Draw ${pct(tightest.p.d)} · ${esc(tightest.away)} ${pct(tightest.p.a)}`);
+  // Under a point the rounded numbers print identically, so claiming a lean reads as
+  // self-contradictory. Saying so plainly is the more valuable answer anyway.
   lines.push(
-    tGap < 0.01
-      ? "   Too close to separate — the model genuinely can't call this one."
-      : `   Narrowest margin on the slate — the model leans ${tp.label}.`,
+    spread(tightest) < 0.01
+      ? "<i>Too close to separate — the model can't call this one.</i>"
+      : `<i>Narrowest margin on the slate — the model leans ${esc(topPick(tightest).label)}.</i>`,
   );
   lines.push("");
-  lines.push(`All ${slate.length} predictions → ${link("/matches/", "preview")}`);
-  lines.push("");
-  lines.push("Every number was public before kickoff. We score them all afterwards — including the misses.");
+  lines.push("<i>Published before kickoff. Scored afterwards — misses included.</i>");
 
-  return lines.join("\n");
+  const buttons: Button[][] = [
+    [{ text: `📊 All ${slate.length} predictions →`, url: link("/matches/", "preview") }],
+    [{ text: "📈 Track record →", url: link("/record/", "preview") }],
+  ];
+  // The slate is the flagship post of the matchday, so it earns a notification.
+  const r = await send(lines.join("\n"), { buttons, silent: false });
+  if (r.ok && !DRY) {
+    writeState("tg-preview.json", { day, postedAt: new Date().toISOString() });
+    console.log(`✓ preview posted (${slate.length} matches, ${day}).`);
+  }
+}
+
+// ── results ─────────────────────────────────────────────────
+// One post per finished match, each carrying the verdict on the model's own call.
+async function results() {
+  const rec = clubRecord();
+  if (!rec.n) { console.log("ℹ results: no scored matches yet."); return; }
+
+  const posted = new Set(readState<number[]>("tg-results.json", []));
+  const fresh = rec.matches.filter((m) => !posted.has(m.id));
+  if (!fresh.length) { console.log("ℹ results: nothing new to post."); return; }
+
+  let n = 0;
+  // Cap the batch: a backlog should trickle out, not flood the channel in one burst.
+  for (const m of fresh.slice(0, 8)) {
+    const conf = Math.max(m.p.h, m.p.d, m.p.a);
+    const pickName = m.pick === "home" ? m.home : m.pick === "away" ? m.away : "Draw";
+    const actualName = m.actual === "home" ? m.home : m.actual === "away" ? m.away : "Draw";
+    const pActual = m.actual === "home" ? m.p.h : m.actual === "away" ? m.p.a : m.p.d;
+    const verdict = m.correct
+      ? `Model called <b>${esc(pickName)} ${pct(conf)}</b> ✅`
+      : `UPSET — the model gave <b>${esc(actualName)}</b> only ${pct(pActual)} 😱`;
+
+    const text =
+      `🏁 <b>FULL-TIME</b>\n<b>${esc(m.home)} ${m.hg}–${m.ag} ${esc(m.away)}</b>\n\n${verdict}`;
+    const buttons: Button[][] = [
+      [{ text: "📈 Prediction vs result →", url: link("/record/", "results") }],
+    ];
+    // First of a batch rings; the rest stay quiet.
+    const r = await send(text, { buttons, silent: n > 0 });
+    if (r.ok) { posted.add(m.id); n++; }
+  }
+  if (!DRY) writeState("tg-results.json", [...posted]);
+  console.log(`✓ results: posted ${n}.`);
 }
 
 // ── scorecard ───────────────────────────────────────────────
-// The payoff post: what the model called correctly, where it was wrong, and the
-// season accuracy that moves a little every week.
-function scorecard(): string {
+// The payoff post, and the trust engine: every call from the last matchday graded,
+// then the season number that shifts a little each week.
+async function scorecard() {
   const rec = clubRecord();
-  if (!rec.n) {
-    return [
-      "(no scored matches yet — the season hasn't produced results the model predicted)",
-      "",
-      "This post will populate automatically once matches finish and CI records the scores.",
-    ].join("\n");
+  if (!rec.n) { console.log("ℹ scorecard: no scored matches yet."); return; }
+
+  const lastDay = rec.matches[rec.matches.length - 1].date.slice(0, 10);
+  const lock = readState<{ day?: string }>("tg-scorecard.json", {});
+  if (!FORCE && lock.day === lastDay) {
+    console.log(`ℹ scorecard: already posted for ${lastDay} — skipping (FORCE=1 to override).`);
+    return;
   }
 
-  // Most recent matchday that has results.
-  const lastDay = rec.matches[rec.matches.length - 1].date.slice(0, 10);
   const slate = rec.matches.filter((m) => m.date.slice(0, 10) === lastDay);
   const hits = slate.filter((m) => m.correct).length;
-
   const conf = (m: ScoredMatch) => Math.max(m.p.h, m.p.d, m.p.a);
-  const pickLabel = (m: ScoredMatch) =>
-    m.pick === "home" ? m.home : m.pick === "away" ? m.away : "Draw";
-  const actualLabel = (m: ScoredMatch) =>
-    m.actual === "home" ? m.home : m.actual === "away" ? m.away : "Draw";
+  const pickName = (m: ScoredMatch) => (m.pick === "home" ? m.home : m.pick === "away" ? m.away : "Draw");
+  const actualName = (m: ScoredMatch) => (m.actual === "home" ? m.home : m.actual === "away" ? m.away : "Draw");
 
-  // Best call = correct pick the model was least sure of (a genuine read, not a gimme).
-  const bestCall = slate.filter((m) => m.correct).sort((a, b) => conf(a) - conf(b))[0];
-  // Worst miss = wrong pick the model was most sure of.
-  const worstMiss = slate.filter((m) => !m.correct).sort((a, b) => conf(b) - conf(a))[0];
+  // Best call = a correct pick the model was least sure of — a real read, not a gimme.
+  const best = slate.filter((m) => m.correct).sort((a, b) => conf(a) - conf(b))[0];
+  const worst = slate.filter((m) => !m.correct).sort((a, b) => conf(b) - conf(a))[0];
 
-  const lines: string[] = [];
-  lines.push(`📊 Matchday scorecard — ${dayLabel(slate[0].date)}`);
-  lines.push("");
-  lines.push(`The model went ${hits}/${slate.length} on results it predicted before kickoff.`);
-  lines.push("");
+  const lines = [
+    `📊 <b>Matchday scorecard</b> — ${dayLabel(slate[0].date)}`,
+    "",
+    `<b>${hits}/${slate.length}</b> correct on calls published before kickoff.`,
+    "",
+  ];
   for (const m of slate) {
-    lines.push(`${m.correct ? "✅" : "❌"} ${m.home} ${m.hg}–${m.ag} ${m.away} — called ${pickLabel(m)} ${pct(conf(m))}`);
+    lines.push(`${m.correct ? "✅" : "❌"} ${esc(m.home)} ${m.hg}–${m.ag} ${esc(m.away)} — called ${esc(pickName(m))} ${pct(conf(m))}`);
   }
   lines.push("");
-  if (bestCall) {
-    lines.push(`🎯 Best call: ${pickLabel(bestCall)} at just ${pct(conf(bestCall))} — ${bestCall.home} ${bestCall.hg}–${bestCall.ag} ${bestCall.away}.`);
-  }
-  if (worstMiss) {
-    lines.push(`🤕 Worst miss: backed ${pickLabel(worstMiss)} at ${pct(conf(worstMiss))}, got ${actualLabel(worstMiss)}.`);
-  }
+  if (best) lines.push(`🎯 <b>Best call</b>: ${esc(pickName(best))} at just ${pct(conf(best))}.`);
+  if (worst) lines.push(`🤕 <b>Worst miss</b>: backed ${esc(pickName(worst))} at ${pct(conf(worst))}, got ${esc(actualName(worst))}.`);
   lines.push("");
-  lines.push(`Season so far: ${rec.hits}/${rec.n} correct (${pct(rec.accuracy)}).`);
+  lines.push(`<b>Season: ${rec.hits}/${rec.n} correct (${pct(rec.accuracy)}).</b>`);
   lines.push("");
-  lines.push(`Full record, every prediction and every miss → ${link("/record/", "scorecard")}`);
+  lines.push("<i>Every call scored — misses included.</i>");
 
-  return lines.join("\n");
+  const buttons: Button[][] = [
+    [{ text: "📈 Full record, every miss →", url: link("/record/", "scorecard") }],
+  ];
+  const r = await send(lines.join("\n"), { buttons, silent: true });
+  if (r.ok && !DRY) {
+    writeState("tg-scorecard.json", { day: lastDay, postedAt: new Date().toISOString() });
+    console.log(`✓ scorecard posted (${hits}/${slate.length}).`);
+  }
+}
+
+// ── poll ────────────────────────────────────────────────────
+// Cheapest engagement hook there is: readers commit to a guess, then the result post
+// tells them whether they beat the model. Needs a sub-daily schedule to catch the
+// window, so it is not part of the daily CI run.
+async function poll() {
+  const snap = latestSnapshot();
+  const now = Date.now();
+  const state = readState<Record<string, { messageId: number | null; kickoff: number; closed: boolean }>>("tg-polls.json", {});
+
+  let closed = 0;
+  for (const slug of Object.keys(state)) {
+    const s = state[slug];
+    if (s.messageId && !s.closed && s.kickoff <= now) {
+      const r = DRY ? { ok: true } : await api("stopPoll", { chat_id: CHANNEL, message_id: s.messageId });
+      if (r.ok) { s.closed = true; closed++; }
+    }
+  }
+
+  // Matches kicking off within the next ~2 hours, excluding any already polled.
+  const soon = (snap.matches ?? []).filter((m) => {
+    const k = new Date(m.date).getTime();
+    return k > now + 5 * 60_000 && k <= now + 120 * 60_000 && !state[m.slug];
+  });
+
+  let opened = 0;
+  for (const m of soon.slice(0, 6)) {
+    const question = `⚽ Who wins? ${m.home} v ${m.away}`.slice(0, 300);
+    const options = [m.home.slice(0, 100), "Draw 🤝", m.away.slice(0, 100)];
+    if (DRY) {
+      console.log(`\n[poll] ${question}  (kickoff ${timeLabel(m.date)})\n  options: ${options.join(" / ")}`);
+      state[m.slug] = { messageId: 0, kickoff: new Date(m.date).getTime(), closed: false };
+      opened++;
+      continue;
+    }
+    const r = await api("sendPoll", {
+      chat_id: CHANNEL, question, options,
+      is_anonymous: true, type: "regular", allows_multiple_answers: false, disable_notification: true,
+    });
+    if (r.ok) {
+      state[m.slug] = { messageId: r.result.message_id, kickoff: new Date(m.date).getTime(), closed: false };
+      opened++;
+      try { appendFileSync(OUTBOX, `${r.result.message_id}\n`); } catch { /* best-effort */ }
+    }
+  }
+  if (!DRY) writeState("tg-polls.json", state);
+  console.log(`✓ polls: opened ${opened}, closed ${closed}.`);
 }
 
 // ── cli ─────────────────────────────────────────────────────
-const mode = process.argv[2] ?? "both";
-const box = (title: string, body: string) => {
-  const chars = body.length;
-  console.log(`\n${"─".repeat(60)}\n${title}  (${chars} chars${chars > 4096 ? " ⚠ OVER TELEGRAM 4096 LIMIT" : ""})\n${"─".repeat(60)}`);
-  console.log(body);
-};
-
-if (mode === "preview" || mode === "both") box("PREVIEW POST", preview());
-if (mode === "scorecard" || mode === "both") box("SCORECARD POST", scorecard());
-if (!["preview", "scorecard", "both"].includes(mode)) {
-  console.error(`unknown mode "${mode}" — use: preview | scorecard | both`);
+const MODES = { preview, results, scorecard, poll } as const;
+const mode = (process.argv[2] ?? "preview") as keyof typeof MODES;
+if (!(mode in MODES)) {
+  console.error(`unknown mode "${mode}" — use: ${Object.keys(MODES).join(" | ")}`);
   process.exit(1);
 }
-console.log(`\n${"─".repeat(60)}\nDRY RUN — nothing was sent to Telegram.\n`);
+async function main() {
+  if (DRY) {
+    console.log(TOKEN && CHANNEL
+      ? "◦ DRY_RUN=1 — printing only, nothing will be sent."
+      : "◦ no TELEGRAM_BOT_TOKEN/TELEGRAM_CHANNEL — printing only, nothing will be sent.");
+  }
+  await MODES[mode]();
+  if (DRY) console.log("\n◦ dry run complete — nothing was sent to Telegram.\n");
+}
+
+main().catch((e) => { console.error(e); process.exit(1); });
