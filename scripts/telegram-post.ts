@@ -84,6 +84,34 @@ const spread = (m: LockedMatch) => {
   return s[0] - s[1];
 };
 
+// ── pre-send validation ─────────────────────────────────────
+// Automated posting means a bad pipeline broadcasts to every subscriber with nobody in
+// the loop, and a wrong post is a credibility event for a product whose whole claim is
+// that its numbers can be checked. A placeholder schedule (every fixture sharing one
+// kickoff instant) once reached the site and would have been announced here, so these
+// checks refuse to post rather than publish something suspect.
+function assertSaneSlate(slate: LockedMatch[], { mustBeUpcoming }: { mustBeUpcoming: boolean }) {
+  const fail = (why: string) => { throw new Error(`refusing to post — ${why}`); };
+  if (!slate.length) fail("empty slate");
+
+  for (const m of slate) {
+    const sum = m.p.h + m.p.d + m.p.a;
+    if (!Number.isFinite(sum) || Math.abs(sum - 1) > 0.02) {
+      fail(`probabilities for ${m.home} v ${m.away} sum to ${sum.toFixed(3)}, not 1`);
+    }
+    if (!m.home || !m.away) fail(`a fixture is missing a club name (id ${m.id})`);
+    if (Number.isNaN(new Date(m.date).getTime())) fail(`unparseable kickoff for ${m.home} v ${m.away}`);
+    if (mustBeUpcoming && new Date(m.date).getTime() <= Date.now()) {
+      fail(`${m.home} v ${m.away} has already kicked off — a preview must precede kickoff`);
+    }
+  }
+  // A real matchday staggers kickoffs. More than four fixtures sharing one instant is the
+  // signature of provider placeholder times, not a schedule.
+  if (slate.length > 4 && new Set(slate.map((m) => m.date)).size === 1) {
+    fail(`all ${slate.length} fixtures share one kickoff instant (${slate[0].date}) — looks like placeholder data`);
+  }
+}
+
 // ── state ───────────────────────────────────────────────────
 function readState<T>(file: string, fallback: T): T {
   try { return JSON.parse(readFileSync(join(STATE_DIR, file), "utf8")); } catch { return fallback; }
@@ -154,6 +182,8 @@ async function preview() {
     console.log(`ℹ preview: already posted the ${day} slate — skipping (FORCE=1 to override).`);
     return;
   }
+
+  assertSaneSlate(slate, { mustBeUpcoming: true });
 
   const confident = [...slate].sort((a, b) => topPick(b).p - topPick(a).p).slice(0, 3);
   const tightest = [...slate].sort((a, b) => spread(a) - spread(b))[0];
