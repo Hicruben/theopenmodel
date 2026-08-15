@@ -27,6 +27,16 @@ jobs:
 
       - run: npm ci
 
+      # Deliberately allowed to fail the whole run. The schedule decides kickoff times,
+      # match slugs and which predictions count as pre-kickoff, so shipping a bad one is
+      # worse than not shipping: Cloudflare keeps serving the last good deploy while a
+      # failure here sends a notification. A silent skip is what let placeholder kickoff
+      # times reach the site for weeks.
+      - name: Refresh season schedule
+        env:
+          API_FOOTBALL_KEY: ${{ secrets.API_FOOTBALL_KEY }}
+        run: node scripts/fetch-fixtures.mjs
+
       - name: Build (fetch data, lock snapshot, static export)
         env:
           API_FOOTBALL_KEY: ${{ secrets.API_FOOTBALL_KEY }}
