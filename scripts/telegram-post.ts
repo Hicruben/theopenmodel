@@ -135,12 +135,52 @@ async function api(method: string, body: Record<string, unknown>) {
   return j;
 }
 
-// `fan` decides whether subscriber groups get a copy. Match essentials only —
-// anything else stays in the channel.
+// POSTING POLICY — what goes where, how often, and how loudly.
+//
+// Telegram channels have no algorithm: every post reaches every subscriber, so nothing
+// is gained by posting more and nothing is throttled for posting less. The only failure
+// mode is a human muting the channel, which is invisible in view counts for weeks. So
+// the budget that matters is notifications, not posts.
+//
+//   mode       | audience | frequency                        | notifies
+//   -----------+----------+----------------------------------+---------
+//   preview    | channel  | at most 1/UTC day, and only when | YES — the
+//              |          | something kicks off within 48h   | day's only one
+//   scorecard  | channel  | once per matchday with results   | no
+//   results    | channel  | per finished match, max 8/run    | no
+//   poll       | channel  | per match entering its window    | no
+//
+// Nothing is sent when nothing kicks off inside 48 hours, so international breaks go
+// quiet on their own. Silence is a retention feature, not a gap to fill.
+//
+// GROUPS ARE OFF. The relay fans channel posts out to the ~21 subscriber groups, and
+// during the World Cup that fan-out — a reboot burst plus nine rest-day posts in one
+// evening — got the bot removed from the two biggest groups the same day. A club season
+// is five leagues over nine months, an order of magnitude more volume than a tournament,
+// so groups stay opt-out until there is a reason to change it and a rule for what they
+// receive. `fan` therefore defaults to false: a post reaches groups only by asking.
+const FAN_TO_GROUPS_DEFAULT = false;
+
+// `fan` decides whether subscriber groups get a copy.
+const utcToday = () => new Date().toISOString().slice(0, 10);
+
+// One notification per UTC day, enforced here rather than trusted to each call site.
+// Subscribers forgive a channel that posts often and buzzes rarely; they mute one that
+// buzzes twice in an evening, and a mute is permanent in practice.
+function notificationSpent(): boolean {
+  return readState<{ day?: string }>("tg-notified.json", {}).day === utcToday();
+}
+
 async function send(
   text: string,
-  { buttons, silent = true, fan = true }: { buttons?: Button[][]; silent?: boolean; fan?: boolean } = {},
+  { buttons, silent = true, fan = FAN_TO_GROUPS_DEFAULT }: { buttons?: Button[][]; silent?: boolean; fan?: boolean } = {},
 ) {
+  // Downgrade to silent once the day's notification is spent, rather than skipping the
+  // post: the content is still worth having in the channel, it just shouldn't buzz.
+  if (!silent && notificationSpent()) {
+    console.log("◦ notification budget already spent today — sending silently.");
+    silent = true;
+  }
   if (DRY) {
     const chars = text.length;
     console.log(`\n${"─".repeat(64)}\n${chars} chars${chars > 4096 ? "  ⚠ OVER TELEGRAM'S 4096 LIMIT" : ""}${fan ? "" : "  · channel-only"}\n${"─".repeat(64)}`);
@@ -158,6 +198,7 @@ async function send(
   });
   if (j.ok && j.result?.message_id) {
     mkdirSync(STATE_DIR, { recursive: true });
+    if (!silent) writeState("tg-notified.json", { day: utcToday(), at: new Date().toISOString() });
     try { appendFileSync(OUTBOX, `${j.result.message_id}${fan ? "" : "|nofan"}\n`); } catch { /* outbox is best-effort */ }
   }
   return j;
