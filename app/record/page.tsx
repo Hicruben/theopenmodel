@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { wcBacktest, clubRecord } from "@/lib/record";
 import { CalibrationChart } from "../components/CalibrationChart";
+import { NewsletterSignup } from "../components/NewsletterSignup";
 import { pct } from "@/lib/ui";
 
 export const metadata = {
@@ -141,6 +142,14 @@ export default function Record() {
           />
         </>
       )}
+
+      <div style={{ marginTop: 28 }}>
+        <NewsletterSignup
+          source="record"
+          title="Follow the record as it fills in"
+          blurb="Every Tuesday the model's week in one email: the biggest probability swing, one chart, and the prediction it got most wrong. The misses are the point — that is how you tell whether any of this is honest."
+        />
+      </div>
 
       <p style={{ marginTop: 28 }}>
         Past results show how the model behaved; they do not guarantee future accuracy. New to

@@ -79,6 +79,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 <li><Link href="/movers/">Teams getting stronger or weaker</Link></li>
                 <li><Link href="/snapshots/">Saved daily forecasts</Link></li>
                 <li><Link href="/data/">Download data (CSV/JSON)</Link></li>
+                <li><Link href="/newsletter/">Weekly email</Link></li>
                 <li><Link href="/guide/">How predictions work</Link></li>
                 <li><Link href="/record/">Past predictions and results</Link></li>
                 <li><Link href="/methodology/">Technical methodology</Link></li>

@@ -24,6 +24,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${SITE}/best-bets/`, changeFrequency: "daily", priority: 0.8, lastModified: now },
     { url: `${SITE}/data/`, changeFrequency: "weekly", priority: 0.6, lastModified: now },
     { url: `${SITE}/snapshots/`, changeFrequency: "daily", priority: 0.6, lastModified: now },
+    { url: `${SITE}/newsletter/`, changeFrequency: "monthly", priority: 0.7 },
     { url: `${SITE}/guide/`, changeFrequency: "monthly", priority: 0.6 },
     { url: `${SITE}/methodology/`, changeFrequency: "monthly", priority: 0.6 },
     { url: `${SITE}/about/`, changeFrequency: "monthly", priority: 0.5 },

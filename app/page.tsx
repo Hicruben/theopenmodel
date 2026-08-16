@@ -6,6 +6,7 @@ import { MatchExplorer, type MatchExplorerMatch } from "./components/MatchExplor
 import { TodayPortal } from "./components/TodayPortal";
 import { LiveTicker } from "./components/LiveTicker";
 import { CountUp } from "./components/CountUp";
+import { NewsletterSignup } from "./components/NewsletterSignup";
 
 function explainFixture(home: string, homeElo: number, away: string, awayElo: number) {
   const gap = Math.round(Math.abs(homeElo - awayElo));
@@ -75,6 +76,10 @@ export default function Home() {
           </dl>
         </div>
         <p className="record-note wrap">Forecast published before kickoff. Final result checked. Correct and incorrect calls kept.</p>
+      </section>
+
+      <section className="wrap" style={{ margin: "36px auto 8px" }}>
+        <NewsletterSignup source="home" />
       </section>
     </main>
   );

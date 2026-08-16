@@ -40,6 +40,9 @@ jobs:
       - name: Build (fetch data, lock snapshot, static export)
         env:
           API_FOOTBALL_KEY: ${{ secrets.API_FOOTBALL_KEY }}
+          # Public by design — it only identifies which Kit form a submission belongs to.
+          # Unset means the signup form renders nowhere rather than collecting into a void.
+          NEXT_PUBLIC_KIT_FORM_ID: ${{ vars.KIT_FORM_ID }}
         run: npm run build
 
       - name: Commit snapshot + data back to the public record

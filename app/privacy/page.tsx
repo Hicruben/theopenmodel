@@ -28,6 +28,24 @@ export default function Privacy() {
         and we do not sell analytics data or share it with advertising networks.
       </p>
 
+      <h2>The weekly email</h2>
+      <p>
+        The <Link href="/newsletter/">newsletter</Link> is the one place this site asks for personal
+        data. If you subscribe, the email address you type — plus a short label recording which page
+        the form was on, so we can tell which parts of the site people find useful — is sent to{" "}
+        <a href="https://kit.com/">Kit</a>, which stores the list and delivers the emails under its
+        own <a href="https://kit.com/privacy">privacy policy</a>. Nothing else about your visit is
+        attached to it.
+      </p>
+      <p>
+        The address is used only to send the weekly email. It is never sold, rented, or shared, and
+        it is not used to identify you in the site statistics described above. Every issue carries a
+        one-click unsubscribe link; unsubscribing removes the address from the list. To have it
+        deleted outright, or to ask what is held, use the contact routes on the{" "}
+        <Link href="/about/">About page</Link>. Subscribing is entirely optional — the whole site,
+        including all the data downloads, works without it.
+      </p>
+
       <h2>External links and data</h2>
       <p>
         News links, GitHub, Telegram and other external services have their own privacy policies.
