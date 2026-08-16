@@ -1,0 +1,23 @@
+{
+ "updated": "2026-08-16T03:08:26.307Z",
+ "results": {
+  "1570333": {
+   "id": 1570333,
+   "date": "2026-08-15T17:30:00+00:00",
+   "league": "la-liga",
+   "home": "Alaves",
+   "away": "Getafe",
+   "hg": 3,
+   "ag": 0
+  },
+  "1570341": {
+   "id": 1570341,
+   "date": "2026-08-15T19:30:00+00:00",
+   "league": "la-liga",
+   "home": "Sevilla",
+   "away": "Rayo Vallecano",
+   "hg": 2,
+   "ag": 1
+  }
+ }
+}
