@@ -36,6 +36,12 @@ const FAIL_ON_ERROR = process.env.API_FOOTBALL_FAIL_ON_ERROR === "true";
 const REFRESH_MODE = (process.env.API_FOOTBALL_REFRESH_MODE || "full").trim().toLowerCase();
 const TIMEOUT_MS = integerEnv("API_FOOTBALL_TIMEOUT_MS", 15_000, 2_000, 60_000);
 const LOOKAHEAD_DAYS = integerEnv("API_FOOTBALL_LOOKAHEAD_DAYS", 14, 0, 60);
+// Look backwards as well as forwards. The snapshot writes finished scores into
+// data/results-2026.json from whatever this window contains, and the daily build runs at
+// 03:30 UTC — so a window starting today would already have moved past every match that
+// kicked off the previous evening, and those results could never be recorded at all. The
+// track record depends entirely on this overlap.
+const LOOKBEHIND_DAYS = integerEnv("API_FOOTBALL_LOOKBEHIND_DAYS", 5, 0, 60);
 const MAX_STANDING_TABLES = integerEnv("API_FOOTBALL_MAX_STANDING_TABLES", 20, 0, 100);
 const RETRIES = integerEnv("API_FOOTBALL_RETRIES", 2, 0, 5);
 const FETCH_LIVE = process.env.API_FOOTBALL_FETCH_LIVE !== "false";
@@ -61,7 +67,7 @@ if (REFRESH_MODE !== "full" && REFRESH_MODE !== "live") {
 }
 
 const startedAt = new Date();
-const dateFrom = formatDate(startedAt);
+const dateFrom = formatDate(addUtcDays(startedAt, -LOOKBEHIND_DAYS));
 const dateTo = formatDate(addUtcDays(startedAt, LOOKAHEAD_DAYS));
 
 try {
@@ -88,7 +94,7 @@ try {
 
 async function refreshFullSnapshot() {
   const datedFixtures = [];
-  for (const date of utcDates(startedAt, LOOKAHEAD_DAYS)) {
+  for (const date of utcDates(startedAt, LOOKAHEAD_DAYS, LOOKBEHIND_DAYS)) {
     const result = await fetchAllPages("/fixtures", {
       date,
       timezone: "UTC",
@@ -658,10 +664,10 @@ function errorValue(value) {
   return null;
 }
 
-function utcDates(start, lookaheadDays) {
+function utcDates(start, lookaheadDays, lookbehindDays = 0) {
   return Array.from(
-    { length: lookaheadDays + 1 },
-    (_, offset) => formatDate(addUtcDays(start, offset)),
+    { length: lookbehindDays + lookaheadDays + 1 },
+    (_, offset) => formatDate(addUtcDays(start, offset - lookbehindDays)),
   );
 }
 

@@ -8,6 +8,7 @@ import { seasonOdds } from "../lib/season";
 import { allFixtures } from "../lib/fixtures";
 import { matchProb } from "../lib/model";
 import { portalFixtures } from "../lib/portal";
+import { predictionLedger } from "../lib/record";
 
 const today = new Date().toISOString().slice(0, 10);
 const snapDir = join(process.cwd(), "data", "snapshots");
@@ -111,8 +112,32 @@ writeFileSync(join(outDir, "fixtures-2026-27.csv"),
   "date,league,round,home,away,pHome,pDraw,pAway,xgHome,xgAway,url\n" +
   fixRows.map((r) => `${r.date},${r.league},"${r.round}","${r.home}","${r.away}",${r.pHome},${r.pDraw},${r.pAway},${r.xgHome},${r.xgAway},${r.url}`).join("\n") + "\n");
 
+// The prediction ledger — the dataset the whole "published before kickoff, scored
+// afterwards" claim rests on. Every row carries the snapshot date it was locked on, so
+// anyone can check a prediction against this repo's git history and rescore the model
+// independently. Rows stay in the file whether the model got them right or wrong.
+const ledger = predictionLedger();
+const ledgerMeta = {
+  updated: today,
+  license: "CC BY 4.0 — link to theopenmodel.com",
+  description:
+    "Every match prediction published before kickoff, with the result once played. " +
+    "lockedOn is the date the prediction was committed to this repository; the git history of " +
+    "data/snapshots/ is the independent proof it preceded the match.",
+  scored: ledger.filter((r) => r.correct !== null).length,
+  pending: ledger.filter((r) => r.correct === null).length,
+};
+writeFileSync(join(outDir, "predictions.json"), JSON.stringify({ ...ledgerMeta, rows: ledger }, null, 1));
+writeFileSync(join(outDir, "predictions.csv"),
+  "kickoff,league,home,away,pHome,pDraw,pAway,modelPick,lockedOn,homeGoals,awayGoals,result,correct\n" +
+  ledger.map((r) => [
+    r.date, r.league, `"${r.home}"`, `"${r.away}"`,
+    r.p.h, r.p.d, r.p.a, r.pick, r.lockedOn,
+    r.hg ?? "", r.ag ?? "", r.actual ?? "", r.correct === null ? "" : r.correct,
+  ].join(",")).join("\n") + "\n");
+
 const eloRows = LEAGUES.flatMap((l) => leagueClubs(l).map((c) => ({ league: l.slug, slug: c.slug, club: c.club, elo: c.elo })));
 writeFileSync(join(outDir, "elo-ratings.csv"),
   "league,slug,club,elo\n" + eloRows.map((r) => `${r.league},${r.slug},"${r.club}",${r.elo}`).join("\n") + "\n");
 
-console.log(`✓ public/data exports: season-forecast (csv+json), fixtures-2026-27 (csv+json, ${fixRows.length} rows), elo-ratings.csv`);
+console.log(`✓ public/data exports: season-forecast (csv+json), fixtures-2026-27 (csv+json, ${fixRows.length} rows), predictions (csv+json, ${ledger.length} rows: ${ledgerMeta.scored} scored / ${ledgerMeta.pending} pending), elo-ratings.csv`);
