@@ -174,36 +174,55 @@ async function preview() {
     .sort((a, b) => a.date.localeCompare(b.date));
   if (!upcoming.length) { console.log("ℹ preview: no upcoming locked predictions."); return; }
 
-  const day = upcoming[0].date.slice(0, 10);
-  const slate = upcoming.filter((m) => m.date.slice(0, 10) === day);
+  // A rolling 48-hour window rather than a calendar day. Matchdays are not days: a
+  // league's opening round can be spread across two weeks, while a settled weekend puts
+  // thirty fixtures across five leagues into one afternoon. The window covers both.
+  const slate = upcoming.filter((m) => new Date(m.date).getTime() < now + 48 * 3600_000);
+  if (!slate.length) {
+    console.log("ℹ preview: nothing kicks off in the next 48 hours — staying quiet.");
+    return;
+  }
 
+  // One preview per UTC day, so a re-run cannot post the window twice.
+  const today = new Date(now).toISOString().slice(0, 10);
   const lock = readState<{ day?: string }>("tg-preview.json", {});
-  if (!FORCE && lock.day === day) {
-    console.log(`ℹ preview: already posted the ${day} slate — skipping (FORCE=1 to override).`);
+  if (!FORCE && lock.day === today) {
+    console.log(`ℹ preview: already posted today (${today}) — skipping (FORCE=1 to override).`);
     return;
   }
 
   assertSaneSlate(slate, { mustBeUpcoming: true });
 
-  const confident = [...slate].sort((a, b) => topPick(b).p - topPick(a).p).slice(0, 3);
+  const byConfidence = [...slate].sort((a, b) => topPick(b).p - topPick(a).p);
   const tightest = [...slate].sort((a, b) => spread(a) - spread(b))[0];
+  // On a short slate every match fits, so list them all rather than pretending a
+  // three-match card has a "top three". Either way the closest call is never repeated
+  // from the list above it — a match billed as both the most confident and the hardest
+  // to call reads as sloppy, and undermines the numbers next to it.
+  const listAll = slate.length <= 4;
+  const featured = listAll
+    ? byConfidence.filter((m) => m.id !== tightest.id)
+    : byConfidence.filter((m) => m.id !== tightest.id).slice(0, 3);
+
   const header = [...new Set(slate.map((m) => m.league))]
     .map((l) => `${LEAGUE_FLAG.get(l) ?? ""} ${LEAGUE_NAME.get(l) ?? l}`)
     .join(" · ");
 
   const lines = [
-    `⚽ <b>${esc(header)}</b> — ${dayLabel(slate[0].date)}`,
+    `⚽ <b>${esc(header)}</b> — next 48 hours`,
     "",
     `${slate.length} prediction${slate.length === 1 ? "" : "s"} locked and published now. Every one gets scored after full time.`,
-    "",
-    "🔒 <b>Most confident</b>",
   ];
-  for (const m of confident) {
-    const t = topPick(m);
-    lines.push(`• ${esc(m.home)} v ${esc(m.away)} — <b>${esc(t.label)} ${pct(t.p)}</b>`);
+  if (featured.length) {
+    lines.push("");
+    lines.push(listAll ? "🔒 <b>The model's calls</b>" : "🔒 <b>Most confident</b>");
+    for (const m of featured) {
+      const t = topPick(m);
+      lines.push(`• ${esc(m.home)} v ${esc(m.away)} — <b>${esc(t.label)} ${pct(t.p)}</b> <i>${timeLabel(m.date)}</i>`);
+    }
   }
   lines.push("");
-  lines.push(`🎲 <b>Closest call</b> — ${esc(tightest.home)} v ${esc(tightest.away)}`);
+  lines.push(`🎲 <b>Closest call</b> — ${esc(tightest.home)} v ${esc(tightest.away)} <i>${timeLabel(tightest.date)}</i>`);
   lines.push(`${esc(tightest.home)} ${pct(tightest.p.h)} · Draw ${pct(tightest.p.d)} · ${esc(tightest.away)} ${pct(tightest.p.a)}`);
   // Under a point the rounded numbers print identically, so claiming a lean reads as
   // self-contradictory. Saying so plainly is the more valuable answer anyway.
@@ -222,8 +241,8 @@ async function preview() {
   // The slate is the flagship post of the matchday, so it earns a notification.
   const r = await send(lines.join("\n"), { buttons, silent: false });
   if (r.ok && !DRY) {
-    writeState("tg-preview.json", { day, postedAt: new Date().toISOString() });
-    console.log(`✓ preview posted (${slate.length} matches, ${day}).`);
+    writeState("tg-preview.json", { day: today, postedAt: new Date().toISOString() });
+    console.log(`✓ preview posted (${slate.length} matches, ${today}).`);
   }
 }
 
