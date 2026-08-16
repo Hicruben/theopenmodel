@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
   "provider": "api-football",
-  "asOf": "2026-08-16T03:08:16.467Z",
-  "updatedAt": "2026-08-16T03:08:16.467Z",
+  "asOf": "2026-08-16T04:09:33.193Z",
+  "updatedAt": "2026-08-16T04:09:33.193Z",
   "coverage": {
     "dateFrom": "2026-08-11",
     "dateTo": "2026-08-30",
     "fixtureCount": 9388,
-    "liveFixtureCount": 18,
-    "finishedFixtureCount": 2207,
+    "liveFixtureCount": 16,
+    "finishedFixtureCount": 2218,
     "leagueCount": 465,
     "standingTableCount": 12,
     "requestedIncludes": [
@@ -27,7 +27,7 @@
     },
     "rateLimit": {
       "resetsInSeconds": null,
-      "remaining": 6939,
+      "remaining": 6743,
       "requestedEntity": "API-Football daily requests"
     },
     "warnings": []
@@ -66373,7 +66373,7 @@
       },
       "venue": {
         "id": null,
-        "name": "Jinan Olympic Sports Center Stadium",
+        "name": "Jinan Olympic Sports Center",
         "city": "Jinan",
         "capacity": null,
         "imageUrl": null
@@ -66679,7 +66679,7 @@
       },
       "venue": {
         "id": null,
-        "name": "Qingdao Guzhenkou University City Sports Center",
+        "name": "Guzhenkou University Sports Center",
         "city": "Qingdao",
         "capacity": null,
         "imageUrl": null
@@ -78583,7 +78583,7 @@
       },
       "venue": {
         "id": null,
-        "name": "King Khalid Sports City",
+        "name": "King Khalid Sport City Stadium",
         "city": "Tabuk",
         "capacity": null,
         "imageUrl": null
@@ -103799,7 +103799,7 @@
       "venue": {
         "id": null,
         "name": "Estadio Presidente Perón",
-        "city": "Avellaneda",
+        "city": "Buenos Aires",
         "capacity": null,
         "imageUrl": null
       },
@@ -116271,7 +116271,7 @@
       },
       "venue": {
         "id": null,
-        "name": "Best Denki Stadium",
+        "name": "K's Denki Stadium Mito",
         "city": "Mito",
         "capacity": null,
         "imageUrl": null
@@ -128087,7 +128087,7 @@
       },
       "venue": {
         "id": null,
-        "name": "Olympic Sports Centre Stadium",
+        "name": "Tiexi Stadium",
         "city": "Shenyang",
         "capacity": null,
         "imageUrl": null
@@ -133358,7 +133358,7 @@
       },
       "venue": {
         "id": null,
-        "name": "Olympic Sports Center Stadium",
+        "name": "TEDA Football Stadium",
         "city": "Tianjin",
         "capacity": null,
         "imageUrl": null
@@ -133460,8 +133460,8 @@
       },
       "venue": {
         "id": null,
-        "name": "Huizhou Olympic Stadium",
-        "city": "Huizhou",
+        "name": "Huanglong Stadium",
+        "city": "Hangzhou",
         "capacity": null,
         "imageUrl": null
       },
@@ -138356,7 +138356,7 @@
       },
       "venue": {
         "id": null,
-        "name": "Preussenstadion",
+        "name": "LVM-Preußenstadion",
         "city": "Munster",
         "capacity": null,
         "imageUrl": null
@@ -138458,7 +138458,7 @@
       },
       "venue": {
         "id": null,
-        "name": "Stadion an der Hafenstrasse",
+        "name": "Stadion Essen",
         "city": "Essen",
         "capacity": null,
         "imageUrl": null
@@ -183731,7 +183731,7 @@
       },
       "venue": {
         "id": null,
-        "name": "Mestsky stadion Miroslava Valenty",
+        "name": "Mestsky Fotbalovy Stadion",
         "city": "Uherske Hradiste",
         "capacity": null,
         "imageUrl": null
@@ -203019,7 +203019,7 @@
       },
       "venue": {
         "id": null,
-        "name": "Al Taawon Arena",
+        "name": "Alinma Stadium",
         "city": "Buraidah",
         "capacity": null,
         "imageUrl": null
@@ -206369,7 +206369,7 @@
       },
       "venue": {
         "id": null,
-        "name": "Estadio Manuel Marques",
+        "name": "Estádio Manuel Marques",
         "city": "Torres Vedras",
         "capacity": null,
         "imageUrl": null
@@ -208360,7 +208360,7 @@
       },
       "venue": {
         "id": null,
-        "name": "Estadio Pedro Bidegain",
+        "name": "Pedro Bidegain",
         "city": "Buenos Aires",
         "capacity": null,
         "imageUrl": null
@@ -211473,7 +211473,7 @@
       },
       "venue": {
         "id": null,
-        "name": "Doosan Arena",
+        "name": "Stadion Mesta Plzne",
         "city": "Plzen",
         "capacity": null,
         "imageUrl": null
@@ -212885,7 +212885,7 @@
       },
       "venue": {
         "id": null,
-        "name": "King Saud University Stadium",
+        "name": "Al-Awwal Park",
         "city": "Riyadh",
         "capacity": null,
         "imageUrl": null
@@ -228151,7 +228151,7 @@
       "providerId": 1493627,
       "name": "Colorado Springs vs Birmingham Legion",
       "startTime": "2026-08-16T01:00:00.000Z",
-      "resultInfo": null,
+      "resultInfo": "3-2",
       "seasonId": 2026,
       "stageId": null,
       "roundId": null,
@@ -228159,11 +228159,11 @@
       "lastProcessedAt": null,
       "status": {
         "id": null,
-        "name": "Second Half",
-        "shortName": "2H",
-        "developerName": "2H",
-        "isLive": true,
-        "isFinished": false
+        "name": "Match Finished",
+        "shortName": "FT",
+        "developerName": "FT",
+        "isLive": false,
+        "isFinished": true
       },
       "league": {
         "id": 255,
@@ -228244,331 +228244,7 @@
           "goals": 1
         }
       ],
-      "events": [
-        {
-          "id": null,
-          "typeId": null,
-          "typeName": "Card",
-          "subTypeId": null,
-          "participantId": 3989,
-          "playerId": 102367,
-          "playerName": "P. Kavita",
-          "relatedPlayerId": null,
-          "relatedPlayerName": null,
-          "minute": 13,
-          "extraMinute": null,
-          "result": null,
-          "info": "Foul",
-          "addition": "Yellow Card",
-          "injured": false
-        },
-        {
-          "id": null,
-          "typeId": null,
-          "typeName": "Goal",
-          "subTypeId": null,
-          "participantId": 3989,
-          "playerId": 543296,
-          "playerName": "N. Brown",
-          "relatedPlayerId": null,
-          "relatedPlayerName": null,
-          "minute": 24,
-          "extraMinute": null,
-          "result": null,
-          "info": null,
-          "addition": "Normal Goal",
-          "injured": false
-        },
-        {
-          "id": null,
-          "typeId": null,
-          "typeName": "Goal",
-          "subTypeId": null,
-          "participantId": 3992,
-          "playerId": 318930,
-          "playerName": "G. Metusala",
-          "relatedPlayerId": 51042,
-          "relatedPlayerName": "A. Perez",
-          "minute": 45,
-          "extraMinute": 4,
-          "result": null,
-          "info": null,
-          "addition": "Normal Goal",
-          "injured": false
-        },
-        {
-          "id": null,
-          "typeId": null,
-          "typeName": "Card",
-          "subTypeId": null,
-          "participantId": 3989,
-          "playerId": 543296,
-          "playerName": "N. Brown",
-          "relatedPlayerId": null,
-          "relatedPlayerName": null,
-          "minute": 49,
-          "extraMinute": null,
-          "result": null,
-          "info": "Serious foul",
-          "addition": "Red Card",
-          "injured": false
-        },
-        {
-          "id": null,
-          "typeId": null,
-          "typeName": "Card",
-          "subTypeId": null,
-          "participantId": 3992,
-          "playerId": 51042,
-          "playerName": "A. Perez",
-          "relatedPlayerId": null,
-          "relatedPlayerName": null,
-          "minute": 53,
-          "extraMinute": null,
-          "result": null,
-          "info": "Foul",
-          "addition": "Yellow Card",
-          "injured": false
-        },
-        {
-          "id": null,
-          "typeId": null,
-          "typeName": "subst",
-          "subTypeId": null,
-          "participantId": 3989,
-          "playerId": 236365,
-          "playerName": "S. McIllhatton",
-          "relatedPlayerId": 541041,
-          "relatedPlayerName": "A. Daley",
-          "minute": 54,
-          "extraMinute": null,
-          "result": null,
-          "info": null,
-          "addition": "Substitution 1",
-          "injured": false
-        },
-        {
-          "id": null,
-          "typeId": null,
-          "typeName": "Card",
-          "subTypeId": null,
-          "participantId": 3992,
-          "playerId": 318930,
-          "playerName": "G. Metusala",
-          "relatedPlayerId": null,
-          "relatedPlayerName": null,
-          "minute": 66,
-          "extraMinute": null,
-          "result": null,
-          "info": "Foul",
-          "addition": "Yellow Card",
-          "injured": false
-        },
-        {
-          "id": null,
-          "typeId": null,
-          "typeName": "subst",
-          "subTypeId": null,
-          "participantId": 3989,
-          "playerId": 103170,
-          "playerName": "D. McCartney",
-          "relatedPlayerId": 281029,
-          "relatedPlayerName": "S. Ngoma",
-          "minute": 67,
-          "extraMinute": null,
-          "result": null,
-          "info": null,
-          "addition": "Substitution 2",
-          "injured": false
-        },
-        {
-          "id": null,
-          "typeId": null,
-          "typeName": "subst",
-          "subTypeId": null,
-          "participantId": 3992,
-          "playerId": 71663,
-          "playerName": "J. Fjeldberg",
-          "relatedPlayerId": 646038,
-          "relatedPlayerName": "S. Masereka",
-          "minute": 72,
-          "extraMinute": null,
-          "result": null,
-          "info": null,
-          "addition": "Substitution 1",
-          "injured": false
-        },
-        {
-          "id": null,
-          "typeId": null,
-          "typeName": "subst",
-          "subTypeId": null,
-          "participantId": 3992,
-          "playerId": 102613,
-          "playerName": "D. Williams",
-          "relatedPlayerId": 626435,
-          "relatedPlayerName": "T. Magee",
-          "minute": 72,
-          "extraMinute": null,
-          "result": null,
-          "info": null,
-          "addition": "Substitution 2",
-          "injured": false
-        },
-        {
-          "id": null,
-          "typeId": null,
-          "typeName": "subst",
-          "subTypeId": null,
-          "participantId": 3989,
-          "playerId": 85915,
-          "playerName": "J. Koleilat",
-          "relatedPlayerId": 541166,
-          "relatedPlayerName": "T. McMullen",
-          "minute": 74,
-          "extraMinute": null,
-          "result": null,
-          "info": null,
-          "addition": "Substitution 3",
-          "injured": false
-        },
-        {
-          "id": null,
-          "typeId": null,
-          "typeName": "subst",
-          "subTypeId": null,
-          "participantId": 3989,
-          "playerId": 460348,
-          "playerName": "G. Diarbian",
-          "relatedPlayerId": 541052,
-          "relatedPlayerName": "P. Vassell",
-          "minute": 84,
-          "extraMinute": null,
-          "result": null,
-          "info": null,
-          "addition": "Substitution 4",
-          "injured": false
-        },
-        {
-          "id": null,
-          "typeId": null,
-          "typeName": "Goal",
-          "subTypeId": null,
-          "participantId": 3989,
-          "playerId": 281029,
-          "playerName": "S. Ngoma",
-          "relatedPlayerId": null,
-          "relatedPlayerName": null,
-          "minute": 86,
-          "extraMinute": null,
-          "result": null,
-          "info": null,
-          "addition": "Normal Goal",
-          "injured": false
-        },
-        {
-          "id": null,
-          "typeId": null,
-          "typeName": "subst",
-          "subTypeId": null,
-          "participantId": 3992,
-          "playerId": 319323,
-          "playerName": "S. Williams",
-          "relatedPlayerId": 71025,
-          "relatedPlayerName": "J. Tejada",
-          "minute": 87,
-          "extraMinute": null,
-          "result": null,
-          "info": null,
-          "addition": "Substitution 3",
-          "injured": false
-        },
-        {
-          "id": null,
-          "typeId": null,
-          "typeName": "subst",
-          "subTypeId": null,
-          "participantId": 3992,
-          "playerId": 102505,
-          "playerName": "D. Lacroix",
-          "relatedPlayerId": 71247,
-          "relatedPlayerName": "M. Mahoney",
-          "minute": 87,
-          "extraMinute": null,
-          "result": null,
-          "info": null,
-          "addition": "Substitution 4",
-          "injured": false
-        },
-        {
-          "id": null,
-          "typeId": null,
-          "typeName": "Goal",
-          "subTypeId": null,
-          "participantId": 3992,
-          "playerId": 51042,
-          "playerName": "A. Perez",
-          "relatedPlayerId": 626435,
-          "relatedPlayerName": "T. Magee",
-          "minute": 90,
-          "extraMinute": 5,
-          "result": null,
-          "info": null,
-          "addition": "Normal Goal",
-          "injured": false
-        },
-        {
-          "id": null,
-          "typeId": null,
-          "typeName": "Goal",
-          "subTypeId": null,
-          "participantId": 3992,
-          "playerId": 71025,
-          "playerName": "J. Tejada",
-          "relatedPlayerId": 315358,
-          "relatedPlayerName": "T. Maples",
-          "minute": 90,
-          "extraMinute": 9,
-          "result": null,
-          "info": null,
-          "addition": "Normal Goal",
-          "injured": false
-        },
-        {
-          "id": null,
-          "typeId": null,
-          "typeName": "Card",
-          "subTypeId": null,
-          "participantId": 3992,
-          "playerId": 318930,
-          "playerName": "G. Metusala",
-          "relatedPlayerId": null,
-          "relatedPlayerName": null,
-          "minute": 90,
-          "extraMinute": 11,
-          "result": null,
-          "info": "Foul",
-          "addition": "Red Card",
-          "injured": false
-        },
-        {
-          "id": null,
-          "typeId": null,
-          "typeName": "Card",
-          "subTypeId": null,
-          "participantId": 3992,
-          "playerId": 318930,
-          "playerName": "G. Metusala",
-          "relatedPlayerId": null,
-          "relatedPlayerName": null,
-          "minute": 90,
-          "extraMinute": 11,
-          "result": null,
-          "info": "Foul",
-          "addition": "Yellow Card",
-          "injured": false
-        }
-      ],
+      "events": [],
       "lineups": [],
       "injuries": []
     },
@@ -229189,7 +228865,7 @@
       "providerId": 1600567,
       "name": "Alianza vs Cacahuatique",
       "startTime": "2026-08-16T01:00:00.000Z",
-      "resultInfo": null,
+      "resultInfo": "0-0",
       "seasonId": 2026,
       "stageId": null,
       "roundId": null,
@@ -229197,11 +228873,11 @@
       "lastProcessedAt": null,
       "status": {
         "id": null,
-        "name": "Second Half",
-        "shortName": "2H",
-        "developerName": "2H",
-        "isLive": true,
-        "isFinished": false
+        "name": "Match Finished",
+        "shortName": "FT",
+        "developerName": "FT",
+        "isLive": false,
+        "isFinished": true
       },
       "league": {
         "id": 370,
@@ -229531,7 +229207,7 @@
       "providerId": 1550922,
       "name": "Monterrey vs FC Juarez",
       "startTime": "2026-08-16T01:10:00.000Z",
-      "resultInfo": null,
+      "resultInfo": "6-1",
       "seasonId": 2026,
       "stageId": null,
       "roundId": null,
@@ -229539,11 +229215,11 @@
       "lastProcessedAt": null,
       "status": {
         "id": null,
-        "name": "Second Half",
-        "shortName": "2H",
-        "developerName": "2H",
-        "isLive": true,
-        "isFinished": false
+        "name": "Match Finished",
+        "shortName": "FT",
+        "developerName": "FT",
+        "isLive": false,
+        "isFinished": true
       },
       "league": {
         "id": 262,
@@ -229624,314 +229300,7 @@
           "goals": 1
         }
       ],
-      "events": [
-        {
-          "id": null,
-          "typeId": null,
-          "typeName": "Goal",
-          "subTypeId": null,
-          "participantId": 2282,
-          "playerId": 6063,
-          "playerName": "L. Orellano",
-          "relatedPlayerId": 51045,
-          "relatedPlayerName": "D. Rossi",
-          "minute": 6,
-          "extraMinute": null,
-          "result": null,
-          "info": null,
-          "addition": "Normal Goal",
-          "injured": false
-        },
-        {
-          "id": null,
-          "typeId": null,
-          "typeName": "Goal",
-          "subTypeId": null,
-          "participantId": 2282,
-          "playerId": 51045,
-          "playerName": "D. Rossi",
-          "relatedPlayerId": 36471,
-          "relatedPlayerName": "R. Chavez",
-          "minute": 15,
-          "extraMinute": null,
-          "result": null,
-          "info": null,
-          "addition": "Normal Goal",
-          "injured": false
-        },
-        {
-          "id": null,
-          "typeId": null,
-          "typeName": "Goal",
-          "subTypeId": null,
-          "participantId": 2282,
-          "playerId": 27104,
-          "playerName": "H. Cuypers",
-          "relatedPlayerId": 35576,
-          "relatedPlayerName": "O. Pineda",
-          "minute": 29,
-          "extraMinute": null,
-          "result": null,
-          "info": null,
-          "addition": "Normal Goal",
-          "injured": false
-        },
-        {
-          "id": null,
-          "typeId": null,
-          "typeName": "Goal",
-          "subTypeId": null,
-          "participantId": 2298,
-          "playerId": 63968,
-          "playerName": "O. Estupinan",
-          "relatedPlayerId": 2979,
-          "relatedPlayerName": "J. Rodriguez",
-          "minute": 32,
-          "extraMinute": null,
-          "result": null,
-          "info": null,
-          "addition": "Normal Goal",
-          "injured": false
-        },
-        {
-          "id": null,
-          "typeId": null,
-          "typeName": "subst",
-          "subTypeId": null,
-          "participantId": 2282,
-          "playerId": 290648,
-          "playerName": "A. Aceves",
-          "relatedPlayerId": 6369,
-          "relatedPlayerName": "J. Rodriguez",
-          "minute": 37,
-          "extraMinute": null,
-          "result": null,
-          "info": null,
-          "addition": "Substitution 1",
-          "injured": false
-        },
-        {
-          "id": null,
-          "typeId": null,
-          "typeName": "Goal",
-          "subTypeId": null,
-          "participantId": 2282,
-          "playerId": 35576,
-          "playerName": "O. Pineda",
-          "relatedPlayerId": 27104,
-          "relatedPlayerName": "H. Cuypers",
-          "minute": 45,
-          "extraMinute": 3,
-          "result": null,
-          "info": null,
-          "addition": "Normal Goal",
-          "injured": false
-        },
-        {
-          "id": null,
-          "typeId": null,
-          "typeName": "subst",
-          "subTypeId": null,
-          "participantId": 2298,
-          "playerId": 36010,
-          "playerName": "R. Fulgencio",
-          "relatedPlayerId": 35864,
-          "relatedPlayerName": "J. M. Torres Ramirez I.",
-          "minute": 46,
-          "extraMinute": null,
-          "result": null,
-          "info": null,
-          "addition": "Substitution 1",
-          "injured": false
-        },
-        {
-          "id": null,
-          "typeId": null,
-          "typeName": "subst",
-          "subTypeId": null,
-          "participantId": 2298,
-          "playerId": 160255,
-          "playerName": "Guilherme Castilho",
-          "relatedPlayerId": 10393,
-          "relatedPlayerName": "Rodrigo Dourado",
-          "minute": 46,
-          "extraMinute": null,
-          "result": null,
-          "info": null,
-          "addition": "Substitution 2",
-          "injured": false
-        },
-        {
-          "id": null,
-          "typeId": null,
-          "typeName": "Var",
-          "subTypeId": null,
-          "participantId": 2282,
-          "playerId": 51045,
-          "playerName": "D. Rossi",
-          "relatedPlayerId": null,
-          "relatedPlayerName": null,
-          "minute": 55,
-          "extraMinute": null,
-          "result": null,
-          "info": null,
-          "addition": "Goal Disallowed - offside",
-          "injured": false
-        },
-        {
-          "id": null,
-          "typeId": null,
-          "typeName": "subst",
-          "subTypeId": null,
-          "participantId": 2298,
-          "playerId": 178913,
-          "playerName": "Ricardinho",
-          "relatedPlayerId": 106418,
-          "relatedPlayerName": "Madson",
-          "minute": 56,
-          "extraMinute": null,
-          "result": null,
-          "info": null,
-          "addition": "Substitution 3",
-          "injured": false
-        },
-        {
-          "id": null,
-          "typeId": null,
-          "typeName": "Goal",
-          "subTypeId": null,
-          "participantId": 2282,
-          "playerId": 1911,
-          "playerName": "L. Ocampos",
-          "relatedPlayerId": 51045,
-          "relatedPlayerName": "D. Rossi",
-          "minute": 62,
-          "extraMinute": null,
-          "result": null,
-          "info": null,
-          "addition": "Normal Goal",
-          "injured": false
-        },
-        {
-          "id": null,
-          "typeId": null,
-          "typeName": "subst",
-          "subTypeId": null,
-          "participantId": 2282,
-          "playerId": 51045,
-          "playerName": "D. Rossi",
-          "relatedPlayerId": 599454,
-          "relatedPlayerName": "A. De Nigris",
-          "minute": 63,
-          "extraMinute": null,
-          "result": null,
-          "info": null,
-          "addition": "Substitution 2",
-          "injured": false
-        },
-        {
-          "id": null,
-          "typeId": null,
-          "typeName": "subst",
-          "subTypeId": null,
-          "participantId": 2282,
-          "playerId": 35576,
-          "playerName": "O. Pineda",
-          "relatedPlayerId": 426512,
-          "relatedPlayerName": "I. Fimbres",
-          "minute": 63,
-          "extraMinute": null,
-          "result": null,
-          "info": null,
-          "addition": "Substitution 3",
-          "injured": false
-        },
-        {
-          "id": null,
-          "typeId": null,
-          "typeName": "subst",
-          "subTypeId": null,
-          "participantId": 2282,
-          "playerId": 27104,
-          "playerName": "H. Cuypers",
-          "relatedPlayerId": 35669,
-          "relatedPlayerName": "R. de la Rosa",
-          "minute": 63,
-          "extraMinute": null,
-          "result": null,
-          "info": null,
-          "addition": "Substitution 4",
-          "injured": false
-        },
-        {
-          "id": null,
-          "typeId": null,
-          "typeName": "subst",
-          "subTypeId": null,
-          "participantId": 2298,
-          "playerId": 63968,
-          "playerName": "O. Estupinan",
-          "relatedPlayerId": 104941,
-          "relatedPlayerName": "Monchu",
-          "minute": 70,
-          "extraMinute": null,
-          "result": null,
-          "info": null,
-          "addition": "Substitution 4",
-          "injured": false
-        },
-        {
-          "id": null,
-          "typeId": null,
-          "typeName": "subst",
-          "subTypeId": null,
-          "participantId": 2298,
-          "playerId": 35870,
-          "playerName": "A. Mayorga",
-          "relatedPlayerId": 36478,
-          "relatedPlayerName": "F. J. Nevarez Pulgarin",
-          "minute": 70,
-          "extraMinute": null,
-          "result": null,
-          "info": null,
-          "addition": "Substitution 5",
-          "injured": false
-        },
-        {
-          "id": null,
-          "typeId": null,
-          "typeName": "subst",
-          "subTypeId": null,
-          "participantId": 2282,
-          "playerId": 1911,
-          "playerName": "L. Ocampos",
-          "relatedPlayerId": 389,
-          "relatedPlayerName": "J. Corona",
-          "minute": 71,
-          "extraMinute": null,
-          "result": null,
-          "info": null,
-          "addition": "Substitution 5",
-          "injured": false
-        },
-        {
-          "id": null,
-          "typeId": null,
-          "typeName": "Goal",
-          "subTypeId": null,
-          "participantId": 2282,
-          "playerId": 6369,
-          "playerName": "J. Rodriguez",
-          "relatedPlayerId": 389,
-          "relatedPlayerName": "J. Corona",
-          "minute": 90,
-          "extraMinute": 2,
-          "result": null,
-          "info": null,
-          "addition": "Normal Goal",
-          "injured": false
-        }
-      ],
+      "events": [],
       "lineups": [],
       "injuries": []
     },
@@ -229940,7 +229309,7 @@
       "providerId": 1490384,
       "name": "Real Salt Lake vs Minnesota United FC",
       "startTime": "2026-08-16T01:30:00.000Z",
-      "resultInfo": null,
+      "resultInfo": "1-1",
       "seasonId": 2026,
       "stageId": null,
       "roundId": null,
@@ -229948,11 +229317,11 @@
       "lastProcessedAt": null,
       "status": {
         "id": null,
-        "name": "Second Half",
-        "shortName": "2H",
-        "developerName": "2H",
-        "isLive": true,
-        "isFinished": false
+        "name": "Match Finished",
+        "shortName": "FT",
+        "developerName": "FT",
+        "isLive": false,
+        "isFinished": true
       },
       "league": {
         "id": 253,
@@ -229994,8 +229363,8 @@
         }
       ],
       "score": {
-        "home": 0,
-        "away": 0,
+        "home": 1,
+        "away": 1,
         "halfTimeHome": 0,
         "halfTimeAway": 0
       },
@@ -230006,7 +229375,7 @@
           "participantId": 1606,
           "description": "CURRENT",
           "participant": "home",
-          "goals": 0
+          "goals": 1
         },
         {
           "id": null,
@@ -230014,7 +229383,7 @@
           "participantId": 1612,
           "description": "CURRENT",
           "participant": "away",
-          "goals": 0
+          "goals": 1
         },
         {
           "id": null,
@@ -230033,127 +229402,7 @@
           "goals": 0
         }
       ],
-      "events": [
-        {
-          "id": null,
-          "typeId": null,
-          "typeName": "Card",
-          "subTypeId": null,
-          "participantId": 1606,
-          "playerId": 284397,
-          "playerName": "Z. Booth",
-          "relatedPlayerId": null,
-          "relatedPlayerName": null,
-          "minute": 12,
-          "extraMinute": null,
-          "result": null,
-          "info": null,
-          "addition": "Yellow Card",
-          "injured": false
-        },
-        {
-          "id": null,
-          "typeId": null,
-          "typeName": "subst",
-          "subTypeId": null,
-          "participantId": 1606,
-          "playerId": 284397,
-          "playerName": "Z. Booth",
-          "relatedPlayerId": 271983,
-          "relatedPlayerName": "D. Marczuk",
-          "minute": 15,
-          "extraMinute": null,
-          "result": null,
-          "info": null,
-          "addition": "Substitution 1",
-          "injured": false
-        },
-        {
-          "id": null,
-          "typeId": null,
-          "typeName": "Card",
-          "subTypeId": null,
-          "participantId": 1612,
-          "playerId": 79258,
-          "playerName": "J. Diaz",
-          "relatedPlayerId": null,
-          "relatedPlayerName": null,
-          "minute": 32,
-          "extraMinute": null,
-          "result": null,
-          "info": null,
-          "addition": "Yellow Card",
-          "injured": false
-        },
-        {
-          "id": null,
-          "typeId": null,
-          "typeName": "subst",
-          "subTypeId": null,
-          "participantId": 1612,
-          "playerId": 50949,
-          "playerName": "K. Duncan",
-          "relatedPlayerId": 46641,
-          "relatedPlayerName": "B. Hlongwane",
-          "minute": 46,
-          "extraMinute": null,
-          "result": null,
-          "info": null,
-          "addition": "Substitution 1",
-          "injured": false
-        },
-        {
-          "id": null,
-          "typeId": null,
-          "typeName": "Card",
-          "subTypeId": null,
-          "participantId": 1606,
-          "playerId": 518114,
-          "playerName": "Lineker Rodrigues",
-          "relatedPlayerId": null,
-          "relatedPlayerName": null,
-          "minute": 56,
-          "extraMinute": null,
-          "result": null,
-          "info": null,
-          "addition": "Yellow Card",
-          "injured": false
-        },
-        {
-          "id": null,
-          "typeId": null,
-          "typeName": "subst",
-          "subTypeId": null,
-          "participantId": 1606,
-          "playerId": 518114,
-          "playerName": "Lineker Rodrigues",
-          "relatedPlayerId": 15698,
-          "relatedPlayerName": "S. Lobjanidze",
-          "minute": 60,
-          "extraMinute": null,
-          "result": null,
-          "info": null,
-          "addition": "Substitution 2",
-          "injured": false
-        },
-        {
-          "id": null,
-          "typeId": null,
-          "typeName": "Card",
-          "subTypeId": null,
-          "participantId": 1606,
-          "playerId": null,
-          "playerName": null,
-          "relatedPlayerId": null,
-          "relatedPlayerName": null,
-          "minute": 68,
-          "extraMinute": null,
-          "result": null,
-          "info": null,
-          "addition": "Yellow Card",
-          "injured": false
-        }
-      ],
+      "events": [],
       "lineups": [],
       "injuries": []
     },
@@ -230162,7 +229411,7 @@
       "providerId": 1490385,
       "name": "Colorado Rapids vs Sporting Kansas City",
       "startTime": "2026-08-16T01:30:00.000Z",
-      "resultInfo": null,
+      "resultInfo": "2-0",
       "seasonId": 2026,
       "stageId": null,
       "roundId": null,
@@ -230170,11 +229419,11 @@
       "lastProcessedAt": null,
       "status": {
         "id": null,
-        "name": "Second Half",
-        "shortName": "2H",
-        "developerName": "2H",
-        "isLive": true,
-        "isFinished": false
+        "name": "Match Finished",
+        "shortName": "FT",
+        "developerName": "FT",
+        "isLive": false,
+        "isFinished": true
       },
       "league": {
         "id": 253,
@@ -230216,7 +229465,7 @@
         }
       ],
       "score": {
-        "home": 1,
+        "home": 2,
         "away": 0,
         "halfTimeHome": 0,
         "halfTimeAway": 0
@@ -230228,7 +229477,7 @@
           "participantId": 1610,
           "description": "CURRENT",
           "participant": "home",
-          "goals": 1
+          "goals": 2
         },
         {
           "id": null,
@@ -230255,144 +229504,7 @@
           "goals": 0
         }
       ],
-      "events": [
-        {
-          "id": null,
-          "typeId": null,
-          "typeName": "Card",
-          "subTypeId": null,
-          "participantId": 1611,
-          "playerId": 8660,
-          "playerName": "Z. Bassong",
-          "relatedPlayerId": null,
-          "relatedPlayerName": null,
-          "minute": 30,
-          "extraMinute": null,
-          "result": null,
-          "info": null,
-          "addition": "Yellow Card",
-          "injured": false
-        },
-        {
-          "id": null,
-          "typeId": null,
-          "typeName": "Card",
-          "subTypeId": null,
-          "participantId": 1611,
-          "playerId": 641980,
-          "playerName": "K. Agyabeng",
-          "relatedPlayerId": null,
-          "relatedPlayerName": null,
-          "minute": 38,
-          "extraMinute": null,
-          "result": null,
-          "info": null,
-          "addition": "Red Card",
-          "injured": false
-        },
-        {
-          "id": null,
-          "typeId": null,
-          "typeName": "subst",
-          "subTypeId": null,
-          "participantId": 1611,
-          "playerId": 2095,
-          "playerName": "S. Suleymanov",
-          "relatedPlayerId": 416220,
-          "relatedPlayerName": "J. Bartlett",
-          "minute": 42,
-          "extraMinute": null,
-          "result": null,
-          "info": null,
-          "addition": "Substitution 1",
-          "injured": false
-        },
-        {
-          "id": null,
-          "typeId": null,
-          "typeName": "subst",
-          "subTypeId": null,
-          "participantId": 1611,
-          "playerId": 8660,
-          "playerName": "Z. Bassong",
-          "relatedPlayerId": 461633,
-          "relatedPlayerName": "I. James",
-          "minute": 46,
-          "extraMinute": null,
-          "result": null,
-          "info": null,
-          "addition": "Substitution 2",
-          "injured": false
-        },
-        {
-          "id": null,
-          "typeId": null,
-          "typeName": "subst",
-          "subTypeId": null,
-          "participantId": 1610,
-          "playerId": 458378,
-          "playerName": "W. Frederick",
-          "relatedPlayerId": 23975,
-          "relatedPlayerName": "Y. Maziz",
-          "minute": 56,
-          "extraMinute": null,
-          "result": null,
-          "info": null,
-          "addition": "Substitution 1",
-          "injured": false
-        },
-        {
-          "id": null,
-          "typeId": null,
-          "typeName": "subst",
-          "subTypeId": null,
-          "participantId": 1611,
-          "playerId": 136139,
-          "playerName": "O. Blorian",
-          "relatedPlayerId": 510972,
-          "relatedPlayerName": "W. Meyer",
-          "minute": 62,
-          "extraMinute": null,
-          "result": null,
-          "info": null,
-          "addition": "Substitution 3",
-          "injured": false
-        },
-        {
-          "id": null,
-          "typeId": null,
-          "typeName": "Goal",
-          "subTypeId": null,
-          "participantId": 1610,
-          "playerId": 51123,
-          "playerName": "R. Cannon",
-          "relatedPlayerId": 23975,
-          "relatedPlayerName": "Y. Maziz",
-          "minute": 65,
-          "extraMinute": null,
-          "result": null,
-          "info": null,
-          "addition": "Normal Goal",
-          "injured": false
-        },
-        {
-          "id": null,
-          "typeId": null,
-          "typeName": "subst",
-          "subTypeId": null,
-          "participantId": 1610,
-          "playerId": 203395,
-          "playerName": "D. Sealy",
-          "relatedPlayerId": 267865,
-          "relatedPlayerName": "D. Yapi",
-          "minute": 66,
-          "extraMinute": null,
-          "result": null,
-          "info": null,
-          "addition": "Substitution 2",
-          "injured": false
-        }
-      ],
+      "events": [],
       "lineups": [],
       "injuries": []
     },
@@ -230401,7 +229513,7 @@
       "providerId": 1493631,
       "name": "New Mexico United vs FC Tulsa",
       "startTime": "2026-08-16T01:30:00.000Z",
-      "resultInfo": null,
+      "resultInfo": "1-0",
       "seasonId": 2026,
       "stageId": null,
       "roundId": null,
@@ -230409,11 +229521,11 @@
       "lastProcessedAt": null,
       "status": {
         "id": null,
-        "name": "Second Half",
-        "shortName": "2H",
-        "developerName": "2H",
-        "isLive": true,
-        "isFinished": false
+        "name": "Match Finished",
+        "shortName": "FT",
+        "developerName": "FT",
+        "isLive": false,
+        "isFinished": true
       },
       "league": {
         "id": 255,
@@ -230442,7 +229554,7 @@
           "imageUrl": "https://media.api-sports.io/football/teams/4003.png",
           "role": "home",
           "position": null,
-          "winner": null
+          "winner": true
         },
         {
           "id": 4022,
@@ -230451,11 +229563,11 @@
           "imageUrl": "https://media.api-sports.io/football/teams/4022.png",
           "role": "away",
           "position": null,
-          "winner": null
+          "winner": false
         }
       ],
       "score": {
-        "home": 0,
+        "home": 1,
         "away": 0,
         "halfTimeHome": 0,
         "halfTimeAway": 0
@@ -230467,7 +229579,7 @@
           "participantId": 4003,
           "description": "CURRENT",
           "participant": "home",
-          "goals": 0
+          "goals": 1
         },
         {
           "id": null,
@@ -230494,59 +229606,7 @@
           "goals": 0
         }
       ],
-      "events": [
-        {
-          "id": null,
-          "typeId": null,
-          "typeName": "subst",
-          "subTypeId": null,
-          "participantId": 4022,
-          "playerId": 160283,
-          "playerName": "Ian",
-          "relatedPlayerId": 647316,
-          "relatedPlayerName": "A. Clarke",
-          "minute": 60,
-          "extraMinute": null,
-          "result": null,
-          "info": null,
-          "addition": "Substitution 1",
-          "injured": false
-        },
-        {
-          "id": null,
-          "typeId": null,
-          "typeName": "subst",
-          "subTypeId": null,
-          "participantId": 4022,
-          "playerId": 319420,
-          "playerName": "A. Ordonez",
-          "relatedPlayerId": 130113,
-          "relatedPlayerName": "G. Colli",
-          "minute": 60,
-          "extraMinute": null,
-          "result": null,
-          "info": null,
-          "addition": "Substitution 2",
-          "injured": false
-        },
-        {
-          "id": null,
-          "typeId": null,
-          "typeName": "Card",
-          "subTypeId": null,
-          "participantId": 4003,
-          "playerId": null,
-          "playerName": "D. Sanchez",
-          "relatedPlayerId": null,
-          "relatedPlayerName": null,
-          "minute": 68,
-          "extraMinute": null,
-          "result": null,
-          "info": "Unsportsmanlike conduct",
-          "addition": "Yellow Card",
-          "injured": false
-        }
-      ],
+      "events": [],
       "lineups": [],
       "injuries": []
     },
@@ -230624,7 +229684,7 @@
       "providerId": 1583736,
       "name": "UMECIT vs Sporting San Miguelito",
       "startTime": "2026-08-16T01:30:00.000Z",
-      "resultInfo": null,
+      "resultInfo": "0-1",
       "seasonId": 2026,
       "stageId": null,
       "roundId": null,
@@ -230632,11 +229692,11 @@
       "lastProcessedAt": null,
       "status": {
         "id": null,
-        "name": "Second Half",
-        "shortName": "2H",
-        "developerName": "2H",
-        "isLive": true,
-        "isFinished": false
+        "name": "Match Finished",
+        "shortName": "FT",
+        "developerName": "FT",
+        "isLive": false,
+        "isFinished": true
       },
       "league": {
         "id": 304,
@@ -230717,178 +229777,7 @@
           "goals": 0
         }
       ],
-      "events": [
-        {
-          "id": null,
-          "typeId": null,
-          "typeName": "Card",
-          "subTypeId": null,
-          "participantId": 2889,
-          "playerId": 57933,
-          "playerName": "S. Ramirez",
-          "relatedPlayerId": null,
-          "relatedPlayerName": null,
-          "minute": 24,
-          "extraMinute": null,
-          "result": null,
-          "info": null,
-          "addition": "Yellow Card",
-          "injured": false
-        },
-        {
-          "id": null,
-          "typeId": null,
-          "typeName": "Card",
-          "subTypeId": null,
-          "participantId": 20788,
-          "playerId": 535784,
-          "playerName": "J. Fuentes",
-          "relatedPlayerId": null,
-          "relatedPlayerName": null,
-          "minute": 33,
-          "extraMinute": null,
-          "result": null,
-          "info": null,
-          "addition": "Yellow Card",
-          "injured": false
-        },
-        {
-          "id": null,
-          "typeId": null,
-          "typeName": "Card",
-          "subTypeId": null,
-          "participantId": 20788,
-          "playerId": 535878,
-          "playerName": "M. Casazola",
-          "relatedPlayerId": null,
-          "relatedPlayerName": null,
-          "minute": 39,
-          "extraMinute": null,
-          "result": null,
-          "info": null,
-          "addition": "Yellow Card",
-          "injured": false
-        },
-        {
-          "id": null,
-          "typeId": null,
-          "typeName": "Card",
-          "subTypeId": null,
-          "participantId": 2889,
-          "playerId": 535921,
-          "playerName": "J. Caicedo",
-          "relatedPlayerId": null,
-          "relatedPlayerName": null,
-          "minute": 39,
-          "extraMinute": null,
-          "result": null,
-          "info": null,
-          "addition": "Yellow Card",
-          "injured": false
-        },
-        {
-          "id": null,
-          "typeId": null,
-          "typeName": "Goal",
-          "subTypeId": null,
-          "participantId": 2889,
-          "playerId": 531436,
-          "playerName": "R. Tello Valor",
-          "relatedPlayerId": null,
-          "relatedPlayerName": null,
-          "minute": 53,
-          "extraMinute": null,
-          "result": null,
-          "info": null,
-          "addition": "Normal Goal",
-          "injured": false
-        },
-        {
-          "id": null,
-          "typeId": null,
-          "typeName": "subst",
-          "subTypeId": null,
-          "participantId": 20788,
-          "playerId": 635777,
-          "playerName": "J. Livingston",
-          "relatedPlayerId": 635436,
-          "relatedPlayerName": "J. Murillo",
-          "minute": 54,
-          "extraMinute": null,
-          "result": null,
-          "info": null,
-          "addition": "Substitution 1",
-          "injured": false
-        },
-        {
-          "id": null,
-          "typeId": null,
-          "typeName": "subst",
-          "subTypeId": null,
-          "participantId": 20788,
-          "playerId": 535878,
-          "playerName": "M. Casazola",
-          "relatedPlayerId": 535941,
-          "relatedPlayerName": "E. Rodriguez",
-          "minute": 54,
-          "extraMinute": null,
-          "result": null,
-          "info": null,
-          "addition": "Substitution 2",
-          "injured": false
-        },
-        {
-          "id": null,
-          "typeId": null,
-          "typeName": "subst",
-          "subTypeId": null,
-          "participantId": 2889,
-          "playerId": 535921,
-          "playerName": "J. Caicedo",
-          "relatedPlayerId": 540934,
-          "relatedPlayerName": "E. Zorrilla",
-          "minute": 61,
-          "extraMinute": null,
-          "result": null,
-          "info": null,
-          "addition": "Substitution 1",
-          "injured": false
-        },
-        {
-          "id": null,
-          "typeId": null,
-          "typeName": "subst",
-          "subTypeId": null,
-          "participantId": 20788,
-          "playerId": 535945,
-          "playerName": "V. Baron",
-          "relatedPlayerId": 453423,
-          "relatedPlayerName": "N. M. Anderson Gomez",
-          "minute": 61,
-          "extraMinute": null,
-          "result": null,
-          "info": null,
-          "addition": "Substitution 3",
-          "injured": false
-        },
-        {
-          "id": null,
-          "typeId": null,
-          "typeName": "subst",
-          "subTypeId": null,
-          "participantId": 20788,
-          "playerId": 200151,
-          "playerName": "O. Almanza",
-          "relatedPlayerId": 535857,
-          "relatedPlayerName": "D. Oliveira",
-          "minute": 70,
-          "extraMinute": null,
-          "result": null,
-          "info": null,
-          "addition": "Substitution 4",
-          "injured": false
-        }
-      ],
+      "events": [],
       "lineups": [],
       "injuries": []
     },
@@ -230897,7 +229786,7 @@
       "providerId": 1592946,
       "name": "Real Espana vs Atletico Independiente",
       "startTime": "2026-08-16T01:30:00.000Z",
-      "resultInfo": null,
+      "resultInfo": "1-1",
       "seasonId": 2026,
       "stageId": null,
       "roundId": null,
@@ -230905,11 +229794,11 @@
       "lastProcessedAt": null,
       "status": {
         "id": null,
-        "name": "Second Half",
-        "shortName": "2H",
-        "developerName": "2H",
-        "isLive": true,
-        "isFinished": false
+        "name": "Match Finished",
+        "shortName": "FT",
+        "developerName": "FT",
+        "isLive": false,
+        "isFinished": true
       },
       "league": {
         "id": 234,
@@ -230990,178 +229879,7 @@
           "goals": 0
         }
       ],
-      "events": [
-        {
-          "id": null,
-          "typeId": null,
-          "typeName": "Card",
-          "subTypeId": null,
-          "participantId": 1058,
-          "playerId": 206990,
-          "playerName": "M. Aceituno",
-          "relatedPlayerId": null,
-          "relatedPlayerName": null,
-          "minute": 41,
-          "extraMinute": null,
-          "result": null,
-          "info": null,
-          "addition": "Yellow Card",
-          "injured": false
-        },
-        {
-          "id": null,
-          "typeId": null,
-          "typeName": "Card",
-          "subTypeId": null,
-          "participantId": 28005,
-          "playerId": 579807,
-          "playerName": "J. Fiallos",
-          "relatedPlayerId": null,
-          "relatedPlayerName": null,
-          "minute": 45,
-          "extraMinute": 5,
-          "result": null,
-          "info": null,
-          "addition": "Yellow Card",
-          "injured": false
-        },
-        {
-          "id": null,
-          "typeId": null,
-          "typeName": "subst",
-          "subTypeId": null,
-          "participantId": 1058,
-          "playerId": 206990,
-          "playerName": "M. Aceituno",
-          "relatedPlayerId": 577748,
-          "relatedPlayerName": "N. Cruz",
-          "minute": 46,
-          "extraMinute": null,
-          "result": null,
-          "info": null,
-          "addition": "Substitution 1",
-          "injured": false
-        },
-        {
-          "id": null,
-          "typeId": null,
-          "typeName": "subst",
-          "subTypeId": null,
-          "participantId": 28005,
-          "playerId": 646489,
-          "playerName": "J. Risuenho",
-          "relatedPlayerId": 672177,
-          "relatedPlayerName": "S. Cruz",
-          "minute": 46,
-          "extraMinute": null,
-          "result": null,
-          "info": null,
-          "addition": "Substitution 1",
-          "injured": false
-        },
-        {
-          "id": null,
-          "typeId": null,
-          "typeName": "Goal",
-          "subTypeId": null,
-          "participantId": 1058,
-          "playerId": 577748,
-          "playerName": "N. Cruz",
-          "relatedPlayerId": null,
-          "relatedPlayerName": null,
-          "minute": 47,
-          "extraMinute": null,
-          "result": null,
-          "info": null,
-          "addition": "Normal Goal",
-          "injured": false
-        },
-        {
-          "id": null,
-          "typeId": null,
-          "typeName": "Card",
-          "subTypeId": null,
-          "participantId": 1058,
-          "playerId": 407570,
-          "playerName": "D. Cacho",
-          "relatedPlayerId": null,
-          "relatedPlayerName": null,
-          "minute": 53,
-          "extraMinute": null,
-          "result": null,
-          "info": null,
-          "addition": "Yellow Card",
-          "injured": false
-        },
-        {
-          "id": null,
-          "typeId": null,
-          "typeName": "subst",
-          "subTypeId": null,
-          "participantId": 28005,
-          "playerId": 577816,
-          "playerName": "L. Melendez",
-          "relatedPlayerId": 672175,
-          "relatedPlayerName": "A. Cabrera",
-          "minute": 65,
-          "extraMinute": null,
-          "result": null,
-          "info": null,
-          "addition": "Substitution 2",
-          "injured": false
-        },
-        {
-          "id": null,
-          "typeId": null,
-          "typeName": "subst",
-          "subTypeId": null,
-          "participantId": 28005,
-          "playerId": 673163,
-          "playerName": "F. J. Escoto Pineda",
-          "relatedPlayerId": 672175,
-          "relatedPlayerName": "A. Cabrera",
-          "minute": 65,
-          "extraMinute": null,
-          "result": null,
-          "info": null,
-          "addition": "Substitution 3",
-          "injured": false
-        },
-        {
-          "id": null,
-          "typeId": null,
-          "typeName": "Card",
-          "subTypeId": null,
-          "participantId": 28005,
-          "playerId": null,
-          "playerName": null,
-          "relatedPlayerId": null,
-          "relatedPlayerName": null,
-          "minute": 67,
-          "extraMinute": null,
-          "result": null,
-          "info": null,
-          "addition": "Yellow Card",
-          "injured": false
-        },
-        {
-          "id": null,
-          "typeId": null,
-          "typeName": "Goal",
-          "subTypeId": null,
-          "participantId": 28005,
-          "playerId": null,
-          "playerName": null,
-          "relatedPlayerId": null,
-          "relatedPlayerName": null,
-          "minute": 73,
-          "extraMinute": null,
-          "result": null,
-          "info": null,
-          "addition": "Normal Goal",
-          "injured": false
-        }
-      ],
+      "events": [],
       "lineups": [],
       "injuries": []
     },
@@ -231170,7 +229888,7 @@
       "providerId": 1493632,
       "name": "Oakland Roots vs Monterey Bay",
       "startTime": "2026-08-16T02:00:00.000Z",
-      "resultInfo": null,
+      "resultInfo": "1-1",
       "seasonId": 2026,
       "stageId": null,
       "roundId": null,
@@ -231178,11 +229896,11 @@
       "lastProcessedAt": null,
       "status": {
         "id": null,
-        "name": "Halftime",
-        "shortName": "HT",
-        "developerName": "HT",
-        "isLive": true,
-        "isFinished": false
+        "name": "Match Finished",
+        "shortName": "FT",
+        "developerName": "FT",
+        "isLive": false,
+        "isFinished": true
       },
       "league": {
         "id": 255,
@@ -231211,7 +229929,7 @@
           "imageUrl": "https://media.api-sports.io/football/teams/10874.png",
           "role": "home",
           "position": null,
-          "winner": true
+          "winner": null
         },
         {
           "id": 18375,
@@ -231220,12 +229938,12 @@
           "imageUrl": "https://media.api-sports.io/football/teams/18375.png",
           "role": "away",
           "position": null,
-          "winner": false
+          "winner": null
         }
       ],
       "score": {
         "home": 1,
-        "away": 0,
+        "away": 1,
         "halfTimeHome": 1,
         "halfTimeAway": 0
       },
@@ -231244,7 +229962,7 @@
           "participantId": 18375,
           "description": "CURRENT",
           "participant": "away",
-          "goals": 0
+          "goals": 1
         },
         {
           "id": null,
@@ -231263,42 +229981,7 @@
           "goals": 0
         }
       ],
-      "events": [
-        {
-          "id": null,
-          "typeId": null,
-          "typeName": "Card",
-          "subTypeId": null,
-          "participantId": 18375,
-          "playerId": 414097,
-          "playerName": "I. Paul",
-          "relatedPlayerId": null,
-          "relatedPlayerName": null,
-          "minute": 15,
-          "extraMinute": null,
-          "result": null,
-          "info": "Foul",
-          "addition": "Yellow Card",
-          "injured": false
-        },
-        {
-          "id": null,
-          "typeId": null,
-          "typeName": "Goal",
-          "subTypeId": null,
-          "participantId": 10874,
-          "playerId": 190650,
-          "playerName": "B. Jacquesson",
-          "relatedPlayerId": 543316,
-          "relatedPlayerName": "D. Garcia",
-          "minute": 45,
-          "extraMinute": null,
-          "result": null,
-          "info": null,
-          "addition": "Normal Goal",
-          "injured": false
-        }
-      ],
+      "events": [],
       "lineups": [],
       "injuries": []
     },
@@ -231307,7 +229990,7 @@
       "providerId": 1493633,
       "name": "Orange County SC vs Louisville City",
       "startTime": "2026-08-16T02:00:00.000Z",
-      "resultInfo": null,
+      "resultInfo": "2-3",
       "seasonId": 2026,
       "stageId": null,
       "roundId": null,
@@ -231315,11 +229998,11 @@
       "lastProcessedAt": null,
       "status": {
         "id": null,
-        "name": "Halftime",
-        "shortName": "HT",
-        "developerName": "HT",
-        "isLive": true,
-        "isFinished": false
+        "name": "Match Finished",
+        "shortName": "FT",
+        "developerName": "FT",
+        "isLive": false,
+        "isFinished": true
       },
       "league": {
         "id": 255,
@@ -231361,8 +230044,8 @@
         }
       ],
       "score": {
-        "home": 0,
-        "away": 1,
+        "home": 2,
+        "away": 3,
         "halfTimeHome": 0,
         "halfTimeAway": 1
       },
@@ -231373,7 +230056,7 @@
           "participantId": 4007,
           "description": "CURRENT",
           "participant": "home",
-          "goals": 0
+          "goals": 2
         },
         {
           "id": null,
@@ -231381,7 +230064,7 @@
           "participantId": 4000,
           "description": "CURRENT",
           "participant": "away",
-          "goals": 1
+          "goals": 3
         },
         {
           "id": null,
@@ -231400,42 +230083,7 @@
           "goals": 1
         }
       ],
-      "events": [
-        {
-          "id": null,
-          "typeId": null,
-          "typeName": "Goal",
-          "subTypeId": null,
-          "participantId": 4000,
-          "playerId": 102511,
-          "playerName": "R. Serrano",
-          "relatedPlayerId": 351566,
-          "relatedPlayerName": "T. Showunmi",
-          "minute": 6,
-          "extraMinute": null,
-          "result": null,
-          "info": null,
-          "addition": "Normal Goal",
-          "injured": false
-        },
-        {
-          "id": null,
-          "typeId": null,
-          "typeName": "Card",
-          "subTypeId": null,
-          "participantId": 4000,
-          "playerId": 7013,
-          "playerName": "Z. Duncan",
-          "relatedPlayerId": null,
-          "relatedPlayerName": null,
-          "minute": 45,
-          "extraMinute": 1,
-          "result": null,
-          "info": "Foul",
-          "addition": "Yellow Card",
-          "injured": false
-        }
-      ],
+      "events": [],
       "lineups": [],
       "injuries": []
     },
@@ -231444,7 +230092,7 @@
       "providerId": 1551664,
       "name": "Deportivo Saprissa vs CS Cartagines",
       "startTime": "2026-08-16T02:00:00.000Z",
-      "resultInfo": null,
+      "resultInfo": "3-2",
       "seasonId": 2026,
       "stageId": null,
       "roundId": null,
@@ -231452,11 +230100,11 @@
       "lastProcessedAt": null,
       "status": {
         "id": null,
-        "name": "Second Half",
-        "shortName": "2H",
-        "developerName": "2H",
-        "isLive": true,
-        "isFinished": false
+        "name": "Match Finished",
+        "shortName": "FT",
+        "developerName": "FT",
+        "isLive": false,
+        "isFinished": true
       },
       "league": {
         "id": 162,
@@ -231498,8 +230146,8 @@
         }
       ],
       "score": {
-        "home": 2,
-        "away": 1,
+        "home": 3,
+        "away": 2,
         "halfTimeHome": 2,
         "halfTimeAway": 1
       },
@@ -231510,7 +230158,7 @@
           "participantId": 816,
           "description": "CURRENT",
           "participant": "home",
-          "goals": 2
+          "goals": 3
         },
         {
           "id": null,
@@ -231518,7 +230166,7 @@
           "participantId": 820,
           "description": "CURRENT",
           "participant": "away",
-          "goals": 1
+          "goals": 2
         },
         {
           "id": null,
@@ -231537,127 +230185,7 @@
           "goals": 1
         }
       ],
-      "events": [
-        {
-          "id": null,
-          "typeId": null,
-          "typeName": "Card",
-          "subTypeId": null,
-          "participantId": 820,
-          "playerId": 541184,
-          "playerName": "G. M. Morera",
-          "relatedPlayerId": null,
-          "relatedPlayerName": null,
-          "minute": 7,
-          "extraMinute": null,
-          "result": null,
-          "info": null,
-          "addition": "Yellow Card",
-          "injured": false
-        },
-        {
-          "id": null,
-          "typeId": null,
-          "typeName": "Goal",
-          "subTypeId": null,
-          "participantId": 816,
-          "playerId": 14146,
-          "playerName": "J. Brenes",
-          "relatedPlayerId": null,
-          "relatedPlayerName": null,
-          "minute": 13,
-          "extraMinute": null,
-          "result": null,
-          "info": null,
-          "addition": "Normal Goal",
-          "injured": false
-        },
-        {
-          "id": null,
-          "typeId": null,
-          "typeName": "Goal",
-          "subTypeId": null,
-          "participantId": 820,
-          "playerId": 14106,
-          "playerName": "D. Lopez",
-          "relatedPlayerId": null,
-          "relatedPlayerName": null,
-          "minute": 31,
-          "extraMinute": null,
-          "result": null,
-          "info": null,
-          "addition": "Normal Goal",
-          "injured": false
-        },
-        {
-          "id": null,
-          "typeId": null,
-          "typeName": "Goal",
-          "subTypeId": null,
-          "participantId": 816,
-          "playerId": 14146,
-          "playerName": "J. Brenes",
-          "relatedPlayerId": null,
-          "relatedPlayerName": null,
-          "minute": 34,
-          "extraMinute": null,
-          "result": null,
-          "info": null,
-          "addition": "Normal Goal",
-          "injured": false
-        },
-        {
-          "id": null,
-          "typeId": null,
-          "typeName": "Card",
-          "subTypeId": null,
-          "participantId": 816,
-          "playerId": 123624,
-          "playerName": "L. Paradela",
-          "relatedPlayerId": null,
-          "relatedPlayerName": null,
-          "minute": 43,
-          "extraMinute": null,
-          "result": null,
-          "info": null,
-          "addition": "Yellow Card",
-          "injured": false
-        },
-        {
-          "id": null,
-          "typeId": null,
-          "typeName": "Card",
-          "subTypeId": null,
-          "participantId": 820,
-          "playerId": 541186,
-          "playerName": "R. Cordero",
-          "relatedPlayerId": null,
-          "relatedPlayerName": null,
-          "minute": 45,
-          "extraMinute": 3,
-          "result": null,
-          "info": null,
-          "addition": "Yellow Card",
-          "injured": false
-        },
-        {
-          "id": null,
-          "typeId": null,
-          "typeName": "subst",
-          "subTypeId": null,
-          "participantId": 820,
-          "playerId": 541186,
-          "playerName": "R. Cordero",
-          "relatedPlayerId": 128206,
-          "relatedPlayerName": "C. Barahona",
-          "minute": 46,
-          "extraMinute": null,
-          "result": null,
-          "info": null,
-          "addition": "Substitution 1",
-          "injured": false
-        }
-      ],
+      "events": [],
       "lineups": [],
       "injuries": []
     },
@@ -231674,9 +230202,9 @@
       "lastProcessedAt": null,
       "status": {
         "id": null,
-        "name": "First Half",
-        "shortName": "1H",
-        "developerName": "1H",
+        "name": "Second Half",
+        "shortName": "2H",
+        "developerName": "2H",
         "isLive": true,
         "isFinished": false
       },
@@ -231763,7 +230291,7 @@
         {
           "id": null,
           "typeId": null,
-          "typeName": "Goal",
+          "typeName": "Var",
           "subTypeId": null,
           "participantId": 1616,
           "playerId": 21437,
@@ -231774,7 +230302,92 @@
           "extraMinute": null,
           "result": null,
           "info": null,
-          "addition": "Normal Goal",
+          "addition": "Goal Disallowed - handball",
+          "injured": false
+        },
+        {
+          "id": null,
+          "typeId": null,
+          "typeName": "Card",
+          "subTypeId": null,
+          "participantId": 25484,
+          "playerId": 265898,
+          "playerName": "A. Alvarado Jr",
+          "relatedPlayerId": null,
+          "relatedPlayerName": null,
+          "minute": 29,
+          "extraMinute": null,
+          "result": null,
+          "info": null,
+          "addition": "Yellow Card",
+          "injured": false
+        },
+        {
+          "id": null,
+          "typeId": null,
+          "typeName": "subst",
+          "subTypeId": null,
+          "participantId": 25484,
+          "playerId": 19909,
+          "playerName": "L. Morgan",
+          "relatedPlayerId": 42012,
+          "relatedPlayerName": "E. Achouri",
+          "minute": 53,
+          "extraMinute": null,
+          "result": null,
+          "info": null,
+          "addition": "Substitution 1",
+          "injured": false
+        },
+        {
+          "id": null,
+          "typeId": null,
+          "typeName": "Card",
+          "subTypeId": null,
+          "participantId": 1616,
+          "playerId": 51031,
+          "playerName": "E. Segura",
+          "relatedPlayerId": null,
+          "relatedPlayerName": null,
+          "minute": 61,
+          "extraMinute": null,
+          "result": null,
+          "info": null,
+          "addition": "Yellow Card",
+          "injured": false
+        },
+        {
+          "id": null,
+          "typeId": null,
+          "typeName": "subst",
+          "subTypeId": null,
+          "participantId": 1616,
+          "playerId": 25617,
+          "playerName": "T. Tillman",
+          "relatedPlayerId": 50788,
+          "relatedPlayerName": "M. Choiniere",
+          "minute": 65,
+          "extraMinute": null,
+          "result": null,
+          "info": null,
+          "addition": "Substitution 1",
+          "injured": false
+        },
+        {
+          "id": null,
+          "typeId": null,
+          "typeName": "subst",
+          "subTypeId": null,
+          "participantId": 1616,
+          "playerId": 50157,
+          "playerName": "T. Boyd",
+          "relatedPlayerId": 50826,
+          "relatedPlayerName": "J. Shaffelburg",
+          "minute": 65,
+          "extraMinute": null,
+          "result": null,
+          "info": null,
+          "addition": "Substitution 2",
           "injured": false
         }
       ],
@@ -231794,9 +230407,9 @@
       "lastProcessedAt": null,
       "status": {
         "id": null,
-        "name": "First Half",
-        "shortName": "1H",
-        "developerName": "1H",
+        "name": "Second Half",
+        "shortName": "2H",
+        "developerName": "2H",
         "isLive": true,
         "isFinished": false
       },
@@ -231840,8 +230453,8 @@
         }
       ],
       "score": {
-        "home": 0,
-        "away": 2,
+        "home": 1,
+        "away": 3,
         "halfTimeHome": 0,
         "halfTimeAway": 2
       },
@@ -231852,7 +230465,7 @@
           "participantId": 1596,
           "description": "CURRENT",
           "participant": "home",
-          "goals": 0
+          "goals": 1
         },
         {
           "id": null,
@@ -231860,7 +230473,7 @@
           "participantId": 20787,
           "description": "CURRENT",
           "participant": "away",
-          "goals": 2
+          "goals": 3
         },
         {
           "id": null,
@@ -231913,6 +230526,91 @@
           "info": null,
           "addition": "Normal Goal",
           "injured": false
+        },
+        {
+          "id": null,
+          "typeId": null,
+          "typeName": "subst",
+          "subTypeId": null,
+          "participantId": 1596,
+          "playerId": 212261,
+          "playerName": "B. Kikanovic",
+          "relatedPlayerId": 265885,
+          "relatedPlayerName": "J. Jasinski",
+          "minute": 46,
+          "extraMinute": null,
+          "result": null,
+          "info": null,
+          "addition": "Substitution 1",
+          "injured": false
+        },
+        {
+          "id": null,
+          "typeId": null,
+          "typeName": "subst",
+          "subTypeId": null,
+          "participantId": 1596,
+          "playerId": 351591,
+          "playerName": "N. Tsakiris",
+          "relatedPlayerId": 376674,
+          "relatedPlayerName": "L. Jovanovic",
+          "minute": 46,
+          "extraMinute": null,
+          "result": null,
+          "info": null,
+          "addition": "Substitution 2",
+          "injured": false
+        },
+        {
+          "id": null,
+          "typeId": null,
+          "typeName": "Goal",
+          "subTypeId": null,
+          "participantId": 1596,
+          "playerId": 461643,
+          "playerName": "B. Leroux",
+          "relatedPlayerId": null,
+          "relatedPlayerName": null,
+          "minute": 47,
+          "extraMinute": null,
+          "result": null,
+          "info": null,
+          "addition": "Normal Goal",
+          "injured": false
+        },
+        {
+          "id": null,
+          "typeId": null,
+          "typeName": "Goal",
+          "subTypeId": null,
+          "participantId": 20787,
+          "playerId": 71739,
+          "playerName": "S. Becher",
+          "relatedPlayerId": 57438,
+          "relatedPlayerName": "T. Totland",
+          "minute": 55,
+          "extraMinute": null,
+          "result": null,
+          "info": null,
+          "addition": "Normal Goal",
+          "injured": false
+        },
+        {
+          "id": null,
+          "typeId": null,
+          "typeName": "subst",
+          "subTypeId": null,
+          "participantId": 20787,
+          "playerId": 25614,
+          "playerName": "E. Lowen",
+          "relatedPlayerId": 15837,
+          "relatedPlayerName": "C. Holse",
+          "minute": 69,
+          "extraMinute": null,
+          "result": null,
+          "info": null,
+          "addition": "Substitution 1",
+          "injured": false
         }
       ],
       "lineups": [],
@@ -231931,9 +230629,9 @@
       "lastProcessedAt": null,
       "status": {
         "id": null,
-        "name": "First Half",
-        "shortName": "1H",
-        "developerName": "1H",
+        "name": "Second Half",
+        "shortName": "2H",
+        "developerName": "2H",
         "isLive": true,
         "isFinished": false
       },
@@ -231964,7 +230662,7 @@
           "imageUrl": "https://media.api-sports.io/football/teams/3998.png",
           "role": "home",
           "position": null,
-          "winner": false
+          "winner": null
         },
         {
           "id": 27252,
@@ -231973,11 +230671,11 @@
           "imageUrl": "https://media.api-sports.io/football/teams/27252.png",
           "role": "away",
           "position": null,
-          "winner": true
+          "winner": null
         }
       ],
       "score": {
-        "home": 0,
+        "home": 1,
         "away": 1,
         "halfTimeHome": 0,
         "halfTimeAway": 1
@@ -231989,7 +230687,7 @@
           "participantId": 3998,
           "description": "CURRENT",
           "participant": "home",
-          "goals": 0
+          "goals": 1
         },
         {
           "id": null,
@@ -232067,6 +230765,108 @@
           "info": "Foul",
           "addition": "Yellow Card",
           "injured": false
+        },
+        {
+          "id": null,
+          "typeId": null,
+          "typeName": "subst",
+          "subTypeId": null,
+          "participantId": 27252,
+          "playerId": 102919,
+          "playerName": "P. Da Silva",
+          "relatedPlayerId": 540834,
+          "relatedPlayerName": "J. Servania",
+          "minute": 55,
+          "extraMinute": null,
+          "result": null,
+          "info": null,
+          "addition": "Substitution 1",
+          "injured": false
+        },
+        {
+          "id": null,
+          "typeId": null,
+          "typeName": "subst",
+          "subTypeId": null,
+          "participantId": 27252,
+          "playerId": 540842,
+          "playerName": "T. Okiyoshi",
+          "relatedPlayerId": 403329,
+          "relatedPlayerName": "M. Pinto",
+          "minute": 55,
+          "extraMinute": null,
+          "result": null,
+          "info": null,
+          "addition": "Substitution 2",
+          "injured": false
+        },
+        {
+          "id": null,
+          "typeId": null,
+          "typeName": "subst",
+          "subTypeId": null,
+          "participantId": 3998,
+          "playerId": 540845,
+          "playerName": "M. Ybarra",
+          "relatedPlayerId": 320032,
+          "relatedPlayerName": "A. Okyere",
+          "minute": 62,
+          "extraMinute": null,
+          "result": null,
+          "info": null,
+          "addition": "Substitution 1",
+          "injured": false
+        },
+        {
+          "id": null,
+          "typeId": null,
+          "typeName": "subst",
+          "subTypeId": null,
+          "participantId": 3998,
+          "playerId": 541956,
+          "playerName": "C. Locker",
+          "relatedPlayerId": 41921,
+          "relatedPlayerName": "M. Arteaga",
+          "minute": 62,
+          "extraMinute": null,
+          "result": null,
+          "info": null,
+          "addition": "Substitution 2",
+          "injured": false
+        },
+        {
+          "id": null,
+          "typeId": null,
+          "typeName": "Card",
+          "subTypeId": null,
+          "participantId": 27252,
+          "playerId": 650018,
+          "playerName": "C. Frogson",
+          "relatedPlayerId": null,
+          "relatedPlayerName": null,
+          "minute": 65,
+          "extraMinute": null,
+          "result": null,
+          "info": "Foul",
+          "addition": "Yellow Card",
+          "injured": false
+        },
+        {
+          "id": null,
+          "typeId": null,
+          "typeName": "Goal",
+          "subTypeId": null,
+          "participantId": 3998,
+          "playerId": 540739,
+          "playerName": "O. Anderson",
+          "relatedPlayerId": 41921,
+          "relatedPlayerName": "M. Arteaga",
+          "minute": 68,
+          "extraMinute": null,
+          "result": null,
+          "info": null,
+          "addition": "Normal Goal",
+          "injured": false
         }
       ],
       "lineups": [],
@@ -232085,10 +230885,10 @@
       "lastProcessedAt": null,
       "status": {
         "id": null,
-        "name": "Not Started",
-        "shortName": "NS",
-        "developerName": "NS",
-        "isLive": false,
+        "name": "Halftime",
+        "shortName": "HT",
+        "developerName": "HT",
+        "isLive": true,
         "isFinished": false
       },
       "league": {
@@ -232131,13 +230931,81 @@
         }
       ],
       "score": {
-        "home": null,
-        "away": null,
-        "halfTimeHome": null,
-        "halfTimeAway": null
+        "home": 0,
+        "away": 0,
+        "halfTimeHome": 0,
+        "halfTimeAway": 0
       },
-      "scores": [],
-      "events": [],
+      "scores": [
+        {
+          "id": null,
+          "typeId": null,
+          "participantId": 4015,
+          "description": "CURRENT",
+          "participant": "home",
+          "goals": 0
+        },
+        {
+          "id": null,
+          "typeId": null,
+          "participantId": 20808,
+          "description": "CURRENT",
+          "participant": "away",
+          "goals": 0
+        },
+        {
+          "id": null,
+          "typeId": null,
+          "participantId": 4015,
+          "description": "1ST_HALF",
+          "participant": "home",
+          "goals": 0
+        },
+        {
+          "id": null,
+          "typeId": null,
+          "participantId": 20808,
+          "description": "1ST_HALF",
+          "participant": "away",
+          "goals": 0
+        }
+      ],
+      "events": [
+        {
+          "id": null,
+          "typeId": null,
+          "typeName": "Card",
+          "subTypeId": null,
+          "participantId": 4015,
+          "playerId": 417326,
+          "playerName": "B. Willey",
+          "relatedPlayerId": null,
+          "relatedPlayerName": null,
+          "minute": 25,
+          "extraMinute": null,
+          "result": null,
+          "info": "Foul",
+          "addition": "Yellow Card",
+          "injured": false
+        },
+        {
+          "id": null,
+          "typeId": null,
+          "typeName": "Card",
+          "subTypeId": null,
+          "participantId": 4015,
+          "playerId": 70966,
+          "playerName": "D. Crisostomo",
+          "relatedPlayerId": null,
+          "relatedPlayerName": null,
+          "minute": 39,
+          "extraMinute": null,
+          "result": null,
+          "info": "Foul",
+          "addition": "Yellow Card",
+          "injured": false
+        }
+      ],
       "lineups": [],
       "injuries": []
     },
@@ -232223,9 +231091,9 @@
       "lastProcessedAt": null,
       "status": {
         "id": null,
-        "name": "First Half",
-        "shortName": "1H",
-        "developerName": "1H",
+        "name": "Second Half",
+        "shortName": "2H",
+        "developerName": "2H",
         "isLive": true,
         "isFinished": false
       },
@@ -232256,7 +231124,7 @@
           "imageUrl": "https://media.api-sports.io/football/teams/27802.png",
           "role": "home",
           "position": null,
-          "winner": null
+          "winner": true
         },
         {
           "id": 27814,
@@ -232265,13 +231133,13 @@
           "imageUrl": "https://media.api-sports.io/football/teams/27814.png",
           "role": "away",
           "position": null,
-          "winner": null
+          "winner": false
         }
       ],
       "score": {
-        "home": 0,
+        "home": 1,
         "away": 0,
-        "halfTimeHome": 0,
+        "halfTimeHome": 1,
         "halfTimeAway": 0
       },
       "scores": [
@@ -232281,7 +231149,7 @@
           "participantId": 27802,
           "description": "CURRENT",
           "participant": "home",
-          "goals": 0
+          "goals": 1
         },
         {
           "id": null,
@@ -232297,7 +231165,7 @@
           "participantId": 27802,
           "description": "1ST_HALF",
           "participant": "home",
-          "goals": 0
+          "goals": 1
         },
         {
           "id": null,
@@ -232325,9 +231193,9 @@
       "lastProcessedAt": null,
       "status": {
         "id": null,
-        "name": "First Half",
-        "shortName": "1H",
-        "developerName": "1H",
+        "name": "Second Half",
+        "shortName": "2H",
+        "developerName": "2H",
         "isLive": true,
         "isFinished": false
       },
@@ -232358,7 +231226,7 @@
           "imageUrl": "https://media.api-sports.io/football/teams/27804.png",
           "role": "home",
           "position": null,
-          "winner": null
+          "winner": false
         },
         {
           "id": 27810,
@@ -232367,14 +231235,14 @@
           "imageUrl": "https://media.api-sports.io/football/teams/27810.png",
           "role": "away",
           "position": null,
-          "winner": null
+          "winner": true
         }
       ],
       "score": {
-        "home": 0,
-        "away": 0,
-        "halfTimeHome": 0,
-        "halfTimeAway": 0
+        "home": 1,
+        "away": 2,
+        "halfTimeHome": 1,
+        "halfTimeAway": 2
       },
       "scores": [
         {
@@ -232383,7 +231251,7 @@
           "participantId": 27804,
           "description": "CURRENT",
           "participant": "home",
-          "goals": 0
+          "goals": 1
         },
         {
           "id": null,
@@ -232391,7 +231259,7 @@
           "participantId": 27810,
           "description": "CURRENT",
           "participant": "away",
-          "goals": 0
+          "goals": 2
         },
         {
           "id": null,
@@ -232399,7 +231267,7 @@
           "participantId": 27804,
           "description": "1ST_HALF",
           "participant": "home",
-          "goals": 0
+          "goals": 1
         },
         {
           "id": null,
@@ -232407,7 +231275,7 @@
           "participantId": 27810,
           "description": "1ST_HALF",
           "participant": "away",
-          "goals": 0
+          "goals": 2
         }
       ],
       "events": [],
@@ -232427,9 +231295,9 @@
       "lastProcessedAt": null,
       "status": {
         "id": null,
-        "name": "First Half",
-        "shortName": "1H",
-        "developerName": "1H",
+        "name": "Second Half",
+        "shortName": "2H",
+        "developerName": "2H",
         "isLive": true,
         "isFinished": false
       },
@@ -232460,7 +231328,7 @@
           "imageUrl": "https://media.api-sports.io/football/teams/27806.png",
           "role": "home",
           "position": null,
-          "winner": null
+          "winner": false
         },
         {
           "id": 27816,
@@ -232469,14 +231337,14 @@
           "imageUrl": "https://media.api-sports.io/football/teams/27816.png",
           "role": "away",
           "position": null,
-          "winner": null
+          "winner": true
         }
       ],
       "score": {
         "home": 0,
-        "away": 0,
+        "away": 3,
         "halfTimeHome": 0,
-        "halfTimeAway": 0
+        "halfTimeAway": 3
       },
       "scores": [
         {
@@ -232493,7 +231361,7 @@
           "participantId": 27816,
           "description": "CURRENT",
           "participant": "away",
-          "goals": 0
+          "goals": 3
         },
         {
           "id": null,
@@ -232509,7 +231377,7 @@
           "participantId": 27816,
           "description": "1ST_HALF",
           "participant": "away",
-          "goals": 0
+          "goals": 3
         }
       ],
       "events": [],
@@ -232529,10 +231397,10 @@
       "lastProcessedAt": null,
       "status": {
         "id": null,
-        "name": "Not Started",
-        "shortName": "NS",
-        "developerName": "NS",
-        "isLive": false,
+        "name": "Halftime",
+        "shortName": "HT",
+        "developerName": "HT",
+        "isLive": true,
         "isFinished": false
       },
       "league": {
@@ -232575,13 +231443,132 @@
         }
       ],
       "score": {
-        "home": null,
-        "away": null,
-        "halfTimeHome": null,
-        "halfTimeAway": null
+        "home": 1,
+        "away": 1,
+        "halfTimeHome": 1,
+        "halfTimeAway": 1
       },
-      "scores": [],
-      "events": [],
+      "scores": [
+        {
+          "id": null,
+          "typeId": null,
+          "participantId": 2283,
+          "description": "CURRENT",
+          "participant": "home",
+          "goals": 1
+        },
+        {
+          "id": null,
+          "typeId": null,
+          "participantId": 2279,
+          "description": "CURRENT",
+          "participant": "away",
+          "goals": 1
+        },
+        {
+          "id": null,
+          "typeId": null,
+          "participantId": 2283,
+          "description": "1ST_HALF",
+          "participant": "home",
+          "goals": 1
+        },
+        {
+          "id": null,
+          "typeId": null,
+          "participantId": 2279,
+          "description": "1ST_HALF",
+          "participant": "away",
+          "goals": 1
+        }
+      ],
+      "events": [
+        {
+          "id": null,
+          "typeId": null,
+          "typeName": "Goal",
+          "subTypeId": null,
+          "participantId": 2283,
+          "playerId": 6260,
+          "playerName": "M. Capasso",
+          "relatedPlayerId": 35546,
+          "relatedPlayerName": "A. Gonzalez",
+          "minute": 2,
+          "extraMinute": null,
+          "result": null,
+          "info": null,
+          "addition": "Normal Goal",
+          "injured": false
+        },
+        {
+          "id": null,
+          "typeId": null,
+          "typeName": "Goal",
+          "subTypeId": null,
+          "participantId": 2279,
+          "playerId": 6579,
+          "playerName": "J. Brunetta",
+          "relatedPlayerId": 16482,
+          "relatedPlayerName": "R. Aguirre",
+          "minute": 21,
+          "extraMinute": null,
+          "result": null,
+          "info": null,
+          "addition": "Normal Goal",
+          "injured": false
+        },
+        {
+          "id": null,
+          "typeId": null,
+          "typeName": "Card",
+          "subTypeId": null,
+          "participantId": 2283,
+          "playerId": 428468,
+          "playerName": "V. H. Rios De Alba",
+          "relatedPlayerId": null,
+          "relatedPlayerName": null,
+          "minute": 22,
+          "extraMinute": null,
+          "result": null,
+          "info": "Foul",
+          "addition": "Yellow Card",
+          "injured": false
+        },
+        {
+          "id": null,
+          "typeId": null,
+          "typeName": "Card",
+          "subTypeId": null,
+          "participantId": 2279,
+          "playerId": null,
+          "playerName": "H. Elizondo",
+          "relatedPlayerId": null,
+          "relatedPlayerName": null,
+          "minute": 30,
+          "extraMinute": null,
+          "result": null,
+          "info": "Unsportsmanlike conduct",
+          "addition": "Yellow Card",
+          "injured": false
+        },
+        {
+          "id": null,
+          "typeId": null,
+          "typeName": "Card",
+          "subTypeId": null,
+          "participantId": 2283,
+          "playerId": 6260,
+          "playerName": "M. Capasso",
+          "relatedPlayerId": null,
+          "relatedPlayerName": null,
+          "minute": 35,
+          "extraMinute": null,
+          "result": null,
+          "info": "Handling",
+          "addition": "Yellow Card",
+          "injured": false
+        }
+      ],
       "lineups": [],
       "injuries": []
     },
@@ -232598,10 +231585,10 @@
       "lastProcessedAt": null,
       "status": {
         "id": null,
-        "name": "Not Started",
-        "shortName": "NS",
-        "developerName": "NS",
-        "isLive": false,
+        "name": "Halftime",
+        "shortName": "HT",
+        "developerName": "HT",
+        "isLive": true,
         "isFinished": false
       },
       "league": {
@@ -232631,7 +231618,7 @@
           "imageUrl": "https://media.api-sports.io/football/teams/14872.png",
           "role": "home",
           "position": null,
-          "winner": null
+          "winner": true
         },
         {
           "id": 14880,
@@ -232640,17 +231627,238 @@
           "imageUrl": "https://media.api-sports.io/football/teams/14880.png",
           "role": "away",
           "position": null,
-          "winner": null
+          "winner": false
         }
       ],
       "score": {
-        "home": null,
-        "away": null,
-        "halfTimeHome": null,
-        "halfTimeAway": null
+        "home": 5,
+        "away": 1,
+        "halfTimeHome": 5,
+        "halfTimeAway": 1
       },
-      "scores": [],
-      "events": [],
+      "scores": [
+        {
+          "id": null,
+          "typeId": null,
+          "participantId": 14872,
+          "description": "CURRENT",
+          "participant": "home",
+          "goals": 5
+        },
+        {
+          "id": null,
+          "typeId": null,
+          "participantId": 14880,
+          "description": "CURRENT",
+          "participant": "away",
+          "goals": 1
+        },
+        {
+          "id": null,
+          "typeId": null,
+          "participantId": 14872,
+          "description": "1ST_HALF",
+          "participant": "home",
+          "goals": 5
+        },
+        {
+          "id": null,
+          "typeId": null,
+          "participantId": 14880,
+          "description": "1ST_HALF",
+          "participant": "away",
+          "goals": 1
+        }
+      ],
+      "events": [
+        {
+          "id": null,
+          "typeId": null,
+          "typeName": "Goal",
+          "subTypeId": null,
+          "participantId": 14872,
+          "playerId": 562709,
+          "playerName": "J. Garcia",
+          "relatedPlayerId": null,
+          "relatedPlayerName": null,
+          "minute": 2,
+          "extraMinute": null,
+          "result": null,
+          "info": null,
+          "addition": "Normal Goal",
+          "injured": false
+        },
+        {
+          "id": null,
+          "typeId": null,
+          "typeName": "Card",
+          "subTypeId": null,
+          "participantId": 14880,
+          "playerId": 630742,
+          "playerName": "Z. Cervantes",
+          "relatedPlayerId": null,
+          "relatedPlayerName": null,
+          "minute": 7,
+          "extraMinute": null,
+          "result": null,
+          "info": null,
+          "addition": "Yellow Card",
+          "injured": false
+        },
+        {
+          "id": null,
+          "typeId": null,
+          "typeName": "Goal",
+          "subTypeId": null,
+          "participantId": 14880,
+          "playerId": 546923,
+          "playerName": "W. Peralta",
+          "relatedPlayerId": null,
+          "relatedPlayerName": null,
+          "minute": 11,
+          "extraMinute": null,
+          "result": null,
+          "info": null,
+          "addition": "Normal Goal",
+          "injured": false
+        },
+        {
+          "id": null,
+          "typeId": null,
+          "typeName": "Goal",
+          "subTypeId": null,
+          "participantId": 14872,
+          "playerId": 554531,
+          "playerName": "K. Hancar",
+          "relatedPlayerId": 74240,
+          "relatedPlayerName": "T. Carter",
+          "minute": 13,
+          "extraMinute": null,
+          "result": null,
+          "info": null,
+          "addition": "Normal Goal",
+          "injured": false
+        },
+        {
+          "id": null,
+          "typeId": null,
+          "typeName": "Goal",
+          "subTypeId": null,
+          "participantId": 14872,
+          "playerId": 74240,
+          "playerName": "T. Carter",
+          "relatedPlayerId": null,
+          "relatedPlayerName": null,
+          "minute": 16,
+          "extraMinute": null,
+          "result": null,
+          "info": null,
+          "addition": "Normal Goal",
+          "injured": false
+        },
+        {
+          "id": null,
+          "typeId": null,
+          "typeName": "Goal",
+          "subTypeId": null,
+          "participantId": 14880,
+          "playerId": 632846,
+          "playerName": "T. Lizeth Quiroz Tinoco",
+          "relatedPlayerId": 632846,
+          "relatedPlayerName": "T. Lizeth Quiroz Tinoco",
+          "minute": 21,
+          "extraMinute": null,
+          "result": null,
+          "info": null,
+          "addition": "Missed Penalty",
+          "injured": false
+        },
+        {
+          "id": null,
+          "typeId": null,
+          "typeName": "Goal",
+          "subTypeId": null,
+          "participantId": 14872,
+          "playerId": 554531,
+          "playerName": "K. Hancar",
+          "relatedPlayerId": 572224,
+          "relatedPlayerName": "V. Gonzalez",
+          "minute": 29,
+          "extraMinute": null,
+          "result": null,
+          "info": null,
+          "addition": "Normal Goal",
+          "injured": false
+        },
+        {
+          "id": null,
+          "typeId": null,
+          "typeName": "subst",
+          "subTypeId": null,
+          "participantId": 14880,
+          "playerId": 672996,
+          "playerName": "A. A. De Leon L.",
+          "relatedPlayerId": 546972,
+          "relatedPlayerName": "F. Bracamonte",
+          "minute": 33,
+          "extraMinute": null,
+          "result": null,
+          "info": null,
+          "addition": "Substitution 1",
+          "injured": false
+        },
+        {
+          "id": null,
+          "typeId": null,
+          "typeName": "Goal",
+          "subTypeId": null,
+          "participantId": 14872,
+          "playerId": 554531,
+          "playerName": "K. Hancar",
+          "relatedPlayerId": null,
+          "relatedPlayerName": null,
+          "minute": 40,
+          "extraMinute": null,
+          "result": null,
+          "info": null,
+          "addition": "Penalty",
+          "injured": false
+        },
+        {
+          "id": null,
+          "typeId": null,
+          "typeName": "Card",
+          "subTypeId": null,
+          "participantId": 14872,
+          "playerId": null,
+          "playerName": null,
+          "relatedPlayerId": null,
+          "relatedPlayerName": null,
+          "minute": 45,
+          "extraMinute": 1,
+          "result": null,
+          "info": null,
+          "addition": "Yellow Card",
+          "injured": false
+        },
+        {
+          "id": null,
+          "typeId": null,
+          "typeName": "Card",
+          "subTypeId": null,
+          "participantId": 14872,
+          "playerId": null,
+          "playerName": null,
+          "relatedPlayerId": null,
+          "relatedPlayerName": null,
+          "minute": 45,
+          "extraMinute": 5,
+          "result": null,
+          "info": null,
+          "addition": "Yellow Card",
+          "injured": false
+        }
+      ],
       "lineups": [],
       "injuries": []
     },
@@ -232736,10 +231944,10 @@
       "lastProcessedAt": null,
       "status": {
         "id": null,
-        "name": "Not Started",
-        "shortName": "NS",
-        "developerName": "NS",
-        "isLive": false,
+        "name": "First Half",
+        "shortName": "1H",
+        "developerName": "1H",
+        "isLive": true,
         "isFinished": false
       },
       "league": {
@@ -232782,12 +231990,45 @@
         }
       ],
       "score": {
-        "home": null,
-        "away": null,
-        "halfTimeHome": null,
-        "halfTimeAway": null
+        "home": 0,
+        "away": 0,
+        "halfTimeHome": 0,
+        "halfTimeAway": 0
       },
-      "scores": [],
+      "scores": [
+        {
+          "id": null,
+          "typeId": null,
+          "participantId": 10202,
+          "description": "CURRENT",
+          "participant": "home",
+          "goals": 0
+        },
+        {
+          "id": null,
+          "typeId": null,
+          "participantId": 10203,
+          "description": "CURRENT",
+          "participant": "away",
+          "goals": 0
+        },
+        {
+          "id": null,
+          "typeId": null,
+          "participantId": 10202,
+          "description": "1ST_HALF",
+          "participant": "home",
+          "goals": 0
+        },
+        {
+          "id": null,
+          "typeId": null,
+          "participantId": 10203,
+          "description": "1ST_HALF",
+          "participant": "away",
+          "goals": 0
+        }
+      ],
       "events": [],
       "lineups": [],
       "injuries": []
@@ -232805,10 +232046,10 @@
       "lastProcessedAt": null,
       "status": {
         "id": null,
-        "name": "Not Started",
-        "shortName": "NS",
-        "developerName": "NS",
-        "isLive": false,
+        "name": "First Half",
+        "shortName": "1H",
+        "developerName": "1H",
+        "isLive": true,
         "isFinished": false
       },
       "league": {
@@ -232851,12 +232092,45 @@
         }
       ],
       "score": {
-        "home": null,
-        "away": null,
-        "halfTimeHome": null,
-        "halfTimeAway": null
+        "home": 0,
+        "away": 0,
+        "halfTimeHome": 0,
+        "halfTimeAway": 0
       },
-      "scores": [],
+      "scores": [
+        {
+          "id": null,
+          "typeId": null,
+          "participantId": 10208,
+          "description": "CURRENT",
+          "participant": "home",
+          "goals": 0
+        },
+        {
+          "id": null,
+          "typeId": null,
+          "participantId": 10204,
+          "description": "CURRENT",
+          "participant": "away",
+          "goals": 0
+        },
+        {
+          "id": null,
+          "typeId": null,
+          "participantId": 10208,
+          "description": "1ST_HALF",
+          "participant": "home",
+          "goals": 0
+        },
+        {
+          "id": null,
+          "typeId": null,
+          "participantId": 10204,
+          "description": "1ST_HALF",
+          "participant": "away",
+          "goals": 0
+        }
+      ],
       "events": [],
       "lineups": [],
       "injuries": []
@@ -232874,10 +232148,10 @@
       "lastProcessedAt": null,
       "status": {
         "id": null,
-        "name": "Not Started",
-        "shortName": "NS",
-        "developerName": "NS",
-        "isLive": false,
+        "name": "First Half",
+        "shortName": "1H",
+        "developerName": "1H",
+        "isLive": true,
         "isFinished": false
       },
       "league": {
@@ -232920,12 +232194,45 @@
         }
       ],
       "score": {
-        "home": null,
-        "away": null,
-        "halfTimeHome": null,
-        "halfTimeAway": null
+        "home": 0,
+        "away": 0,
+        "halfTimeHome": 0,
+        "halfTimeAway": 0
       },
-      "scores": [],
+      "scores": [
+        {
+          "id": null,
+          "typeId": null,
+          "participantId": 10207,
+          "description": "CURRENT",
+          "participant": "home",
+          "goals": 0
+        },
+        {
+          "id": null,
+          "typeId": null,
+          "participantId": 10205,
+          "description": "CURRENT",
+          "participant": "away",
+          "goals": 0
+        },
+        {
+          "id": null,
+          "typeId": null,
+          "participantId": 10207,
+          "description": "1ST_HALF",
+          "participant": "home",
+          "goals": 0
+        },
+        {
+          "id": null,
+          "typeId": null,
+          "participantId": 10205,
+          "description": "1ST_HALF",
+          "participant": "away",
+          "goals": 0
+        }
+      ],
       "events": [],
       "lineups": [],
       "injuries": []
@@ -232943,10 +232250,10 @@
       "lastProcessedAt": null,
       "status": {
         "id": null,
-        "name": "Not Started",
-        "shortName": "NS",
-        "developerName": "NS",
-        "isLive": false,
+        "name": "First Half",
+        "shortName": "1H",
+        "developerName": "1H",
+        "isLive": true,
         "isFinished": false
       },
       "league": {
@@ -232989,12 +232296,45 @@
         }
       ],
       "score": {
-        "home": null,
-        "away": null,
-        "halfTimeHome": null,
-        "halfTimeAway": null
+        "home": 0,
+        "away": 0,
+        "halfTimeHome": 0,
+        "halfTimeAway": 0
       },
-      "scores": [],
+      "scores": [
+        {
+          "id": null,
+          "typeId": null,
+          "participantId": 10209,
+          "description": "CURRENT",
+          "participant": "home",
+          "goals": 0
+        },
+        {
+          "id": null,
+          "typeId": null,
+          "participantId": 10210,
+          "description": "CURRENT",
+          "participant": "away",
+          "goals": 0
+        },
+        {
+          "id": null,
+          "typeId": null,
+          "participantId": 10209,
+          "description": "1ST_HALF",
+          "participant": "home",
+          "goals": 0
+        },
+        {
+          "id": null,
+          "typeId": null,
+          "participantId": 10210,
+          "description": "1ST_HALF",
+          "participant": "away",
+          "goals": 0
+        }
+      ],
       "events": [],
       "lineups": [],
       "injuries": []
@@ -233012,10 +232352,10 @@
       "lastProcessedAt": null,
       "status": {
         "id": null,
-        "name": "Not Started",
-        "shortName": "NS",
-        "developerName": "NS",
-        "isLive": false,
+        "name": "First Half",
+        "shortName": "1H",
+        "developerName": "1H",
+        "isLive": true,
         "isFinished": false
       },
       "league": {
@@ -233058,12 +232398,45 @@
         }
       ],
       "score": {
-        "home": null,
-        "away": null,
-        "halfTimeHome": null,
-        "halfTimeAway": null
+        "home": 0,
+        "away": 0,
+        "halfTimeHome": 0,
+        "halfTimeAway": 0
       },
-      "scores": [],
+      "scores": [
+        {
+          "id": null,
+          "typeId": null,
+          "participantId": 23500,
+          "description": "CURRENT",
+          "participant": "home",
+          "goals": 0
+        },
+        {
+          "id": null,
+          "typeId": null,
+          "participantId": 10201,
+          "description": "CURRENT",
+          "participant": "away",
+          "goals": 0
+        },
+        {
+          "id": null,
+          "typeId": null,
+          "participantId": 23500,
+          "description": "1ST_HALF",
+          "participant": "home",
+          "goals": 0
+        },
+        {
+          "id": null,
+          "typeId": null,
+          "participantId": 10201,
+          "description": "1ST_HALF",
+          "participant": "away",
+          "goals": 0
+        }
+      ],
       "events": [],
       "lineups": [],
       "injuries": []
@@ -233081,10 +232454,10 @@
       "lastProcessedAt": null,
       "status": {
         "id": null,
-        "name": "Not Started",
-        "shortName": "NS",
-        "developerName": "NS",
-        "isLive": false,
+        "name": "First Half",
+        "shortName": "1H",
+        "developerName": "1H",
+        "isLive": true,
         "isFinished": false
       },
       "league": {
@@ -233127,12 +232500,45 @@
         }
       ],
       "score": {
-        "home": null,
-        "away": null,
-        "halfTimeHome": null,
-        "halfTimeAway": null
+        "home": 0,
+        "away": 0,
+        "halfTimeHome": 0,
+        "halfTimeAway": 0
       },
-      "scores": [],
+      "scores": [
+        {
+          "id": null,
+          "typeId": null,
+          "participantId": 23502,
+          "description": "CURRENT",
+          "participant": "home",
+          "goals": 0
+        },
+        {
+          "id": null,
+          "typeId": null,
+          "participantId": 18313,
+          "description": "CURRENT",
+          "participant": "away",
+          "goals": 0
+        },
+        {
+          "id": null,
+          "typeId": null,
+          "participantId": 23502,
+          "description": "1ST_HALF",
+          "participant": "home",
+          "goals": 0
+        },
+        {
+          "id": null,
+          "typeId": null,
+          "participantId": 18313,
+          "description": "1ST_HALF",
+          "participant": "away",
+          "goals": 0
+        }
+      ],
       "events": [],
       "lineups": [],
       "injuries": []
@@ -728060,15 +727466,15 @@
             },
             {
               "fixtureId": null,
+              "form": "D"
+            },
+            {
+              "fixtureId": null,
               "form": "W"
             },
             {
               "fixtureId": null,
               "form": "D"
-            },
-            {
-              "fixtureId": null,
-              "form": "L"
             },
             {
               "fixtureId": null,
@@ -731038,7 +730444,7 @@
         },
         {
           "id": null,
-          "participantId": 460,
+          "participantId": 451,
           "position": 11,
           "points": 6,
           "result": "same",
@@ -731048,10 +730454,10 @@
           "groupId": null,
           "roundId": null,
           "participant": {
-            "id": 460,
-            "name": "San Lorenzo",
+            "id": 451,
+            "name": "Boca Juniors",
             "shortCode": null,
-            "imageUrl": "https://media.api-sports.io/football/teams/460.png",
+            "imageUrl": "https://media.api-sports.io/football/teams/451.png",
             "role": null,
             "position": 11,
             "winner": null
@@ -731064,27 +730470,27 @@
             },
             {
               "typeId": null,
-              "value": 2,
+              "value": 1,
               "description": "Won"
             },
             {
               "typeId": null,
-              "value": 0,
+              "value": 3,
               "description": "Drawn"
             },
             {
               "typeId": null,
-              "value": 3,
+              "value": 1,
               "description": "Lost"
             },
             {
               "typeId": null,
-              "value": 2,
+              "value": 5,
               "description": "Goals for"
             },
             {
               "typeId": null,
-              "value": 4,
+              "value": 7,
               "description": "Goals against"
             },
             {
@@ -731096,19 +730502,19 @@
           "form": [
             {
               "fixtureId": null,
-              "form": "W"
+              "form": "D"
             },
             {
               "fixtureId": null,
-              "form": "L"
-            },
-            {
-              "fixtureId": null,
-              "form": "L"
+              "form": "D"
             },
             {
               "fixtureId": null,
               "form": "W"
+            },
+            {
+              "fixtureId": null,
+              "form": "D"
             },
             {
               "fixtureId": null,
@@ -731256,6 +730662,10 @@
           "form": [
             {
               "fixtureId": null,
+              "form": "D"
+            },
+            {
+              "fixtureId": null,
               "form": "W"
             },
             {
@@ -731269,10 +730679,6 @@
             {
               "fixtureId": null,
               "form": "D"
-            },
-            {
-              "fixtureId": null,
-              "form": "L"
             }
           ]
         },
@@ -731358,9 +730764,9 @@
         },
         {
           "id": null,
-          "participantId": 451,
+          "participantId": 460,
           "position": 12,
-          "points": 5,
+          "points": 6,
           "result": "same",
           "leagueId": 128,
           "seasonId": 2026,
@@ -731368,10 +730774,10 @@
           "groupId": null,
           "roundId": null,
           "participant": {
-            "id": 451,
-            "name": "Boca Juniors",
+            "id": 460,
+            "name": "San Lorenzo",
             "shortCode": null,
-            "imageUrl": "https://media.api-sports.io/football/teams/451.png",
+            "imageUrl": "https://media.api-sports.io/football/teams/460.png",
             "role": null,
             "position": 12,
             "winner": null
@@ -731379,32 +730785,32 @@
           "details": [
             {
               "typeId": null,
-              "value": 4,
+              "value": 5,
               "description": "Played"
             },
             {
               "typeId": null,
-              "value": 1,
+              "value": 2,
               "description": "Won"
             },
             {
               "typeId": null,
-              "value": 2,
+              "value": 0,
               "description": "Drawn"
             },
             {
               "typeId": null,
-              "value": 1,
+              "value": 3,
               "description": "Lost"
             },
             {
               "typeId": null,
-              "value": 4,
+              "value": 2,
               "description": "Goals for"
             },
             {
               "typeId": null,
-              "value": 6,
+              "value": 4,
               "description": "Goals against"
             },
             {
@@ -731416,19 +730822,19 @@
           "form": [
             {
               "fixtureId": null,
-              "form": "D"
-            },
-            {
-              "fixtureId": null,
               "form": "W"
             },
             {
               "fixtureId": null,
-              "form": "D"
+              "form": "L"
             },
             {
               "fixtureId": null,
               "form": "L"
+            },
+            {
+              "fixtureId": null,
+              "form": "W"
             },
             {
               "fixtureId": null,
@@ -731678,9 +731084,9 @@
         },
         {
           "id": null,
-          "participantId": 441,
+          "participantId": 1064,
           "position": 13,
-          "points": 4,
+          "points": 5,
           "result": "same",
           "leagueId": 128,
           "seasonId": 2026,
@@ -731688,10 +731094,10 @@
           "groupId": null,
           "roundId": null,
           "participant": {
-            "id": 441,
-            "name": "Union Santa Fe",
+            "id": 1064,
+            "name": "Platense",
             "shortCode": null,
-            "imageUrl": "https://media.api-sports.io/football/teams/441.png",
+            "imageUrl": "https://media.api-sports.io/football/teams/1064.png",
             "role": null,
             "position": 13,
             "winner": null
@@ -731709,12 +731115,12 @@
             },
             {
               "typeId": null,
-              "value": 1,
+              "value": 2,
               "description": "Drawn"
             },
             {
               "typeId": null,
-              "value": 3,
+              "value": 2,
               "description": "Lost"
             },
             {
@@ -731724,27 +731130,27 @@
             },
             {
               "typeId": null,
-              "value": 8,
+              "value": 9,
               "description": "Goals against"
             },
             {
               "typeId": null,
-              "value": -3,
+              "value": -4,
               "description": "Goal difference"
             }
           ],
           "form": [
             {
               "fixtureId": null,
-              "form": "L"
-            },
-            {
-              "fixtureId": null,
-              "form": "L"
+              "form": "D"
             },
             {
               "fixtureId": null,
               "form": "W"
+            },
+            {
+              "fixtureId": null,
+              "form": "L"
             },
             {
               "fixtureId": null,
@@ -731998,7 +731404,7 @@
         },
         {
           "id": null,
-          "participantId": 1064,
+          "participantId": 441,
           "position": 14,
           "points": 4,
           "result": "same",
@@ -732008,10 +731414,10 @@
           "groupId": null,
           "roundId": null,
           "participant": {
-            "id": 1064,
-            "name": "Platense",
+            "id": 441,
+            "name": "Union Santa Fe",
             "shortCode": null,
-            "imageUrl": "https://media.api-sports.io/football/teams/1064.png",
+            "imageUrl": "https://media.api-sports.io/football/teams/441.png",
             "role": null,
             "position": 14,
             "winner": null
@@ -732019,7 +731425,7 @@
           "details": [
             {
               "typeId": null,
-              "value": 4,
+              "value": 5,
               "description": "Played"
             },
             {
@@ -732034,12 +731440,12 @@
             },
             {
               "typeId": null,
-              "value": 2,
+              "value": 3,
               "description": "Lost"
             },
             {
               "typeId": null,
-              "value": 4,
+              "value": 5,
               "description": "Goals for"
             },
             {
@@ -732049,11 +731455,19 @@
             },
             {
               "typeId": null,
-              "value": -4,
+              "value": -3,
               "description": "Goal difference"
             }
           ],
           "form": [
+            {
+              "fixtureId": null,
+              "form": "L"
+            },
+            {
+              "fixtureId": null,
+              "form": "L"
+            },
             {
               "fixtureId": null,
               "form": "W"
@@ -732064,15 +731478,7 @@
             },
             {
               "fixtureId": null,
-              "form": "L"
-            },
-            {
-              "fixtureId": null,
               "form": "D"
-            },
-            {
-              "fixtureId": null,
-              "form": "L"
             }
           ]
         },
@@ -733176,9 +732582,9 @@
         },
         {
           "id": null,
-          "participantId": 27364,
+          "participantId": 2889,
           "position": 5,
-          "points": 4,
+          "points": 5,
           "result": null,
           "leagueId": 304,
           "seasonId": 2026,
@@ -733186,10 +732592,10 @@
           "groupId": null,
           "roundId": null,
           "participant": {
-            "id": 27364,
-            "name": "Union Cocle",
+            "id": 2889,
+            "name": "Sporting San Miguelito",
             "shortCode": null,
-            "imageUrl": "https://media.api-sports.io/football/teams/27364.png",
+            "imageUrl": "https://media.api-sports.io/football/teams/2889.png",
             "role": null,
             "position": 5,
             "winner": null
@@ -733207,22 +732613,22 @@
             },
             {
               "typeId": null,
-              "value": 1,
+              "value": 2,
               "description": "Drawn"
             },
             {
               "typeId": null,
-              "value": 2,
+              "value": 1,
               "description": "Lost"
             },
             {
               "typeId": null,
-              "value": 3,
+              "value": 1,
               "description": "Goals for"
             },
             {
               "typeId": null,
-              "value": 4,
+              "value": 2,
               "description": "Goals against"
             },
             {
@@ -733234,6 +732640,10 @@
           "form": [
             {
               "fixtureId": null,
+              "form": "W"
+            },
+            {
+              "fixtureId": null,
               "form": "D"
             },
             {
@@ -733242,11 +732652,7 @@
             },
             {
               "fixtureId": null,
-              "form": "W"
-            },
-            {
-              "fixtureId": null,
-              "form": "L"
+              "form": "D"
             }
           ]
         },
@@ -733332,7 +732738,7 @@
         },
         {
           "id": null,
-          "participantId": 15619,
+          "participantId": 27364,
           "position": 6,
           "points": 4,
           "result": null,
@@ -733342,10 +732748,10 @@
           "groupId": null,
           "roundId": null,
           "participant": {
-            "id": 15619,
-            "name": "Herrera",
+            "id": 27364,
+            "name": "Union Cocle",
             "shortCode": null,
-            "imageUrl": "https://media.api-sports.io/football/teams/15619.png",
+            "imageUrl": "https://media.api-sports.io/football/teams/27364.png",
             "role": null,
             "position": 6,
             "winner": null
@@ -733353,7 +732759,7 @@
           "details": [
             {
               "typeId": null,
-              "value": 3,
+              "value": 4,
               "description": "Played"
             },
             {
@@ -733368,17 +732774,17 @@
             },
             {
               "typeId": null,
-              "value": 1,
+              "value": 2,
               "description": "Lost"
             },
             {
               "typeId": null,
-              "value": 2,
+              "value": 3,
               "description": "Goals for"
             },
             {
               "typeId": null,
-              "value": 3,
+              "value": 4,
               "description": "Goals against"
             },
             {
@@ -733390,15 +732796,19 @@
           "form": [
             {
               "fixtureId": null,
-              "form": "L"
-            },
-            {
-              "fixtureId": null,
               "form": "D"
             },
             {
               "fixtureId": null,
+              "form": "L"
+            },
+            {
+              "fixtureId": null,
               "form": "W"
+            },
+            {
+              "fixtureId": null,
+              "form": "L"
             }
           ]
         },
@@ -733484,9 +732894,9 @@
         },
         {
           "id": null,
-          "participantId": 20788,
+          "participantId": 15619,
           "position": 7,
-          "points": 3,
+          "points": 4,
           "result": null,
           "leagueId": 304,
           "seasonId": 2026,
@@ -733494,10 +732904,10 @@
           "groupId": null,
           "roundId": null,
           "participant": {
-            "id": 20788,
-            "name": "UMECIT",
+            "id": 15619,
+            "name": "Herrera",
             "shortCode": null,
-            "imageUrl": "https://media.api-sports.io/football/teams/20788.png",
+            "imageUrl": "https://media.api-sports.io/football/teams/15619.png",
             "role": null,
             "position": 7,
             "winner": null
@@ -733510,39 +732920,39 @@
             },
             {
               "typeId": null,
-              "value": 0,
+              "value": 1,
               "description": "Won"
             },
             {
               "typeId": null,
-              "value": 3,
+              "value": 1,
               "description": "Drawn"
             },
             {
               "typeId": null,
-              "value": 0,
+              "value": 1,
               "description": "Lost"
             },
             {
               "typeId": null,
-              "value": 1,
+              "value": 2,
               "description": "Goals for"
             },
             {
               "typeId": null,
-              "value": 1,
+              "value": 3,
               "description": "Goals against"
             },
             {
               "typeId": null,
-              "value": 0,
+              "value": -1,
               "description": "Goal difference"
             }
           ],
           "form": [
             {
               "fixtureId": null,
-              "form": "D"
+              "form": "L"
             },
             {
               "fixtureId": null,
@@ -733550,7 +732960,7 @@
             },
             {
               "fixtureId": null,
-              "form": "D"
+              "form": "W"
             }
           ]
         },
@@ -733792,9 +733202,9 @@
         },
         {
           "id": null,
-          "participantId": 2885,
+          "participantId": 20788,
           "position": 9,
-          "points": 2,
+          "points": 3,
           "result": null,
           "leagueId": 304,
           "seasonId": 2026,
@@ -733802,10 +733212,10 @@
           "groupId": null,
           "roundId": null,
           "participant": {
-            "id": 2885,
-            "name": "Tauro FC",
+            "id": 20788,
+            "name": "UMECIT",
             "shortCode": null,
-            "imageUrl": "https://media.api-sports.io/football/teams/2885.png",
+            "imageUrl": "https://media.api-sports.io/football/teams/20788.png",
             "role": null,
             "position": 9,
             "winner": null
@@ -733813,7 +733223,7 @@
           "details": [
             {
               "typeId": null,
-              "value": 3,
+              "value": 4,
               "description": "Played"
             },
             {
@@ -733823,7 +733233,7 @@
             },
             {
               "typeId": null,
-              "value": 2,
+              "value": 3,
               "description": "Drawn"
             },
             {
@@ -733833,12 +733243,12 @@
             },
             {
               "typeId": null,
-              "value": 3,
+              "value": 1,
               "description": "Goals for"
             },
             {
               "typeId": null,
-              "value": 4,
+              "value": 2,
               "description": "Goals against"
             },
             {
@@ -733851,6 +733261,10 @@
             {
               "fixtureId": null,
               "form": "L"
+            },
+            {
+              "fixtureId": null,
+              "form": "D"
             },
             {
               "fixtureId": null,
@@ -733944,7 +733358,7 @@
         },
         {
           "id": null,
-          "participantId": 2882,
+          "participantId": 2885,
           "position": 10,
           "points": 2,
           "result": null,
@@ -733954,10 +733368,10 @@
           "groupId": null,
           "roundId": null,
           "participant": {
-            "id": 2882,
-            "name": "CD Arabe Unido",
+            "id": 2885,
+            "name": "Tauro FC",
             "shortCode": null,
-            "imageUrl": "https://media.api-sports.io/football/teams/2882.png",
+            "imageUrl": "https://media.api-sports.io/football/teams/2885.png",
             "role": null,
             "position": 10,
             "winner": null
@@ -733985,12 +733399,12 @@
             },
             {
               "typeId": null,
-              "value": 2,
+              "value": 3,
               "description": "Goals for"
             },
             {
               "typeId": null,
-              "value": 3,
+              "value": 4,
               "description": "Goals against"
             },
             {
@@ -734002,11 +733416,11 @@
           "form": [
             {
               "fixtureId": null,
-              "form": "D"
+              "form": "L"
             },
             {
               "fixtureId": null,
-              "form": "L"
+              "form": "D"
             },
             {
               "fixtureId": null,
@@ -734096,7 +733510,7 @@
         },
         {
           "id": null,
-          "participantId": 2888,
+          "participantId": 2882,
           "position": 11,
           "points": 2,
           "result": null,
@@ -734106,10 +733520,10 @@
           "groupId": null,
           "roundId": null,
           "participant": {
-            "id": 2888,
-            "name": "Deportivo Universitario",
+            "id": 2882,
+            "name": "CD Arabe Unido",
             "shortCode": null,
-            "imageUrl": "https://media.api-sports.io/football/teams/2888.png",
+            "imageUrl": "https://media.api-sports.io/football/teams/2882.png",
             "role": null,
             "position": 11,
             "winner": null
@@ -734117,7 +733531,7 @@
           "details": [
             {
               "typeId": null,
-              "value": 4,
+              "value": 3,
               "description": "Played"
             },
             {
@@ -734132,22 +733546,22 @@
             },
             {
               "typeId": null,
-              "value": 2,
+              "value": 1,
               "description": "Lost"
             },
             {
               "typeId": null,
-              "value": 5,
+              "value": 2,
               "description": "Goals for"
             },
             {
               "typeId": null,
-              "value": 7,
+              "value": 3,
               "description": "Goals against"
             },
             {
               "typeId": null,
-              "value": -2,
+              "value": -1,
               "description": "Goal difference"
             }
           ],
@@ -734158,15 +733572,11 @@
             },
             {
               "fixtureId": null,
+              "form": "L"
+            },
+            {
+              "fixtureId": null,
               "form": "D"
-            },
-            {
-              "fixtureId": null,
-              "form": "L"
-            },
-            {
-              "fixtureId": null,
-              "form": "L"
             }
           ]
         },
@@ -734252,7 +733662,7 @@
         },
         {
           "id": null,
-          "participantId": 2889,
+          "participantId": 2888,
           "position": 12,
           "points": 2,
           "result": null,
@@ -734262,10 +733672,10 @@
           "groupId": null,
           "roundId": null,
           "participant": {
-            "id": 2889,
-            "name": "Sporting San Miguelito",
+            "id": 2888,
+            "name": "Deportivo Universitario",
             "shortCode": null,
-            "imageUrl": "https://media.api-sports.io/football/teams/2889.png",
+            "imageUrl": "https://media.api-sports.io/football/teams/2888.png",
             "role": null,
             "position": 12,
             "winner": null
@@ -734273,7 +733683,7 @@
           "details": [
             {
               "typeId": null,
-              "value": 3,
+              "value": 4,
               "description": "Played"
             },
             {
@@ -734288,17 +733698,17 @@
             },
             {
               "typeId": null,
-              "value": 1,
+              "value": 2,
               "description": "Lost"
             },
             {
               "typeId": null,
-              "value": 0,
+              "value": 5,
               "description": "Goals for"
             },
             {
               "typeId": null,
-              "value": 2,
+              "value": 7,
               "description": "Goals against"
             },
             {
@@ -734314,11 +733724,15 @@
             },
             {
               "fixtureId": null,
+              "form": "D"
+            },
+            {
+              "fixtureId": null,
               "form": "L"
             },
             {
               "fixtureId": null,
-              "form": "D"
+              "form": "L"
             }
           ]
         }

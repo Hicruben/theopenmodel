@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
   "provider": "api-football",
-  "asOf": "2026-08-16T03:08:16.467Z",
-  "updatedAt": "2026-08-16T03:08:16.467Z",
+  "asOf": "2026-08-16T04:09:33.193Z",
+  "updatedAt": "2026-08-16T04:09:33.193Z",
   "coverage": {
     "dateFrom": "2026-08-11",
     "dateTo": "2026-08-30",
     "fixtureCount": 9388,
-    "liveFixtureCount": 18,
-    "finishedFixtureCount": 2207,
+    "liveFixtureCount": 16,
+    "finishedFixtureCount": 2218,
     "leagueCount": 465,
     "standingTableCount": 12,
     "requestedIncludes": [
@@ -27,7 +27,7 @@
     },
     "rateLimit": {
       "resetsInSeconds": null,
-      "remaining": 6939,
+      "remaining": 6743,
       "requestedEntity": "API-Football daily requests"
     },
     "warnings": []
@@ -45399,7 +45399,7 @@
       },
       "venue": {
         "id": null,
-        "name": "Jinan Olympic Sports Center Stadium",
+        "name": "Jinan Olympic Sports Center",
         "city": "Jinan",
         "capacity": null,
         "imageUrl": null
@@ -45606,7 +45606,7 @@
       },
       "venue": {
         "id": null,
-        "name": "Qingdao Guzhenkou University City Sports Center",
+        "name": "Guzhenkou University Sports Center",
         "city": "Qingdao",
         "capacity": null,
         "imageUrl": null
@@ -53748,7 +53748,7 @@
       },
       "venue": {
         "id": null,
-        "name": "King Khalid Sports City",
+        "name": "King Khalid Sport City Stadium",
         "city": "Tabuk",
         "capacity": null,
         "imageUrl": null
@@ -70861,7 +70861,7 @@
       "venue": {
         "id": null,
         "name": "Estadio Presidente Perón",
-        "city": "Avellaneda",
+        "city": "Buenos Aires",
         "capacity": null,
         "imageUrl": null
       },
@@ -79485,7 +79485,7 @@
       },
       "venue": {
         "id": null,
-        "name": "Best Denki Stadium",
+        "name": "K's Denki Stadium Mito",
         "city": "Mito",
         "capacity": null,
         "imageUrl": null
@@ -87489,7 +87489,7 @@
       },
       "venue": {
         "id": null,
-        "name": "Olympic Sports Centre Stadium",
+        "name": "Tiexi Stadium",
         "city": "Shenyang",
         "capacity": null,
         "imageUrl": null
@@ -91077,7 +91077,7 @@
       },
       "venue": {
         "id": null,
-        "name": "Olympic Sports Center Stadium",
+        "name": "TEDA Football Stadium",
         "city": "Tianjin",
         "capacity": null,
         "imageUrl": null
@@ -91146,8 +91146,8 @@
       },
       "venue": {
         "id": null,
-        "name": "Huizhou Olympic Stadium",
-        "city": "Huizhou",
+        "name": "Huanglong Stadium",
+        "city": "Hangzhou",
         "capacity": null,
         "imageUrl": null
       },
@@ -94458,7 +94458,7 @@
       },
       "venue": {
         "id": null,
-        "name": "Preussenstadion",
+        "name": "LVM-Preußenstadion",
         "city": "Munster",
         "capacity": null,
         "imageUrl": null
@@ -94527,7 +94527,7 @@
       },
       "venue": {
         "id": null,
-        "name": "Stadion an der Hafenstrasse",
+        "name": "Stadion Essen",
         "city": "Essen",
         "capacity": null,
         "imageUrl": null
@@ -125508,7 +125508,7 @@
       },
       "venue": {
         "id": null,
-        "name": "Mestsky stadion Miroslava Valenty",
+        "name": "Mestsky Fotbalovy Stadion",
         "city": "Uherske Hradiste",
         "capacity": null,
         "imageUrl": null
@@ -138687,7 +138687,7 @@
       },
       "venue": {
         "id": null,
-        "name": "Al Taawon Arena",
+        "name": "Alinma Stadium",
         "city": "Buraidah",
         "capacity": null,
         "imageUrl": null
@@ -140964,7 +140964,7 @@
       },
       "venue": {
         "id": null,
-        "name": "Estadio Manuel Marques",
+        "name": "Estádio Manuel Marques",
         "city": "Torres Vedras",
         "capacity": null,
         "imageUrl": null
@@ -142344,7 +142344,7 @@
       },
       "venue": {
         "id": null,
-        "name": "Estadio Pedro Bidegain",
+        "name": "Pedro Bidegain",
         "city": "Buenos Aires",
         "capacity": null,
         "imageUrl": null
@@ -144483,7 +144483,7 @@
       },
       "venue": {
         "id": null,
-        "name": "Doosan Arena",
+        "name": "Stadion Mesta Plzne",
         "city": "Plzen",
         "capacity": null,
         "imageUrl": null
@@ -145449,7 +145449,7 @@
       },
       "venue": {
         "id": null,
-        "name": "King Saud University Stadium",
+        "name": "Al-Awwal Park",
         "city": "Riyadh",
         "capacity": null,
         "imageUrl": null
@@ -155978,7 +155978,7 @@
       "providerId": 1493627,
       "name": "Colorado Springs vs Birmingham Legion",
       "startTime": "2026-08-16T01:00:00.000Z",
-      "resultInfo": null,
+      "resultInfo": "3-2",
       "seasonId": 2026,
       "stageId": null,
       "roundId": null,
@@ -155986,11 +155986,11 @@
       "lastProcessedAt": null,
       "status": {
         "id": null,
-        "name": "Second Half",
-        "shortName": "2H",
-        "developerName": "2H",
-        "isLive": true,
-        "isFinished": false
+        "name": "Match Finished",
+        "shortName": "FT",
+        "developerName": "FT",
+        "isLive": false,
+        "isFinished": true
       },
       "league": {
         "id": 255,
@@ -156461,7 +156461,7 @@
       "providerId": 1600567,
       "name": "Alianza vs Cacahuatique",
       "startTime": "2026-08-16T01:00:00.000Z",
-      "resultInfo": null,
+      "resultInfo": "0-0",
       "seasonId": 2026,
       "stageId": null,
       "roundId": null,
@@ -156469,11 +156469,11 @@
       "lastProcessedAt": null,
       "status": {
         "id": null,
-        "name": "Second Half",
-        "shortName": "2H",
-        "developerName": "2H",
-        "isLive": true,
-        "isFinished": false
+        "name": "Match Finished",
+        "shortName": "FT",
+        "developerName": "FT",
+        "isLive": false,
+        "isFinished": true
       },
       "league": {
         "id": 370,
@@ -156737,7 +156737,7 @@
       "providerId": 1550922,
       "name": "Monterrey vs FC Juarez",
       "startTime": "2026-08-16T01:10:00.000Z",
-      "resultInfo": null,
+      "resultInfo": "6-1",
       "seasonId": 2026,
       "stageId": null,
       "roundId": null,
@@ -156745,11 +156745,11 @@
       "lastProcessedAt": null,
       "status": {
         "id": null,
-        "name": "Second Half",
-        "shortName": "2H",
-        "developerName": "2H",
-        "isLive": true,
-        "isFinished": false
+        "name": "Match Finished",
+        "shortName": "FT",
+        "developerName": "FT",
+        "isLive": false,
+        "isFinished": true
       },
       "league": {
         "id": 262,
@@ -156806,7 +156806,7 @@
       "providerId": 1490384,
       "name": "Real Salt Lake vs Minnesota United FC",
       "startTime": "2026-08-16T01:30:00.000Z",
-      "resultInfo": null,
+      "resultInfo": "1-1",
       "seasonId": 2026,
       "stageId": null,
       "roundId": null,
@@ -156814,11 +156814,11 @@
       "lastProcessedAt": null,
       "status": {
         "id": null,
-        "name": "Second Half",
-        "shortName": "2H",
-        "developerName": "2H",
-        "isLive": true,
-        "isFinished": false
+        "name": "Match Finished",
+        "shortName": "FT",
+        "developerName": "FT",
+        "isLive": false,
+        "isFinished": true
       },
       "league": {
         "id": 253,
@@ -156860,8 +156860,8 @@
         }
       ],
       "score": {
-        "home": 0,
-        "away": 0,
+        "home": 1,
+        "away": 1,
         "halfTimeHome": 0,
         "halfTimeAway": 0
       },
@@ -156875,7 +156875,7 @@
       "providerId": 1490385,
       "name": "Colorado Rapids vs Sporting Kansas City",
       "startTime": "2026-08-16T01:30:00.000Z",
-      "resultInfo": null,
+      "resultInfo": "2-0",
       "seasonId": 2026,
       "stageId": null,
       "roundId": null,
@@ -156883,11 +156883,11 @@
       "lastProcessedAt": null,
       "status": {
         "id": null,
-        "name": "Second Half",
-        "shortName": "2H",
-        "developerName": "2H",
-        "isLive": true,
-        "isFinished": false
+        "name": "Match Finished",
+        "shortName": "FT",
+        "developerName": "FT",
+        "isLive": false,
+        "isFinished": true
       },
       "league": {
         "id": 253,
@@ -156929,7 +156929,7 @@
         }
       ],
       "score": {
-        "home": 1,
+        "home": 2,
         "away": 0,
         "halfTimeHome": 0,
         "halfTimeAway": 0
@@ -156944,7 +156944,7 @@
       "providerId": 1493631,
       "name": "New Mexico United vs FC Tulsa",
       "startTime": "2026-08-16T01:30:00.000Z",
-      "resultInfo": null,
+      "resultInfo": "1-0",
       "seasonId": 2026,
       "stageId": null,
       "roundId": null,
@@ -156952,11 +156952,11 @@
       "lastProcessedAt": null,
       "status": {
         "id": null,
-        "name": "Second Half",
-        "shortName": "2H",
-        "developerName": "2H",
-        "isLive": true,
-        "isFinished": false
+        "name": "Match Finished",
+        "shortName": "FT",
+        "developerName": "FT",
+        "isLive": false,
+        "isFinished": true
       },
       "league": {
         "id": 255,
@@ -156985,7 +156985,7 @@
           "imageUrl": "https://media.api-sports.io/football/teams/4003.png",
           "role": "home",
           "position": null,
-          "winner": null
+          "winner": true
         },
         {
           "id": 4022,
@@ -156994,11 +156994,11 @@
           "imageUrl": "https://media.api-sports.io/football/teams/4022.png",
           "role": "away",
           "position": null,
-          "winner": null
+          "winner": false
         }
       ],
       "score": {
-        "home": 0,
+        "home": 1,
         "away": 0,
         "halfTimeHome": 0,
         "halfTimeAway": 0
@@ -157082,7 +157082,7 @@
       "providerId": 1583736,
       "name": "UMECIT vs Sporting San Miguelito",
       "startTime": "2026-08-16T01:30:00.000Z",
-      "resultInfo": null,
+      "resultInfo": "0-1",
       "seasonId": 2026,
       "stageId": null,
       "roundId": null,
@@ -157090,11 +157090,11 @@
       "lastProcessedAt": null,
       "status": {
         "id": null,
-        "name": "Second Half",
-        "shortName": "2H",
-        "developerName": "2H",
-        "isLive": true,
-        "isFinished": false
+        "name": "Match Finished",
+        "shortName": "FT",
+        "developerName": "FT",
+        "isLive": false,
+        "isFinished": true
       },
       "league": {
         "id": 304,
@@ -157151,7 +157151,7 @@
       "providerId": 1592946,
       "name": "Real Espana vs Atletico Independiente",
       "startTime": "2026-08-16T01:30:00.000Z",
-      "resultInfo": null,
+      "resultInfo": "1-1",
       "seasonId": 2026,
       "stageId": null,
       "roundId": null,
@@ -157159,11 +157159,11 @@
       "lastProcessedAt": null,
       "status": {
         "id": null,
-        "name": "Second Half",
-        "shortName": "2H",
-        "developerName": "2H",
-        "isLive": true,
-        "isFinished": false
+        "name": "Match Finished",
+        "shortName": "FT",
+        "developerName": "FT",
+        "isLive": false,
+        "isFinished": true
       },
       "league": {
         "id": 234,
@@ -157220,7 +157220,7 @@
       "providerId": 1493632,
       "name": "Oakland Roots vs Monterey Bay",
       "startTime": "2026-08-16T02:00:00.000Z",
-      "resultInfo": null,
+      "resultInfo": "1-1",
       "seasonId": 2026,
       "stageId": null,
       "roundId": null,
@@ -157228,11 +157228,11 @@
       "lastProcessedAt": null,
       "status": {
         "id": null,
-        "name": "Halftime",
-        "shortName": "HT",
-        "developerName": "HT",
-        "isLive": true,
-        "isFinished": false
+        "name": "Match Finished",
+        "shortName": "FT",
+        "developerName": "FT",
+        "isLive": false,
+        "isFinished": true
       },
       "league": {
         "id": 255,
@@ -157261,7 +157261,7 @@
           "imageUrl": "https://media.api-sports.io/football/teams/10874.png",
           "role": "home",
           "position": null,
-          "winner": true
+          "winner": null
         },
         {
           "id": 18375,
@@ -157270,12 +157270,12 @@
           "imageUrl": "https://media.api-sports.io/football/teams/18375.png",
           "role": "away",
           "position": null,
-          "winner": false
+          "winner": null
         }
       ],
       "score": {
         "home": 1,
-        "away": 0,
+        "away": 1,
         "halfTimeHome": 1,
         "halfTimeAway": 0
       },
@@ -157289,7 +157289,7 @@
       "providerId": 1493633,
       "name": "Orange County SC vs Louisville City",
       "startTime": "2026-08-16T02:00:00.000Z",
-      "resultInfo": null,
+      "resultInfo": "2-3",
       "seasonId": 2026,
       "stageId": null,
       "roundId": null,
@@ -157297,11 +157297,11 @@
       "lastProcessedAt": null,
       "status": {
         "id": null,
-        "name": "Halftime",
-        "shortName": "HT",
-        "developerName": "HT",
-        "isLive": true,
-        "isFinished": false
+        "name": "Match Finished",
+        "shortName": "FT",
+        "developerName": "FT",
+        "isLive": false,
+        "isFinished": true
       },
       "league": {
         "id": 255,
@@ -157343,8 +157343,8 @@
         }
       ],
       "score": {
-        "home": 0,
-        "away": 1,
+        "home": 2,
+        "away": 3,
         "halfTimeHome": 0,
         "halfTimeAway": 1
       },
@@ -157358,7 +157358,7 @@
       "providerId": 1551664,
       "name": "Deportivo Saprissa vs CS Cartagines",
       "startTime": "2026-08-16T02:00:00.000Z",
-      "resultInfo": null,
+      "resultInfo": "3-2",
       "seasonId": 2026,
       "stageId": null,
       "roundId": null,
@@ -157366,11 +157366,11 @@
       "lastProcessedAt": null,
       "status": {
         "id": null,
-        "name": "Second Half",
-        "shortName": "2H",
-        "developerName": "2H",
-        "isLive": true,
-        "isFinished": false
+        "name": "Match Finished",
+        "shortName": "FT",
+        "developerName": "FT",
+        "isLive": false,
+        "isFinished": true
       },
       "league": {
         "id": 162,
@@ -157412,8 +157412,8 @@
         }
       ],
       "score": {
-        "home": 2,
-        "away": 1,
+        "home": 3,
+        "away": 2,
         "halfTimeHome": 2,
         "halfTimeAway": 1
       },
@@ -157435,9 +157435,9 @@
       "lastProcessedAt": null,
       "status": {
         "id": null,
-        "name": "First Half",
-        "shortName": "1H",
-        "developerName": "1H",
+        "name": "Second Half",
+        "shortName": "2H",
+        "developerName": "2H",
         "isLive": true,
         "isFinished": false
       },
@@ -157504,9 +157504,9 @@
       "lastProcessedAt": null,
       "status": {
         "id": null,
-        "name": "First Half",
-        "shortName": "1H",
-        "developerName": "1H",
+        "name": "Second Half",
+        "shortName": "2H",
+        "developerName": "2H",
         "isLive": true,
         "isFinished": false
       },
@@ -157550,8 +157550,8 @@
         }
       ],
       "score": {
-        "home": 0,
-        "away": 2,
+        "home": 1,
+        "away": 3,
         "halfTimeHome": 0,
         "halfTimeAway": 2
       },
@@ -157573,9 +157573,9 @@
       "lastProcessedAt": null,
       "status": {
         "id": null,
-        "name": "First Half",
-        "shortName": "1H",
-        "developerName": "1H",
+        "name": "Second Half",
+        "shortName": "2H",
+        "developerName": "2H",
         "isLive": true,
         "isFinished": false
       },
@@ -157606,7 +157606,7 @@
           "imageUrl": "https://media.api-sports.io/football/teams/3998.png",
           "role": "home",
           "position": null,
-          "winner": false
+          "winner": null
         },
         {
           "id": 27252,
@@ -157615,11 +157615,11 @@
           "imageUrl": "https://media.api-sports.io/football/teams/27252.png",
           "role": "away",
           "position": null,
-          "winner": true
+          "winner": null
         }
       ],
       "score": {
-        "home": 0,
+        "home": 1,
         "away": 1,
         "halfTimeHome": 0,
         "halfTimeAway": 1
@@ -157642,10 +157642,10 @@
       "lastProcessedAt": null,
       "status": {
         "id": null,
-        "name": "Not Started",
-        "shortName": "NS",
-        "developerName": "NS",
-        "isLive": false,
+        "name": "Halftime",
+        "shortName": "HT",
+        "developerName": "HT",
+        "isLive": true,
         "isFinished": false
       },
       "league": {
@@ -157688,10 +157688,10 @@
         }
       ],
       "score": {
-        "home": null,
-        "away": null,
-        "halfTimeHome": null,
-        "halfTimeAway": null
+        "home": 0,
+        "away": 0,
+        "halfTimeHome": 0,
+        "halfTimeAway": 0
       },
       "scores": [],
       "events": [],
@@ -157780,9 +157780,9 @@
       "lastProcessedAt": null,
       "status": {
         "id": null,
-        "name": "First Half",
-        "shortName": "1H",
-        "developerName": "1H",
+        "name": "Second Half",
+        "shortName": "2H",
+        "developerName": "2H",
         "isLive": true,
         "isFinished": false
       },
@@ -157813,7 +157813,7 @@
           "imageUrl": "https://media.api-sports.io/football/teams/27802.png",
           "role": "home",
           "position": null,
-          "winner": null
+          "winner": true
         },
         {
           "id": 27814,
@@ -157822,13 +157822,13 @@
           "imageUrl": "https://media.api-sports.io/football/teams/27814.png",
           "role": "away",
           "position": null,
-          "winner": null
+          "winner": false
         }
       ],
       "score": {
-        "home": 0,
+        "home": 1,
         "away": 0,
-        "halfTimeHome": 0,
+        "halfTimeHome": 1,
         "halfTimeAway": 0
       },
       "scores": [],
@@ -157849,9 +157849,9 @@
       "lastProcessedAt": null,
       "status": {
         "id": null,
-        "name": "First Half",
-        "shortName": "1H",
-        "developerName": "1H",
+        "name": "Second Half",
+        "shortName": "2H",
+        "developerName": "2H",
         "isLive": true,
         "isFinished": false
       },
@@ -157882,7 +157882,7 @@
           "imageUrl": "https://media.api-sports.io/football/teams/27804.png",
           "role": "home",
           "position": null,
-          "winner": null
+          "winner": false
         },
         {
           "id": 27810,
@@ -157891,14 +157891,14 @@
           "imageUrl": "https://media.api-sports.io/football/teams/27810.png",
           "role": "away",
           "position": null,
-          "winner": null
+          "winner": true
         }
       ],
       "score": {
-        "home": 0,
-        "away": 0,
-        "halfTimeHome": 0,
-        "halfTimeAway": 0
+        "home": 1,
+        "away": 2,
+        "halfTimeHome": 1,
+        "halfTimeAway": 2
       },
       "scores": [],
       "events": [],
@@ -157918,9 +157918,9 @@
       "lastProcessedAt": null,
       "status": {
         "id": null,
-        "name": "First Half",
-        "shortName": "1H",
-        "developerName": "1H",
+        "name": "Second Half",
+        "shortName": "2H",
+        "developerName": "2H",
         "isLive": true,
         "isFinished": false
       },
@@ -157951,7 +157951,7 @@
           "imageUrl": "https://media.api-sports.io/football/teams/27806.png",
           "role": "home",
           "position": null,
-          "winner": null
+          "winner": false
         },
         {
           "id": 27816,
@@ -157960,14 +157960,14 @@
           "imageUrl": "https://media.api-sports.io/football/teams/27816.png",
           "role": "away",
           "position": null,
-          "winner": null
+          "winner": true
         }
       ],
       "score": {
         "home": 0,
-        "away": 0,
+        "away": 3,
         "halfTimeHome": 0,
-        "halfTimeAway": 0
+        "halfTimeAway": 3
       },
       "scores": [],
       "events": [],
@@ -157987,10 +157987,10 @@
       "lastProcessedAt": null,
       "status": {
         "id": null,
-        "name": "Not Started",
-        "shortName": "NS",
-        "developerName": "NS",
-        "isLive": false,
+        "name": "Halftime",
+        "shortName": "HT",
+        "developerName": "HT",
+        "isLive": true,
         "isFinished": false
       },
       "league": {
@@ -158033,10 +158033,10 @@
         }
       ],
       "score": {
-        "home": null,
-        "away": null,
-        "halfTimeHome": null,
-        "halfTimeAway": null
+        "home": 1,
+        "away": 1,
+        "halfTimeHome": 1,
+        "halfTimeAway": 1
       },
       "scores": [],
       "events": [],
@@ -158056,10 +158056,10 @@
       "lastProcessedAt": null,
       "status": {
         "id": null,
-        "name": "Not Started",
-        "shortName": "NS",
-        "developerName": "NS",
-        "isLive": false,
+        "name": "Halftime",
+        "shortName": "HT",
+        "developerName": "HT",
+        "isLive": true,
         "isFinished": false
       },
       "league": {
@@ -158089,7 +158089,7 @@
           "imageUrl": "https://media.api-sports.io/football/teams/14872.png",
           "role": "home",
           "position": null,
-          "winner": null
+          "winner": true
         },
         {
           "id": 14880,
@@ -158098,14 +158098,14 @@
           "imageUrl": "https://media.api-sports.io/football/teams/14880.png",
           "role": "away",
           "position": null,
-          "winner": null
+          "winner": false
         }
       ],
       "score": {
-        "home": null,
-        "away": null,
-        "halfTimeHome": null,
-        "halfTimeAway": null
+        "home": 5,
+        "away": 1,
+        "halfTimeHome": 5,
+        "halfTimeAway": 1
       },
       "scores": [],
       "events": [],
@@ -158194,10 +158194,10 @@
       "lastProcessedAt": null,
       "status": {
         "id": null,
-        "name": "Not Started",
-        "shortName": "NS",
-        "developerName": "NS",
-        "isLive": false,
+        "name": "First Half",
+        "shortName": "1H",
+        "developerName": "1H",
+        "isLive": true,
         "isFinished": false
       },
       "league": {
@@ -158240,10 +158240,10 @@
         }
       ],
       "score": {
-        "home": null,
-        "away": null,
-        "halfTimeHome": null,
-        "halfTimeAway": null
+        "home": 0,
+        "away": 0,
+        "halfTimeHome": 0,
+        "halfTimeAway": 0
       },
       "scores": [],
       "events": [],
@@ -158263,10 +158263,10 @@
       "lastProcessedAt": null,
       "status": {
         "id": null,
-        "name": "Not Started",
-        "shortName": "NS",
-        "developerName": "NS",
-        "isLive": false,
+        "name": "First Half",
+        "shortName": "1H",
+        "developerName": "1H",
+        "isLive": true,
         "isFinished": false
       },
       "league": {
@@ -158309,10 +158309,10 @@
         }
       ],
       "score": {
-        "home": null,
-        "away": null,
-        "halfTimeHome": null,
-        "halfTimeAway": null
+        "home": 0,
+        "away": 0,
+        "halfTimeHome": 0,
+        "halfTimeAway": 0
       },
       "scores": [],
       "events": [],
@@ -158332,10 +158332,10 @@
       "lastProcessedAt": null,
       "status": {
         "id": null,
-        "name": "Not Started",
-        "shortName": "NS",
-        "developerName": "NS",
-        "isLive": false,
+        "name": "First Half",
+        "shortName": "1H",
+        "developerName": "1H",
+        "isLive": true,
         "isFinished": false
       },
       "league": {
@@ -158378,10 +158378,10 @@
         }
       ],
       "score": {
-        "home": null,
-        "away": null,
-        "halfTimeHome": null,
-        "halfTimeAway": null
+        "home": 0,
+        "away": 0,
+        "halfTimeHome": 0,
+        "halfTimeAway": 0
       },
       "scores": [],
       "events": [],
@@ -158401,10 +158401,10 @@
       "lastProcessedAt": null,
       "status": {
         "id": null,
-        "name": "Not Started",
-        "shortName": "NS",
-        "developerName": "NS",
-        "isLive": false,
+        "name": "First Half",
+        "shortName": "1H",
+        "developerName": "1H",
+        "isLive": true,
         "isFinished": false
       },
       "league": {
@@ -158447,10 +158447,10 @@
         }
       ],
       "score": {
-        "home": null,
-        "away": null,
-        "halfTimeHome": null,
-        "halfTimeAway": null
+        "home": 0,
+        "away": 0,
+        "halfTimeHome": 0,
+        "halfTimeAway": 0
       },
       "scores": [],
       "events": [],
@@ -158470,10 +158470,10 @@
       "lastProcessedAt": null,
       "status": {
         "id": null,
-        "name": "Not Started",
-        "shortName": "NS",
-        "developerName": "NS",
-        "isLive": false,
+        "name": "First Half",
+        "shortName": "1H",
+        "developerName": "1H",
+        "isLive": true,
         "isFinished": false
       },
       "league": {
@@ -158516,10 +158516,10 @@
         }
       ],
       "score": {
-        "home": null,
-        "away": null,
-        "halfTimeHome": null,
-        "halfTimeAway": null
+        "home": 0,
+        "away": 0,
+        "halfTimeHome": 0,
+        "halfTimeAway": 0
       },
       "scores": [],
       "events": [],
@@ -158539,10 +158539,10 @@
       "lastProcessedAt": null,
       "status": {
         "id": null,
-        "name": "Not Started",
-        "shortName": "NS",
-        "developerName": "NS",
-        "isLive": false,
+        "name": "First Half",
+        "shortName": "1H",
+        "developerName": "1H",
+        "isLive": true,
         "isFinished": false
       },
       "league": {
@@ -158585,10 +158585,10 @@
         }
       ],
       "score": {
-        "home": null,
-        "away": null,
-        "halfTimeHome": null,
-        "halfTimeAway": null
+        "home": 0,
+        "away": 0,
+        "halfTimeHome": 0,
+        "halfTimeAway": 0
       },
       "scores": [],
       "events": [],

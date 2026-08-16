@@ -1,47 +1,173 @@
 {
- "updated": "2026-08-15T04:05:18.924Z",
+ "updated": "2026-08-16T04:09:34.097Z",
  "items": [
+  {
+   "title": "Villa begin Suzuki talks - Sunday's gossip",
+   "link": "https://www.bbc.co.uk/sport/football/articles/cnvnndmz4reo?at_medium=RSS&at_campaign=rss",
+   "date": "2026-08-15T20:23:00.000Z",
+   "src": "BBC Sport",
+   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/c991/live/8d457c30-98e5-11f1-870d-5d08c49babb2.png"
+  },
+  {
+   "title": "West Ham break EFL record to sign Engels for £22m",
+   "link": "https://www.bbc.co.uk/sport/football/articles/c77ggr5nk7jo?at_medium=RSS&at_campaign=rss",
+   "date": "2026-08-15T20:19:40.000Z",
+   "src": "BBC Sport",
+   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/379a/live/7dd3ae70-98ea-11f1-baa8-93026f9f7e66.jpg"
+  },
+  {
+   "title": "Rashford returns as Amorim's Milan highlight issues for Carrick",
+   "link": "https://www.bbc.co.uk/sport/football/articles/cg5ll71pqv1o?at_medium=RSS&at_campaign=rss",
+   "date": "2026-08-15T19:25:09.000Z",
+   "src": "BBC Sport",
+   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/130f/live/5dfdd470-98d8-11f1-8216-1399f248beea.jpg"
+  },
+  {
+   "title": "Championship excellent place to discover talent - Espanyol's Monchi",
+   "link": "https://www.bbc.co.uk/sport/football/articles/c62v1e64x41o?at_medium=RSS&at_campaign=rss",
+   "date": "2026-08-15T19:24:45.000Z",
+   "src": "BBC Sport",
+   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/c42e/live/26745a90-97f4-11f1-8170-33f7e8571fbe.jpg"
+  },
+  {
+   "title": "Rangers need 'wee bit of help' and money is there to get it",
+   "link": "https://www.bbc.co.uk/sport/football/articles/ckg44wvnjyeo?at_medium=RSS&at_campaign=rss",
+   "date": "2026-08-15T19:20:16.000Z",
+   "src": "BBC Sport",
+   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/bcd0/live/17f51530-98e0-11f1-89f0-8dbc5eb120ba.jpg"
+  },
+  {
+   "title": "Newcastle’s Matthias Jaissle looks on bright side despite lacklustre Leverkusen defeat",
+   "link": "https://www.theguardian.com/football/2026/aug/15/newcastle-matthias-jaissle-bayer-leverkusen-defeat-amar-dedic",
+   "date": "2026-08-15T19:18:10.000Z",
+   "src": "The Guardian",
+   "img": "https://i.guim.co.uk/img/media/e0a55c087df35ce72d154c103d55e9251db4ac86/380_0_3798_3038/master/3798.jpg?width=700&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=d7b88f1b8471c079997110af013963dc"
+  },
+  {
+   "title": "Community Shield offers insight into Arsenal’s desire and Maresca’s Manchester City impact | Jonathan Wilson",
+   "link": "https://www.theguardian.com/football/2026/aug/15/community-shield-offers-insight-into-arsenals-desire-and-marescas-manchester-city-impact",
+   "date": "2026-08-15T19:00:04.000Z",
+   "src": "The Guardian",
+   "img": "https://i.guim.co.uk/img/media/8467bffc42f5a757e5723f068d2cd59cff5337be/0_0_2500_2000/master/2500.jpg?width=700&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=e2b745daf64a4cc708b11c4277594d50"
+  },
+  {
+   "title": "Transfer roundup: Aston Villa close on Japan keeper Zion Suzuki as Emiliano Martínez nears exit",
+   "link": "https://www.theguardian.com/football/2026/aug/15/psg-ferran-torres-barcelona-transfer-window",
+   "date": "2026-08-15T17:53:31.000Z",
+   "src": "The Guardian",
+   "img": "https://i.guim.co.uk/img/media/ab6b41a64232af04e3253bcca6818d7ce106a328/496_252_3385_2708/master/3385.jpg?width=700&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=5bd223a961f39d04e7b70f80600c1a33"
+  },
+  {
+   "title": "Sunderland agree £25.6m fee for defender Methalie",
+   "link": "https://www.bbc.co.uk/sport/football/articles/c934488gjyzo?at_medium=RSS&at_campaign=rss",
+   "date": "2026-08-15T17:20:54.000Z",
+   "src": "BBC Sport",
+   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/07fb/live/222cf230-98cb-11f1-9687-fb984065014d.jpg"
+  },
+  {
+   "title": "Inter sign England full-back Spence from Tottenham",
+   "link": "https://www.bbc.co.uk/sport/football/articles/cz64vg6znz1o?at_medium=RSS&at_campaign=rss",
+   "date": "2026-08-15T17:15:16.000Z",
+   "src": "BBC Sport",
+   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/2cdf/live/31e573a0-98cb-11f1-9687-fb984065014d.jpg"
+  },
+  {
+   "title": "Championship roundup: Middlesbrough seal comeback win; West Brom beat Norwich",
+   "link": "https://www.theguardian.com/football/2026/aug/15/championship-efl-bolton-preston-middlesbrough-lincoln-sheffield-united-birmingham",
+   "date": "2026-08-15T16:37:44.000Z",
+   "src": "The Guardian",
+   "img": "https://i.guim.co.uk/img/media/f766d07c25c130028da04fac973497349e59b542/160_0_3684_2947/master/3684.jpg?width=700&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=3c9aa868ca710d6f3a0ef6072b2199da"
+  },
+  {
+   "title": "Fernandez booed by Chelsea fans as Alonso offers glimpse of blueprint",
+   "link": "https://www.bbc.co.uk/sport/football/articles/c36dd10jj09o?at_medium=RSS&at_campaign=rss",
+   "date": "2026-08-15T16:22:07.000Z",
+   "src": "BBC Sport",
+   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/3947/live/067a6270-98c1-11f1-baa7-c1f421a55365.jpg"
+  },
+  {
+   "title": "Bournemouth to 'do better' after 'disgusting' email",
+   "link": "https://www.bbc.co.uk/sport/football/articles/cy8ee0gzqx2o?at_medium=RSS&at_campaign=rss",
+   "date": "2026-08-15T14:02:48.000Z",
+   "src": "BBC Sport",
+   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/c0d5/live/058b5740-98b0-11f1-9a0b-ef36d15fc6b3.jpg"
+  },
+  {
+   "title": "Belgian Pocognoli frontrunner to be Scotland boss - but who is he?",
+   "link": "https://www.bbc.co.uk/sport/football/articles/cwyrre1qzwlo?at_medium=RSS&at_campaign=rss",
+   "date": "2026-08-15T13:58:42.000Z",
+   "src": "BBC Sport",
+   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/efb8/live/d6ac89d0-98aa-11f1-9dd3-79dbb17f6bca.jpg"
+  },
+  {
+   "title": "Newcastle progressing with move for Benfica defender Dedic",
+   "link": "https://www.bbc.co.uk/sport/football/articles/c70gg3dp61lo?at_medium=RSS&at_campaign=rss",
+   "date": "2026-08-15T13:54:09.000Z",
+   "src": "BBC Sport",
+   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/370b/live/6449d010-98a9-11f1-9dd3-79dbb17f6bca.jpg"
+  },
+  {
+   "title": "Scotland hope to name 39-year-old Pocognoli as successor to Clarke in fresh approach",
+   "link": "https://www.theguardian.com/football/2026/aug/15/scotland-hope-to-name-sebastien-pocognoli-as-new-international-manager",
+   "date": "2026-08-15T13:09:59.000Z",
+   "src": "The Guardian",
+   "img": "https://i.guim.co.uk/img/media/ace7b99f13f38dcc1bb1207a802139cd8d17d83d/471_0_4207_3365/master/4207.jpg?width=700&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=6d7eb7e173e1bb0aa957bf333fa14b12"
+  },
+  {
+   "title": "Ex-tennis player Bautista Agut scores on football debut",
+   "link": "https://www.bbc.co.uk/sport/articles/c0jllp431qqo?at_medium=RSS&at_campaign=rss",
+   "date": "2026-08-15T13:07:09.000Z",
+   "src": "BBC Sport",
+   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/2b94/live/b8c99dd0-98a6-11f1-9d70-ef365dc3a762.png"
+  },
+  {
+   "title": "Women’s U20 World Cup boycott may hurt in short term but can send Fifa a vital message | Tom Garry",
+   "link": "https://www.theguardian.com/football/2026/aug/15/womens-u20-world-cup-boycott-may-hurt-in-short-term-but-can-send-fifa-a-vital-message",
+   "date": "2026-08-15T11:00:55.000Z",
+   "src": "The Guardian",
+   "img": "https://i.guim.co.uk/img/media/5c5b44a54dfbaeb189ba739ae97be421e66979d9/363_0_3833_3066/master/3833.jpg?width=700&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=e12c67787841976a193ffe0c9221ad7e"
+  },
+  {
+   "title": "PSG sign World Cup winner Torres from Barcelona",
+   "link": "https://www.bbc.co.uk/sport/football/articles/c20jyxjl8yko?at_medium=RSS&at_campaign=rss",
+   "date": "2026-08-15T09:37:31.000Z",
+   "src": "BBC Sport",
+   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/6f12/live/1e272b10-974f-11f1-9c09-a729ba578a81.jpg"
+  },
+  {
+   "title": "Premier League clubs looking to EFL for next Semenyo and Eze",
+   "link": "https://www.bbc.co.uk/sport/football/articles/c5y6w5972lyo?at_medium=RSS&at_campaign=rss",
+   "date": "2026-08-15T07:16:50.000Z",
+   "src": "BBC Sport",
+   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/dac3/live/07444830-97bb-11f1-870d-5d08c49babb2.png"
+  },
+  {
+   "title": "London City Lionesses’ Mapi León: ‘It is a club created for women. It is beautiful and exciting’",
+   "link": "https://www.theguardian.com/football/2026/aug/15/london-city-lionesses-mapi-leon-it-is-a-club-created-for-women-it-is-beautiful-and-exciting",
+   "date": "2026-08-15T07:00:51.000Z",
+   "src": "The Guardian",
+   "img": "https://i.guim.co.uk/img/media/51cffa05d78c440fe0bee94160a21d099a9eae4b/1044_371_6264_5012/master/6264.jpg?width=700&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=68c0d43bd775ee7f1ef51e680569f48f"
+  },
+  {
+   "title": "Farewell Cristian Romero, you actually always were ‘that type of player’ | Max Rushden",
+   "link": "https://www.theguardian.com/football/2026/aug/15/farewell-cristian-romero-that-type-of-player-atletico-madrid-argentina",
+   "date": "2026-08-15T07:00:50.000Z",
+   "src": "The Guardian",
+   "img": "https://i.guim.co.uk/img/media/72d385bef1f04b171ccaf8dabcef306138f6a3c5/30_0_2402_1921/master/2402.jpg?width=700&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=14603850e68453e373eb199ff716baa1"
+  },
+  {
+   "title": "'This is the right one' - Rohl on leaving Rangers for Salzburg",
+   "link": "https://www.bbc.co.uk/sport/football/articles/cj9dpvwl1nmo?at_medium=RSS&at_campaign=rss",
+   "date": "2026-08-15T06:19:19.000Z",
+   "src": "BBC Sport",
+   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/cab7/live/0e7a72c0-97fa-11f1-9577-b1309b6ea3af.jpg"
+  },
   {
    "title": "‘Not going to be an issue’: Mikel Arteta relaxed about Arsenal contract situation",
    "link": "https://www.theguardian.com/football/2026/aug/14/mikel-arteta-arsenal-contract-manchester-city-community-shield-premier-league",
    "date": "2026-08-14T21:30:38.000Z",
    "src": "The Guardian",
    "img": "https://i.guim.co.uk/img/media/46338dd7321f2ce7d4451d7cd32a25c156ad4351/312_80_2519_2015/master/2519.jpg?width=700&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=fdc886e87dab262977acff798790dda5"
-  },
-  {
-   "title": "Arteta not worried about Arsenal contract talks",
-   "link": "https://www.bbc.co.uk/sport/football/articles/cp3r6qgve4no?at_medium=RSS&at_campaign=rss",
-   "date": "2026-08-14T21:30:21.000Z",
-   "src": "BBC Sport",
-   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/528a/live/77286200-97eb-11f1-a655-8fe1097dfbd0.jpg"
-  },
-  {
-   "title": "Raúl Jiménez’s injury-time penalty salvages point for Wolves against Blackburn",
-   "link": "https://www.theguardian.com/football/2026/aug/14/wolves-blackburn-championship-match-report",
-   "date": "2026-08-14T21:21:18.000Z",
-   "src": "The Guardian",
-   "img": "https://i.guim.co.uk/img/media/298ad7fadb054f019c5ea87c6759cf39af57b8ce/397_0_4742_3793/master/4742.jpg?width=700&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=2d071e8200010c29327c5613e0ce5669"
-  },
-  {
-   "title": "Arsenal lead Hinshelwood race - Saturday's gossip",
-   "link": "https://www.bbc.co.uk/sport/football/articles/c80n2g2x0g7o?at_medium=RSS&at_campaign=rss",
-   "date": "2026-08-14T21:14:10.000Z",
-   "src": "BBC Sport",
-   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/a1ae/live/71e00c00-9820-11f1-b2ab-0dd01740f9f6.png"
-  },
-  {
-   "title": "Football Daily",
-   "link": "https://www.bbc.co.uk/sounds/play/p0p4mymx?at_medium=RSS&at_campaign=rss",
-   "date": "2026-08-14T21:09:00.000Z",
-   "src": "BBC Sport",
-   "img": "https://ichef.bbci.co.uk/images/ic/240x135/p0m6ztjd.jpg"
-  },
-  {
-   "title": "Departing Romero says he wasn't perfect at Spurs",
-   "link": "https://www.bbc.co.uk/sport/football/articles/c20dyz4vrero?at_medium=RSS&at_campaign=rss",
-   "date": "2026-08-14T19:47:25.000Z",
-   "src": "BBC Sport",
-   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/e445/live/b935ba70-9814-11f1-a7ea-19f04b81e9a0.jpg"
   },
   {
    "title": "Europe’s top clubs threatened Club World Cup boycott before Fifa plan collapsed",
@@ -51,25 +177,11 @@
    "img": "https://i.guim.co.uk/img/media/0073d06176f69062323f7b27fd6862ecb297e26b/1032_173_2511_2009/master/2511.jpg?width=700&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=74d09bb4344dd6d4c8dd94b92c631c3a"
   },
   {
-   "title": "Chelsea expect Enzo Fernández to stay after Manchester City opt not to meet deadline",
-   "link": "https://www.theguardian.com/football/2026/aug/14/enzo-maresca-manchester-city-chelsea-fernandez-rodri-transfer",
-   "date": "2026-08-14T16:58:00.000Z",
-   "src": "The Guardian",
-   "img": "https://i.guim.co.uk/img/media/1aa38a522b989ad9c154d1af6a805f7e66cf2c21/353_624_2115_1691/master/2115.jpg?width=700&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=eb4cb51869d960238d9f521ee402801f"
-  },
-  {
    "title": "Arsenal v Manchester City in Community Shield and athletics gold – follow with us",
    "link": "https://www.theguardian.com/sport/2026/aug/14/arsenal-v-manchester-city-in-community-shield-and-athletics-gold-follow-with-us",
    "date": "2026-08-14T16:09:45.000Z",
    "src": "The Guardian",
    "img": "https://i.guim.co.uk/img/media/68fd3c8388d191479d5441bcf5b482bd91d7e8e4/0_0_5000_4000/master/5000.jpg?width=700&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=4af6303fb22e0f31ca8b61b0d8253022"
-  },
-  {
-   "title": "Chelsea say no Fernandez move as deadline passes - but is it really over?",
-   "link": "https://www.bbc.co.uk/sport/football/articles/c7vgyrl2573o?at_medium=RSS&at_campaign=rss",
-   "date": "2026-08-14T16:04:54.000Z",
-   "src": "BBC Sport",
-   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/b082/live/a40cb340-97d5-11f1-b1e0-bbc28f2688df.jpg"
   },
   {
    "title": "Liverpool owner FSG seals £1.65bn sale of 30% stake to consortium including Jeff Bezos",
@@ -79,95 +191,11 @@
    "img": "https://i.guim.co.uk/img/media/de7d58b829d463efa84be0515b83830dd0bfff2d/0_0_5000_4000/master/5000.jpg?width=700&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=e4debd29926fb34d4f0bc69b64973ff3"
   },
   {
-   "title": "Bezos-backed consortium buys a third of Liverpool",
-   "link": "https://www.bbc.co.uk/sport/football/articles/cx2vj4l9wxyo?at_medium=RSS&at_campaign=rss",
-   "date": "2026-08-14T16:00:16.000Z",
-   "src": "BBC Sport",
-   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/af44/live/70cbf600-9585-11f1-8636-978a48bd79b6.jpg"
-  },
-  {
-   "title": "Who are the Chawinga sisters leading Malawi's bid for Wafcon glory?",
-   "link": "https://www.bbc.co.uk/sport/football/articles/cp87rj8v946o?at_medium=RSS&at_campaign=rss",
-   "date": "2026-08-14T15:16:55.000Z",
-   "src": "BBC Sport",
-   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/3cb5/live/2e7e6c00-97e8-11f1-a76b-f1c27c51f3da.jpg"
-  },
-  {
-   "title": "Football Daily | Rangers and the paradox of a painful exit that boosts their trophy chances",
-   "link": "https://www.theguardian.com/football/2026/aug/14/rangers-football-daily-newsletter",
-   "date": "2026-08-14T14:48:56.000Z",
-   "src": "The Guardian",
-   "img": "https://i.guim.co.uk/img/media/3c50f7901492429002549bd981eb9019a00d513f/475_0_4810_3848/master/4810.jpg?width=700&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=5e91f0f459355737ddc719c63e1fd6d2"
-  },
-  {
-   "title": "Shakhtar want to play Champions League ties at Chelsea",
-   "link": "https://www.bbc.co.uk/sport/football/articles/cpw9e1dz9kko?at_medium=RSS&at_campaign=rss",
-   "date": "2026-08-14T13:38:41.000Z",
-   "src": "BBC Sport",
-   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/360c/live/c5f213b0-97e4-11f1-a76b-f1c27c51f3da.jpg"
-  },
-  {
-   "title": "VAR, timewasting and subs - new rules for the new season",
-   "link": "https://www.bbc.co.uk/sport/football/articles/ce85pje4gyqo?at_medium=RSS&at_campaign=rss",
-   "date": "2026-08-14T11:00:52.000Z",
-   "src": "BBC Sport",
-   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/1b11/live/96fea260-6582-11f1-b1db-af71d47507d6.jpg"
-  },
-  {
    "title": "Premier League 2026-27 preview No 10: Fulham",
    "link": "https://www.theguardian.com/football/2026/aug/14/premier-league-2026-27-preview-no-10-fulham",
    "date": "2026-08-14T11:00:26.000Z",
    "src": "The Guardian",
    "img": "https://i.guim.co.uk/img/media/128e0ac378a67828b0ddcfbb61593d7c4036ebce/228_503_2648_2118/master/2648.jpg?width=700&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=37283d29fe662dbb5e2b390f766f4a3c"
-  },
-  {
-   "title": "Arsenal open talks with Bayer Leverkusen over deal for Jarell Quansah",
-   "link": "https://www.theguardian.com/football/2026/aug/14/arsenal-bayer-leverkusen-jarell-quansah-transfer-talks",
-   "date": "2026-08-14T10:40:24.000Z",
-   "src": "The Guardian",
-   "img": "https://i.guim.co.uk/img/media/30babb52add44cb73482115e260ffba3993bfec6/586_192_3592_2875/master/3592.jpg?width=700&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=0f1bcbe563f27a287267bdb205ec0d7c"
-  },
-  {
-   "title": "Arsenal express interest in signing Quansah",
-   "link": "https://www.bbc.co.uk/sport/football/articles/c9q92xr0854o?at_medium=RSS&at_campaign=rss",
-   "date": "2026-08-14T10:35:26.000Z",
-   "src": "BBC Sport",
-   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/1c9c/live/3cbc6190-97cb-11f1-a927-0dfab640b8c9.jpg"
-  },
-  {
-   "title": "European Cup winner Rimmer dies aged 78",
-   "link": "https://www.bbc.co.uk/sport/football/articles/c20eyww3vyro?at_medium=RSS&at_campaign=rss",
-   "date": "2026-08-14T10:13:47.000Z",
-   "src": "BBC Sport",
-   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/6210/live/c4f34450-97c3-11f1-97a6-b387157e78db.jpg"
-  },
-  {
-   "title": "How will the three promoted teams fare in the Premier League?",
-   "link": "https://www.theguardian.com/football/who-scored-blog/2026/aug/14/premier-league-promoted-teams-coventry-hull-ipswich",
-   "date": "2026-08-14T10:00:24.000Z",
-   "src": "The Guardian",
-   "img": "https://i.guim.co.uk/img/media/7fd4f23b22fe092a2c38beb3674fb3283dd4f929/0_0_5000_4000/master/5000.jpg?width=700&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=240ddbf7afe237970c456309864aa1de"
-  },
-  {
-   "title": "Hammers & Boro to go up? Championship club-by-club preview",
-   "link": "https://www.bbc.co.uk/sport/football/articles/cy8edygyw02o?at_medium=RSS&at_campaign=rss",
-   "date": "2026-08-14T09:06:36.000Z",
-   "src": "BBC Sport",
-   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/843e/live/6c1300b0-9718-11f1-870d-5d08c49babb2.jpg"
-  },
-  {
-   "title": "Titans & underdogs - League One club-by-club preview",
-   "link": "https://www.bbc.co.uk/sport/football/articles/cgewydzqyjyo?at_medium=RSS&at_campaign=rss",
-   "date": "2026-08-14T09:02:33.000Z",
-   "src": "BBC Sport",
-   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/881d/live/522d65c0-972f-11f1-870d-5d08c49babb2.jpg"
-  },
-  {
-   "title": "Salford champions? Millers to spiral? - League Two club-by-club preview",
-   "link": "https://www.bbc.co.uk/sport/football/articles/cx2dy2112djo?at_medium=RSS&at_campaign=rss",
-   "date": "2026-08-14T09:02:23.000Z",
-   "src": "BBC Sport",
-   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/1b61/live/77164b90-9725-11f1-b8b8-270ec183dd5e.jpg"
   },
   {
    "title": "Premier League 2026-27 preview No 9: Everton",
@@ -189,13 +217,6 @@
    "date": "2026-08-13T17:56:48.000Z",
    "src": "BBC Sport",
    "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/9ada/live/0a70d7d0-973e-11f1-b2ab-0dd01740f9f6.jpg"
-  },
-  {
-   "title": "Celta Vigo’s La Liga opener postponed due to fungal outbreak on pitch",
-   "link": "https://www.theguardian.com/football/2026/aug/13/celta-vigo-la-liga-opener-osasuna-postponed-due-to-fungus-on-pitch",
-   "date": "2026-08-13T16:14:47.000Z",
-   "src": "The Guardian",
-   "img": "https://i.guim.co.uk/img/media/82d0fc13ab6c4dcfb73e03b74efd93700dc60b75/1616_975_3734_2988/master/3734.jpg?width=700&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=85d6a741ac30ad59e609e268d3edfd83"
   },
   {
    "title": "Premier League 2026-27 preview No 8: Crystal Palace",
@@ -226,13 +247,6 @@
    "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/32c5/live/37f5c4c0-96fa-11f1-a7ab-8b30adf0800a.jpg"
   },
   {
-   "title": "Chelsea set Friday deadline for Fernández suitors as City reject new £51m Barça bid for Rodri",
-   "link": "https://www.theguardian.com/football/2026/aug/13/manchester-city-barcelona-rodri-chelsea-enzo-fernandez",
-   "date": "2026-08-13T09:26:27.000Z",
-   "src": "The Guardian",
-   "img": "https://i.guim.co.uk/img/media/d5b60e0c37018476ef8fe8b2e4dc18257f028ea5/96_166_4951_3961/master/4951.jpg?width=700&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=0f8aa628aab512edf7753914fc3c258f"
-  },
-  {
    "title": "‘It was horrendous’: Durham captain relieved WSL2 club survived after fears of folding",
    "link": "https://www.theguardian.com/football/2026/aug/13/durham-captain-sarah-wilson-relieved-wsl2-club-survived",
    "date": "2026-08-13T07:00:51.000Z",
@@ -261,25 +275,11 @@
    "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/4c4d/live/29f7c300-9696-11f1-870d-5d08c49babb2.jpg"
   },
   {
-   "title": "How will relegated trio fare in the Championship?",
-   "link": "https://www.bbc.co.uk/sport/football/articles/cvg0d3ewek0o?at_medium=RSS&at_campaign=rss",
-   "date": "2026-08-12T11:05:41.000Z",
+   "title": "Doue goal awarded on VAR after tight offside",
+   "link": "https://www.bbc.co.uk/sport/football/videos/c4gw5zrznq1o?at_medium=RSS&at_campaign=rss",
+   "date": "2026-08-12T21:29:07.000Z",
    "src": "BBC Sport",
-   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/3d07/live/426ccae0-9185-11f1-b8ee-9b3c26ad07bb.png"
-  },
-  {
-   "title": "Premier League 2026-27 preview No 6: Chelsea",
-   "link": "https://www.theguardian.com/football/2026/aug/12/premier-league-2026-27-preview-no-6-chelsea",
-   "date": "2026-08-12T11:00:27.000Z",
-   "src": "The Guardian",
-   "img": "https://i.guim.co.uk/img/media/3976a41f85628fe16a1fe3e8630d2dab1f46a7e2/1029_122_4788_3831/master/4788.jpg?width=700&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=6d6ee22188de157a0bd07b41b0edd1b8"
-  },
-  {
-   "title": "Listen: 2026-27 EFL season preview",
-   "link": "https://www.bbc.co.uk/sounds/play/p0p3yymr?at_medium=RSS&at_campaign=rss",
-   "date": "2026-08-11T20:13:00.000Z",
-   "src": "BBC Sport",
-   "img": "https://ichef.bbci.co.uk/images/ic/240x135/p0p3yyqs.jpg"
+   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/03c2/live/d2549200-9694-11f1-870d-5d08c49babb2.jpg"
   }
  ]
 }
