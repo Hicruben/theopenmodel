@@ -15,3 +15,6 @@ ops/
 .DS_Store
 ._*
 tsconfig.tsbuildinfo
+
+# API backfill cache for model backtests — large, regenerable, and not part of the record
+data/.backtest-cache/
