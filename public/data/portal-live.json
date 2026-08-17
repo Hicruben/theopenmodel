@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
   "provider": "api-football",
-  "asOf": "2026-08-17T03:58:02.205Z",
-  "updatedAt": "2026-08-17T03:58:02.205Z",
+  "asOf": "2026-08-17T04:20:12.825Z",
+  "updatedAt": "2026-08-17T04:20:12.825Z",
   "coverage": {
     "dateFrom": "2026-08-12",
     "dateTo": "2026-08-31",
     "fixtureCount": 9427,
-    "liveFixtureCount": 6,
-    "finishedFixtureCount": 2695,
+    "liveFixtureCount": 5,
+    "finishedFixtureCount": 2696,
     "leagueCount": 464,
     "standingTableCount": 11,
     "requestedIncludes": [
@@ -27,7 +27,7 @@
     },
     "rateLimit": {
       "resetsInSeconds": null,
-      "remaining": 6887,
+      "remaining": 6742,
       "requestedEntity": "API-Football daily requests"
     },
     "warnings": []
@@ -38706,7 +38706,7 @@
       },
       "venue": {
         "id": null,
-        "name": "King Khalid Sports City",
+        "name": "King Khalid Sport City Stadium",
         "city": "Tabuk",
         "capacity": null,
         "imageUrl": null
@@ -41881,7 +41881,7 @@
       "venue": {
         "id": null,
         "name": "Flyeralarm Arena",
-        "city": "Wurzburger",
+        "city": "Wuerzburg",
         "capacity": null,
         "imageUrl": null
       },
@@ -48022,7 +48022,7 @@
       "venue": {
         "id": null,
         "name": "BUKO Stadion",
-        "city": "Velsen-Zuid",
+        "city": "Velsen",
         "capacity": null,
         "imageUrl": null
       },
@@ -48918,7 +48918,7 @@
       },
       "venue": {
         "id": null,
-        "name": "Abdullah Al Dabil Stadium",
+        "name": "Al-Ettifaq Club Stadium",
         "city": "Dammam",
         "capacity": null,
         "imageUrl": null
@@ -50850,7 +50850,7 @@
       },
       "venue": {
         "id": null,
-        "name": "Estadio Zubieta",
+        "name": "Estadio Ciudad Deportiva Zubieta",
         "city": "San Sebastian",
         "capacity": null,
         "imageUrl": null
@@ -50988,7 +50988,7 @@
       },
       "venue": {
         "id": null,
-        "name": "Rams Park",
+        "name": "Rams Park Stadyumu",
         "city": "Istanbul",
         "capacity": null,
         "imageUrl": null
@@ -54645,7 +54645,7 @@
       },
       "venue": {
         "id": null,
-        "name": "Ambrosio Maco Arroyo",
+        "name": "Estadio Municipal Ambrosio Maco Arroyo",
         "city": "Piura",
         "capacity": null,
         "imageUrl": null
@@ -79416,7 +79416,7 @@
       },
       "venue": {
         "id": null,
-        "name": "Preussenstadion",
+        "name": "LVM-Preußenstadion",
         "city": "Munster",
         "capacity": null,
         "imageUrl": null
@@ -79485,7 +79485,7 @@
       },
       "venue": {
         "id": null,
-        "name": "Stadion an der Hafenstrasse",
+        "name": "Stadion Essen",
         "city": "Essen",
         "capacity": null,
         "imageUrl": null
@@ -121299,7 +121299,7 @@
       },
       "venue": {
         "id": null,
-        "name": "Konya Buyuksehir Belediye Stadium",
+        "name": "Medas Konya Büyüksehir Belediyesi Stadium",
         "city": "Konya",
         "capacity": null,
         "imageUrl": null
@@ -123576,7 +123576,7 @@
       },
       "venue": {
         "id": null,
-        "name": "Al Taawon Arena",
+        "name": "Alinma Stadium",
         "city": "Buraidah",
         "capacity": null,
         "imageUrl": null
@@ -125577,7 +125577,7 @@
       },
       "venue": {
         "id": null,
-        "name": "JP Financial Estadio",
+        "name": "Nuevo Mirandilla",
         "city": "Cadiz",
         "capacity": null,
         "imageUrl": null
@@ -130338,7 +130338,7 @@
       },
       "venue": {
         "id": null,
-        "name": "King Saud University Stadium",
+        "name": "Al-Awwal Park",
         "city": "Riyadh",
         "capacity": null,
         "imageUrl": null
@@ -131856,7 +131856,7 @@
       },
       "venue": {
         "id": null,
-        "name": "Eryaman Stadium",
+        "name": "Eryaman Stadyumu",
         "city": "Ankara",
         "capacity": null,
         "imageUrl": null
@@ -131925,7 +131925,7 @@
       },
       "venue": {
         "id": null,
-        "name": "Timsah Park",
+        "name": "Timsah Arena",
         "city": "Bursa",
         "capacity": null,
         "imageUrl": null
@@ -134410,7 +134410,7 @@
       "venue": {
         "id": null,
         "name": "Ramón Sánchez Pizjuán",
-        "city": "Sevilla",
+        "city": "Seville",
         "capacity": null,
         "imageUrl": null
       },
@@ -147795,7 +147795,7 @@
       },
       "venue": {
         "id": null,
-        "name": "WerkTalent Stadion",
+        "name": "Bingoal Stadium",
         "city": "Den Haag",
         "capacity": null,
         "imageUrl": null
@@ -155661,8 +155661,8 @@
       },
       "venue": {
         "id": null,
-        "name": "Arena Livyi Bereg",
-        "city": "Kyiv",
+        "name": "Stadium Livyi Bereh",
+        "city": "Kiev",
         "capacity": null,
         "imageUrl": null
       },
@@ -170151,7 +170151,7 @@
       },
       "venue": {
         "id": null,
-        "name": "Estadio El Sardinero",
+        "name": "El Sardinero",
         "city": "Santander",
         "capacity": null,
         "imageUrl": null
@@ -171876,7 +171876,7 @@
       },
       "venue": {
         "id": null,
-        "name": "Stadion Cracovii im. Jozefa Pilsudskiego",
+        "name": "Marshal Jozef Pilsudski Stadium",
         "city": "Kraków",
         "capacity": null,
         "imageUrl": null
@@ -173601,7 +173601,7 @@
       },
       "venue": {
         "id": null,
-        "name": "National Stadium Vasil Levski",
+        "name": "Vasil Levski National Stadium",
         "city": "Sofia",
         "capacity": null,
         "imageUrl": null
@@ -177948,7 +177948,7 @@
       },
       "venue": {
         "id": null,
-        "name": "Estadio Municipal de Montilivi",
+        "name": "Estadi Montilivi",
         "city": "Girona",
         "capacity": null,
         "imageUrl": null
@@ -178018,7 +178018,7 @@
       "venue": {
         "id": null,
         "name": "RCDE Stadium",
-        "city": "Cornella de Llobregat",
+        "city": "Cornella",
         "capacity": null,
         "imageUrl": null
       },
@@ -183054,7 +183054,7 @@
       },
       "venue": {
         "id": null,
-        "name": "Diyarbakir Stadium",
+        "name": "Şilbe Spor Kompleksi",
         "city": "Diyarbakır",
         "capacity": null,
         "imageUrl": null
@@ -183123,7 +183123,7 @@
       },
       "venue": {
         "id": null,
-        "name": "Besiktas Park",
+        "name": "Tüpraş Stadyumu",
         "city": "Istanbul",
         "capacity": null,
         "imageUrl": null
@@ -183813,7 +183813,7 @@
       },
       "venue": {
         "id": null,
-        "name": "MRV Arena",
+        "name": "Arena MRV",
         "city": "Belo Horizonte",
         "capacity": null,
         "imageUrl": null
@@ -184020,7 +184020,7 @@
       },
       "venue": {
         "id": null,
-        "name": "Estadio El Cobre de El Salvador",
+        "name": "El Cobre",
         "city": "El Salvador",
         "capacity": null,
         "imageUrl": null
@@ -186090,8 +186090,8 @@
       },
       "venue": {
         "id": null,
-        "name": "Estadio de Gran Canaria",
-        "city": "Las Palmas",
+        "name": "Gran Canaria",
+        "city": "Las Palmas de Gran Canaria",
         "capacity": null,
         "imageUrl": null
       },
@@ -186228,7 +186228,7 @@
       },
       "venue": {
         "id": null,
-        "name": "Estadio Municipal de Famalicao",
+        "name": "Estádio Municipal de Famalicão",
         "city": "Vila Nova de Famalicao",
         "capacity": null,
         "imageUrl": null
@@ -190230,7 +190230,7 @@
       },
       "venue": {
         "id": null,
-        "name": "Estadio Unico Madre de Ciudades",
+        "name": "Estadio Alfredo Terrera",
         "city": "Santiago del Estero",
         "capacity": null,
         "imageUrl": null
@@ -191375,7 +191375,7 @@
       "providerId": 1513293,
       "name": "Los Angeles FC II vs Tacoma Defiance",
       "startTime": "2026-08-17T02:00:00.000Z",
-      "resultInfo": null,
+      "resultInfo": "4-3",
       "seasonId": 2026,
       "stageId": null,
       "roundId": null,
@@ -191383,11 +191383,11 @@
       "lastProcessedAt": null,
       "status": {
         "id": null,
-        "name": "Second Half",
-        "shortName": "2H",
-        "developerName": "2H",
-        "isLive": true,
-        "isFinished": false
+        "name": "Match Finished",
+        "shortName": "FT",
+        "developerName": "FT",
+        "isLive": false,
+        "isFinished": true
       },
       "league": {
         "id": 909,
@@ -191590,9 +191590,9 @@
       "lastProcessedAt": null,
       "status": {
         "id": null,
-        "name": "First Half",
-        "shortName": "1H",
-        "developerName": "1H",
+        "name": "Halftime",
+        "shortName": "HT",
+        "developerName": "HT",
         "isLive": true,
         "isFinished": false
       },
@@ -191636,10 +191636,10 @@
         }
       ],
       "score": {
-        "home": 0,
-        "away": 0,
-        "halfTimeHome": 0,
-        "halfTimeAway": 0
+        "home": 1,
+        "away": 1,
+        "halfTimeHome": 1,
+        "halfTimeAway": 1
       },
       "scores": [],
       "events": [],
