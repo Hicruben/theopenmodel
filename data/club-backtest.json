@@ -1,0 +1,64 @@
+{
+ "generatedAt": "2026-08-17",
+ "method": "Walk-forward backtest of the live club model over three completed seasons of the top five leagues. Each match is predicted from each club's ClubElo rating as it stood strictly before kickoff, then scored against the result. Matches involving clubs outside the current top-five rosters are excluded, so promoted and relegated sides are under-represented — those fixtures are disproportionately mismatches, which are the easiest to call, so the accuracy here is measured on a harder-than-average sample.",
+ "seasons": [2023, 2024, 2025],
+ "evaluated": 3362,
+ "model": {
+  "accuracy": 0.5098,
+  "favouriteAccuracy": 0.598,
+  "favouriteCount": 1567,
+  "brier": 0.6006,
+  "logloss": 1.0048,
+  "ece": 0.0068
+ },
+ "baselines": {
+  "alwaysHome": 0.44,
+  "drawRate": 0.261
+ },
+ "market": {
+  "source": "Football-Data.co.uk closing average odds, same leagues and seasons, overround removed",
+  "matches": 5256,
+  "accuracy": 0.54,
+  "brier": 0.5743,
+  "logloss": 0.966,
+  "ece": 0.0104,
+  "drawWasFavourite": 4,
+  "note": "The betting market is the strongest available benchmark: it aggregates every source of information and real money. It reaches 54.0%. In 5,256 matches it named the draw as the most likely single outcome four times, which is why 1X2 accuracy has a low ceiling — roughly a quarter of matches end level and almost none are predictable as draws."
+ },
+ "calibration": {
+  "bins": [
+   { "range": [0.0, 0.1], "n": 342, "avgPred": 0.067, "obsFreq": 0.108 },
+   { "range": [0.1, 0.2], "n": 1138, "avgPred": 0.158, "obsFreq": 0.153 },
+   { "range": [0.2, 0.3], "n": 4482, "avgPred": 0.265, "obsFreq": 0.266 },
+   { "range": [0.3, 0.4], "n": 1359, "avgPred": 0.349, "obsFreq": 0.352 },
+   { "range": [0.4, 0.5], "n": 1198, "avgPred": 0.448, "obsFreq": 0.456 },
+   { "range": [0.5, 0.6], "n": 810, "avgPred": 0.546, "obsFreq": 0.519 },
+   { "range": [0.6, 0.7], "n": 483, "avgPred": 0.644, "obsFreq": 0.652 },
+   { "range": [0.7, 0.8], "n": 220, "avgPred": 0.742, "obsFreq": 0.714 },
+   { "range": [0.8, 0.9], "n": 54, "avgPred": 0.833, "obsFreq": 0.833 }
+  ]
+ },
+ "experiments": [
+  {
+   "name": "Tuning the existing constants",
+   "question": "Are the goal baseline, home advantage and Dixon-Coles correction — all fitted on international matches — wrong for club football?",
+   "result": "No. A 750-point sweep improved log loss by 0.04% and accuracy not at all. The current values already rank 21st of 750.",
+   "shipped": false,
+   "reason": "There is nothing to gain. The ceiling is not in the constants."
+  },
+  {
+   "name": "Adjusting for unavailable players",
+   "question": "Does knowing who is injured or suspended improve the forecast?",
+   "result": "Slightly. Removing 6 Elo points per absent player was best: accuracy 50.84% → 51.00%, log loss −0.09%, calibration error 0.70% → 0.68%. A larger adjustment won more picks while getting worse at log loss — accuracy bought with overconfidence.",
+   "shipped": false,
+   "reason": "The gain is smaller than the uncertainty around it. Absence records exist before kickoff but appear to fill in as kickoff approaches, and the backtest reads their final state — so some of that 0.16 points may be hindsight. Revisit once absences can be captured at the moment each forecast is locked."
+  },
+  {
+   "name": "Rating teams on chances instead of results",
+   "question": "Elo moves on results, so a 1-0 win from one shot counts like a 4-0 win from twenty. Does an expected-goals rating describe strength better?",
+   "result": "It is more accurate and less honest. An xG attack/defence rating blended half-and-half with Elo lifted accuracy 50.84% → 51.94% and improved log loss 0.67% — but calibration error grew from 0.70% to 1.24%, with the model overstating its confidence most in the 30–50% band where most matches sit.",
+   "shipped": false,
+   "reason": "This site's claim is not that its predictions beat the market — they don't — but that its numbers mean what they say. Trading a point of accuracy for a worse-calibrated model sells the only thing here that is actually better than the bookmakers."
+  }
+ ]
+}

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { wcBacktest, clubRecord } from "@/lib/record";
+import { wcBacktest, clubBacktest, clubRecord } from "@/lib/record";
 import { CalibrationChart } from "../components/CalibrationChart";
 import { NewsletterSignup } from "../components/NewsletterSignup";
 import { pct } from "@/lib/ui";
@@ -14,6 +14,7 @@ const f3 = (x: number) => x.toFixed(3);
 
 export default function Record() {
   const bt = wcBacktest();
+  const cbt = clubBacktest();
   const club = clubRecord();
 
   return (
@@ -74,6 +75,101 @@ export default function Record() {
             <Link href="/snapshots/">forecast snapshot</Link> locks the match probabilities that are
             public before kickoff, and finished results are scored against them automatically. This
             section fills in from the first completed match.
+          </p>
+        </>
+      )}
+
+      {cbt && (
+        <>
+          <h2>How good are these predictions, really?</h2>
+          <p>
+            The live record above is only a few matches old, so here is the same model measured
+            over <b>{cbt.evaluated.toLocaleString()} completed matches</b> across three seasons of
+            the same five leagues. Every match was predicted from each club&apos;s rating as it
+            stood <i>before</i> kickoff, then scored against the result.
+          </p>
+
+          <div className="panel tight" style={{ margin: "18px 0" }}>
+            <table className="data">
+              <thead>
+                <tr><th>Picking the most likely result</th><th className="r">Correct</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Always pick the home team</td>
+                  <td className="num r">{pct(cbt.baselines.alwaysHome)}</td>
+                </tr>
+                <tr>
+                  <td><b>This model</b></td>
+                  <td className="num r"><b>{pct(cbt.model.accuracy)}</b></td>
+                </tr>
+                <tr>
+                  <td>The betting market (closing odds)</td>
+                  <td className="num r">{pct(cbt.market.accuracy)}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p>
+            <b>The betting market is the ceiling, and it is 54%.</b> That is every bookmaker, every
+            tipster and every pound of real money combined — and it still gets barely half of
+            matches right. Football is not very predictable: about a quarter of matches end level,
+            and a draw is almost never any forecaster&apos;s single most likely outcome. In{" "}
+            {cbt.market.matches.toLocaleString()} matches the market named the draw as most likely{" "}
+            <b>{cbt.market.drawWasFavourite} times</b>. So roughly one match in four is, in practice,
+            unpredictable by anyone.
+          </p>
+          <p>
+            Against that, this model sits {Math.round((cbt.model.accuracy - cbt.baselines.alwaysHome) * 100)} points above
+            simply backing the home side, and {Math.round((cbt.market.accuracy - cbt.model.accuracy) * 100)} points below
+            the market. If you want the most accurate forecast in the world, the market is it — and
+            it is free to look at. What this site offers instead is the next paragraph.
+          </p>
+
+          <h3>The number that actually matters: do the percentages mean anything?</h3>
+          <p>
+            A forecast is only useful if its numbers are literal. When this model says 30%, that
+            should happen about 30 times in 100 — otherwise the figure beside a match is decoration.
+            Measured across those {cbt.evaluated.toLocaleString()} matches, the average gap between
+            what the model said and what happened is <b>{(cbt.model.ece * 100).toFixed(2)} percentage
+            points</b>. The betting market&apos;s gap, on the same seasons, is{" "}
+            {(cbt.market.ece * 100).toFixed(2)} points.
+          </p>
+          <blockquote>
+            <b>This model is less accurate than the bookmakers and better calibrated than them.</b>{" "}
+            It will not tell you who wins more often than they will. It will tell you the truth about
+            how sure it is — which is the part you can actually use, and the part nobody selling
+            betting tips has any reason to get right.
+          </blockquote>
+          <CalibrationChart
+            bins={cbt.calibration.bins}
+            caption={`Club backtest calibration: ${cbt.evaluated.toLocaleString()} matches × 3 outcomes across ${cbt.seasons.join(", ")}. Each bar compares what the model said with how often it happened.`}
+          />
+
+          <h3>Things we tried that did not make it in</h3>
+          <p>
+            Accuracy could be pushed a little higher. We measured three ways of doing it and shipped
+            none of them; the reasons matter more than the results.
+          </p>
+          <div style={{ overflowX: "auto" }}>
+            <table className="data">
+              <thead>
+                <tr><th>Idea</th><th>What happened</th><th>Why it isn&apos;t live</th></tr>
+              </thead>
+              <tbody>
+                {cbt.experiments.map((e) => (
+                  <tr key={e.name}>
+                    <td style={{ whiteSpace: "nowrap" }}><b>{e.name}</b></td>
+                    <td style={{ fontSize: 13, color: "var(--ink-soft)" }}>{e.result}</td>
+                    <td style={{ fontSize: 13, color: "var(--ink-soft)" }}>{e.reason}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <p className="foot-src">
+            {cbt.method} Market figures: {cbt.market.source}.
           </p>
         </>
       )}

@@ -32,6 +32,27 @@ export interface WcBacktest {
   calibration: { bins: CalibBin[] };
 }
 
+// Walk-forward backtest of the CLUB model, plus the market benchmark it is measured
+// against. Separate from the World Cup figure: internationals are a much easier problem —
+// they contain real mismatches — so quoting that number beside club forecasts would set
+// expectations the club model cannot meet.
+export interface ClubBacktest {
+  generatedAt: string;
+  method: string;
+  seasons: number[];
+  evaluated: number;
+  model: { accuracy: number; favouriteAccuracy: number; favouriteCount: number; brier: number; logloss: number; ece: number };
+  baselines: { alwaysHome: number; drawRate: number };
+  market: { source: string; matches: number; accuracy: number; brier: number; logloss: number; ece: number; drawWasFavourite: number; note: string };
+  calibration: { bins: CalibBin[] };
+  experiments: { name: string; question: string; result: string; shipped: boolean; reason: string }[];
+}
+
+export function clubBacktest(): ClubBacktest | null {
+  const p = join(process.cwd(), "data", "club-backtest.json");
+  try { return JSON.parse(readFileSync(p, "utf8")); } catch { return null; }
+}
+
 export function wcBacktest(): WcBacktest | null {
   const p = join(process.cwd(), "data", "wc-backtest.json");
   try { return JSON.parse(readFileSync(p, "utf8")); } catch { return null; }

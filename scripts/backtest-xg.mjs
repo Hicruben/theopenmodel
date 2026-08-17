@@ -83,6 +83,13 @@ const meta = JSON.parse(readFileSync(join(process.cwd(), "data", "leagues-2026.j
 const byApiId = new Map();
 for (const rows of Object.values(meta)) for (const c of rows) if (c.apiId) byApiId.set(c.apiId, c.slug);
 
+// Absences, from the same walk-forward cache. 6 Elo points per unavailable player is the
+// value that minimised log loss in backtest-club.mjs; bigger adjustments won more picks
+// while getting worse at log loss, which is accuracy bought with overconfidence.
+const INJURY_K = Number(process.env.INJURY_K ?? 6);
+const injFile = join(CACHE, "injuries.json");
+const injuries = existsSync(injFile) ? JSON.parse(readFileSync(injFile, "utf8")) : null;
+
 const xgFile = join(CACHE, "xg.json");
 if (!existsSync(xgFile)) { console.error("✗ no xg.json — run scripts/fetch-xg-history.mjs first"); process.exit(1); }
 const xgData = JSON.parse(readFileSync(xgFile, "utf8"));
@@ -127,10 +134,14 @@ function runXg({ halfLife, homeFactor, rho, prior, burnIn }) {
       const muL = clamp(mu * aA * dH / homeFactor);
       const eloH = hs ? eloBefore(hs, m.date) : null;
       const eloA = as ? eloBefore(as, m.date) : null;
+      const absent = injuries?.[m.id];
+      const absH = absent?.[m.homeId] ?? 0, absA = absent?.[m.awayId] ?? 0;
       rows.push({
         m,
         xg: probsFromLambdas(lambda, muL, rho),
         elo: eloH != null && eloA != null ? eloProbs(eloH, eloA) : null,
+        eloInj: eloH != null && eloA != null
+          ? eloProbs(eloH - INJURY_K * absH, eloA - INJURY_K * absA) : null,
       });
     }
 
@@ -186,6 +197,18 @@ for (const w of [0.25, 0.5, 0.75]) {
     scoreProbs(rows, (r) => r.xg.map((p, i) => w * p + (1 - w) * r.elo[i])));
 }
 
+// What the two additions are worth together, against the model that is live today.
+{
+  const best = runXg({ ...DEFAULT, halfLife: 12, homeFactor: 1.15, rho: -0.08 }).filter((r) => r.elo);
+  console.log(`\n── everything combined, ${best.length} matches ───────────────`);
+  show("live model (Elo only)", scoreProbs(best, (r) => r.elo));
+  show("+ absences", scoreProbs(best, (r) => r.eloInj));
+  for (const w of [0.5, 0.6, 0.7]) {
+    show(`+ absences + ${Math.round(w * 100)}% xG`,
+      scoreProbs(best, (r) => r.xg.map((p, i) => w * p + (1 - w) * r.eloInj[i])));
+  }
+}
+
 if (SWEEP) {
   console.log("\n── sweeping the xG model (objective: log loss) ──────────");
   const results = [];
@@ -209,4 +232,33 @@ if (SWEEP) {
       scoreProbs(best.rows, (r) => r.xg.map((p, i) => w * p + (1 - w) * r.elo[i])));
   }
   show("Elo alone (reference)", scoreProbs(best.rows, (r) => r.elo));
+}
+
+// ── calibration side by side ────────────────────────────────
+// Printed because "calibration got worse" is abstract until you see the two columns:
+// what the model said would happen, next to how often it actually did.
+if (process.argv.includes("--calibration")) {
+  const best = runXg({ ...DEFAULT, halfLife: 12, homeFactor: 1.15, rho: -0.08 }).filter((r) => r.elo);
+  const table = (pick) => {
+    const bins = Array.from({ length: 10 }, () => ({ sumP: 0, sumY: 0, n: 0 }));
+    for (const r of best) {
+      const probs = pick(r);
+      const actual = r.m.hg > r.m.ag ? 0 : r.m.hg === r.m.ag ? 1 : 2;
+      for (let k = 0; k < 3; k++) {
+        const b = Math.min(9, Math.floor(probs[k] * 10));
+        bins[b].sumP += probs[k]; bins[b].sumY += (k === actual ? 1 : 0); bins[b].n++;
+      }
+    }
+    return bins;
+  };
+  const a = table((r) => r.elo);
+  const b = table((r) => r.xg.map((p, i) => 0.5 * p + 0.5 * r.eloInj[i]));
+  console.log("\n  band        current: said → happened   |  with xG: said → happened   | gap now / then");
+  for (let i = 0; i < 10; i++) {
+    if (!a[i].n) continue;
+    const s1 = a[i].sumP / a[i].n, o1 = a[i].sumY / a[i].n;
+    const s2 = b[i].sumP / b[i].n, o2 = b[i].sumY / b[i].n;
+    const f = (x) => (x * 100).toFixed(1).padStart(5);
+    console.log(`  ${String(i * 10).padStart(2)}-${String(i * 10 + 10).padStart(3)}%   ${f(s1)}% → ${f(o1)}%  (n=${String(a[i].n).padStart(4)})  |  ${f(s2)}% → ${f(o2)}%  | ${((Math.abs(s2 - o2) - Math.abs(s1 - o1)) * 100).toFixed(2).padStart(6)}pp`);
+  }
 }
