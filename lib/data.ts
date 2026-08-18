@@ -2,6 +2,7 @@
 // League membership: API-Football 2026-27 rosters (data/leagues-2026.json) — authoritative,
 // ClubElo's level flags lag promotion/relegation. Strength: ClubElo Elo, joined at build.
 import { readFileSync } from "node:fs";
+import { liveElo } from "./elo-live";
 import { join } from "node:path";
 
 export interface ClubRow {
@@ -39,7 +40,23 @@ let rosters: Record<string, ClubRow[]> | null = null;
 
 function loadRosters(): Record<string, ClubRow[]> {
   if (rosters) return rosters;
-  rosters = JSON.parse(readFileSync(join(process.cwd(), "data", "leagues-2026.json"), "utf8"));
+  const raw: Record<string, ClubRow[]> =
+    JSON.parse(readFileSync(join(process.cwd(), "data", "leagues-2026.json"), "utf8"));
+
+  // ClubElo's ratings are the base, but it sometimes stops processing results while still
+  // publishing — at the start of 2026-27 it went weeks without moving a single number.
+  // Anything it hasn't priced in is applied here, so a club that won at the weekend is
+  // rated as a club that won at the weekend. When ClubElo is current this changes nothing.
+  const adjusted = liveElo(new Map(Object.values(raw).flat().map((c) => [c.club, c.elo])));
+  rosters = Object.fromEntries(
+    Object.entries(raw).map(([league, clubs]) => [
+      league,
+      clubs.map((c) => {
+        const a = adjusted.get(c.club);
+        return a && a.applied > 0 ? { ...c, elo: Math.round(a.elo * 10) / 10 } : c;
+      }),
+    ]),
+  );
   return rosters!;
 }
 

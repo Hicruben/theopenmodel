@@ -32,19 +32,26 @@ function findRow(date: string, leagueSlug: string, clubSlug: string): SnapshotRo
   return snap?.leagues?.[leagueSlug]?.find((r) => r.slug === clubSlug) ?? null;
 }
 
-export function seasonMovement(leagueSlug: string, clubSlug: string, days = 7): SeasonMovement | null {
+// `current` is passed in rather than read from the newest snapshot. The projection shown
+// on the page is computed live — including any correction for results the ratings provider
+// hasn't processed — while the snapshot is a record of what was published that morning.
+// Comparing snapshot against snapshot would report no movement on exactly the days the
+// live numbers had just moved.
+export function seasonMovement(
+  leagueSlug: string,
+  clubSlug: string,
+  current: { title: number; top4: number; releg: number; xPts: number; elo: number },
+  days = 7,
+): SeasonMovement | null {
   const dates = snapshotDates();                 // newest first
-  if (dates.length < 2) return null;
+  if (!dates.length) return null;
 
-  const nowRow = findRow(dates[0], leagueSlug, clubSlug);
-  if (!nowRow) return null;
+  const nowRow = current;
 
   // The closest snapshot at least `days` old, so a missed build doesn't silently turn a
   // week's movement into a day's.
-  const cutoff = new Date(new Date(`${dates[0]}T00:00:00Z`).getTime() - days * 86400_000)
-    .toISOString().slice(0, 10);
+  const cutoff = new Date(Date.now() - days * 86400_000).toISOString().slice(0, 10);
   const thenDate = dates.find((d) => d <= cutoff) ?? dates[dates.length - 1];
-  if (thenDate === dates[0]) return null;
   const thenRow = findRow(thenDate, leagueSlug, clubSlug);
   if (!thenRow) return null;
 
@@ -64,9 +71,9 @@ export function seasonMovement(leagueSlug: string, clubSlug: string, days = 7): 
 
   return {
     comparedWith: thenDate,
-    daysApart: Math.round(
-      (new Date(`${dates[0]}T00:00:00Z`).getTime() - new Date(`${thenDate}T00:00:00Z`).getTime()) / 86400_000,
-    ),
+    daysApart: Math.max(1, Math.round(
+      (Date.now() - new Date(`${thenDate}T00:00:00Z`).getTime()) / 86400_000,
+    )),
     title, top4, releg,
     xPts: move(nowRow.xPts, thenRow.xPts),
     elo: move(nowRow.elo, thenRow.elo),

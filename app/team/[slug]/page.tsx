@@ -83,7 +83,7 @@ export default async function TeamPage({ params }: { params: Promise<{ slug: str
         <SeasonOutlook
           club={club.club}
           odds={odds}
-          movement={seasonMovement(league.slug, club.slug)}
+          movement={seasonMovement(league.slug, club.slug, { title: odds.title, top4: odds.top4, releg: odds.releg, xPts: odds.avgPts, elo: club.elo })}
           leagueSlug={league.slug}
           leagueName={league.name}
         />
