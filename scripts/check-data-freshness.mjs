@@ -21,7 +21,8 @@ import { join } from "node:path";
 const ROOT = process.cwd();
 const now = Date.now();
 const DAY = 86400_000;
-const problems = [];
+const problems = [];   // wrong or missing data — must not ship
+const warnings = [];   // stale but not wrong, or upstream's fault — must not be silent
 const notes = [];
 
 const ageDays = (iso) => (now - new Date(iso).getTime()) / DAY;
@@ -43,6 +44,49 @@ check("clubelo", () => {
   // period is always within a few days. Ten days means the refresh has stopped.
   if (age > 10) throw new Error(`newest rating period is ${fmt(age)} old (${newest}) — refresh has stopped`);
   notes.push(`clubelo: ${rows.length} clubs, newest period ${newest} (${fmt(age)})`);
+
+  // A fresh file is not the same as a live rating. ClubElo rolls each club's validity
+  // window forward at every fixture whether or not it has processed the result, so the
+  // dates above can look current while the numbers are months old — which is exactly what
+  // happened at the start of the 2026-27 season. If matches have been played and no club's
+  // rating has moved, the model is running on frozen strengths and nothing on the site can
+  // change, however fresh the file looks.
+  const resultsPath = join(ROOT, "data", "results-2026.json");
+  if (!existsSync(resultsPath)) return;
+  const results = Object.values(JSON.parse(readFileSync(resultsPath, "utf8")).results ?? {});
+  const recent = results.filter((r) => ageDays(r.date) <= 14);
+  if (recent.length < 5) return;                 // too early in the season to expect movement
+
+  const dir = join(ROOT, "data", "elo-history");
+  if (!existsSync(dir)) return;
+  const played = new Set(recent.flatMap((r) => [r.home, r.away]));
+  const current = new Map(rows.map((l) => { const c = l.split(","); return [c[1], Number(c[4])]; }));
+  let checked = 0, stationary = 0;
+  for (const [club, elo] of current) {
+    if (!played.has(club)) continue;
+    const f = join(dir, `${club.toLowerCase().replace(/[^a-z0-9]+/g, "-")}.csv`);
+    if (!existsSync(f)) continue;
+    const hist = readFileSync(f, "utf8").trim().split("\n").slice(1)
+      .map((l) => { const c = l.split(","); return { date: c[5], elo: Number(c[4]) }; })
+      .filter((x) => x.date);
+    const cutoff = new Date(now - 21 * DAY).toISOString().slice(0, 10);
+    let before = null;
+    for (const p of hist) { if (p.date <= cutoff) before = p.elo; else break; }
+    if (before == null) continue;
+    checked++;
+    if (Math.abs(elo - before) < 0.5) stationary++;
+  }
+  if (checked >= 4 && stationary === checked) {
+    // A warning rather than a failure: the forecasts are stale, not wrong, and the cause
+    // is upstream. Blocking the deploy would also stop results being recorded, which is
+    // strictly worse than shipping a projection built on last month's strengths.
+    warnings.push(
+      `ratings are frozen — ${recent.length} matches played in the last 14 days, but none of ${checked} clubs involved ` +
+      `has moved in 21 days. ClubElo has not processed this season yet, so no projection on the site can change.`,
+    );
+    return;
+  }
+  if (checked) notes.push(`clubelo: ${checked - stationary}/${checked} recently-played clubs have moved rating`);
 });
 
 // ── fixtures: kickoff times, match slugs, and what counts as pre-kickoff ──
@@ -91,10 +135,11 @@ check("snapshots", () => {
 });
 
 for (const n of notes) console.log(`  ✓ ${n}`);
+for (const w of warnings) console.warn(`  ⚠ ${w}`);
 if (problems.length) {
   console.error("\n✗ data freshness check failed:");
   for (const p of problems) console.error(`  · ${p}`);
   console.error("\nA stale forecast looks exactly like a fresh one on the page, which is why this fails the build instead of warning.");
   process.exit(1);
 }
-console.log("✓ all datasets fresh");
+console.log(warnings.length ? `✓ no blocking problems (${warnings.length} warning)` : "✓ all datasets fresh");
