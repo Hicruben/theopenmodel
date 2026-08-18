@@ -19,12 +19,16 @@ const SNAPSHOT_LABEL = LATEST_SNAPSHOT
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE),
+  // The old title led with news, matches and predictions — three things done better
+  // elsewhere, which invited a comparison against live-score apps and bookmakers that this
+  // site loses on both counts. It now leads with the question nothing free has answered
+  // since FiveThirtyEight's model stopped in 2023.
   title: {
-    default: "The Open Model: football news, matches & clear predictions",
+    default: "The Open Model: how will your club's season end?",
     template: "%s | The Open Model",
   },
   description:
-    "Football news, upcoming matches and easy-to-read result probabilities. See what each percentage means and check past predictions, including the wrong ones.",
+    "Title, top-four and relegation chances for every club in Europe's top five leagues, resimulated every day. Free, open-source, and every forecast we have ever published is scored in public — including the wrong ones.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -75,7 +79,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 <li><Link href="/news/">Football news</Link></li>
                 <li><Link href="/tools/">Football tools</Link></li>
                 <li><Link href="/tools/scenario/">What-if season simulator</Link></li>
-                <li><Link href="/best-bets/">Most confident predictions</Link></li>
+                <li><Link href="/clearest-calls/">Most confident predictions</Link></li>
                 <li><Link href="/movers/">Teams getting stronger or weaker</Link></li>
                 <li><Link href="/snapshots/">Saved daily forecasts</Link></li>
                 <li><Link href="/data/">Download data (CSV/JSON)</Link></li>

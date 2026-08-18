@@ -23,6 +23,15 @@ export default {
       return Response.redirect(url.toString(), 301);
     }
 
+    // /best-bets/ was indexed and linked before it was renamed. The URL itself read as a
+    // betting-tips page on a site that publishes no tips and claims no edge over
+    // bookmakers, which put us in the one search neighbourhood we can never win and drew
+    // readers who bounce. Redirected rather than dropped, so the little authority it has
+    // moves to the honest name.
+    if (url.pathname === "/best-bets" || url.pathname === "/best-bets/") {
+      return Response.redirect(`${url.origin}/clearest-calls/`, 301);
+    }
+
     if (url.pathname === "/stats.js") {
       // The old nginx aliased /stats.js to the real Umami script at /script.js.
       return proxyUmami(request, `${UMAMI_ORIGIN}/script.js`);

@@ -82,10 +82,13 @@ export function LiveScores({ initial, initialAsOf }: { initial: PortalFixture[];
         }
       } catch { /* keep last snapshot */ }
     }
+    // The feed behind this file is rebuilt once a day on static hosting, so the old
+    // 30-second poll re-downloaded an unchanged file 2,880 times a day and dressed stale
+    // data up as live. One fetch on load, plus one when the tab regains focus, is all the
+    // freshness there actually is to collect.
     void refresh();
-    const id = window.setInterval(refresh, 30_000);
     window.addEventListener("focus", refresh);
-    return () => { cancelled = true; window.clearInterval(id); window.removeEventListener("focus", refresh); };
+    return () => { cancelled = true; window.removeEventListener("focus", refresh); };
   }, []);
 
   const { live, finished, upcoming, updated } = useMemo(() => {
@@ -106,9 +109,9 @@ export function LiveScores({ initial, initialAsOf }: { initial: PortalFixture[];
     <>
       <p className="updated" style={{ margin: "2px 0 0" }}>
         {live.length > 0 ? <><span className="ls-livebadge"><i className="ls-dot" aria-hidden />{live.length} live now</span> · </> : null}
-        {updated ? `Live feed updated ${updated} · refreshes automatically` : "Awaiting the live feed"}
+        {updated ? `Results as of ${updated} · rebuilt once a day` : "Awaiting the next daily rebuild"}
       </p>
-      {empty && <p className="pagedesc" style={{ marginTop: 20 }}>No matches in the live window right now. Live scores appear here automatically when games kick off.</p>}
+      {empty && <p className="pagedesc" style={{ marginTop: 20 }}>No matches in the current window. Results appear here after the next daily rebuild.</p>}
       <Group title="Live now" list={live} tone="" />
       <Group title="Finished today" list={finished} />
       <Group title="Coming up today" list={upcoming} />

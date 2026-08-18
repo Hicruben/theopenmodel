@@ -6,11 +6,11 @@ import { Crest } from "../components/Crest";
 import { Kickoff } from "../components/Kickoff";
 
 export const metadata = {
-  title: "Top predictions — the clearest upcoming matches",
-  description: "Upcoming matches ranked by their highest estimated result chance, with plain-language goal and scoring probabilities.",
+  title: "The clearest calls — where the model is most confident",
+  description: "Upcoming matches ranked by how confident the model is, with plain-language goal and scoring probabilities. Statistical forecasts, not betting tips — no edge over bookmakers is claimed.",
 };
 
-export default function BestBets() {
+export default function ClearestCalls() {
   const fx = upcomingFixtures(80);
   const rated = fx.map((f) => {
     const p = matchProb(f.home.elo, f.away.elo);

@@ -4,19 +4,22 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
+// The nav is the clearest statement of what this site is for, so it leads with the
+// question only we answer — how a club's season ends — rather than with live scores and
+// news, which FlashForm-style apps do far better and which invited exactly the comparison
+// we lose. Scores and news still exist; they are no longer what we claim to be.
 const LINKS = [
   { href: "/", label: "Today" },
-  { href: "/scores/", label: "Scores" },
+  { href: "/leagues/", label: "Season outlook" },
   { href: "/matches/", label: "Predictions" },
-  { href: "/news/", label: "News" },
-  { href: "/leagues/", label: "Leagues" },
+  { href: "/record/", label: "Track record" },
+  { href: "/data/", label: "Free data" },
   { href: "/tools/", label: "Tools" },
   { href: "/guide/", label: "How it works" },
-  { href: "/record/", label: "Past results" },
 ];
 
 // On desktop these lower-priority links collapse first; on mobile all show in the drawer.
-const COMPACT = new Set(["/tools/", "/guide/", "/record/"]);
+const COMPACT = new Set(["/tools/", "/guide/", "/data/"]);
 
 export function MainNav({ snapshotHref, snapshotLabel }: { snapshotHref?: string; snapshotLabel?: string } = {}) {
   const pathname = usePathname();

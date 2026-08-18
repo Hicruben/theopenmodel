@@ -21,7 +21,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${SITE}/tools/scenario/`, changeFrequency: "weekly", priority: 0.75 },
     { url: `${SITE}/leagues/`, changeFrequency: "weekly", priority: 0.7, lastModified: now },
     { url: `${SITE}/movers/`, changeFrequency: "weekly", priority: 0.7, lastModified: now },
-    { url: `${SITE}/best-bets/`, changeFrequency: "daily", priority: 0.8, lastModified: now },
+    { url: `${SITE}/clearest-calls/`, changeFrequency: "daily", priority: 0.8, lastModified: now },
     { url: `${SITE}/data/`, changeFrequency: "weekly", priority: 0.6, lastModified: now },
     { url: `${SITE}/snapshots/`, changeFrequency: "daily", priority: 0.6, lastModified: now },
     { url: `${SITE}/guide/`, changeFrequency: "monthly", priority: 0.6 },

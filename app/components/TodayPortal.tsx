@@ -100,7 +100,7 @@ export function TodayPortal({ predictionSlot, tickerSlot }: { predictionSlot?: R
 
   const tools = [
     { href: "/tools/scenario/", title: "What-if season simulator", copy: "Change a result and see how the league table could move." },
-    { href: "/best-bets/", title: "Top predictions", copy: "See the upcoming matches where one result stands out most." },
+    { href: "/clearest-calls/", title: "Top predictions", copy: "See the upcoming matches where one result stands out most." },
     { href: "/movers/", title: "Teams improving fastest", copy: "See which clubs have become stronger or weaker over time." },
     { href: "/data/", title: "Download the data", copy: "Take every prediction with you as a CSV or JSON file." },
   ];
@@ -179,7 +179,7 @@ export function TodayPortal({ predictionSlot, tickerSlot }: { predictionSlot?: R
               <h2 id="portal-radar-title">Three forecasts to watch</h2>
               <p>One clear favourite, one close call and one match with a higher goal estimate.</p>
             </div>
-            <Link className="portal-section-link" href="/best-bets/">
+            <Link className="portal-section-link" href="/clearest-calls/">
               See all predictions <span aria-hidden>→</span>
             </Link>
           </header>
