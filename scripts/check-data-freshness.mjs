@@ -89,6 +89,35 @@ check("clubelo", () => {
   if (checked) notes.push(`clubelo: ${checked - stationary}/${checked} recently-played clubs have moved rating`);
 });
 
+// ── rosters: the file the site actually reads ratings from ──
+// Refreshing clubelo-latest.csv achieves nothing on its own: every page reads strengths
+// from leagues-2026.json, which is built by joining that CSV with the API-Football rosters.
+// That join was not wired into the build either, so a refreshed CSV sat next to a
+// month-old roster file and the site kept serving July's numbers.
+check("rosters", () => {
+  const p = join(ROOT, "data", "leagues-2026.json");
+  if (!existsSync(p)) throw new Error("data/leagues-2026.json is missing");
+  const rosters = JSON.parse(readFileSync(p, "utf8"));
+  const clubs = Object.values(rosters).flat();
+  if (clubs.length < 90) throw new Error(`only ${clubs.length} clubs (expected ~96)`);
+
+  const csv = join(ROOT, "data", "clubelo-latest.csv");
+  if (!existsSync(csv)) return;
+  const elo = new Map(readFileSync(csv, "utf8").trim().split("\n").slice(1)
+    .map((l) => { const c = l.split(","); return [c[1], Number(c[4])]; }));
+  const drifted = clubs.filter((c) => {
+    const source = elo.get(c.club);
+    return source != null && Math.abs(source - c.elo) >= 1;
+  });
+  if (drifted.length) {
+    throw new Error(
+      `${drifted.length} clubs' ratings disagree with clubelo-latest.csv (e.g. ${drifted.slice(0, 3).map((c) => `${c.club} ${c.elo} vs ${elo.get(c.club).toFixed(0)}`).join(", ")}) — ` +
+      `the roster join has not been re-run, so the site is serving older strengths than the ratings file holds`,
+    );
+  }
+  notes.push(`rosters: ${clubs.length} clubs, ratings match clubelo-latest.csv`);
+});
+
 // ── fixtures: kickoff times, match slugs, and what counts as pre-kickoff ──
 check("fixtures", () => {
   const p = join(ROOT, "data", "fixtures-2026.json");
