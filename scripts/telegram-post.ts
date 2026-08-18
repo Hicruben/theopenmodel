@@ -254,29 +254,50 @@ async function preview() {
     "",
     `${slate.length} prediction${slate.length === 1 ? "" : "s"} locked and published now. Every one gets scored after full time.`,
   ];
-  if (featured.length) {
+
+  if (slate.length === 1) {
+    // A single fixture has no slate to compare against, so "closest call" and "narrowest
+    // margin" are simply false — and calling a 72% favourite the hardest match to call
+    // undermines every other number we print. Just show the match.
+    const m = slate[0];
+    const t = topPick(m);
     lines.push("");
-    lines.push(listAll ? "🔒 <b>The model's calls</b>" : "🔒 <b>Most confident</b>");
-    for (const m of featured) {
-      const t = topPick(m);
-      lines.push(`• ${esc(m.home)} v ${esc(m.away)} — <b>${esc(t.label)} ${pct(t.p)}</b> <i>${timeLabel(m.date)}</i>`);
+    lines.push(`<b>${esc(m.home)} v ${esc(m.away)}</b> <i>${timeLabel(m.date)}</i>`);
+    lines.push(`${esc(m.home)} ${pct(m.p.h)} · Draw ${pct(m.p.d)} · ${esc(m.away)} ${pct(m.p.a)}`);
+    lines.push(
+      t.p >= 0.6 ? `<i>The model's clearest call in a while — ${esc(t.label)} to win.</i>`
+        : spread(m) < 0.01 ? "<i>Too close to separate — the model can't call this one.</i>"
+        : `<i>The model leans ${esc(t.label)}, without much conviction.</i>`,
+    );
+  } else {
+    if (featured.length) {
+      lines.push("");
+      lines.push(listAll ? "🔒 <b>The model's calls</b>" : "🔒 <b>Most confident</b>");
+      for (const m of featured) {
+        const t = topPick(m);
+        lines.push(`• ${esc(m.home)} v ${esc(m.away)} — <b>${esc(t.label)} ${pct(t.p)}</b> <i>${timeLabel(m.date)}</i>`);
+      }
     }
+    lines.push("");
+    lines.push(`🎲 <b>Closest call</b> — ${esc(tightest.home)} v ${esc(tightest.away)} <i>${timeLabel(tightest.date)}</i>`);
+    lines.push(`${esc(tightest.home)} ${pct(tightest.p.h)} · Draw ${pct(tightest.p.d)} · ${esc(tightest.away)} ${pct(tightest.p.a)}`);
+    // Under a point the rounded numbers print identically, so claiming a lean reads as
+    // self-contradictory. Saying so plainly is the more valuable answer anyway.
+    lines.push(
+      spread(tightest) < 0.01
+        ? "<i>Too close to separate — the model can't call this one.</i>"
+        : `<i>Narrowest margin on the slate — the model leans ${esc(topPick(tightest).label)}.</i>`,
+    );
   }
-  lines.push("");
-  lines.push(`🎲 <b>Closest call</b> — ${esc(tightest.home)} v ${esc(tightest.away)} <i>${timeLabel(tightest.date)}</i>`);
-  lines.push(`${esc(tightest.home)} ${pct(tightest.p.h)} · Draw ${pct(tightest.p.d)} · ${esc(tightest.away)} ${pct(tightest.p.a)}`);
-  // Under a point the rounded numbers print identically, so claiming a lean reads as
-  // self-contradictory. Saying so plainly is the more valuable answer anyway.
-  lines.push(
-    spread(tightest) < 0.01
-      ? "<i>Too close to separate — the model can't call this one.</i>"
-      : `<i>Narrowest margin on the slate — the model leans ${esc(topPick(tightest).label)}.</i>`,
-  );
+
   lines.push("");
   lines.push("<i>Published before kickoff. Scored afterwards — misses included.</i>");
 
   const buttons: Button[][] = [
-    [{ text: `📊 All ${slate.length} predictions →`, url: link("/matches/", "preview") }],
+    [{
+      text: slate.length === 1 ? "📊 See the full prediction →" : `📊 All ${slate.length} predictions →`,
+      url: link("/matches/", "preview"),
+    }],
     [{ text: "📈 Track record →", url: link("/record/", "preview") }],
   ];
   // The slate is the flagship post of the matchday, so it earns a notification.
