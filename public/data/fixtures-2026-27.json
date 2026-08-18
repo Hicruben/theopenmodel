@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-17",
+ "updated": "2026-08-18",
  "license": "CC BY 4.0 — link to theopenmodel.com",
  "rows": [
   {
@@ -3266,6 +3266,19 @@
    "url": "https://theopenmodel.com/match/marseille-vs-paris-sg-2026-09-20/"
   },
   {
+   "date": "2026-10-10T11:30:00+00:00",
+   "league": "premier-league",
+   "round": "Regular Season - 6",
+   "home": "Arsenal",
+   "away": "Leeds",
+   "pHome": 0.7265,
+   "pDraw": 0.1955,
+   "pAway": 0.078,
+   "xgHome": 2.18,
+   "xgAway": 0.6,
+   "url": "https://theopenmodel.com/match/arsenal-vs-leeds-2026-10-10/"
+  },
+  {
    "date": "2026-10-10T13:30:00+00:00",
    "league": "bundesliga",
    "round": "Regular Season - 5",
@@ -3386,45 +3399,6 @@
    "date": "2026-10-10T14:00:00+00:00",
    "league": "premier-league",
    "round": "Regular Season - 6",
-   "home": "Man United",
-   "away": "Tottenham",
-   "pHome": 0.5793,
-   "pDraw": 0.2513,
-   "pAway": 0.1694,
-   "xgHome": 1.86,
-   "xgAway": 0.92,
-   "url": "https://theopenmodel.com/match/man-united-vs-tottenham-2026-10-10/"
-  },
-  {
-   "date": "2026-10-10T14:00:00+00:00",
-   "league": "premier-league",
-   "round": "Regular Season - 6",
-   "home": "Liverpool",
-   "away": "Man City",
-   "pHome": 0.3447,
-   "pDraw": 0.2848,
-   "pAway": 0.3705,
-   "xgHome": 1.36,
-   "xgAway": 1.42,
-   "url": "https://theopenmodel.com/match/liverpool-vs-man-city-2026-10-10/"
-  },
-  {
-   "date": "2026-10-10T14:00:00+00:00",
-   "league": "premier-league",
-   "round": "Regular Season - 6",
-   "home": "Arsenal",
-   "away": "Leeds",
-   "pHome": 0.7265,
-   "pDraw": 0.1955,
-   "pAway": 0.078,
-   "xgHome": 2.18,
-   "xgAway": 0.6,
-   "url": "https://theopenmodel.com/match/arsenal-vs-leeds-2026-10-10/"
-  },
-  {
-   "date": "2026-10-10T14:00:00+00:00",
-   "league": "premier-league",
-   "round": "Regular Season - 6",
    "home": "Chelsea",
    "away": "Bournemouth",
    "pHome": 0.3665,
@@ -3438,19 +3412,6 @@
    "date": "2026-10-10T14:00:00+00:00",
    "league": "premier-league",
    "round": "Regular Season - 6",
-   "home": "Crystal Palace",
-   "away": "Forest",
-   "pHome": 0.3925,
-   "pDraw": 0.284,
-   "pAway": 0.3235,
-   "xgHome": 1.47,
-   "xgAway": 1.31,
-   "url": "https://theopenmodel.com/match/crystal-palace-vs-forest-2026-10-10/"
-  },
-  {
-   "date": "2026-10-10T14:00:00+00:00",
-   "league": "premier-league",
-   "round": "Regular Season - 6",
    "home": "Ipswich",
    "away": "Fulham",
    "pHome": 0.226,
@@ -3459,19 +3420,6 @@
    "xgHome": 1.08,
    "xgAway": 1.7,
    "url": "https://theopenmodel.com/match/ipswich-vs-fulham-2026-10-10/"
-  },
-  {
-   "date": "2026-10-10T14:00:00+00:00",
-   "league": "premier-league",
-   "round": "Regular Season - 6",
-   "home": "Hull",
-   "away": "Everton",
-   "pHome": 0.141,
-   "pDraw": 0.2382,
-   "pAway": 0.6208,
-   "xgHome": 0.84,
-   "xgAway": 1.95,
-   "url": "https://theopenmodel.com/match/hull-vs-everton-2026-10-10/"
   },
   {
    "date": "2026-10-10T14:00:00+00:00",
@@ -3498,19 +3446,6 @@
    "xgHome": 1.25,
    "xgAway": 1.53,
    "url": "https://theopenmodel.com/match/sunderland-vs-brighton-2026-10-10/"
-  },
-  {
-   "date": "2026-10-10T14:00:00+00:00",
-   "league": "premier-league",
-   "round": "Regular Season - 6",
-   "home": "Coventry",
-   "away": "Newcastle",
-   "pHome": 0.2232,
-   "pDraw": 0.269,
-   "pAway": 0.5078,
-   "xgHome": 1.07,
-   "xgAway": 1.71,
-   "url": "https://theopenmodel.com/match/coventry-vs-newcastle-2026-10-10/"
   },
   {
    "date": "2026-10-10T15:00:00+00:00",
@@ -3628,6 +3563,45 @@
    "xgHome": 1.6,
    "xgAway": 1.18,
    "url": "https://theopenmodel.com/match/lens-vs-lyon-2026-10-10/"
+  },
+  {
+   "date": "2026-10-10T16:30:00+00:00",
+   "league": "premier-league",
+   "round": "Regular Season - 6",
+   "home": "Man United",
+   "away": "Tottenham",
+   "pHome": 0.5793,
+   "pDraw": 0.2513,
+   "pAway": 0.1694,
+   "xgHome": 1.86,
+   "xgAway": 0.92,
+   "url": "https://theopenmodel.com/match/man-united-vs-tottenham-2026-10-10/"
+  },
+  {
+   "date": "2026-10-11T13:00:00+00:00",
+   "league": "premier-league",
+   "round": "Regular Season - 6",
+   "home": "Crystal Palace",
+   "away": "Forest",
+   "pHome": 0.3925,
+   "pDraw": 0.284,
+   "pAway": 0.3235,
+   "xgHome": 1.47,
+   "xgAway": 1.31,
+   "url": "https://theopenmodel.com/match/crystal-palace-vs-forest-2026-10-11/"
+  },
+  {
+   "date": "2026-10-11T13:00:00+00:00",
+   "league": "premier-league",
+   "round": "Regular Season - 6",
+   "home": "Hull",
+   "away": "Everton",
+   "pHome": 0.141,
+   "pDraw": 0.2382,
+   "pAway": 0.6208,
+   "xgHome": 0.84,
+   "xgAway": 1.95,
+   "url": "https://theopenmodel.com/match/hull-vs-everton-2026-10-11/"
   },
   {
    "date": "2026-10-11T15:00:00+00:00",
@@ -3760,6 +3734,19 @@
    "url": "https://theopenmodel.com/match/santander-vs-valencia-2026-10-11/"
   },
   {
+   "date": "2026-10-11T15:30:00+00:00",
+   "league": "premier-league",
+   "round": "Regular Season - 6",
+   "home": "Liverpool",
+   "away": "Man City",
+   "pHome": 0.3447,
+   "pDraw": 0.2848,
+   "pAway": 0.3705,
+   "xgHome": 1.36,
+   "xgAway": 1.42,
+   "url": "https://theopenmodel.com/match/liverpool-vs-man-city-2026-10-11/"
+  },
+  {
    "date": "2026-10-11T16:30:00+00:00",
    "league": "serie-a",
    "round": "Regular Season - 6",
@@ -3890,6 +3877,32 @@
    "url": "https://theopenmodel.com/match/como-vs-roma-2026-10-11/"
   },
   {
+   "date": "2026-10-12T19:00:00+00:00",
+   "league": "premier-league",
+   "round": "Regular Season - 6",
+   "home": "Coventry",
+   "away": "Newcastle",
+   "pHome": 0.2232,
+   "pDraw": 0.269,
+   "pAway": 0.5078,
+   "xgHome": 1.07,
+   "xgAway": 1.71,
+   "url": "https://theopenmodel.com/match/coventry-vs-newcastle-2026-10-12/"
+  },
+  {
+   "date": "2026-10-17T11:30:00+00:00",
+   "league": "premier-league",
+   "round": "Regular Season - 7",
+   "home": "Everton",
+   "away": "Chelsea",
+   "pHome": 0.3817,
+   "pDraw": 0.2845,
+   "pAway": 0.3338,
+   "xgHome": 1.44,
+   "xgAway": 1.34,
+   "url": "https://theopenmodel.com/match/everton-vs-chelsea-2026-10-17/"
+  },
+  {
    "date": "2026-10-17T13:30:00+00:00",
    "league": "bundesliga",
    "round": "Regular Season - 6",
@@ -4010,32 +4023,6 @@
    "date": "2026-10-17T14:00:00+00:00",
    "league": "premier-league",
    "round": "Regular Season - 7",
-   "home": "Newcastle",
-   "away": "Aston Villa",
-   "pHome": 0.3187,
-   "pDraw": 0.2837,
-   "pAway": 0.3976,
-   "xgHome": 1.3,
-   "xgAway": 1.48,
-   "url": "https://theopenmodel.com/match/newcastle-vs-aston-villa-2026-10-17/"
-  },
-  {
-   "date": "2026-10-17T14:00:00+00:00",
-   "league": "premier-league",
-   "round": "Regular Season - 7",
-   "home": "Bournemouth",
-   "away": "Sunderland",
-   "pHome": 0.577,
-   "pDraw": 0.2519,
-   "pAway": 0.171,
-   "xgHome": 1.85,
-   "xgAway": 0.93,
-   "url": "https://theopenmodel.com/match/bournemouth-vs-sunderland-2026-10-17/"
-  },
-  {
-   "date": "2026-10-17T14:00:00+00:00",
-   "league": "premier-league",
-   "round": "Regular Season - 7",
    "home": "Fulham",
    "away": "Hull",
    "pHome": 0.7413,
@@ -4044,32 +4031,6 @@
    "xgHome": 2.21,
    "xgAway": 0.57,
    "url": "https://theopenmodel.com/match/fulham-vs-hull-2026-10-17/"
-  },
-  {
-   "date": "2026-10-17T14:00:00+00:00",
-   "league": "premier-league",
-   "round": "Regular Season - 7",
-   "home": "Everton",
-   "away": "Chelsea",
-   "pHome": 0.3817,
-   "pDraw": 0.2845,
-   "pAway": 0.3338,
-   "xgHome": 1.44,
-   "xgAway": 1.34,
-   "url": "https://theopenmodel.com/match/everton-vs-chelsea-2026-10-17/"
-  },
-  {
-   "date": "2026-10-17T14:00:00+00:00",
-   "league": "premier-league",
-   "round": "Regular Season - 7",
-   "home": "Tottenham",
-   "away": "Coventry",
-   "pHome": 0.5527,
-   "pDraw": 0.2586,
-   "pAway": 0.1887,
-   "xgHome": 1.8,
-   "xgAway": 0.98,
-   "url": "https://theopenmodel.com/match/tottenham-vs-coventry-2026-10-17/"
   },
   {
    "date": "2026-10-17T14:00:00+00:00",
@@ -4088,19 +4049,6 @@
    "date": "2026-10-17T14:00:00+00:00",
    "league": "premier-league",
    "round": "Regular Season - 7",
-   "home": "Brighton",
-   "away": "Crystal Palace",
-   "pHome": 0.4594,
-   "pDraw": 0.2774,
-   "pAway": 0.2632,
-   "xgHome": 1.61,
-   "xgAway": 1.17,
-   "url": "https://theopenmodel.com/match/brighton-vs-crystal-palace-2026-10-17/"
-  },
-  {
-   "date": "2026-10-17T14:00:00+00:00",
-   "league": "premier-league",
-   "round": "Regular Season - 7",
    "home": "Brentford",
    "away": "Liverpool",
    "pHome": 0.3289,
@@ -4109,32 +4057,6 @@
    "xgHome": 1.33,
    "xgAway": 1.45,
    "url": "https://theopenmodel.com/match/brentford-vs-liverpool-2026-10-17/"
-  },
-  {
-   "date": "2026-10-17T14:00:00+00:00",
-   "league": "premier-league",
-   "round": "Regular Season - 7",
-   "home": "Leeds",
-   "away": "Man United",
-   "pHome": 0.2817,
-   "pDraw": 0.2802,
-   "pAway": 0.4382,
-   "xgHome": 1.22,
-   "xgAway": 1.56,
-   "url": "https://theopenmodel.com/match/leeds-vs-man-united-2026-10-17/"
-  },
-  {
-   "date": "2026-10-17T14:00:00+00:00",
-   "league": "premier-league",
-   "round": "Regular Season - 7",
-   "home": "Forest",
-   "away": "Arsenal",
-   "pHome": 0.1643,
-   "pDraw": 0.2491,
-   "pAway": 0.5866,
-   "xgHome": 0.91,
-   "xgAway": 1.87,
-   "url": "https://theopenmodel.com/match/forest-vs-arsenal-2026-10-17/"
   },
   {
    "date": "2026-10-17T15:00:00+00:00",
@@ -4252,6 +4174,58 @@
    "xgHome": 1.11,
    "xgAway": 1.67,
    "url": "https://theopenmodel.com/match/le-mans-vs-toulouse-2026-10-17/"
+  },
+  {
+   "date": "2026-10-17T16:30:00+00:00",
+   "league": "premier-league",
+   "round": "Regular Season - 7",
+   "home": "Newcastle",
+   "away": "Aston Villa",
+   "pHome": 0.3187,
+   "pDraw": 0.2837,
+   "pAway": 0.3976,
+   "xgHome": 1.3,
+   "xgAway": 1.48,
+   "url": "https://theopenmodel.com/match/newcastle-vs-aston-villa-2026-10-17/"
+  },
+  {
+   "date": "2026-10-18T13:00:00+00:00",
+   "league": "premier-league",
+   "round": "Regular Season - 7",
+   "home": "Bournemouth",
+   "away": "Sunderland",
+   "pHome": 0.577,
+   "pDraw": 0.2519,
+   "pAway": 0.171,
+   "xgHome": 1.85,
+   "xgAway": 0.93,
+   "url": "https://theopenmodel.com/match/bournemouth-vs-sunderland-2026-10-18/"
+  },
+  {
+   "date": "2026-10-18T13:00:00+00:00",
+   "league": "premier-league",
+   "round": "Regular Season - 7",
+   "home": "Brighton",
+   "away": "Crystal Palace",
+   "pHome": 0.4594,
+   "pDraw": 0.2774,
+   "pAway": 0.2632,
+   "xgHome": 1.61,
+   "xgAway": 1.17,
+   "url": "https://theopenmodel.com/match/brighton-vs-crystal-palace-2026-10-18/"
+  },
+  {
+   "date": "2026-10-18T13:00:00+00:00",
+   "league": "premier-league",
+   "round": "Regular Season - 7",
+   "home": "Leeds",
+   "away": "Man United",
+   "pHome": 0.2817,
+   "pDraw": 0.2802,
+   "pAway": 0.4382,
+   "xgHome": 1.22,
+   "xgAway": 1.56,
+   "url": "https://theopenmodel.com/match/leeds-vs-man-united-2026-10-18/"
   },
   {
    "date": "2026-10-18T15:00:00+00:00",
@@ -4384,6 +4358,19 @@
    "url": "https://theopenmodel.com/match/osasuna-vs-santander-2026-10-18/"
   },
   {
+   "date": "2026-10-18T15:30:00+00:00",
+   "league": "premier-league",
+   "round": "Regular Season - 7",
+   "home": "Forest",
+   "away": "Arsenal",
+   "pHome": 0.1643,
+   "pDraw": 0.2491,
+   "pAway": 0.5866,
+   "xgHome": 0.91,
+   "xgAway": 1.87,
+   "url": "https://theopenmodel.com/match/forest-vs-arsenal-2026-10-18/"
+  },
+  {
    "date": "2026-10-18T16:30:00+00:00",
    "league": "serie-a",
    "round": "Regular Season - 7",
@@ -4514,6 +4501,45 @@
    "url": "https://theopenmodel.com/match/monza-vs-cagliari-2026-10-18/"
   },
   {
+   "date": "2026-10-19T19:00:00+00:00",
+   "league": "premier-league",
+   "round": "Regular Season - 7",
+   "home": "Tottenham",
+   "away": "Coventry",
+   "pHome": 0.5527,
+   "pDraw": 0.2586,
+   "pAway": 0.1887,
+   "xgHome": 1.8,
+   "xgAway": 0.98,
+   "url": "https://theopenmodel.com/match/tottenham-vs-coventry-2026-10-19/"
+  },
+  {
+   "date": "2026-10-23T19:00:00+00:00",
+   "league": "premier-league",
+   "round": "Regular Season - 8",
+   "home": "Ipswich",
+   "away": "Forest",
+   "pHome": 0.2173,
+   "pDraw": 0.2674,
+   "pAway": 0.5153,
+   "xgHome": 1.06,
+   "xgAway": 1.72,
+   "url": "https://theopenmodel.com/match/ipswich-vs-forest-2026-10-23/"
+  },
+  {
+   "date": "2026-10-24T11:30:00+00:00",
+   "league": "premier-league",
+   "round": "Regular Season - 8",
+   "home": "Aston Villa",
+   "away": "Man City",
+   "pHome": 0.3562,
+   "pDraw": 0.2849,
+   "pAway": 0.3588,
+   "xgHome": 1.39,
+   "xgAway": 1.39,
+   "url": "https://theopenmodel.com/match/aston-villa-vs-man-city-2026-10-24/"
+  },
+  {
    "date": "2026-10-24T13:30:00+00:00",
    "league": "bundesliga",
    "round": "Regular Season - 7",
@@ -4634,19 +4660,6 @@
    "date": "2026-10-24T14:00:00+00:00",
    "league": "premier-league",
    "round": "Regular Season - 8",
-   "home": "Man United",
-   "away": "Bournemouth",
-   "pHome": 0.4655,
-   "pDraw": 0.2765,
-   "pAway": 0.258,
-   "xgHome": 1.62,
-   "xgAway": 1.16,
-   "url": "https://theopenmodel.com/match/man-united-vs-bournemouth-2026-10-24/"
-  },
-  {
-   "date": "2026-10-24T14:00:00+00:00",
-   "league": "premier-league",
-   "round": "Regular Season - 8",
    "home": "Liverpool",
    "away": "Brighton",
    "pHome": 0.4961,
@@ -4668,84 +4681,6 @@
    "xgHome": 2.16,
    "xgAway": 0.62,
    "url": "https://theopenmodel.com/match/arsenal-vs-everton-2026-10-24/"
-  },
-  {
-   "date": "2026-10-24T14:00:00+00:00",
-   "league": "premier-league",
-   "round": "Regular Season - 8",
-   "home": "Chelsea",
-   "away": "Tottenham",
-   "pHome": 0.4781,
-   "pDraw": 0.2745,
-   "pAway": 0.2474,
-   "xgHome": 1.65,
-   "xgAway": 1.13,
-   "url": "https://theopenmodel.com/match/chelsea-vs-tottenham-2026-10-24/"
-  },
-  {
-   "date": "2026-10-24T14:00:00+00:00",
-   "league": "premier-league",
-   "round": "Regular Season - 8",
-   "home": "Crystal Palace",
-   "away": "Newcastle",
-   "pHome": 0.3747,
-   "pDraw": 0.2847,
-   "pAway": 0.3405,
-   "xgHome": 1.43,
-   "xgAway": 1.35,
-   "url": "https://theopenmodel.com/match/crystal-palace-vs-newcastle-2026-10-24/"
-  },
-  {
-   "date": "2026-10-24T14:00:00+00:00",
-   "league": "premier-league",
-   "round": "Regular Season - 8",
-   "home": "Ipswich",
-   "away": "Forest",
-   "pHome": 0.2173,
-   "pDraw": 0.2674,
-   "pAway": 0.5153,
-   "xgHome": 1.06,
-   "xgAway": 1.72,
-   "url": "https://theopenmodel.com/match/ipswich-vs-forest-2026-10-24/"
-  },
-  {
-   "date": "2026-10-24T14:00:00+00:00",
-   "league": "premier-league",
-   "round": "Regular Season - 8",
-   "home": "Hull",
-   "away": "Brentford",
-   "pHome": 0.1165,
-   "pDraw": 0.2242,
-   "pAway": 0.6593,
-   "xgHome": 0.75,
-   "xgAway": 2.03,
-   "url": "https://theopenmodel.com/match/hull-vs-brentford-2026-10-24/"
-  },
-  {
-   "date": "2026-10-24T14:00:00+00:00",
-   "league": "premier-league",
-   "round": "Regular Season - 8",
-   "home": "Aston Villa",
-   "away": "Man City",
-   "pHome": 0.3562,
-   "pDraw": 0.2849,
-   "pAway": 0.3588,
-   "xgHome": 1.39,
-   "xgAway": 1.39,
-   "url": "https://theopenmodel.com/match/aston-villa-vs-man-city-2026-10-24/"
-  },
-  {
-   "date": "2026-10-24T14:00:00+00:00",
-   "league": "premier-league",
-   "round": "Regular Season - 8",
-   "home": "Sunderland",
-   "away": "Leeds",
-   "pHome": 0.3431,
-   "pDraw": 0.2848,
-   "pAway": 0.3721,
-   "xgHome": 1.36,
-   "xgAway": 1.42,
-   "url": "https://theopenmodel.com/match/sunderland-vs-leeds-2026-10-24/"
   },
   {
    "date": "2026-10-24T14:00:00+00:00",
@@ -4863,6 +4798,58 @@
    "xgHome": 1.86,
    "xgAway": 0.92,
    "url": "https://theopenmodel.com/match/lens-vs-paris-fc-2026-10-24/"
+  },
+  {
+   "date": "2026-10-24T16:30:00+00:00",
+   "league": "premier-league",
+   "round": "Regular Season - 8",
+   "home": "Chelsea",
+   "away": "Tottenham",
+   "pHome": 0.4781,
+   "pDraw": 0.2745,
+   "pAway": 0.2474,
+   "xgHome": 1.65,
+   "xgAway": 1.13,
+   "url": "https://theopenmodel.com/match/chelsea-vs-tottenham-2026-10-24/"
+  },
+  {
+   "date": "2026-10-25T14:00:00+00:00",
+   "league": "premier-league",
+   "round": "Regular Season - 8",
+   "home": "Man United",
+   "away": "Bournemouth",
+   "pHome": 0.4655,
+   "pDraw": 0.2765,
+   "pAway": 0.258,
+   "xgHome": 1.62,
+   "xgAway": 1.16,
+   "url": "https://theopenmodel.com/match/man-united-vs-bournemouth-2026-10-25/"
+  },
+  {
+   "date": "2026-10-25T14:00:00+00:00",
+   "league": "premier-league",
+   "round": "Regular Season - 8",
+   "home": "Crystal Palace",
+   "away": "Newcastle",
+   "pHome": 0.3747,
+   "pDraw": 0.2847,
+   "pAway": 0.3405,
+   "xgHome": 1.43,
+   "xgAway": 1.35,
+   "url": "https://theopenmodel.com/match/crystal-palace-vs-newcastle-2026-10-25/"
+  },
+  {
+   "date": "2026-10-25T14:00:00+00:00",
+   "league": "premier-league",
+   "round": "Regular Season - 8",
+   "home": "Hull",
+   "away": "Brentford",
+   "pHome": 0.1165,
+   "pDraw": 0.2242,
+   "pAway": 0.6593,
+   "xgHome": 0.75,
+   "xgAway": 2.03,
+   "url": "https://theopenmodel.com/match/hull-vs-brentford-2026-10-25/"
   },
   {
    "date": "2026-10-25T16:00:00+00:00",
@@ -4993,6 +4980,19 @@
    "xgHome": 1.39,
    "xgAway": 1.39,
    "url": "https://theopenmodel.com/match/santander-vs-espanyol-2026-10-25/"
+  },
+  {
+   "date": "2026-10-25T16:30:00+00:00",
+   "league": "premier-league",
+   "round": "Regular Season - 8",
+   "home": "Sunderland",
+   "away": "Leeds",
+   "pHome": 0.3431,
+   "pDraw": 0.2848,
+   "pAway": 0.3721,
+   "xgHome": 1.36,
+   "xgAway": 1.42,
+   "url": "https://theopenmodel.com/match/sunderland-vs-leeds-2026-10-25/"
   },
   {
    "date": "2026-10-25T17:30:00+00:00",
@@ -5268,6 +5268,19 @@
    "url": "https://theopenmodel.com/match/monza-vs-napoli-2026-10-28/"
   },
   {
+   "date": "2026-10-31T12:30:00+00:00",
+   "league": "premier-league",
+   "round": "Regular Season - 9",
+   "home": "Chelsea",
+   "away": "Man United",
+   "pHome": 0.3179,
+   "pDraw": 0.2837,
+   "pAway": 0.3984,
+   "xgHome": 1.3,
+   "xgAway": 1.48,
+   "url": "https://theopenmodel.com/match/chelsea-vs-man-united-2026-10-31/"
+  },
+  {
    "date": "2026-10-31T14:30:00+00:00",
    "league": "bundesliga",
    "round": "Regular Season - 8",
@@ -5388,19 +5401,6 @@
    "date": "2026-10-31T15:00:00+00:00",
    "league": "premier-league",
    "round": "Regular Season - 9",
-   "home": "Newcastle",
-   "away": "Everton",
-   "pHome": 0.4545,
-   "pDraw": 0.2781,
-   "pAway": 0.2674,
-   "xgHome": 1.6,
-   "xgAway": 1.18,
-   "url": "https://theopenmodel.com/match/newcastle-vs-everton-2026-10-31/"
-  },
-  {
-   "date": "2026-10-31T15:00:00+00:00",
-   "league": "premier-league",
-   "round": "Regular Season - 9",
    "home": "Bournemouth",
    "away": "Leeds",
    "pHome": 0.5031,
@@ -5409,45 +5409,6 @@
    "xgHome": 1.7,
    "xgAway": 1.08,
    "url": "https://theopenmodel.com/match/bournemouth-vs-leeds-2026-10-31/"
-  },
-  {
-   "date": "2026-10-31T15:00:00+00:00",
-   "league": "premier-league",
-   "round": "Regular Season - 9",
-   "home": "Liverpool",
-   "away": "Arsenal",
-   "pHome": 0.2457,
-   "pDraw": 0.2742,
-   "pAway": 0.4801,
-   "xgHome": 1.13,
-   "xgAway": 1.65,
-   "url": "https://theopenmodel.com/match/liverpool-vs-arsenal-2026-10-31/"
-  },
-  {
-   "date": "2026-10-31T15:00:00+00:00",
-   "league": "premier-league",
-   "round": "Regular Season - 9",
-   "home": "Tottenham",
-   "away": "Crystal Palace",
-   "pHome": 0.3831,
-   "pDraw": 0.2845,
-   "pAway": 0.3325,
-   "xgHome": 1.45,
-   "xgAway": 1.34,
-   "url": "https://theopenmodel.com/match/tottenham-vs-crystal-palace-2026-10-31/"
-  },
-  {
-   "date": "2026-10-31T15:00:00+00:00",
-   "league": "premier-league",
-   "round": "Regular Season - 9",
-   "home": "Chelsea",
-   "away": "Man United",
-   "pHome": 0.3179,
-   "pDraw": 0.2837,
-   "pAway": 0.3984,
-   "xgHome": 1.3,
-   "xgAway": 1.48,
-   "url": "https://theopenmodel.com/match/chelsea-vs-man-united-2026-10-31/"
   },
   {
    "date": "2026-10-31T15:00:00+00:00",
@@ -5487,19 +5448,6 @@
    "xgHome": 1.24,
    "xgAway": 1.54,
    "url": "https://theopenmodel.com/match/hull-vs-ipswich-2026-10-31/"
-  },
-  {
-   "date": "2026-10-31T15:00:00+00:00",
-   "league": "premier-league",
-   "round": "Regular Season - 9",
-   "home": "Aston Villa",
-   "away": "Fulham",
-   "pHome": 0.5432,
-   "pDraw": 0.261,
-   "pAway": 0.1958,
-   "xgHome": 1.78,
-   "xgAway": 1,
-   "url": "https://theopenmodel.com/match/aston-villa-vs-fulham-2026-10-31/"
   },
   {
    "date": "2026-10-31T15:00:00+00:00",
@@ -5632,6 +5580,32 @@
    "url": "https://theopenmodel.com/match/paris-fc-vs-monaco-2026-10-31/"
   },
   {
+   "date": "2026-10-31T17:30:00+00:00",
+   "league": "premier-league",
+   "round": "Regular Season - 9",
+   "home": "Tottenham",
+   "away": "Crystal Palace",
+   "pHome": 0.3831,
+   "pDraw": 0.2845,
+   "pAway": 0.3325,
+   "xgHome": 1.45,
+   "xgAway": 1.34,
+   "url": "https://theopenmodel.com/match/tottenham-vs-crystal-palace-2026-10-31/"
+  },
+  {
+   "date": "2026-11-01T14:00:00+00:00",
+   "league": "premier-league",
+   "round": "Regular Season - 9",
+   "home": "Aston Villa",
+   "away": "Fulham",
+   "pHome": 0.5432,
+   "pDraw": 0.261,
+   "pAway": 0.1958,
+   "xgHome": 1.78,
+   "xgAway": 1,
+   "url": "https://theopenmodel.com/match/aston-villa-vs-fulham-2026-11-01/"
+  },
+  {
    "date": "2026-11-01T16:00:00+00:00",
    "league": "la-liga",
    "round": "Regular Season - 11",
@@ -5762,6 +5736,19 @@
    "url": "https://theopenmodel.com/match/santander-vs-real-madrid-2026-11-01/"
   },
   {
+   "date": "2026-11-01T16:30:00+00:00",
+   "league": "premier-league",
+   "round": "Regular Season - 9",
+   "home": "Liverpool",
+   "away": "Arsenal",
+   "pHome": 0.2457,
+   "pDraw": 0.2742,
+   "pAway": 0.4801,
+   "xgHome": 1.13,
+   "xgAway": 1.65,
+   "url": "https://theopenmodel.com/match/liverpool-vs-arsenal-2026-11-01/"
+  },
+  {
    "date": "2026-11-01T17:30:00+00:00",
    "league": "serie-a",
    "round": "Regular Season - 10",
@@ -5890,6 +5877,19 @@
    "xgHome": 1.92,
    "xgAway": 0.87,
    "url": "https://theopenmodel.com/match/como-vs-venezia-2026-11-01/"
+  },
+  {
+   "date": "2026-11-02T20:00:00+00:00",
+   "league": "premier-league",
+   "round": "Regular Season - 9",
+   "home": "Newcastle",
+   "away": "Everton",
+   "pHome": 0.4545,
+   "pDraw": 0.2781,
+   "pAway": 0.2674,
+   "xgHome": 1.6,
+   "xgAway": 1.18,
+   "url": "https://theopenmodel.com/match/newcastle-vs-everton-2026-11-02/"
   },
   {
    "date": "2026-11-07T14:30:00+00:00",

@@ -551,30 +551,8 @@
    "away": "Manchester United"
   },
   {
-   "id": 1557425,
-   "date": "2026-10-10T14:00:00+00:00",
-   "round": "Regular Season - 6",
-   "venue": "Old Trafford",
-   "city": "Manchester",
-   "homeId": 33,
-   "awayId": 47,
-   "home": "Manchester United",
-   "away": "Tottenham"
-  },
-  {
-   "id": 1557424,
-   "date": "2026-10-10T14:00:00+00:00",
-   "round": "Regular Season - 6",
-   "venue": "Anfield",
-   "city": "Liverpool",
-   "homeId": 40,
-   "awayId": 50,
-   "home": "Liverpool",
-   "away": "Manchester City"
-  },
-  {
    "id": 1557417,
-   "date": "2026-10-10T14:00:00+00:00",
+   "date": "2026-10-10T11:30:00+00:00",
    "round": "Regular Season - 6",
    "venue": "Emirates Stadium",
    "city": "London",
@@ -595,17 +573,6 @@
    "away": "Bournemouth"
   },
   {
-   "id": 1557421,
-   "date": "2026-10-10T14:00:00+00:00",
-   "round": "Regular Season - 6",
-   "venue": "Selhurst Park",
-   "city": "London",
-   "homeId": 52,
-   "awayId": 65,
-   "home": "Crystal Palace",
-   "away": "Nottingham Forest"
-  },
-  {
    "id": 1557423,
    "date": "2026-10-10T14:00:00+00:00",
    "round": "Regular Season - 6",
@@ -615,17 +582,6 @@
    "awayId": 36,
    "home": "Ipswich",
    "away": "Fulham"
-  },
-  {
-   "id": 1557422,
-   "date": "2026-10-10T14:00:00+00:00",
-   "round": "Regular Season - 6",
-   "venue": "MKM Stadium",
-   "city": "Hull",
-   "homeId": 64,
-   "awayId": 45,
-   "home": "Hull City",
-   "away": "Everton"
   },
   {
    "id": 1557418,
@@ -650,8 +606,52 @@
    "away": "Brighton"
   },
   {
+   "id": 1557425,
+   "date": "2026-10-10T16:30:00+00:00",
+   "round": "Regular Season - 6",
+   "venue": "Old Trafford",
+   "city": "Manchester",
+   "homeId": 33,
+   "awayId": 47,
+   "home": "Manchester United",
+   "away": "Tottenham"
+  },
+  {
+   "id": 1557421,
+   "date": "2026-10-11T13:00:00+00:00",
+   "round": "Regular Season - 6",
+   "venue": "Selhurst Park",
+   "city": "London",
+   "homeId": 52,
+   "awayId": 65,
+   "home": "Crystal Palace",
+   "away": "Nottingham Forest"
+  },
+  {
+   "id": 1557422,
+   "date": "2026-10-11T13:00:00+00:00",
+   "round": "Regular Season - 6",
+   "venue": "MKM Stadium",
+   "city": "Hull",
+   "homeId": 64,
+   "awayId": 45,
+   "home": "Hull City",
+   "away": "Everton"
+  },
+  {
+   "id": 1557424,
+   "date": "2026-10-11T15:30:00+00:00",
+   "round": "Regular Season - 6",
+   "venue": "Anfield",
+   "city": "Liverpool",
+   "homeId": 40,
+   "awayId": 50,
+   "home": "Liverpool",
+   "away": "Manchester City"
+  },
+  {
    "id": 1557420,
-   "date": "2026-10-10T14:00:00+00:00",
+   "date": "2026-10-12T19:00:00+00:00",
    "round": "Regular Season - 6",
    "venue": "Coventry Building Society Arena",
    "city": "Coventry",
@@ -661,26 +661,15 @@
    "away": "Newcastle"
   },
   {
-   "id": 1557434,
-   "date": "2026-10-17T14:00:00+00:00",
+   "id": 1557430,
+   "date": "2026-10-17T11:30:00+00:00",
    "round": "Regular Season - 7",
-   "venue": null,
-   "city": "Newcastle",
-   "homeId": 34,
-   "awayId": 66,
-   "home": "Newcastle",
-   "away": "Aston Villa"
-  },
-  {
-   "id": 1557427,
-   "date": "2026-10-17T14:00:00+00:00",
-   "round": "Regular Season - 7",
-   "venue": "Vitality Stadium",
-   "city": "Bournemouth",
-   "homeId": 35,
-   "awayId": 746,
-   "home": "Bournemouth",
-   "away": "Sunderland"
+   "venue": "Hill Dickinson Stadium",
+   "city": "Liverpool",
+   "homeId": 45,
+   "awayId": 49,
+   "home": "Everton",
+   "away": "Chelsea"
   },
   {
    "id": 1557431,
@@ -694,28 +683,6 @@
    "away": "Hull City"
   },
   {
-   "id": 1557430,
-   "date": "2026-10-17T14:00:00+00:00",
-   "round": "Regular Season - 7",
-   "venue": "Hill Dickinson Stadium",
-   "city": "Liverpool",
-   "homeId": 45,
-   "awayId": 49,
-   "home": "Everton",
-   "away": "Chelsea"
-  },
-  {
-   "id": 1557436,
-   "date": "2026-10-17T14:00:00+00:00",
-   "round": "Regular Season - 7",
-   "venue": "Tottenham Hotspur Stadium",
-   "city": "London",
-   "homeId": 47,
-   "awayId": 1346,
-   "home": "Tottenham",
-   "away": "Coventry"
-  },
-  {
    "id": 1557433,
    "date": "2026-10-17T14:00:00+00:00",
    "round": "Regular Season - 7",
@@ -725,17 +692,6 @@
    "awayId": 57,
    "home": "Manchester City",
    "away": "Ipswich"
-  },
-  {
-   "id": 1557429,
-   "date": "2026-10-17T14:00:00+00:00",
-   "round": "Regular Season - 7",
-   "venue": "Amex Stadium",
-   "city": "Brighton",
-   "homeId": 51,
-   "awayId": 52,
-   "home": "Brighton",
-   "away": "Crystal Palace"
   },
   {
    "id": 1557428,
@@ -749,8 +705,41 @@
    "away": "Liverpool"
   },
   {
+   "id": 1557434,
+   "date": "2026-10-17T16:30:00+00:00",
+   "round": "Regular Season - 7",
+   "venue": null,
+   "city": "Newcastle",
+   "homeId": 34,
+   "awayId": 66,
+   "home": "Newcastle",
+   "away": "Aston Villa"
+  },
+  {
+   "id": 1557427,
+   "date": "2026-10-18T13:00:00+00:00",
+   "round": "Regular Season - 7",
+   "venue": "Vitality Stadium",
+   "city": "Bournemouth",
+   "homeId": 35,
+   "awayId": 746,
+   "home": "Bournemouth",
+   "away": "Sunderland"
+  },
+  {
+   "id": 1557429,
+   "date": "2026-10-18T13:00:00+00:00",
+   "round": "Regular Season - 7",
+   "venue": "Amex Stadium",
+   "city": "Brighton",
+   "homeId": 51,
+   "awayId": 52,
+   "home": "Brighton",
+   "away": "Crystal Palace"
+  },
+  {
    "id": 1557432,
-   "date": "2026-10-17T14:00:00+00:00",
+   "date": "2026-10-18T13:00:00+00:00",
    "round": "Regular Season - 7",
    "venue": "Elland Road",
    "city": "Leeds",
@@ -761,7 +750,7 @@
   },
   {
    "id": 1557435,
-   "date": "2026-10-17T14:00:00+00:00",
+   "date": "2026-10-18T15:30:00+00:00",
    "round": "Regular Season - 7",
    "venue": "City Ground",
    "city": "Nottingham",
@@ -771,15 +760,37 @@
    "away": "Arsenal"
   },
   {
-   "id": 1557445,
-   "date": "2026-10-24T14:00:00+00:00",
+   "id": 1557436,
+   "date": "2026-10-19T19:00:00+00:00",
+   "round": "Regular Season - 7",
+   "venue": "Tottenham Hotspur Stadium",
+   "city": "London",
+   "homeId": 47,
+   "awayId": 1346,
+   "home": "Tottenham",
+   "away": "Coventry"
+  },
+  {
+   "id": 1557443,
+   "date": "2026-10-23T19:00:00+00:00",
    "round": "Regular Season - 8",
-   "venue": "Old Trafford",
-   "city": "Manchester",
-   "homeId": 33,
-   "awayId": 35,
-   "home": "Manchester United",
-   "away": "Bournemouth"
+   "venue": "Portman Road",
+   "city": "Ipswich",
+   "homeId": 57,
+   "awayId": 65,
+   "home": "Ipswich",
+   "away": "Nottingham Forest"
+  },
+  {
+   "id": 1557438,
+   "date": "2026-10-24T11:30:00+00:00",
+   "round": "Regular Season - 8",
+   "venue": "Villa Park",
+   "city": "Birmingham",
+   "homeId": 66,
+   "awayId": 50,
+   "home": "Aston Villa",
+   "away": "Manchester City"
   },
   {
    "id": 1557444,
@@ -804,72 +815,6 @@
    "away": "Everton"
   },
   {
-   "id": 1557439,
-   "date": "2026-10-24T14:00:00+00:00",
-   "round": "Regular Season - 8",
-   "venue": "Stamford Bridge",
-   "city": "London",
-   "homeId": 49,
-   "awayId": 47,
-   "home": "Chelsea",
-   "away": "Tottenham"
-  },
-  {
-   "id": 1557441,
-   "date": "2026-10-24T14:00:00+00:00",
-   "round": "Regular Season - 8",
-   "venue": "Selhurst Park",
-   "city": "London",
-   "homeId": 52,
-   "awayId": 34,
-   "home": "Crystal Palace",
-   "away": "Newcastle"
-  },
-  {
-   "id": 1557443,
-   "date": "2026-10-24T14:00:00+00:00",
-   "round": "Regular Season - 8",
-   "venue": "Portman Road",
-   "city": "Ipswich",
-   "homeId": 57,
-   "awayId": 65,
-   "home": "Ipswich",
-   "away": "Nottingham Forest"
-  },
-  {
-   "id": 1557442,
-   "date": "2026-10-24T14:00:00+00:00",
-   "round": "Regular Season - 8",
-   "venue": "MKM Stadium",
-   "city": "Hull",
-   "homeId": 64,
-   "awayId": 55,
-   "home": "Hull City",
-   "away": "Brentford"
-  },
-  {
-   "id": 1557438,
-   "date": "2026-10-24T14:00:00+00:00",
-   "round": "Regular Season - 8",
-   "venue": "Villa Park",
-   "city": "Birmingham",
-   "homeId": 66,
-   "awayId": 50,
-   "home": "Aston Villa",
-   "away": "Manchester City"
-  },
-  {
-   "id": 1557446,
-   "date": "2026-10-24T14:00:00+00:00",
-   "round": "Regular Season - 8",
-   "venue": "Stadium of Light",
-   "city": "Sunderland",
-   "homeId": 746,
-   "awayId": 63,
-   "home": "Sunderland",
-   "away": "Leeds"
-  },
-  {
    "id": 1557440,
    "date": "2026-10-24T14:00:00+00:00",
    "round": "Regular Season - 8",
@@ -881,15 +826,70 @@
    "away": "Fulham"
   },
   {
-   "id": 1557455,
-   "date": "2026-10-31T15:00:00+00:00",
+   "id": 1557439,
+   "date": "2026-10-24T16:30:00+00:00",
+   "round": "Regular Season - 8",
+   "venue": "Stamford Bridge",
+   "city": "London",
+   "homeId": 49,
+   "awayId": 47,
+   "home": "Chelsea",
+   "away": "Tottenham"
+  },
+  {
+   "id": 1557445,
+   "date": "2026-10-25T14:00:00+00:00",
+   "round": "Regular Season - 8",
+   "venue": "Old Trafford",
+   "city": "Manchester",
+   "homeId": 33,
+   "awayId": 35,
+   "home": "Manchester United",
+   "away": "Bournemouth"
+  },
+  {
+   "id": 1557441,
+   "date": "2026-10-25T14:00:00+00:00",
+   "round": "Regular Season - 8",
+   "venue": "Selhurst Park",
+   "city": "London",
+   "homeId": 52,
+   "awayId": 34,
+   "home": "Crystal Palace",
+   "away": "Newcastle"
+  },
+  {
+   "id": 1557442,
+   "date": "2026-10-25T14:00:00+00:00",
+   "round": "Regular Season - 8",
+   "venue": "MKM Stadium",
+   "city": "Hull",
+   "homeId": 64,
+   "awayId": 55,
+   "home": "Hull City",
+   "away": "Brentford"
+  },
+  {
+   "id": 1557446,
+   "date": "2026-10-25T16:30:00+00:00",
+   "round": "Regular Season - 8",
+   "venue": "Stadium of Light",
+   "city": "Sunderland",
+   "homeId": 746,
+   "awayId": 63,
+   "home": "Sunderland",
+   "away": "Leeds"
+  },
+  {
+   "id": 1557450,
+   "date": "2026-10-31T12:30:00+00:00",
    "round": "Regular Season - 9",
-   "venue": null,
-   "city": "Newcastle",
-   "homeId": 34,
-   "awayId": 45,
-   "home": "Newcastle",
-   "away": "Everton"
+   "venue": "Stamford Bridge",
+   "city": "London",
+   "homeId": 49,
+   "awayId": 33,
+   "home": "Chelsea",
+   "away": "Manchester United"
   },
   {
    "id": 1557448,
@@ -901,39 +901,6 @@
    "awayId": 63,
    "home": "Bournemouth",
    "away": "Leeds"
-  },
-  {
-   "id": 1557453,
-   "date": "2026-10-31T15:00:00+00:00",
-   "round": "Regular Season - 9",
-   "venue": "Anfield",
-   "city": "Liverpool",
-   "homeId": 40,
-   "awayId": 42,
-   "home": "Liverpool",
-   "away": "Arsenal"
-  },
-  {
-   "id": 1557456,
-   "date": "2026-10-31T15:00:00+00:00",
-   "round": "Regular Season - 9",
-   "venue": "Tottenham Hotspur Stadium",
-   "city": "London",
-   "homeId": 47,
-   "awayId": 52,
-   "home": "Tottenham",
-   "away": "Crystal Palace"
-  },
-  {
-   "id": 1557450,
-   "date": "2026-10-31T15:00:00+00:00",
-   "round": "Regular Season - 9",
-   "venue": "Stamford Bridge",
-   "city": "London",
-   "homeId": 49,
-   "awayId": 33,
-   "home": "Chelsea",
-   "away": "Manchester United"
   },
   {
    "id": 1557454,
@@ -969,17 +936,6 @@
    "away": "Ipswich"
   },
   {
-   "id": 1557447,
-   "date": "2026-10-31T15:00:00+00:00",
-   "round": "Regular Season - 9",
-   "venue": "Villa Park",
-   "city": "Birmingham",
-   "homeId": 66,
-   "awayId": 36,
-   "home": "Aston Villa",
-   "away": "Fulham"
-  },
-  {
    "id": 1557451,
    "date": "2026-10-31T15:00:00+00:00",
    "round": "Regular Season - 9",
@@ -989,6 +945,50 @@
    "awayId": 746,
    "home": "Coventry",
    "away": "Sunderland"
+  },
+  {
+   "id": 1557456,
+   "date": "2026-10-31T17:30:00+00:00",
+   "round": "Regular Season - 9",
+   "venue": "Tottenham Hotspur Stadium",
+   "city": "London",
+   "homeId": 47,
+   "awayId": 52,
+   "home": "Tottenham",
+   "away": "Crystal Palace"
+  },
+  {
+   "id": 1557447,
+   "date": "2026-11-01T14:00:00+00:00",
+   "round": "Regular Season - 9",
+   "venue": "Villa Park",
+   "city": "Birmingham",
+   "homeId": 66,
+   "awayId": 36,
+   "home": "Aston Villa",
+   "away": "Fulham"
+  },
+  {
+   "id": 1557453,
+   "date": "2026-11-01T16:30:00+00:00",
+   "round": "Regular Season - 9",
+   "venue": "Anfield",
+   "city": "Liverpool",
+   "homeId": 40,
+   "awayId": 42,
+   "home": "Liverpool",
+   "away": "Arsenal"
+  },
+  {
+   "id": 1557455,
+   "date": "2026-11-02T20:00:00+00:00",
+   "round": "Regular Season - 9",
+   "venue": null,
+   "city": "Newcastle",
+   "homeId": 34,
+   "awayId": 45,
+   "home": "Newcastle",
+   "away": "Everton"
   },
   {
    "id": 1557464,
@@ -4198,7 +4198,7 @@
    "date": "2026-08-15T19:30:00+00:00",
    "round": "Regular Season - 1",
    "venue": "Ramón Sánchez Pizjuán",
-   "city": "Seville",
+   "city": "Sevilla",
    "homeId": 536,
    "awayId": 728,
    "home": "Sevilla",
@@ -4208,7 +4208,7 @@
    "id": 1570339,
    "date": "2026-08-16T15:00:00+00:00",
    "round": "Regular Season - 1",
-   "venue": "El Sardinero",
+   "venue": "Estadio El Sardinero",
    "city": "Santander",
    "homeId": 4665,
    "awayId": 533,
@@ -4220,7 +4220,7 @@
    "date": "2026-08-16T17:00:00+00:00",
    "round": "Regular Season - 1",
    "venue": "RCDE Stadium",
-   "city": "Cornella",
+   "city": "Cornella de Llobregat",
    "homeId": 540,
    "awayId": 539,
    "home": "Espanyol",
@@ -4230,8 +4230,8 @@
    "id": 1570337,
    "date": "2026-08-17T19:00:00+00:00",
    "round": "Regular Season - 1",
-   "venue": "Estadio Municipal de Riazor",
-   "city": null,
+   "venue": "Estadio Riazor",
+   "city": "La Coruna",
    "homeId": 544,
    "awayId": 797,
    "home": "Deportivo La Coruna",
