@@ -6,6 +6,8 @@
 // season. It is also the honest way to show a forecast: a probability that never visibly
 // changes looks like a guess nobody is maintaining.
 import { loadSnapshot, snapshotDates, type SnapshotRow } from "./snapshots";
+import { LEAGUES, leagueClubs } from "./data";
+import { seasonOdds } from "./season";
 
 export interface OddsMove {
   now: number;
@@ -81,4 +83,65 @@ export function seasonMovement(
       ? { key: candidates[0].key, label: LABEL[candidates[0].key], move: candidates[0].move }
       : null,
   };
+}
+
+// ── movers across every league ──────────────────────────────
+
+export interface Mover {
+  club: string;
+  slug: string;
+  league: string;
+  leagueName: string;
+  metric: "title" | "top4" | "releg";
+  label: string;
+  now: number;
+  then: number;
+  delta: number;
+  /** True when the change is good news for the club. */
+  good: boolean;
+}
+
+/**
+ * The week's biggest shifts in season outlook, across all five leagues. This is the
+ * closest thing a forecast has to news: a probability that moved is something that
+ * happened, and it is the reason to look again next week rather than once.
+ */
+export function topMovers(n = 6, days = 7): Mover[] {
+  const dates = snapshotDates();
+  if (!dates.length) return [];
+  const cutoff = new Date(Date.now() - days * 86400_000).toISOString().slice(0, 10);
+  const thenDate = dates.find((d) => d <= cutoff) ?? dates[dates.length - 1];
+  const then = loadSnapshot(thenDate);
+  if (!then) return [];
+
+  const out: Mover[] = [];
+  for (const league of LEAGUES) {
+    const before = new Map((then.leagues?.[league.slug] ?? []).map((r) => [r.slug, r]));
+    for (const o of seasonOdds(league.slug, leagueClubs(league))) {
+      const was = before.get(o.slug);
+      if (!was) continue;
+      const metrics = [
+        { metric: "title" as const, label: "title chance", now: o.title, then: was.title, good: true },
+        { metric: "top4" as const, label: "top-four chance", now: o.top4, then: was.top4, good: true },
+        { metric: "releg" as const, label: "relegation risk", now: o.releg, then: was.releg, good: false },
+      ];
+      for (const m of metrics) {
+        const delta = m.now - m.then;
+        // Ignore races the club is not in: a move within a probability that is near zero
+        // either way is simulation noise dressed up as a story.
+        if (Math.max(m.now, m.then) < 0.04 || Math.abs(delta) < 0.01) continue;
+        out.push({
+          club: o.club, slug: o.slug, league: league.slug, leagueName: league.name,
+          metric: m.metric, label: m.label, now: m.now, then: m.then, delta,
+          good: m.good ? delta > 0 : delta < 0,
+        });
+      }
+    }
+  }
+  // One line per club, so a single result doesn't fill the list with its own side effects.
+  const seen = new Set<string>();
+  return out
+    .sort((a, b) => Math.abs(b.delta) - Math.abs(a.delta))
+    .filter((m) => (seen.has(m.slug) ? false : (seen.add(m.slug), true)))
+    .slice(0, n);
 }

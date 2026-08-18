@@ -7,6 +7,7 @@ import { TodayPortal } from "./components/TodayPortal";
 import { LiveTicker } from "./components/LiveTicker";
 import { CountUp } from "./components/CountUp";
 import { NewsletterSignup } from "./components/NewsletterSignup";
+import { SeasonRaces } from "./components/SeasonRaces";
 
 function explainFixture(home: string, homeElo: number, away: string, awayElo: number) {
   const gap = Math.round(Math.abs(homeElo - awayElo));
@@ -51,6 +52,8 @@ export default function Home() {
   return (
     <main className="home-page portal-page portal-page-home">
       <TodayPortal predictionSlot={predictionLab} tickerSlot={<LiveTicker fixtures={fixturePool.slice(0, 12)} />} />
+
+      <SeasonRaces />
 
       <section className="record-stage" data-reveal>
         <div className="record-grid wrap">
