@@ -81,8 +81,9 @@ check("clubelo", () => {
     // is upstream. Blocking the deploy would also stop results being recorded, which is
     // strictly worse than shipping a projection built on last month's strengths.
     warnings.push(
-      `ratings are frozen — ${recent.length} matches played in the last 14 days, but none of ${checked} clubs involved ` +
-      `has moved in 21 days. ClubElo has not processed this season yet, so no projection on the site can change.`,
+      `provider ratings are stalled — ${recent.length} matches played in the last 14 days, but none of ${checked} clubs ` +
+      `involved has moved in 21 days. lib/elo-live.ts is filling the gap from results, so projections still move; ` +
+      `this is worth watching because the correction is ours, not ClubElo's.`,
     );
     return;
   }
