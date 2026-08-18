@@ -8,7 +8,7 @@
     "data:elo": "node scripts/fetch-clubelo.mjs",
     "data:fixtures": "node scripts/fetch-fixtures.mjs",
     "data:portal": "node scripts/fetch-api-football.mjs",
-    "prebuild": "node scripts/fetch-api-football.mjs; node scripts/fetch-news.mjs; tsx scripts/snapshot.ts"
+    "prebuild": "node scripts/fetch-clubelo.mjs; node scripts/fetch-api-football.mjs; node scripts/fetch-news.mjs; tsx scripts/snapshot.ts"
   },
   "dependencies": {
     "@react-three/drei": "^10.7.7",

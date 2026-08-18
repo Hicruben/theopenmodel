@@ -45,6 +45,13 @@ jobs:
           NEXT_PUBLIC_KIT_FORM_ID: ${{ vars.KIT_FORM_ID }}
         run: npm run build
 
+      # Runs after the build has refreshed everything, and fails the job if any input has
+      # quietly stopped updating. Three datasets went stale for weeks without anyone
+      # noticing, because a stale forecast is indistinguishable from a fresh one on the
+      # page — the only way to see it is to assert on the data.
+      - name: Check data freshness
+        run: node scripts/check-data-freshness.mjs
+
       - name: Commit snapshot + data back to the public record
         run: |
           git config user.name "github-actions[bot]"

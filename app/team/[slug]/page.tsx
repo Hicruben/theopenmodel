@@ -3,6 +3,8 @@ import { notFound } from "next/navigation";
 import { LEAGUES, clubBySlug, leagueClubs, topTeams, flagUrl } from "@/lib/data";
 import { matchProb } from "@/lib/model";
 import { seasonOdds } from "@/lib/season";
+import { seasonMovement } from "@/lib/movement";
+import { SeasonOutlook } from "../../components/SeasonOutlook";
 import { eloHistory, sparkPath } from "@/lib/history";
 import { pct, shade } from "@/lib/ui";
 import { keyPlayers } from "@/lib/players";
@@ -73,17 +75,19 @@ export default async function TeamPage({ params }: { params: Promise<{ slug: str
         </div>
         <p style={{ fontSize: 14, color: "var(--ink-soft)", margin: "10px 0 0" }} className="tnum">
           <b>Elo {club.elo}</b>
-          {odds && (
-            <>
-              {" "}· title <b style={{ color: "var(--accent-ink)" }}>{pct(odds.title)}</b>
-              {" "}· top 4 <b>{pct(odds.top4)}</b>
-              {" "}· relegation <b>{pct(odds.releg)}</b>
-              {" "}· expected points <b>{odds.avgPts.toFixed(0)}</b>
-            </>
-          )}
-          <span style={{ color: "var(--muted)" }}> — 5,000 simulated seasons</span>
+          <span style={{ color: "var(--muted)" }}> — team strength from ClubElo, the input the season simulation runs on</span>
         </p>
       </section>
+
+      {odds && league && (
+        <SeasonOutlook
+          club={club.club}
+          odds={odds}
+          movement={seasonMovement(league.slug, club.slug)}
+          leagueSlug={league.slug}
+          leagueName={league.name}
+        />
+      )}
 
       {spark.d && (
         <div className="panel" style={{ marginTop: 20 }}>

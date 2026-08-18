@@ -3142,3 +3142,31 @@ a.portal-live-row:hover { background: var(--accent-dim); }
   position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
   overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0;
 }
+
+/* ── season outlook (team page) ──────────────────────────── */
+/* The projection is the reason to be on a club's page, so it gets panel weight and the
+   week's movement sits next to each number rather than in a footnote. */
+.outlook { margin: 22px 0; border-left: 3px solid var(--accent); }
+.outlook-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px; margin-bottom: 14px; }
+.outlook-head h2 { margin: 0; font-size: 20px; }
+.outlook-sub { font-size: 12.5px; color: var(--muted); }
+.outlook-grid {
+  display: grid; gap: 12px;
+  grid-template-columns: repeat(auto-fit, minmax(132px, 1fr));
+}
+.outlook-cell {
+  padding: 12px 14px; border: 1px solid var(--rule); border-radius: 2px;
+  background: var(--paper);
+}
+.outlook-cell.lead { border-color: var(--accent); }
+.outlook-label { font-size: 12px; color: var(--muted); text-transform: uppercase; letter-spacing: .04em; }
+.outlook-value { font-size: 27px; font-weight: 700; line-height: 1.15; margin-top: 4px; }
+.outlook-move { font-size: 12.5px; margin-top: 3px; }
+.outlook-up { color: var(--win); font-weight: 600; }
+.outlook-down { color: var(--loss); font-weight: 600; }
+.outlook-flat { color: var(--muted); }
+.outlook-story {
+  margin: 14px 0 0; padding-top: 12px; border-top: 1px solid var(--rule);
+  font-size: 14px; color: var(--ink-soft);
+}
+.outlook-foot { margin: 10px 0 0; font-size: 12.5px; color: var(--muted); }
