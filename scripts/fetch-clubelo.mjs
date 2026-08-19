@@ -5,12 +5,28 @@
 // weeks back to backfill anyone missing (e.g. Bayern vanished 2026-07-04).
 import { writeFileSync } from "node:fs";
 
-async function snapshot(date) {
-  const res = await fetch(`http://api.clubelo.com/${date}`);
-  if (!res.ok) throw new Error(`clubelo ${date} → ${res.status}`);
-  const csv = await res.text();
-  if (!csv.startsWith("Rank,Club")) throw new Error(`unexpected payload for ${date}`);
-  return csv.trim().split("\n");
+// ClubElo is a free single-maintainer service and goes unresponsive for stretches — it
+// answered fine this morning and timed out entirely this afternoon. Without retries a
+// single bad minute leaves the ratings unrefreshed for a day, which is how they silently
+// fell a month behind in the first place.
+async function snapshot(date, attempts = 4) {
+  let lastError;
+  for (let i = 0; i < attempts; i++) {
+    if (i) await new Promise((r) => setTimeout(r, 3000 * i));
+    try {
+      const res = await fetch(`http://api.clubelo.com/${date}`, {
+        signal: AbortSignal.timeout(45_000),
+      });
+      if (!res.ok) throw new Error(`clubelo ${date} → ${res.status}`);
+      const csv = await res.text();
+      if (!csv.startsWith("Rank,Club")) throw new Error(`unexpected payload for ${date}`);
+      return csv.trim().split("\n");
+    } catch (e) {
+      lastError = e;
+      console.warn(`  clubelo ${date}: attempt ${i + 1}/${attempts} failed (${e.message})`);
+    }
+  }
+  throw lastError;
 }
 
 const iso = (d) => d.toISOString().slice(0, 10);
