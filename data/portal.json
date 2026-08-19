@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
   "provider": "api-football",
-  "asOf": "2026-08-19T04:14:13.558Z",
-  "updatedAt": "2026-08-19T04:14:13.558Z",
+  "asOf": "2026-08-19T06:10:15.575Z",
+  "updatedAt": "2026-08-19T06:10:15.575Z",
   "coverage": {
     "dateFrom": "2026-08-14",
     "dateTo": "2026-09-02",
     "fixtureCount": 9558,
-    "liveFixtureCount": 2,
-    "finishedFixtureCount": 2681,
+    "liveFixtureCount": 0,
+    "finishedFixtureCount": 2685,
     "leagueCount": 473,
     "standingTableCount": 15,
     "requestedIncludes": [
@@ -20,14 +20,14 @@
       "fixtures": true,
       "scores": true,
       "statuses": true,
-      "events": true,
+      "events": false,
       "lineups": false,
       "injuries": false,
       "standings": true
     },
     "rateLimit": {
       "resetsInSeconds": null,
-      "remaining": 6814,
+      "remaining": 6489,
       "requestedEntity": "API-Football daily requests"
     },
     "warnings": []
@@ -645,7 +645,7 @@
       },
       "venue": {
         "id": null,
-        "name": "Estadio Gigante de Arroyito",
+        "name": "Gigante de Arroyito",
         "city": "Rosario",
         "capacity": null,
         "imageUrl": null
@@ -5133,7 +5133,7 @@
       },
       "venue": {
         "id": null,
-        "name": "Jinan Olympic Sports Center Stadium",
+        "name": "Jinan Olympic Sports Center",
         "city": "Jinan",
         "capacity": null,
         "imageUrl": null
@@ -5439,7 +5439,7 @@
       },
       "venue": {
         "id": null,
-        "name": "Qingdao Guzhenkou University City Sports Center",
+        "name": "Guzhenkou University Sports Center",
         "city": "Qingdao",
         "capacity": null,
         "imageUrl": null
@@ -42147,8 +42147,8 @@
       },
       "venue": {
         "id": null,
-        "name": "Estadio Primeiro de Maio",
-        "city": "Sao Bernardo",
+        "name": "Estádio Primeiro de Maio",
+        "city": "Sao Bernardo do Campo",
         "capacity": null,
         "imageUrl": null
       },
@@ -67097,7 +67097,7 @@
       },
       "venue": {
         "id": null,
-        "name": "Olympic Sports Centre Stadium",
+        "name": "Tiexi Stadium",
         "city": "Shenyang",
         "capacity": null,
         "imageUrl": null
@@ -72368,7 +72368,7 @@
       },
       "venue": {
         "id": null,
-        "name": "Olympic Sports Center Stadium",
+        "name": "TEDA Football Stadium",
         "city": "Tianjin",
         "capacity": null,
         "imageUrl": null
@@ -72470,8 +72470,8 @@
       },
       "venue": {
         "id": null,
-        "name": "Huizhou Olympic Stadium",
-        "city": "Huizhou",
+        "name": "Huanglong Stadium",
+        "city": "Hangzhou",
         "capacity": null,
         "imageUrl": null
       },
@@ -161406,7 +161406,7 @@
       },
       "venue": {
         "id": null,
-        "name": "Estadio Alfredo Jaconi",
+        "name": "Estádio Alfredo Jaconi",
         "city": "Caxias do Sul",
         "capacity": null,
         "imageUrl": null
@@ -220218,7 +220218,7 @@
       },
       "venue": {
         "id": null,
-        "name": "Estadio Municipal Nelson Oyarzun Arenas",
+        "name": "Estadio Municipal Nelson Oyarzún Arenas",
         "city": "Chillan",
         "capacity": null,
         "imageUrl": null
@@ -231168,7 +231168,7 @@
       },
       "venue": {
         "id": null,
-        "name": "MRV Arena",
+        "name": "Arena MRV",
         "city": "Belo Horizonte",
         "capacity": null,
         "imageUrl": null
@@ -267001,7 +267001,7 @@
       "providerId": 1543987,
       "name": "Fortaleza U17 vs America MG U17",
       "startTime": "2026-08-18T18:00:00.000Z",
-      "resultInfo": null,
+      "resultInfo": "2-1",
       "seasonId": 2026,
       "stageId": null,
       "roundId": null,
@@ -267009,11 +267009,11 @@
       "lastProcessedAt": null,
       "status": {
         "id": null,
-        "name": "Not Started",
-        "shortName": "NS",
-        "developerName": "NS",
+        "name": "Match Finished",
+        "shortName": "FT",
+        "developerName": "FT",
         "isLive": false,
-        "isFinished": false
+        "isFinished": true
       },
       "league": {
         "id": 1128,
@@ -267042,7 +267042,7 @@
           "imageUrl": "https://media.api-sports.io/football/teams/24480.png",
           "role": "home",
           "position": null,
-          "winner": null
+          "winner": true
         },
         {
           "id": 24468,
@@ -267051,16 +267051,33 @@
           "imageUrl": "https://media.api-sports.io/football/teams/24468.png",
           "role": "away",
           "position": null,
-          "winner": null
+          "winner": false
         }
       ],
       "score": {
-        "home": null,
-        "away": null,
+        "home": 2,
+        "away": 1,
         "halfTimeHome": null,
         "halfTimeAway": null
       },
-      "scores": [],
+      "scores": [
+        {
+          "id": null,
+          "typeId": null,
+          "participantId": 24480,
+          "description": "CURRENT",
+          "participant": "home",
+          "goals": 2
+        },
+        {
+          "id": null,
+          "typeId": null,
+          "participantId": 24468,
+          "description": "CURRENT",
+          "participant": "away",
+          "goals": 1
+        }
+      ],
       "events": [],
       "lineups": [],
       "injuries": []
@@ -276715,7 +276732,7 @@
       "providerId": 1548361,
       "name": "Real Estelí vs CS Herediano",
       "startTime": "2026-08-19T03:00:00.000Z",
-      "resultInfo": null,
+      "resultInfo": "0-2",
       "seasonId": 2026,
       "stageId": null,
       "roundId": null,
@@ -276723,11 +276740,11 @@
       "lastProcessedAt": null,
       "status": {
         "id": null,
-        "name": "Second Half",
-        "shortName": "2H",
-        "developerName": "2H",
-        "isLive": true,
-        "isFinished": false
+        "name": "Match Finished",
+        "shortName": "FT",
+        "developerName": "FT",
+        "isLive": false,
+        "isFinished": true
       },
       "league": {
         "id": 1028,
@@ -276770,7 +276787,7 @@
       ],
       "score": {
         "home": 0,
-        "away": 1,
+        "away": 2,
         "halfTimeHome": 0,
         "halfTimeAway": 1
       },
@@ -276789,7 +276806,7 @@
           "participantId": 815,
           "description": "CURRENT",
           "participant": "away",
-          "goals": 1
+          "goals": 2
         },
         {
           "id": null,
@@ -276808,110 +276825,7 @@
           "goals": 1
         }
       ],
-      "events": [
-        {
-          "id": null,
-          "typeId": null,
-          "typeName": "Goal",
-          "subTypeId": null,
-          "participantId": 815,
-          "playerId": 2838,
-          "playerName": "E. Aguilar",
-          "relatedPlayerId": 79686,
-          "relatedPlayerName": "A. Murillo",
-          "minute": 21,
-          "extraMinute": null,
-          "result": null,
-          "info": null,
-          "addition": "Normal Goal",
-          "injured": false
-        },
-        {
-          "id": null,
-          "typeId": null,
-          "typeName": "Card",
-          "subTypeId": null,
-          "participantId": 815,
-          "playerId": 270487,
-          "playerName": "H. Quiros",
-          "relatedPlayerId": null,
-          "relatedPlayerName": null,
-          "minute": 26,
-          "extraMinute": null,
-          "result": null,
-          "info": null,
-          "addition": "Yellow Card",
-          "injured": false
-        },
-        {
-          "id": null,
-          "typeId": null,
-          "typeName": "Card",
-          "subTypeId": null,
-          "participantId": 815,
-          "playerId": 27623,
-          "playerName": "G. Montes",
-          "relatedPlayerId": null,
-          "relatedPlayerName": null,
-          "minute": 30,
-          "extraMinute": null,
-          "result": null,
-          "info": null,
-          "addition": "Yellow Card",
-          "injured": false
-        },
-        {
-          "id": null,
-          "typeId": null,
-          "typeName": "Card",
-          "subTypeId": null,
-          "participantId": 4645,
-          "playerId": 585838,
-          "playerName": "H. Aranda",
-          "relatedPlayerId": null,
-          "relatedPlayerName": null,
-          "minute": 37,
-          "extraMinute": null,
-          "result": null,
-          "info": null,
-          "addition": "Yellow Card",
-          "injured": false
-        },
-        {
-          "id": null,
-          "typeId": null,
-          "typeName": "subst",
-          "subTypeId": null,
-          "participantId": 4645,
-          "playerId": 585838,
-          "playerName": "H. Aranda",
-          "relatedPlayerId": 113004,
-          "relatedPlayerName": "A. Baez",
-          "minute": 44,
-          "extraMinute": null,
-          "result": null,
-          "info": null,
-          "addition": "Substitution 1",
-          "injured": false
-        },
-        {
-          "id": null,
-          "typeId": null,
-          "typeName": "subst",
-          "subTypeId": null,
-          "participantId": 4645,
-          "playerId": 586897,
-          "playerName": "J. Gutierrez",
-          "relatedPlayerId": 113005,
-          "relatedPlayerName": "J. Quijano",
-          "minute": 46,
-          "extraMinute": null,
-          "result": null,
-          "info": null,
-          "addition": "Substitution 2",
-          "injured": false
-        }
-      ],
+      "events": [],
       "lineups": [],
       "injuries": []
     },
@@ -276920,7 +276834,7 @@
       "providerId": 1548362,
       "name": "Xelajú vs Diriangén",
       "startTime": "2026-08-19T03:00:00.000Z",
-      "resultInfo": null,
+      "resultInfo": "2-0",
       "seasonId": 2026,
       "stageId": null,
       "roundId": null,
@@ -276928,11 +276842,11 @@
       "lastProcessedAt": null,
       "status": {
         "id": null,
-        "name": "Second Half",
-        "shortName": "2H",
-        "developerName": "2H",
-        "isLive": true,
-        "isFinished": false
+        "name": "Match Finished",
+        "shortName": "FT",
+        "developerName": "FT",
+        "isLive": false,
+        "isFinished": true
       },
       "league": {
         "id": 1028,
@@ -276974,7 +276888,7 @@
         }
       ],
       "score": {
-        "home": 1,
+        "home": 2,
         "away": 0,
         "halfTimeHome": 1,
         "halfTimeAway": 0
@@ -276986,7 +276900,7 @@
           "participantId": 3667,
           "description": "CURRENT",
           "participant": "home",
-          "goals": 1
+          "goals": 2
         },
         {
           "id": null,
@@ -277013,76 +276927,7 @@
           "goals": 0
         }
       ],
-      "events": [
-        {
-          "id": null,
-          "typeId": null,
-          "typeName": "Card",
-          "subTypeId": null,
-          "participantId": 4641,
-          "playerId": 586866,
-          "playerName": "E. Tellez",
-          "relatedPlayerId": null,
-          "relatedPlayerName": null,
-          "minute": 14,
-          "extraMinute": null,
-          "result": null,
-          "info": null,
-          "addition": "Yellow Card",
-          "injured": false
-        },
-        {
-          "id": null,
-          "typeId": null,
-          "typeName": "Goal",
-          "subTypeId": null,
-          "participantId": 3667,
-          "playerId": 51379,
-          "playerName": "D. Casas",
-          "relatedPlayerId": null,
-          "relatedPlayerName": null,
-          "minute": 16,
-          "extraMinute": null,
-          "result": null,
-          "info": null,
-          "addition": "Penalty",
-          "injured": false
-        },
-        {
-          "id": null,
-          "typeId": null,
-          "typeName": "Card",
-          "subTypeId": null,
-          "participantId": 4641,
-          "playerId": 13948,
-          "playerName": "C. Reyes",
-          "relatedPlayerId": null,
-          "relatedPlayerName": null,
-          "minute": 32,
-          "extraMinute": null,
-          "result": null,
-          "info": null,
-          "addition": "Yellow Card",
-          "injured": false
-        },
-        {
-          "id": null,
-          "typeId": null,
-          "typeName": "Card",
-          "subTypeId": null,
-          "participantId": 3667,
-          "playerId": 324113,
-          "playerName": "S. Cardenas",
-          "relatedPlayerId": null,
-          "relatedPlayerName": null,
-          "minute": 45,
-          "extraMinute": 1,
-          "result": null,
-          "info": null,
-          "addition": "Yellow Card",
-          "injured": false
-        }
-      ],
+      "events": [],
       "lineups": [],
       "injuries": []
     },
@@ -277091,7 +276936,7 @@
       "providerId": 1628458,
       "name": "Auckland City vs Rewa",
       "startTime": "2026-08-19T03:00:00.000Z",
-      "resultInfo": null,
+      "resultInfo": "3-1",
       "seasonId": 2026,
       "stageId": null,
       "roundId": null,
@@ -277099,11 +276944,11 @@
       "lastProcessedAt": null,
       "status": {
         "id": null,
-        "name": "Not Started",
-        "shortName": "NS",
-        "developerName": "NS",
+        "name": "Match Finished",
+        "shortName": "FT",
+        "developerName": "FT",
         "isLive": false,
-        "isFinished": false
+        "isFinished": true
       },
       "league": {
         "id": 27,
@@ -277132,7 +276977,7 @@
           "imageUrl": "https://media.api-sports.io/football/teams/2537.png",
           "role": "home",
           "position": null,
-          "winner": null
+          "winner": true
         },
         {
           "id": 4387,
@@ -277141,16 +276986,49 @@
           "imageUrl": "https://media.api-sports.io/football/teams/4387.png",
           "role": "away",
           "position": null,
-          "winner": null
+          "winner": false
         }
       ],
       "score": {
-        "home": null,
-        "away": null,
-        "halfTimeHome": null,
-        "halfTimeAway": null
+        "home": 3,
+        "away": 1,
+        "halfTimeHome": 2,
+        "halfTimeAway": 0
       },
-      "scores": [],
+      "scores": [
+        {
+          "id": null,
+          "typeId": null,
+          "participantId": 2537,
+          "description": "CURRENT",
+          "participant": "home",
+          "goals": 3
+        },
+        {
+          "id": null,
+          "typeId": null,
+          "participantId": 4387,
+          "description": "CURRENT",
+          "participant": "away",
+          "goals": 1
+        },
+        {
+          "id": null,
+          "typeId": null,
+          "participantId": 2537,
+          "description": "1ST_HALF",
+          "participant": "home",
+          "goals": 2
+        },
+        {
+          "id": null,
+          "typeId": null,
+          "participantId": 4387,
+          "description": "1ST_HALF",
+          "participant": "away",
+          "goals": 0
+        }
+      ],
       "events": [],
       "lineups": [],
       "injuries": []
@@ -293112,75 +292990,6 @@
       "injuries": []
     },
     {
-      "id": "api-football:1604795",
-      "providerId": 1604795,
-      "name": "Coruxo vs Pontevedra",
-      "startTime": "2026-08-19T17:00:00.000Z",
-      "resultInfo": null,
-      "seasonId": 2026,
-      "stageId": null,
-      "roundId": null,
-      "hasOdds": false,
-      "lastProcessedAt": null,
-      "status": {
-        "id": null,
-        "name": "Not Started",
-        "shortName": "NS",
-        "developerName": "NS",
-        "isLive": false,
-        "isFinished": false
-      },
-      "league": {
-        "id": 667,
-        "name": "Friendlies Clubs",
-        "shortCode": null,
-        "imageUrl": "https://media.api-sports.io/football/leagues/667.png"
-      },
-      "round": {
-        "id": null,
-        "name": "Club Friendlies",
-        "shortCode": null,
-        "imageUrl": null
-      },
-      "venue": {
-        "id": null,
-        "name": null,
-        "city": null,
-        "capacity": null,
-        "imageUrl": null
-      },
-      "participants": [
-        {
-          "id": 9385,
-          "name": "Coruxo",
-          "shortCode": null,
-          "imageUrl": "https://media.api-sports.io/football/teams/9385.png",
-          "role": "home",
-          "position": null,
-          "winner": null
-        },
-        {
-          "id": 9407,
-          "name": "Pontevedra",
-          "shortCode": null,
-          "imageUrl": "https://media.api-sports.io/football/teams/9407.png",
-          "role": "away",
-          "position": null,
-          "winner": null
-        }
-      ],
-      "score": {
-        "home": null,
-        "away": null,
-        "halfTimeHome": null,
-        "halfTimeAway": null
-      },
-      "scores": [],
-      "events": [],
-      "lineups": [],
-      "injuries": []
-    },
-    {
       "id": "api-football:1611948",
       "providerId": 1611948,
       "name": "Gimnasia La Plata Res. vs Sarmiento Res.",
@@ -295096,6 +294905,75 @@
           "name": "Manchester City U21",
           "shortCode": null,
           "imageUrl": "https://media.api-sports.io/football/teams/7197.png",
+          "role": "away",
+          "position": null,
+          "winner": null
+        }
+      ],
+      "score": {
+        "home": null,
+        "away": null,
+        "halfTimeHome": null,
+        "halfTimeAway": null
+      },
+      "scores": [],
+      "events": [],
+      "lineups": [],
+      "injuries": []
+    },
+    {
+      "id": "api-football:1604795",
+      "providerId": 1604795,
+      "name": "Coruxo vs Pontevedra",
+      "startTime": "2026-08-19T18:00:00.000Z",
+      "resultInfo": null,
+      "seasonId": 2026,
+      "stageId": null,
+      "roundId": null,
+      "hasOdds": false,
+      "lastProcessedAt": null,
+      "status": {
+        "id": null,
+        "name": "Not Started",
+        "shortName": "NS",
+        "developerName": "NS",
+        "isLive": false,
+        "isFinished": false
+      },
+      "league": {
+        "id": 667,
+        "name": "Friendlies Clubs",
+        "shortCode": null,
+        "imageUrl": "https://media.api-sports.io/football/leagues/667.png"
+      },
+      "round": {
+        "id": null,
+        "name": "Club Friendlies",
+        "shortCode": null,
+        "imageUrl": null
+      },
+      "venue": {
+        "id": null,
+        "name": null,
+        "city": null,
+        "capacity": null,
+        "imageUrl": null
+      },
+      "participants": [
+        {
+          "id": 9385,
+          "name": "Coruxo",
+          "shortCode": null,
+          "imageUrl": "https://media.api-sports.io/football/teams/9385.png",
+          "role": "home",
+          "position": null,
+          "winner": null
+        },
+        {
+          "id": 9407,
+          "name": "Pontevedra",
+          "shortCode": null,
+          "imageUrl": "https://media.api-sports.io/football/teams/9407.png",
           "role": "away",
           "position": null,
           "winner": null
