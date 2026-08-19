@@ -1,68 +1,208 @@
 {
- "updated": "2026-08-18T04:09:05.989Z",
+ "updated": "2026-08-19T04:14:14.462Z",
  "items": [
+  {
+   "title": "Premier League 2026-27 preview No 15: Manchester City",
+   "link": "https://www.theguardian.com/football/2026/aug/19/premier-league-2026-27-preview-no-15-manchester-city",
+   "date": "2026-08-18T23:01:03.000Z",
+   "src": "The Guardian",
+   "img": "https://i.guim.co.uk/img/media/a8f404684ec4ea7fe46b99f056eb1746b3098469/661_225_4468_3577/master/4468.jpg?width=700&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=ea299d6e6ec2e6190e3344d9d9826418"
+  },
+  {
+   "title": "In Zavier Gozo, Crystal Palace land a US prospect living up to the hype",
+   "link": "https://www.theguardian.com/football/2026/aug/18/zavier-gozo-crystal-palace-mls-real-salt-lake-transfer",
+   "date": "2026-08-18T21:32:42.000Z",
+   "src": "The Guardian",
+   "img": "https://i.guim.co.uk/img/media/4fef751d146d32ad3e895a07a65e3860b7223122/443_0_4164_3333/master/4164.jpg?width=700&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=1474afb896d1ecb4fdc7cbf74ac07ff4"
+  },
+  {
+   "title": "Palace sign United States prospect Gozo",
+   "link": "https://www.bbc.co.uk/sport/football/articles/cpq80q88dyqo?at_medium=RSS&at_campaign=rss",
+   "date": "2026-08-18T21:26:12.000Z",
+   "src": "BBC Sport",
+   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/4e59/live/869e1160-9b49-11f1-a98d-2d938d056219.jpg"
+  },
+  {
+   "title": "Al Hilal target England's Kane - Wednesday's gossip",
+   "link": "https://www.bbc.co.uk/sport/football/articles/c70gdd61kk4o?at_medium=RSS&at_campaign=rss",
+   "date": "2026-08-18T21:02:44.000Z",
+   "src": "BBC Sport",
+   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/9aa4/live/6775d0f0-9b41-11f1-a291-b542ee92de7c.png"
+  },
+  {
+   "title": "Brighton sign Canada striker David on loan",
+   "link": "https://www.bbc.co.uk/sport/football/articles/c30450z6pmmo?at_medium=RSS&at_campaign=rss",
+   "date": "2026-08-18T20:43:01.000Z",
+   "src": "BBC Sport",
+   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/6019/live/2d88af90-9b44-11f1-bd52-f9704e8e5c82.jpg"
+  },
+  {
+   "title": "Man found dead at Charlton Athletic's ground",
+   "link": "https://www.bbc.co.uk/news/articles/c934e3pgp9lo?at_medium=RSS&at_campaign=rss",
+   "date": "2026-08-18T20:14:04.000Z",
+   "src": "BBC Sport",
+   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/1049/live/77903360-9b3f-11f1-bd52-f9704e8e5c82.jpg"
+  },
+  {
+   "title": "Jamal Musiala says ‘treatable seizures’ are reason for two collapses in four days",
+   "link": "https://www.theguardian.com/football/2026/aug/18/jamal-musiala-treatable-seizures-statement-collapses-bayern-munich",
+   "date": "2026-08-18T20:08:04.000Z",
+   "src": "The Guardian",
+   "img": "https://i.guim.co.uk/img/media/db27ecc99db5325d7af567aacd1af3c6f7aaf489/440_0_5284_4229/master/5284.jpg?width=700&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=40ecd48442fc52a7bfefe606ab942d0e"
+  },
+  {
+   "title": "Musiala collapses during match for second time in four-day period",
+   "link": "https://www.bbc.co.uk/sport/football/articles/c330kg5xm8no?at_medium=RSS&at_campaign=rss",
+   "date": "2026-08-18T19:57:08.000Z",
+   "src": "BBC Sport",
+   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/da05/live/27df2cc0-9b37-11f1-a794-9d45cb2a51de.jpg"
+  },
+  {
+   "title": "Barcelona steal Rodri away from Real Madrid and plan to make him new Busquets",
+   "link": "https://www.theguardian.com/football/2026/aug/18/barcelona-snatch-rodri-from-madrid-and-make-him-new-busquets",
+   "date": "2026-08-18T19:49:19.000Z",
+   "src": "The Guardian",
+   "img": "https://i.guim.co.uk/img/media/3e0bd585267b6c10cdda72a47e637efde6bb04f0/311_40_4139_3312/master/4139.jpg?width=700&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=58978e639649004209a07602276172c8"
+  },
+  {
+   "title": "Irish striker Parrott on brink of Real Betis move",
+   "link": "https://www.bbc.co.uk/sport/football/articles/c935vrgrn0vo?at_medium=RSS&at_campaign=rss",
+   "date": "2026-08-18T19:25:40.000Z",
+   "src": "BBC Sport",
+   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/80f8/live/1b731730-9b37-11f1-a794-9d45cb2a51de.jpg"
+  },
+  {
+   "title": "Pep’s final act of passion: Amazon’s revealing Guardiola series pulls no punches",
+   "link": "https://www.theguardian.com/football/2026/aug/18/peps-final-act-of-passion-amazons-revealing-guardiola-series-pulls-no-punches",
+   "date": "2026-08-18T19:00:53.000Z",
+   "src": "The Guardian",
+   "img": "https://i.guim.co.uk/img/media/cdd47b26519a2bd905511168140c3fda8af80de2/576_52_6358_5087/master/6358.jpg?width=700&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=46745162f22f3756ad86e69b8ec8ebd9"
+  },
+  {
+   "title": "Jeff Bezos consortium could be majority Liverpool shareholder within a year",
+   "link": "https://www.theguardian.com/football/2026/aug/18/jeff-bezos-liverpool-1892-holdings-fenway-bid",
+   "date": "2026-08-18T18:49:29.000Z",
+   "src": "The Guardian",
+   "img": "https://i.guim.co.uk/img/media/c67f6a932b1970999267fd9717d1bec5140a9520/1266_556_6075_4860/master/6075.jpg?width=700&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=8f8ba846847a34e525562a6d7359672d"
+  },
+  {
+   "title": "Rodri ready for 'excitement again' after Barca complete £65m deal",
+   "link": "https://www.bbc.co.uk/sport/football/articles/c2k7w3vwv5yo?at_medium=RSS&at_campaign=rss",
+   "date": "2026-08-18T18:14:01.000Z",
+   "src": "BBC Sport",
+   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/5d2a/live/cae6f730-9b4c-11f1-a4d5-27953a73ef84.jpg"
+  },
+  {
+   "title": "Transfer roundup: Dedic completes £29.5m Newcastle move, Wan-Bissaka loaned to Villa",
+   "link": "https://www.theguardian.com/football/2026/aug/18/newcastle-sign-amar-dedic-benfica-transfer-window",
+   "date": "2026-08-18T18:13:36.000Z",
+   "src": "The Guardian",
+   "img": "https://i.guim.co.uk/img/media/95cca22cf76abd5f53d85e3c5b8b38a546ddf32b/160_0_1434_1147/master/1434.jpg?width=700&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=edc9ba21a7b957a6f0f5b4a3c0394193"
+  },
+  {
+   "title": "Israel withdraws support for embattled Fifa president Gianni Infantino",
+   "link": "https://www.theguardian.com/football/2026/aug/18/israel-withdraws-support-for-embattled-fifa-president-gianni-infantino",
+   "date": "2026-08-18T18:03:57.000Z",
+   "src": "The Guardian",
+   "img": "https://i.guim.co.uk/img/media/47721a2ee603085fc9d1333cb5df079d944be858/271_0_3405_2724/master/3405.jpg?width=700&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=2fb204c02d22a38cf646c09a547092fa"
+  },
+  {
+   "title": "Aston Villa agree deal for West Ham's Wan-Bissaka",
+   "link": "https://www.bbc.co.uk/sport/football/articles/cgr7vvpkw0eo?at_medium=RSS&at_campaign=rss",
+   "date": "2026-08-18T17:56:13.000Z",
+   "src": "BBC Sport",
+   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/8aec/live/1293ff20-9b1a-11f1-a8a4-83462463c9fa.jpg"
+  },
+  {
+   "title": "Fifa sacking 'deeply troubling' - Uefa executive",
+   "link": "https://www.bbc.co.uk/sport/football/articles/cqlxwnz71qgo?at_medium=RSS&at_campaign=rss",
+   "date": "2026-08-18T17:51:14.000Z",
+   "src": "BBC Sport",
+   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/0a77/live/f2d66fa0-9b29-11f1-9a2c-6d6ac3827d20.jpg"
+  },
+  {
+   "title": "Football Daily",
+   "link": "https://www.bbc.co.uk/sounds/play/p0p5540m?at_medium=RSS&at_campaign=rss",
+   "date": "2026-08-18T17:03:00.000Z",
+   "src": "BBC Sport",
+   "img": "https://ichef.bbci.co.uk/images/ic/240x135/p0p5542c.jpg"
+  },
+  {
+   "title": "Chelsea’s boardroom rift: if Boehly goes who will Clearlake have left to blame? | Sam Cunningham",
+   "link": "https://www.theguardian.com/football/2026/aug/18/chelsea-todd-boehly-mark-walter-clearlake-capital-ownership",
+   "date": "2026-08-18T16:53:13.000Z",
+   "src": "The Guardian",
+   "img": "https://i.guim.co.uk/img/media/4ead7116325e70109d51e315765412e81f237b5e/187_0_2241_1793/master/2241.jpg?width=700&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=d08844815bf6d2cf0a5b38a71cbd4c64"
+  },
+  {
+   "title": "Celtic out to erase Kairat pain as O'Neill eyes Champions League return",
+   "link": "https://www.bbc.co.ukundefined/?at_medium=RSS&at_campaign=rss",
+   "date": "2026-08-18T16:19:51.000Z",
+   "src": "BBC Sport",
+   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/b026/live/6219faf0-9b1e-11f1-a8a4-83462463c9fa.jpg"
+  },
+  {
+   "title": "Premier League chief Masters says Fifa self-destructed over World Cup plan",
+   "link": "https://www.bbc.co.uk/sport/football/articles/cgjeqez58wno?at_medium=RSS&at_campaign=rss",
+   "date": "2026-08-18T16:18:37.000Z",
+   "src": "BBC Sport",
+   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/4852/live/d2590070-9b16-11f1-b8e1-e7ef86eff0e6.jpg"
+  },
+  {
+   "title": "Patrick Vieira appointed as head coach of Senegal, the country of his birth",
+   "link": "https://www.theguardian.com/football/2026/aug/18/patrick-vieira-appointed-as-senegal-head-coach",
+   "date": "2026-08-18T14:48:30.000Z",
+   "src": "The Guardian",
+   "img": "https://i.guim.co.uk/img/media/652169143719dae14b433f81ab3606ade46987e1/369_0_4026_3220/master/4026.jpg?width=700&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=b674b690453e3d2c0035f23ea7bc43ce"
+  },
+  {
+   "title": "Bezos consortium bought almost 40% of Liverpool",
+   "link": "https://www.bbc.co.uk/sport/football/articles/cly9l92kj6po?at_medium=RSS&at_campaign=rss",
+   "date": "2026-08-18T13:51:25.000Z",
+   "src": "BBC Sport",
+   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/88c0/live/1f977b10-9b0c-11f1-bb80-c1b1e1adeea5.jpg"
+  },
+  {
+   "title": "Premier League 2026-27 preview No 14: Liverpool",
+   "link": "https://www.theguardian.com/football/2026/aug/18/premier-league-2026-27-preview-no-14-liverpool",
+   "date": "2026-08-18T11:00:44.000Z",
+   "src": "The Guardian",
+   "img": "https://i.guim.co.uk/img/media/97eaf6c58855f1cf2412b2753c2e7529a55cc289/658_0_6596_5277/master/6596.jpg?width=700&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=246c4073c4936ec15e16bf070e97f456"
+  },
+  {
+   "title": "Why Fernandez uncertainty has echoes of Isak saga",
+   "link": "https://www.bbc.co.uk/sport/football/articles/cx2dzj2w25vo?at_medium=RSS&at_campaign=rss",
+   "date": "2026-08-18T10:46:17.000Z",
+   "src": "BBC Sport",
+   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/4ef6/live/9c1d9e80-9a3f-11f1-ae41-df15e7357ff6.jpg"
+  },
+  {
+   "title": "David Squires on … new managers causing a stir before Premier League’s return",
+   "link": "https://www.theguardian.com/football/picture/2026/aug/18/david-squires-new-managers-causing-stir-premier-league-return",
+   "date": "2026-08-18T10:38:02.000Z",
+   "src": "The Guardian",
+   "img": "https://i.guim.co.uk/img/media/33ce8b3991ceadec7e6fb0ce40a24159a7dc2b4b/136_697_1253_1002/master/1253.jpg?width=700&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=ab891474daf4b2d460c3b440ab9a3eb6"
+  },
+  {
+   "title": "Guardiola’s row with Walker at Manchester City revealed in new Amazon documentary",
+   "link": "https://www.theguardian.com/football/2026/aug/18/pep-guardiola-row-kyle-walker-manchester-city-revealed-new-amazon-documentary",
+   "date": "2026-08-18T08:42:05.000Z",
+   "src": "The Guardian",
+   "img": "https://i.guim.co.uk/img/media/5f108ed41390708bc93af9c4021bad28718887c1/0_0_7200_5760/master/7200.jpg?width=700&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=39d53426d538b557a741decab10bcaa3"
+  },
+  {
+   "title": "Breakouts & wildcards - 13 surprise stars for new season",
+   "link": "https://www.bbc.co.uk/sport/football/articles/c1l197j4gvro?at_medium=RSS&at_campaign=rss",
+   "date": "2026-08-18T05:49:00.000Z",
+   "src": "BBC Sport",
+   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/3a28/live/57dd5980-9a63-11f1-b792-a710e56a11dc.jpg"
+  },
   {
    "title": "Premier League 2026-27 preview No 13: Leeds",
    "link": "https://www.theguardian.com/football/2026/aug/18/premier-league-2026-27-preview-no-13-leeds",
    "date": "2026-08-17T23:01:07.000Z",
    "src": "The Guardian",
    "img": "https://i.guim.co.uk/img/media/57186c94e99a0c65f6d80185c6fba43a770b10c1/96_30_2746_2197/master/2746.jpg?width=700&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=71076648cf070a9bc0e8e3da4b4d43f2"
-  },
-  {
-   "title": "Guardiola-Walker fallout revealed in new documentary",
-   "link": "https://www.bbc.co.uk/sport/football/articles/c62xj5evpjpo?at_medium=RSS&at_campaign=rss",
-   "date": "2026-08-17T23:00:04.000Z",
-   "src": "BBC Sport",
-   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/095f/live/c3977850-9a49-11f1-a86b-519b4d19bbee.jpg"
-  },
-  {
-   "title": "Barry-Murphy toasts Colwill after Cardiff fightback",
-   "link": "https://www.bbc.co.uk/sport/football/articles/c62qe7197zwo?at_medium=RSS&at_campaign=rss",
-   "date": "2026-08-17T22:54:09.000Z",
-   "src": "BBC Sport",
-   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/e043/live/ef0144a0-9a8d-11f1-ba8c-f50349e75e06.jpg"
-  },
-  {
-   "title": "Former Wolves captain Bailey dies aged 84",
-   "link": "https://www.bbc.co.uk/sport/football/articles/cx2lz34ve8lo?at_medium=RSS&at_campaign=rss",
-   "date": "2026-08-17T22:43:44.000Z",
-   "src": "BBC Sport",
-   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/acaf/live/eaac2d40-9a8b-11f1-97a8-59956482e833.jpg"
-  },
-  {
-   "title": "Football Daily",
-   "link": "https://www.bbc.co.uk/sounds/play/p0p51f17?at_medium=RSS&at_campaign=rss",
-   "date": "2026-08-17T22:15:00.000Z",
-   "src": "BBC Sport",
-   "img": "https://ichef.bbci.co.uk/images/ic/240x135/p0p51f1t.jpg"
-  },
-  {
-   "title": "Fernandez will cost Man City more than £120m - Tuesday's gossip",
-   "link": "https://www.bbc.co.uk/sport/football/articles/cz64z1dxn7xo?at_medium=RSS&at_campaign=rss",
-   "date": "2026-08-17T21:42:19.000Z",
-   "src": "BBC Sport",
-   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/bf36/live/87cbb8d0-9a81-11f1-aed2-8d6da8d75094.png"
-  },
-  {
-   "title": "Rubin Colwill’s last-gasp free-kick earns Cardiff dramatic point against Wrexham",
-   "link": "https://www.theguardian.com/football/2026/aug/17/wrexham-cardiff-championship-match-report",
-   "date": "2026-08-17T21:32:53.000Z",
-   "src": "The Guardian",
-   "img": "https://i.guim.co.uk/img/media/fecc5b21105bc55d506b053f11cdd6a6606a53e4/408_0_2984_2388/master/2984.jpg?width=700&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=cb41ecfd22e9262a1e75d8109d01e89e"
-  },
-  {
-   "title": "Chelsea co-owners Boehly & Walter explore selling stakes",
-   "link": "https://www.bbc.co.uk/sport/football/articles/cj6341x2g18o?at_medium=RSS&at_campaign=rss",
-   "date": "2026-08-17T21:18:49.000Z",
-   "src": "BBC Sport",
-   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/8834/live/f23b2a00-9a79-11f1-b68f-817a5a696299.jpg"
-  },
-  {
-   "title": "Top Fifa official sacked after Infantino plan criticism",
-   "link": "https://www.bbc.co.uk/sport/football/articles/cn7n4d6vy03o?at_medium=RSS&at_campaign=rss",
-   "date": "2026-08-17T20:46:08.000Z",
-   "src": "BBC Sport",
-   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/6644/live/a810eee0-9a71-11f1-b68f-817a5a696299.jpg"
   },
   {
    "title": "Fifa chief sacked after criticism of Infantino’s World Cup sell-off plan",
@@ -72,20 +212,6 @@
    "img": "https://i.guim.co.uk/img/media/8d2dd72ecb8d30c1955861a7b096f4437b6cd360/314_0_3995_3196/master/3995.jpg?width=700&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=395ace0c393f2666771d563dce4a9f72"
   },
   {
-   "title": "Rodri lands in Barcelona to complete 'dream' move",
-   "link": "https://www.bbc.co.uk/sport/football/articles/cevmw02j4nyo?at_medium=RSS&at_campaign=rss",
-   "date": "2026-08-17T20:02:27.000Z",
-   "src": "BBC Sport",
-   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/7a65/live/e0f47630-9a73-11f1-b68f-817a5a696299.jpg"
-  },
-  {
-   "title": "Rodri calls it ‘a dream to play for Barcelona’ as he flies in for medical",
-   "link": "https://www.theguardian.com/football/2026/aug/16/rodri-set-to-complete-barcelona-move-after-manchester-city-accept-654m-bid",
-   "date": "2026-08-17T19:39:23.000Z",
-   "src": "The Guardian",
-   "img": "https://i.guim.co.uk/img/media/f25f99e5bb08760867be8c0994108c7fd65f2c11/817_0_5326_4260/master/5326.jpg?width=700&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=c56293f8b502a0b44a93647c4684d399"
-  },
-  {
    "title": "Todd Boehly and Mark Walter consider selling Chelsea shares to Clearlake Capital",
    "link": "https://www.theguardian.com/football/2026/aug/17/chelsea-todd-boehly-mark-walter-consider-selling-shares-clearlake-capital",
    "date": "2026-08-17T18:56:28.000Z",
@@ -93,109 +219,11 @@
    "img": "https://i.guim.co.uk/img/media/739fba520f0bb60693161d3437f1a1b958a19614/0_0_1826_1460/master/1826.jpg?width=700&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=d161ffae7f4549e76aff58cbb697f82c"
   },
   {
-   "title": "Sergio’s stunner lights up El Sardinero on Racing Santander’s emotional La Liga return | Sid Lowe",
-   "link": "https://www.theguardian.com/football/2026/aug/17/sergio-martinez-racing-santander-la-liga-return",
-   "date": "2026-08-17T17:15:00.000Z",
-   "src": "The Guardian",
-   "img": "https://i.guim.co.uk/img/media/6c9ce3a71c998be2193912087707c6605feeb46f/482_1_4155_3325/master/4155.jpg?width=700&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=806c8a4f7bb04c8308d9a6947e560e02"
-  },
-  {
-   "title": "Tottenham goalkeeper Guglielmo Vicario to leave for Juventus in loan deal",
-   "link": "https://www.theguardian.com/football/2026/aug/17/tottenham-guglielmo-vicario-spurs-juventus-loan-deal-transfer-window",
-   "date": "2026-08-17T17:09:17.000Z",
-   "src": "The Guardian",
-   "img": "https://i.guim.co.uk/img/media/8a796a763b55113945f46af5b62228ad16be0d06/504_0_3771_3020/master/3771.jpg?width=700&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=4df7813fd4bd6013185a60f40cfa06f3"
-  },
-  {
-   "title": "Coventry sign Forest striker Awoniyi for £9m",
-   "link": "https://www.bbc.co.uk/sport/football/articles/cvgjjr90l0lo?at_medium=RSS&at_campaign=rss",
-   "date": "2026-08-17T16:02:31.000Z",
-   "src": "BBC Sport",
-   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/28b9/live/e58adf30-996b-11f1-aaab-c702cc6b4645.jpg"
-  },
-  {
-   "title": "Youthful Pocognoli the brave choice for Scotland job",
-   "link": "https://www.bbc.co.uk/sport/football/articles/c8dn39n6np2o?at_medium=RSS&at_campaign=rss",
-   "date": "2026-08-17T16:01:05.000Z",
-   "src": "BBC Sport",
-   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/04de/live/bcbb3a80-9a3f-11f1-ae41-df15e7357ff6.jpg"
-  },
-  {
-   "title": "Premier League to allow audio of conversations between players and referees",
-   "link": "https://www.theguardian.com/football/2026/aug/17/premier-league-allow-audio-conversations-players-referees",
-   "date": "2026-08-17T15:40:33.000Z",
-   "src": "The Guardian",
-   "img": "https://i.guim.co.uk/img/media/e8589805dc59f5327195bcf6a75c67cdd504c6dc/194_0_1516_1213/master/1516.jpg?width=700&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=364275469d872cb29663e1345f78c8c7"
-  },
-  {
-   "title": "Enzo Maresca’s Manchester City opener was startlingly bad",
-   "link": "https://www.theguardian.com/football/2026/aug/17/marescas-man-city-opener-was-startlingly-bad",
-   "date": "2026-08-17T15:00:02.000Z",
-   "src": "The Guardian",
-   "img": "https://i.guim.co.uk/img/media/840656e8df5dcb59f9b13abbe1a5618ca078ca78/0_0_5000_4000/master/5000.jpg?width=700&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=d3e4c0c51a005d11bdc1d21968ec3601"
-  },
-  {
-   "title": "Ipswich sign Strasbourg duo Enciso & Ouattara",
-   "link": "https://www.bbc.co.uk/sport/football/articles/cwymzjwypezo?at_medium=RSS&at_campaign=rss",
-   "date": "2026-08-17T14:51:19.000Z",
-   "src": "BBC Sport",
-   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/6a6f/live/8ba19640-9a50-11f1-96c4-e7f87215742d.png"
-  },
-  {
-   "title": "Football Daily | Pocognoli looks the part as Scotland’s new boss but a question remains: can he boogie?",
-   "link": "https://www.theguardian.com/football/2026/aug/17/sebastien-pocognoli-scotland-football-daily-newsletter",
-   "date": "2026-08-17T14:33:16.000Z",
-   "src": "The Guardian",
-   "img": "https://i.guim.co.uk/img/media/b8d93a1da45982666faad5c9114d8a9c9b7c2310/537_0_4843_3876/master/4843.jpg?width=700&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=9ba9c592aae87eff48776edd1e89ced0"
-  },
-  {
-   "title": "Man City move for £85m Bouaddi and still want Fernandez",
-   "link": "https://www.bbc.co.uk/sport/football/articles/cd7l9n4qnlno?at_medium=RSS&at_campaign=rss",
-   "date": "2026-08-17T13:50:22.000Z",
-   "src": "BBC Sport",
-   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/9ba9/live/af032020-9a43-11f1-aed2-8d6da8d75094.png"
-  },
-  {
-   "title": "£2.14bn and counting - why Premier League spending could set new record",
-   "link": "https://www.bbc.co.uk/sport/football/articles/cp30kw3q08ko?at_medium=RSS&at_campaign=rss",
-   "date": "2026-08-17T13:07:16.000Z",
-   "src": "BBC Sport",
-   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/d64c/live/418c2e60-9a16-11f1-b0ec-399275ee28cb.jpg"
-  },
-  {
-   "title": "Scottish FA withdraws support for Fifa president Infantino",
-   "link": "https://www.bbc.co.uk/sport/football/articles/crrv4092pvlo?at_medium=RSS&at_campaign=rss",
-   "date": "2026-08-17T12:43:23.000Z",
-   "src": "BBC Sport",
-   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/e69f/live/e03a5720-9a35-11f1-bb53-f521e7e25454.jpg"
-  },
-  {
    "title": "Premier League 2026-27 preview No 12: Ipswich",
    "link": "https://www.theguardian.com/football/2026/aug/17/premier-league-2026-27-preview-no-12-ipswich",
    "date": "2026-08-17T11:00:53.000Z",
    "src": "The Guardian",
    "img": "https://i.guim.co.uk/img/media/96b7836bba13024f659b52eadaaf1770f623d853/350_0_3500_2800/master/3500.jpg?width=700&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=63fcb6efa941596e3254603ee82ab5e0"
-  },
-  {
-   "title": "Baller League to no longer be shown live on Sky Sports from next season",
-   "link": "https://www.theguardian.com/football/2026/aug/17/baller-league-live-sky-sports-season-ksi-prime-fc",
-   "date": "2026-08-17T10:34:47.000Z",
-   "src": "The Guardian",
-   "img": "https://i.guim.co.uk/img/media/4c7c2ca24df248f155e2efd02a4318a4a23265ba/87_0_4828_3862/master/4828.jpg?width=700&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=57292248fb729bb64fe86e2a4835c65d"
-  },
-  {
-   "title": "These eight players will help you win FPL",
-   "link": "https://www.bbc.co.uk/sport/football/articles/c4g305xwdr4o?at_medium=RSS&at_campaign=rss",
-   "date": "2026-08-17T07:49:52.000Z",
-   "src": "BBC Sport",
-   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/53f8/live/07dcc7a0-970b-11f1-870d-5d08c49babb2.jpg"
-  },
-  {
-   "title": "Brighton’s Emilie Joramo: ‘I feel like I’m now in the place I want to be’",
-   "link": "https://www.theguardian.com/football/2026/aug/17/brightons-emilie-joramo-i-feel-like-im-now-in-the-place-i-want-to-be",
-   "date": "2026-08-17T07:00:48.000Z",
-   "src": "The Guardian",
-   "img": "https://i.guim.co.uk/img/media/3f3634a29c2da8993af8d9cf8488fef84eb766fe/0_846_3368_2694/master/3368.jpg?width=700&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=456532f1b8f4115c3a4b0a5d42394f02"
   },
   {
    "title": "Premier League 2026-27 preview No 11: Hull City",
@@ -210,34 +238,6 @@
    "date": "2026-08-16T20:51:15.000Z",
    "src": "BBC Sport",
    "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/aadf/live/4233aae0-9756-11f1-a7ab-8b30adf0800a.jpg"
-  },
-  {
-   "title": "Flemming’s dramatic Burnley double pegs back West Ham on Championship return",
-   "link": "https://www.theguardian.com/football/2026/aug/16/burnley-west-ham-championship-match-report",
-   "date": "2026-08-16T17:18:51.000Z",
-   "src": "The Guardian",
-   "img": "https://i.guim.co.uk/img/media/e67c8f11f546880eb0b26cd8065ea9a5faef4418/682_417_2153_1723/master/2153.jpg?width=700&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=0bf527859a88222b3943582bc961b957"
-  },
-  {
-   "title": "Cristiano Ronaldo says this year is ‘probably’ his last as a footballer",
-   "link": "https://www.theguardian.com/football/2026/aug/16/cristiano-ronaldo-says-this-year-is-probably-his-last-as-a-footballer",
-   "date": "2026-08-16T16:46:36.000Z",
-   "src": "The Guardian",
-   "img": "https://i.guim.co.uk/img/media/e56d19b715473bc3ed8e26ab3215bd731d853ffa/93_0_1880_1504/master/1880.jpg?width=700&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=f25fffb93f28570c5b3c8ece8298b815"
-  },
-  {
-   "title": "Premier League 2026-27 preview No 10: Fulham",
-   "link": "https://www.theguardian.com/football/2026/aug/14/premier-league-2026-27-preview-no-10-fulham",
-   "date": "2026-08-14T11:00:26.000Z",
-   "src": "The Guardian",
-   "img": "https://i.guim.co.uk/img/media/128e0ac378a67828b0ddcfbb61593d7c4036ebce/228_503_2648_2118/master/2648.jpg?width=700&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=37283d29fe662dbb5e2b390f766f4a3c"
-  },
-  {
-   "title": "Premier League 2026-27 preview No 9: Everton",
-   "link": "https://www.theguardian.com/football/2026/aug/14/premier-league-2026-27-preview-no-9-everton",
-   "date": "2026-08-13T23:01:11.000Z",
-   "src": "The Guardian",
-   "img": "https://i.guim.co.uk/img/media/f0a2d99e703981c1fd80a07215a062aff6da272d/309_106_1712_1370/master/1712.jpg?width=700&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=c87c344ffebf1e66ec757671fa42afff"
   },
   {
    "title": "Carrick pushing to improve the squad this summer",
