@@ -1,19 +1,194 @@
 {
- "updated": "2026-08-20T04:12:31.005Z",
+ "updated": "2026-08-21T04:14:27.695Z",
  "items": [
   {
-   "title": "‘A huge honour’: Socceroos World Cup star Alessandro Circati seals move to Benfica",
-   "link": "https://www.theguardian.com/football/2026/aug/20/alessandro-circati-benfica-portugal-primeira-liga-transfer-news-move",
-   "date": "2026-08-19T23:58:35.000Z",
+   "title": "Premier League 2026-27 preview No 19: Sunderland",
+   "link": "https://www.theguardian.com/football/2026/aug/21/premier-league-2026-27-preview-no-19-sunderland",
+   "date": "2026-08-20T23:01:18.000Z",
    "src": "The Guardian",
-   "img": "https://i.guim.co.uk/img/media/56acdea2fd08881bf83336d3824bb586a69691fa/0_31_2667_2133/master/2667.jpg?width=700&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=0fec00075521b936f0035839743de939"
+   "img": "https://i.guim.co.uk/img/media/3b3ed51e53b0513abaa603f818693e7cf0d5b492/906_569_4162_3329/master/4162.jpg?width=700&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=11fa580cf65779a7a1549bf1ed3e1f6a"
   },
   {
-   "title": "Algorithms amplified World Cup racism, says report",
-   "link": "https://www.bbc.co.uk/sport/football/articles/c2k7en0lxkjo?at_medium=RSS&at_campaign=rss",
-   "date": "2026-08-19T23:02:14.000Z",
+   "title": "Premier League: 10 things to look out for as the new season kicks off",
+   "link": "https://www.theguardian.com/football/2026/aug/21/premier-league-10-things-to-look-out-for-as-new-season-kicks-off",
+   "date": "2026-08-20T23:01:18.000Z",
+   "src": "The Guardian",
+   "img": "https://i.guim.co.uk/img/media/9582f87c8db86570ee73d59bec8f3afaa67d3ffe/0_0_5000_4000/master/5000.jpg?width=700&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=9950f4d4c3c2f0cc33bf90e4d27c8584"
+  },
+  {
+   "title": "European playoffs: Rangers scrape first-leg win as Brighton draw in Norway",
+   "link": "https://www.theguardian.com/football/2026/aug/20/european-playoffs-rangers-scrape-first-leg-win-as-brighton-draw-in-norway",
+   "date": "2026-08-20T22:54:49.000Z",
+   "src": "The Guardian",
+   "img": "https://i.guim.co.uk/img/media/806ce17dd3f4ac8b8363f91bd60a7c994d9cae7e/2_0_3756_3005/master/3756.jpg?width=700&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=938af8fbfb5a81a29f722ebeb46e7da2"
+  },
+  {
+   "title": "McInnes' Rangers serve up stodgy 12-course banquet of huff and puff",
+   "link": "https://www.bbc.co.uk/sport/football/articles/c98v73n24j2o?at_medium=RSS&at_campaign=rss",
+   "date": "2026-08-20T22:09:11.000Z",
    "src": "BBC Sport",
-   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/8d5c/live/8c405a40-9bf0-11f1-8470-d18257d2d589.jpg"
+   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/1537/live/1ecc22c0-9ce3-11f1-9e72-05a4f32fdb83.jpg"
+  },
+  {
+   "title": "Ronaldinho, 46, on mission of love and happiness – and maybe goals – at Serie C’s Ravenna",
+   "link": "https://www.theguardian.com/football/2026/aug/20/ronaldinho-46-serie-c-ravenna-unveiling-comeback",
+   "date": "2026-08-20T21:27:01.000Z",
+   "src": "The Guardian",
+   "img": "https://i.guim.co.uk/img/media/e35c9752859e3b6f2dd3481f5f22ef5d37d79c52/1265_450_3364_2691/master/3364.jpg?width=700&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=a0d27360b9cf9a13449c14a18198dda2"
+  },
+  {
+   "title": "Hull owner hits out at pundits over 'laughable' criticism",
+   "link": "https://www.bbc.co.uk/sport/football/articles/c39eg04p08eo?at_medium=RSS&at_campaign=rss",
+   "date": "2026-08-20T21:22:34.000Z",
+   "src": "BBC Sport",
+   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/4ff3/live/d26373e0-9cdb-11f1-8c2c-67800657f112.jpg"
+  },
+  {
+   "title": "Ronaldinho seeks 300th goal with comeback aged 46",
+   "link": "https://www.bbc.co.uk/sport/football/articles/c2lq5dk0gneo?at_medium=RSS&at_campaign=rss",
+   "date": "2026-08-20T20:58:57.000Z",
+   "src": "BBC Sport",
+   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/b676/live/1beecd60-9cd8-11f1-8c2c-67800657f112.jpg"
+  },
+  {
+   "title": "Arsenal exploring Yildiz move - Friday's gossip",
+   "link": "https://www.bbc.co.uk/sport/football/articles/czxqvllyg72o?at_medium=RSS&at_campaign=rss",
+   "date": "2026-08-20T20:47:42.000Z",
+   "src": "BBC Sport",
+   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/d337/live/a2dce1a0-9cbe-11f1-b109-879e35c24276.png"
+  },
+  {
+   "title": "Villa £18m bid for Harwood-Bellis rejected by Southampton",
+   "link": "https://www.bbc.co.uk/sport/football/articles/cx27w8kv9lvo?at_medium=RSS&at_campaign=rss",
+   "date": "2026-08-20T19:14:08.000Z",
+   "src": "BBC Sport",
+   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/1d4b/live/e3926de0-9cc9-11f1-a5cd-a14170183a2c.jpg"
+  },
+  {
+   "title": "Joao Pedro set to extend Chelsea deal to 2034",
+   "link": "https://www.bbc.co.uk/sport/football/articles/c79g2z11r81o?at_medium=RSS&at_campaign=rss",
+   "date": "2026-08-20T19:06:34.000Z",
+   "src": "BBC Sport",
+   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/479e/live/7c70f030-9cc6-11f1-a5cd-a14170183a2c.jpg"
+  },
+  {
+   "title": "Gianni Infantino eyes junior tournament in Dominican Republic as potential route out of crisis",
+   "link": "https://www.theguardian.com/football/2026/aug/20/gianni-infantino-eyes-junior-tournament-dominican-republic-route-out-of-fifa-crisis",
+   "date": "2026-08-20T19:03:08.000Z",
+   "src": "The Guardian",
+   "img": "https://i.guim.co.uk/img/media/169d8a40f66255bac26154d4bae440b28b84961f/303_0_3530_2825/master/3530.jpg?width=700&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=de2a840ed9d02fa38b69f71a5efb4d4c"
+  },
+  {
+   "title": "Late Larne double seals first-leg win over 10-man Red Imps",
+   "link": "https://www.bbc.co.uk/sport/football/videos/c5y3ny87r84o?at_medium=RSS&at_campaign=rss",
+   "date": "2026-08-20T19:03:06.000Z",
+   "src": "BBC Sport",
+   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/5a7c/live/ae4b3540-9cc9-11f1-b109-879e35c24276.jpg"
+  },
+  {
+   "title": "Premier League returns and Arsenal sense opportunity with rivals in flux",
+   "link": "https://www.theguardian.com/football/2026/aug/20/premier-league-returns-arsenal-sense-opportunity",
+   "date": "2026-08-20T19:00:13.000Z",
+   "src": "The Guardian",
+   "img": "https://i.guim.co.uk/img/media/0103dcb2602f3e882e53fb383bbf3259039ec7a4/595_0_6723_5380/master/6723.jpg?width=700&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=e1258ee076160ddd3488640895c84a84"
+  },
+  {
+   "title": "Seven defenders on the books - why Arsenal still want Konsa",
+   "link": "https://www.bbc.co.uk/sport/football/articles/c62ey2y9n79o?at_medium=RSS&at_campaign=rss",
+   "date": "2026-08-20T17:48:12.000Z",
+   "src": "BBC Sport",
+   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/52b9/live/69de6c30-9ca4-11f1-a5a0-114ca9d4a1bc.jpg"
+  },
+  {
+   "title": "Liverpool have £50m bid rejected for Brighton's Minteh",
+   "link": "https://www.bbc.co.uk/sport/football/articles/c4gknq7d8d5o?at_medium=RSS&at_campaign=rss",
+   "date": "2026-08-20T17:06:34.000Z",
+   "src": "BBC Sport",
+   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/4457/live/9f853380-9cb0-11f1-84cf-fd4cfd9d6c84.jpg"
+  },
+  {
+   "title": "Michael Carrick rejects ‘ridiculous’ talk of easy start to Manchester United season",
+   "link": "https://www.theguardian.com/football/2026/aug/20/michael-carrick-rejects-talk-of-easy-start-to-season-for-manchester-united",
+   "date": "2026-08-20T17:00:27.000Z",
+   "src": "The Guardian",
+   "img": "https://i.guim.co.uk/img/media/0aef9a394f47e00d078596f9c8e4ef66008cc942/456_0_4560_3648/master/4560.jpg?width=700&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=17181d52c159c8e510d3175fcb0e9199"
+  },
+  {
+   "title": "Terry Dyson, only Spurs player to score north London derby hat-trick, dies at 91",
+   "link": "https://www.theguardian.com/football/2026/aug/20/terry-dyson-tottenham-dies-aged-91",
+   "date": "2026-08-20T16:28:25.000Z",
+   "src": "The Guardian",
+   "img": "https://i.guim.co.uk/img/media/c5628a4d9cbbe14726808ed441c37cf68ab492d4/0_732_4724_3779/master/4724.jpg?width=700&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=d00b4df4850dc0b32bb07cfeb3a8bd22"
+  },
+  {
+   "title": "‘Enzo is a Chelsea player,’ says Alonso but doesn’t guarantee Fernández’s future",
+   "link": "https://www.theguardian.com/football/2026/aug/20/enzo-fernandez-chelsea-xabi-alonso-manchester-city-transfer",
+   "date": "2026-08-20T15:50:12.000Z",
+   "src": "The Guardian",
+   "img": "https://i.guim.co.uk/img/media/593393786c04b2875bc833a587eaeace26f89e2a/546_121_2513_2010/master/2513.jpg?width=700&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=a2096ecbfee006dcfda33ab76523b790"
+  },
+  {
+   "title": "Maracanã to host opening game and final at next year’s Women’s World Cup",
+   "link": "https://www.theguardian.com/football/2026/aug/20/maracana-to-host-opening-game-and-final-at-next-years-womens-world-cup",
+   "date": "2026-08-20T15:25:54.000Z",
+   "src": "The Guardian",
+   "img": "https://i.guim.co.uk/img/media/4a90ea7b5e9af638d6601f0853c80ce689741cd8/366_0_3401_2720/master/3401.jpg?width=700&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=97ad2f9e772c6cffbe9512dd0b079458"
+  },
+  {
+   "title": "The Premier League's new plan to end corner chaos",
+   "link": "https://www.bbc.co.uk/sport/football/articles/c0jl03lv775o?at_medium=RSS&at_campaign=rss",
+   "date": "2026-08-20T12:53:03.000Z",
+   "src": "BBC Sport",
+   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/df50/live/adedee20-1642-11f1-9293-5bf16ec577d6.jpg"
+  },
+  {
+   "title": "PSG’s Ligue 1 home opener moved to Rennes after pitch damaged by heat",
+   "link": "https://www.theguardian.com/football/2026/aug/20/psgs-ligue-1-home-opener-moved-to-rennes-after-paris-pitch-damaged-by-heat",
+   "date": "2026-08-20T12:41:01.000Z",
+   "src": "The Guardian",
+   "img": "https://i.guim.co.uk/img/media/4ef8d9f4bc01444203fe64701b47f68b21c37b3d/813_1090_5518_4414/master/5518.jpg?width=700&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=78cc668dd7b7a233e014c48f2cabbdef"
+  },
+  {
+   "title": "Double-elimination, reseeding and 20 teams: MLS plans potential overhaul of playoffs",
+   "link": "https://www.theguardian.com/football/2026/aug/20/mls-playoff-format-overhaul",
+   "date": "2026-08-20T12:00:52.000Z",
+   "src": "The Guardian",
+   "img": "https://i.guim.co.uk/img/media/ebfdbbfb1b3767e7fcb68cd395225cda8d57c35a/500_0_5000_4000/master/5000.jpg?width=700&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=f48bdbf303eb4beb7e3e038460fa0ce2"
+  },
+  {
+   "title": "Can a managerial merry-go-round in Serie A stop Inter’s dominance?",
+   "link": "https://www.theguardian.com/football/2026/aug/20/serie-a-preview-inter-milan-juventus-como-roma-napoli",
+   "date": "2026-08-20T11:00:51.000Z",
+   "src": "The Guardian",
+   "img": "https://i.guim.co.uk/img/media/d8586b9886b2c0f2d7deaf3142a7c5b775a7bc10/977_0_6880_5504/master/6880.jpg?width=700&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=1775a81588d630412b869f495a6894e3"
+  },
+  {
+   "title": "Premier League 2026-27 preview No 18: Nottingham Forest",
+   "link": "https://www.theguardian.com/football/2026/aug/20/premier-league-2026-27-preview-no-18-nottingham-forest",
+   "date": "2026-08-20T11:00:50.000Z",
+   "src": "The Guardian",
+   "img": "https://i.guim.co.uk/img/media/3d910894fbe94855c88741f712411d3fd3276112/607_169_4703_3763/master/4703.jpg?width=700&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=e138eeb289df96768e9ef65cafe8c68d"
+  },
+  {
+   "title": "Opening half-hour of TNT Sports’ Premier League broadcasts to be shown on YouTube",
+   "link": "https://www.theguardian.com/football/2026/aug/20/opening-half-hour-of-tnt-sports-premier-league-broadcasts-to-be-shown-on-youtube",
+   "date": "2026-08-20T08:00:46.000Z",
+   "src": "The Guardian",
+   "img": "https://i.guim.co.uk/img/media/8cc9b592234301adb2cf5096f5bb94bc16848f7a/705_0_5000_4000/master/5000.jpg?width=700&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=f46348b6933cb734c589c8269d3c7e06"
+  },
+  {
+   "title": "Premier League predictions 2026-27: BBC Sport pundits pick their top four",
+   "link": "https://www.bbc.co.uk/sport/football/articles/cp8edryd7plo?at_medium=RSS&at_campaign=rss",
+   "date": "2026-08-20T05:24:16.000Z",
+   "src": "BBC Sport",
+   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/86f1/live/4444d1b0-9bb6-11f1-b109-879e35c24276.jpg"
+  },
+  {
+   "title": "Aguero and Shearer star in best opening-round debuts",
+   "link": "https://www.bbc.co.uk/sport/football/videos/cwyl718g865o?at_medium=RSS&at_campaign=rss",
+   "date": "2026-08-20T05:22:10.000Z",
+   "src": "BBC Sport",
+   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/a20c/live/89ac3320-9bf6-11f1-a291-b542ee92de7c.jpg"
   },
   {
    "title": "Premier League 2026-27 preview No 17: Newcastle",
@@ -23,193 +198,11 @@
    "img": "https://i.guim.co.uk/img/media/b82094e38adc7018bf1b976cdb5c5cfa2b7fcd40/704_47_3155_2524/master/3155.jpg?width=700&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=6b0942817e888025c65b1c79db10993c"
   },
   {
-   "title": "‘Really exceptional’: O’Neill hails Durán as Celtic surge towards Champions League",
-   "link": "https://www.theguardian.com/football/2026/aug/19/celtic-lask-champions-league-playoff-match-report",
-   "date": "2026-08-19T22:24:52.000Z",
-   "src": "The Guardian",
-   "img": "https://i.guim.co.uk/img/media/0dcf21133725e4c9b4ef6c16dd953075e1c2687c/99_0_4625_3701/master/4625.jpg?width=700&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=c95c7b76cb2c0292a9d5b676af3a78cd"
-  },
-  {
-   "title": "Hapoel Be'er Sheva earn comeback win over Sabah",
-   "link": "https://www.bbc.co.uk/sport/football/videos/cy74z3zzvm1o?at_medium=RSS&at_campaign=rss",
-   "date": "2026-08-19T21:42:50.000Z",
+   "title": "Is Haaland worth the £15.5m price tag on FPL?",
+   "link": "https://www.bbc.co.uk/sport/football/videos/cvgx0dngdl0o?at_medium=RSS&at_campaign=rss",
+   "date": "2026-08-19T11:32:34.000Z",
    "src": "BBC Sport",
-   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/a621/live/611987c0-9c17-11f1-aed2-8d6da8d75094.jpg"
-  },
-  {
-   "title": "Man City join Man Utd in Kone race - Thursday's gossip",
-   "link": "https://www.bbc.co.uk/sport/football/articles/cn0n4qlxyq7o?at_medium=RSS&at_campaign=rss",
-   "date": "2026-08-19T21:30:46.000Z",
-   "src": "BBC Sport",
-   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/a92e/live/c0bac070-9c05-11f1-b109-879e35c24276.png"
-  },
-  {
-   "title": "Bodo/Glimt in strong position following first-leg win at NEC",
-   "link": "https://www.bbc.co.uk/sport/football/videos/c62v4v90yd9o?at_medium=RSS&at_campaign=rss",
-   "date": "2026-08-19T21:29:50.000Z",
-   "src": "BBC Sport",
-   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/3083/live/3a26b410-9c14-11f1-b109-879e35c24276.jpg"
-  },
-  {
-   "title": "Duran stars as Celtic ease to comfortable win over LASK",
-   "link": "https://www.bbc.co.uk/sport/football/videos/c0m73y34nglo?at_medium=RSS&at_campaign=rss",
-   "date": "2026-08-19T21:28:08.000Z",
-   "src": "BBC Sport",
-   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/8fea/live/91b7b210-9c14-11f1-b109-879e35c24276.jpg"
-  },
-  {
-   "title": "Celje fight back to earn draw against Slovan Bratislava",
-   "link": "https://www.bbc.co.uk/sport/football/videos/crl7673348xo?at_medium=RSS&at_campaign=rss",
-   "date": "2026-08-19T21:22:24.000Z",
-   "src": "BBC Sport",
-   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/3e4e/live/4bb104c0-9c13-11f1-a291-b542ee92de7c.jpg"
-  },
-  {
-   "title": "‘Believe your eyes’: Masters says Premier League’s integrity cannot be doubted",
-   "link": "https://www.theguardian.com/football/2026/aug/19/referees-chief-howard-webb-really-troubled-by-folarin-balogun-escaping-world-cup-ban",
-   "date": "2026-08-19T21:08:21.000Z",
-   "src": "The Guardian",
-   "img": "https://i.guim.co.uk/img/media/02138692f76e7596bb5340a783939e38bf736a8b/483_234_2459_1968/master/2459.jpg?width=700&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=b78b1298fa505106fd40f44825257080"
-  },
-  {
-   "title": "Celtic take the lead through Nygren's 'magnificent' strike",
-   "link": "https://www.bbc.co.uk/sport/football/videos/cp8xg9j7gnko?at_medium=RSS&at_campaign=rss",
-   "date": "2026-08-19T21:00:45.000Z",
-   "src": "BBC Sport",
-   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/3e5c/live/735a61c0-9c17-11f1-a291-b542ee92de7c.jpg"
-  },
-  {
-   "title": "Duran's incredible double edges Celtic closer to Champions League",
-   "link": "https://www.bbc.co.uk/sport/football/videos/crmrydv4ww0o?at_medium=RSS&at_campaign=rss",
-   "date": "2026-08-19T21:00:41.000Z",
-   "src": "BBC Sport",
-   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/c763/live/24e31a00-9c17-11f1-a291-b542ee92de7c.jpg"
-  },
-  {
-   "title": "Rashford wants to play football 'without name mentioned every day'",
-   "link": "https://www.bbc.co.uk/sport/football/articles/c1j1397zg1xo?at_medium=RSS&at_campaign=rss",
-   "date": "2026-08-19T20:56:50.000Z",
-   "src": "BBC Sport",
-   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/025f/live/4a8ac680-9c0e-11f1-bab6-dd87b521d67e.jpg"
-  },
-  {
-   "title": "Manchester City target Roma’s Manu Koné as Spurs talk over Savinho and Marmoush deal",
-   "link": "https://www.theguardian.com/football/2026/aug/19/manchester-city-target-romas-manu-kone-as-spurs-talk-over-savinho-and-marmoush-deal",
-   "date": "2026-08-19T20:56:13.000Z",
-   "src": "The Guardian",
-   "img": "https://i.guim.co.uk/img/media/b3c1d6a66a6aef17f3ad6e364fe34798855c08b4/392_0_5683_4546/master/5683.jpg?width=700&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=fa85a31fc009ac7662783f1a3860b8c0"
-  },
-  {
-   "title": "Curtis Jones set to leave Liverpool as Inter submit £30m offer for midfielder",
-   "link": "https://www.theguardian.com/football/2026/aug/19/inter-liverpool-30m-curtis-jones-transfer-window-premier-league",
-   "date": "2026-08-19T19:22:01.000Z",
-   "src": "The Guardian",
-   "img": "https://i.guim.co.uk/img/media/75d50ccc648c1cd28dfcc43eea4ee561c092825d/0_0_4678_3743/master/4678.jpg?width=700&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=5a49d589692c4645e7484eea82d03e4e"
-  },
-  {
-   "title": "Fifth Fifa vice-president turns against Infantino, saying he has ‘lost confidence’ in him",
-   "link": "https://www.theguardian.com/football/2026/aug/19/fifth-fifa-vice-president-turns-against-infantino-saying-he-has-lost-confidence-in-him",
-   "date": "2026-08-19T19:04:48.000Z",
-   "src": "The Guardian",
-   "img": "https://i.guim.co.uk/img/media/96f0cd8b5d7de094404335c8e5cfd3353bb95f98/1222_2_2430_1944/master/2430.jpg?width=700&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=99014d8eb96fcbf258f66aaeb1946ccf"
-  },
-  {
-   "title": "Sheffield United co-chair could be disqualified after dispute over £35m debt from club purchase",
-   "link": "https://www.theguardian.com/football/2026/aug/19/sheffield-united-chair-could-be-disqualified-dispute-35m-debt-club-purchase",
-   "date": "2026-08-19T17:59:24.000Z",
-   "src": "The Guardian",
-   "img": "https://i.guim.co.uk/img/media/d860bbabaf8a0cf4fe1d7789866262b0867b26ab/473_0_4733_3787/master/4733.jpg?width=700&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=ab6a873f13c169559525d64f81b3cc10"
-  },
-  {
-   "title": "Baptisms of fire: the fixture list has not been kind to Coventry, Hull and Ipswich",
-   "link": "https://www.theguardian.com/football/2026/aug/19/premer-league-fixtures-coventry-ipswich-hull",
-   "date": "2026-08-19T17:33:32.000Z",
-   "src": "The Guardian",
-   "img": "https://i.guim.co.uk/img/media/cba6456f3115fa9a514dd839a5d39ba20f52571f/0_0_4998_3998/master/4998.jpg?width=700&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=13baf5d23f2290bd2bf1873b75505e76"
-  },
-  {
-   "title": "Kane plays down returning to Premier League in future",
-   "link": "https://www.bbc.co.uk/sport/football/articles/clylkxekeleo?at_medium=RSS&at_campaign=rss",
-   "date": "2026-08-19T17:14:38.000Z",
-   "src": "BBC Sport",
-   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/e38c/live/f5ef4850-9bed-11f1-aed9-776866bfb986.jpg"
-  },
-  {
-   "title": "Sheff Utd could face points deduction after High Court ruling",
-   "link": "https://www.bbc.co.uk/sport/football/articles/c4g618x1z80o?at_medium=RSS&at_campaign=rss",
-   "date": "2026-08-19T17:01:42.000Z",
-   "src": "BBC Sport",
-   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/1d43/live/c85e5cd0-9bd6-11f1-bd98-ed4222d45acc.jpg"
-  },
-  {
-   "title": "Reijnders leaves Man City for Al-Qadsiah in £52m deal",
-   "link": "https://www.bbc.co.uk/sport/football/articles/c0m7el3zr2eo?at_medium=RSS&at_campaign=rss",
-   "date": "2026-08-19T16:01:32.000Z",
-   "src": "BBC Sport",
-   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/83d9/live/7a887240-9be3-11f1-ba30-ddd78081057f.jpg"
-  },
-  {
-   "title": "Delap loses number nine shirt & trains away from first team",
-   "link": "https://www.bbc.co.uk/sport/football/articles/c5y4nel5gddo?at_medium=RSS&at_campaign=rss",
-   "date": "2026-08-19T15:58:44.000Z",
-   "src": "BBC Sport",
-   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/1eaa/live/250e17e0-9be6-11f1-ba30-ddd78081057f.jpg"
-  },
-  {
-   "title": "Two collapses in four days - what's happening to Musiala?",
-   "link": "https://www.bbc.co.uk/sport/football/articles/crmry3r1ew7o?at_medium=RSS&at_campaign=rss",
-   "date": "2026-08-19T15:34:38.000Z",
-   "src": "BBC Sport",
-   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/07ee/live/d8375700-9bb4-11f1-ae8a-8d57110c5ba6.jpg"
-  },
-  {
-   "title": "Arsenal agree £51m deal to sign Ezri Konsa from Aston Villa",
-   "link": "https://www.theguardian.com/football/2026/aug/19/aston-villa-al-hilal-ollie-watkins",
-   "date": "2026-08-19T15:16:00.000Z",
-   "src": "The Guardian",
-   "img": "https://i.guim.co.uk/img/media/a594e7a0db017a8d5503d82d1352959c79918e77/36_73_1800_1440/master/1800.jpg?width=700&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=0ebbbe1fcaaf0c1c629dfc892cab9a4c"
-  },
-  {
-   "title": "Man Utd's decision to make Baleba their 'third midfielder'",
-   "link": "https://www.bbc.co.uk/sport/football/articles/clylk1wexgno?at_medium=RSS&at_campaign=rss",
-   "date": "2026-08-19T14:35:36.000Z",
-   "src": "BBC Sport",
-   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/278b/live/236ff2e0-9bd3-11f1-bb4d-1147ef2e78e5.jpg"
-  },
-  {
-   "title": "Inter close in on £30m deal for Liverpool's Jones",
-   "link": "https://www.bbc.co.uk/sport/football/articles/clye43vge5jo?at_medium=RSS&at_campaign=rss",
-   "date": "2026-08-19T14:23:20.000Z",
-   "src": "BBC Sport",
-   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/3d51/live/eeaadb30-9bd5-11f1-bd98-ed4222d45acc.jpg"
-  },
-  {
-   "title": "Arsenal agree £50m-plus deal to sign Villa's Konsa",
-   "link": "https://www.bbc.co.uk/sport/football/articles/c98vz9jvg0vo?at_medium=RSS&at_campaign=rss",
-   "date": "2026-08-19T13:55:18.000Z",
-   "src": "BBC Sport",
-   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/ae9d/live/ad505a30-9bbb-11f1-ae8a-8d57110c5ba6.jpg"
-  },
-  {
-   "title": "‘He doubted’: Mourinho says Real Madrid did not want Rodri after hesitation over move",
-   "link": "https://www.theguardian.com/football/2026/aug/19/jose-mourinho-real-madrid-rodri-barcelona-transfer-offer",
-   "date": "2026-08-19T13:42:13.000Z",
-   "src": "The Guardian",
-   "img": "https://i.guim.co.uk/img/media/2b921b46b16991b2097bbc665ea33f4aafffd854/0_0_4224_3378/master/4224.jpg?width=700&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=8148394ff79bfd1075034c0dc3b51fce"
-  },
-  {
-   "title": "'Everyone wants clarity' over Man City charges, says Arsenal chief",
-   "link": "https://www.bbc.co.uk/sport/football/articles/c1416keng1po?at_medium=RSS&at_campaign=rss",
-   "date": "2026-08-19T12:30:11.000Z",
-   "src": "BBC Sport",
-   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/be00/live/b648b050-9bbc-11f1-ae8a-8d57110c5ba6.jpg"
-  },
-  {
-   "title": "Manchester United make £65m offer for Brighton’s Carlos Baleba",
-   "link": "https://www.theguardian.com/football/2026/aug/19/manchester-united-brighton-carlos-baleba",
-   "date": "2026-08-19T12:01:14.000Z",
-   "src": "The Guardian",
-   "img": "https://i.guim.co.uk/img/media/da6d9862086055e86649affabe8bc41cfea49420/0_0_4133_3306/master/4133.jpg?width=700&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=da0cb7b1648def66af74f3cddf1ae0c4"
+   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/a64a/live/d4b4ed60-9bbc-11f1-b109-879e35c24276.jpg"
   },
   {
    "title": "Premier League 2026-27 preview No 16: Manchester United",
@@ -219,25 +212,11 @@
    "img": "https://i.guim.co.uk/img/media/ef1c8978665382575f2869051eb5b182b4620c46/702_281_5306_4248/master/5306.jpg?width=700&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=7cb94c9d93013b0ceae020c896948ff8"
   },
   {
-   "title": "Mourinho told Vinicius Jr 'not worth' leaving Real",
-   "link": "https://www.bbc.co.uk/sport/football/articles/cgq5wv43g8lo?at_medium=RSS&at_campaign=rss",
-   "date": "2026-08-19T10:54:36.000Z",
+   "title": "I won FPL last season - here are my five best tips",
+   "link": "https://www.bbc.co.uk/sport/football/articles/c3ekq87e214o?at_medium=RSS&at_campaign=rss",
+   "date": "2026-08-19T07:11:05.000Z",
    "src": "BBC Sport",
-   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/02a3/live/8909c650-9bae-11f1-92e6-b1dfcecd4308.jpg"
-  },
-  {
-   "title": "WSL’s ‘big two’: Arsenal and Chelsea record more revenue than rest of league combined | Tom Garry",
-   "link": "https://www.theguardian.com/football/2026/aug/19/wsl-finances-arsenal-chelsea-revenue",
-   "date": "2026-08-19T07:15:09.000Z",
-   "src": "The Guardian",
-   "img": "https://i.guim.co.uk/img/media/29510243d008cdf55ced3d84caac915c43d55600/330_0_3504_2804/master/3504.jpg?width=700&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=763e6d05a3e238da6067f71af9e0fad6"
-  },
-  {
-   "title": "How will your club fare? Phil McNulty's Premier League predictions",
-   "link": "https://www.bbc.co.uk/sport/football/articles/c5ye50qz7yqo?at_medium=RSS&at_campaign=rss",
-   "date": "2026-08-19T05:21:19.000Z",
-   "src": "BBC Sport",
-   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/eaee/live/8a1167d0-9ae9-11f1-930b-57cfba7235f9.jpg"
+   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/9039/live/99b07210-9a1e-11f1-aed2-8d6da8d75094.jpg"
   },
   {
    "title": "Premier League 2026-27 preview No 15: Manchester City",
@@ -247,25 +226,46 @@
    "img": "https://i.guim.co.uk/img/media/a8f404684ec4ea7fe46b99f056eb1746b3098469/661_225_4468_3577/master/4468.jpg?width=700&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=ea299d6e6ec2e6190e3344d9d9826418"
   },
   {
-   "title": "Israel withdraws support for embattled Fifa president Gianni Infantino",
-   "link": "https://www.theguardian.com/football/2026/aug/18/israel-withdraws-support-for-embattled-fifa-president-gianni-infantino",
-   "date": "2026-08-18T18:03:57.000Z",
-   "src": "The Guardian",
-   "img": "https://i.guim.co.uk/img/media/47721a2ee603085fc9d1333cb5df079d944be858/271_0_3405_2724/master/3405.jpg?width=700&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=2fb204c02d22a38cf646c09a547092fa"
+   "title": "Is Haaland worth the price? Pick Rogers or Palmer? Five key FPL questions",
+   "link": "https://www.bbc.co.uk/sport/football/articles/cn0np755k4wo?at_medium=RSS&at_campaign=rss",
+   "date": "2026-08-18T07:23:59.000Z",
+   "src": "BBC Sport",
+   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/b09f/live/205992d0-97fc-11f1-870d-5d08c49babb2.jpg"
   },
   {
-   "title": "Premier League 2026-27 preview No 14: Liverpool",
-   "link": "https://www.theguardian.com/football/2026/aug/18/premier-league-2026-27-preview-no-14-liverpool",
-   "date": "2026-08-18T11:00:44.000Z",
-   "src": "The Guardian",
-   "img": "https://i.guim.co.uk/img/media/97eaf6c58855f1cf2412b2753c2e7529a55cc289/658_0_6596_5277/master/6596.jpg?width=700&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=246c4073c4936ec15e16bf070e97f456"
+   "title": "These eight players will help you win FPL",
+   "link": "https://www.bbc.co.uk/sport/football/articles/c4g305xwdr4o?at_medium=RSS&at_campaign=rss",
+   "date": "2026-08-17T07:49:52.000Z",
+   "src": "BBC Sport",
+   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/53f8/live/07dcc7a0-970b-11f1-870d-5d08c49babb2.jpg"
   },
   {
-   "title": "Premier League 2026-27 preview No 13: Leeds",
-   "link": "https://www.theguardian.com/football/2026/aug/18/premier-league-2026-27-preview-no-13-leeds",
-   "date": "2026-08-17T23:01:07.000Z",
-   "src": "The Guardian",
-   "img": "https://i.guim.co.uk/img/media/57186c94e99a0c65f6d80185c6fba43a770b10c1/96_30_2746_2197/master/2746.jpg?width=700&amp;quality=85&amp;auto=format&amp;fit=max&amp;s=71076648cf070a9bc0e8e3da4b4d43f2"
+   "title": "'He's the professor' - Rodri's Manchester City journey",
+   "link": "https://www.bbc.co.uk/sport/football/videos/cly9xz3rgkeo?at_medium=RSS&at_campaign=rss",
+   "date": "2026-08-16T20:51:15.000Z",
+   "src": "BBC Sport",
+   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/aadf/live/4233aae0-9756-11f1-a7ab-8b30adf0800a.jpg"
+  },
+  {
+   "title": "Who to pick, who to avoid - your team's FPL assets analysed",
+   "link": "https://www.bbc.co.uk/sport/football/articles/c0qv21egpneo?at_medium=RSS&at_campaign=rss",
+   "date": "2026-08-14T07:14:05.000Z",
+   "src": "BBC Sport",
+   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/908e/live/aab70ec0-9636-11f1-acde-358da1a6646b.jpg"
+  },
+  {
+   "title": "Carrick pushing to improve the squad this summer",
+   "link": "https://www.bbc.co.uk/sport/football/videos/c4g3vg077vpo?at_medium=RSS&at_campaign=rss",
+   "date": "2026-08-13T17:56:48.000Z",
+   "src": "BBC Sport",
+   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/9ada/live/0a70d7d0-973e-11f1-b2ab-0dd01740f9f6.jpg"
+  },
+  {
+   "title": "What has changed in FPL for 2026-27 season?",
+   "link": "https://www.bbc.co.uk/sport/football/articles/c4gk9980l0yo?at_medium=RSS&at_campaign=rss",
+   "date": "2026-08-13T12:53:59.000Z",
+   "src": "BBC Sport",
+   "img": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/1480/live/0d9d8c90-876d-11f1-a7ab-8b30adf0800a.jpg"
   },
   {
    "title": "Women’s transfer window summer 2026: all deals from world’s top six leagues",
