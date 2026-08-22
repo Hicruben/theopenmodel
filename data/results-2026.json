@@ -1,6 +1,24 @@
 {
- "updated": "2026-08-21T04:14:28.919Z",
+ "updated": "2026-08-22T04:11:10.971Z",
  "results": {
+  "1552733": {
+   "id": 1552733,
+   "date": "2026-08-21T18:45:00+00:00",
+   "league": "ligue-1",
+   "home": "Marseille",
+   "away": "Strasbourg",
+   "hg": 4,
+   "ag": 0
+  },
+  "1557367": {
+   "id": 1557367,
+   "date": "2026-08-21T19:00:00+00:00",
+   "league": "premier-league",
+   "home": "Arsenal",
+   "away": "Coventry",
+   "hg": 3,
+   "ag": 0
+  },
   "1570333": {
    "id": 1570333,
    "date": "2026-08-15T17:30:00+00:00",
@@ -54,6 +72,15 @@
    "away": "Rayo Vallecano",
    "hg": 2,
    "ag": 1
+  },
+  "1570345": {
+   "id": 1570345,
+   "date": "2026-08-21T19:00:00+00:00",
+   "league": "la-liga",
+   "home": "Betis",
+   "away": "Sociedad",
+   "hg": 1,
+   "ag": 0
   },
   "1570351": {
    "id": 1570351,
