@@ -1,6 +1,60 @@
 {
- "updated": "2026-08-22T04:11:10.971Z",
+ "updated": "2026-08-23T04:14:00.068Z",
  "results": {
+  "1550091": {
+   "id": 1550091,
+   "date": "2026-08-22T18:45:00+00:00",
+   "league": "serie-a",
+   "home": "Genoa",
+   "away": "Napoli",
+   "hg": 0,
+   "ag": 2
+  },
+  "1550092": {
+   "id": 1550092,
+   "date": "2026-08-22T16:30:00+00:00",
+   "league": "serie-a",
+   "home": "Inter",
+   "away": "Monza",
+   "hg": 4,
+   "ag": 1
+  },
+  "1550093": {
+   "id": 1550093,
+   "date": "2026-08-22T18:45:00+00:00",
+   "league": "serie-a",
+   "home": "Parma",
+   "away": "Cagliari",
+   "hg": 0,
+   "ag": 1
+  },
+  "1550095": {
+   "id": 1550095,
+   "date": "2026-08-22T16:30:00+00:00",
+   "league": "serie-a",
+   "home": "Udinese",
+   "away": "Como",
+   "hg": 1,
+   "ag": 1
+  },
+  "1552731": {
+   "id": 1552731,
+   "date": "2026-08-22T18:45:00+00:00",
+   "league": "ligue-1",
+   "home": "Le Mans",
+   "away": "Brest",
+   "hg": 2,
+   "ag": 2
+  },
+  "1552732": {
+   "id": 1552732,
+   "date": "2026-08-22T15:15:00+00:00",
+   "league": "ligue-1",
+   "home": "Lens",
+   "away": "Auxerre",
+   "hg": 5,
+   "ag": 2
+  },
   "1552733": {
    "id": 1552733,
    "date": "2026-08-21T18:45:00+00:00",
@@ -10,12 +64,84 @@
    "hg": 4,
    "ag": 0
   },
+  "1552734": {
+   "id": 1552734,
+   "date": "2026-08-22T18:45:00+00:00",
+   "league": "ligue-1",
+   "home": "Nice",
+   "away": "Lorient",
+   "hg": 0,
+   "ag": 0
+  },
+  "1552736": {
+   "id": 1552736,
+   "date": "2026-08-22T18:45:00+00:00",
+   "league": "ligue-1",
+   "home": "Toulouse",
+   "away": "Lyon",
+   "hg": 0,
+   "ag": 2
+  },
+  "1552737": {
+   "id": 1552737,
+   "date": "2026-08-22T18:45:00+00:00",
+   "league": "ligue-1",
+   "home": "Troyes",
+   "away": "Paris FC",
+   "hg": 0,
+   "ag": 0
+  },
   "1557367": {
    "id": 1557367,
    "date": "2026-08-21T19:00:00+00:00",
    "league": "premier-league",
    "home": "Arsenal",
    "away": "Coventry",
+   "hg": 3,
+   "ag": 0
+  },
+  "1557368": {
+   "id": 1557368,
+   "date": "2026-08-22T11:30:00+00:00",
+   "league": "premier-league",
+   "home": "Hull",
+   "away": "Man United",
+   "hg": 2,
+   "ag": 0
+  },
+  "1557369": {
+   "id": 1557369,
+   "date": "2026-08-22T14:00:00+00:00",
+   "league": "premier-league",
+   "home": "Everton",
+   "away": "Crystal Palace",
+   "hg": 2,
+   "ag": 0
+  },
+  "1557370": {
+   "id": 1557370,
+   "date": "2026-08-22T14:00:00+00:00",
+   "league": "premier-league",
+   "home": "Ipswich",
+   "away": "Sunderland",
+   "hg": 2,
+   "ag": 1
+  },
+  "1557371": {
+   "id": 1557371,
+   "date": "2026-08-22T14:00:00+00:00",
+   "league": "premier-league",
+   "home": "Forest",
+   "away": "Leeds",
+   "hg": 0,
+   "ag": 1
+  },
+  "1557372": {
+   "id": 1557372,
+   "date": "2026-08-22T16:30:00+00:00",
+   "league": "premier-league",
+   "home": "Brentford",
+   "away": "Tottenham",
    "hg": 3,
    "ag": 0
   },
@@ -73,6 +199,15 @@
    "hg": 2,
    "ag": 1
   },
+  "1570343": {
+   "id": 1570343,
+   "date": "2026-08-22T15:00:00+00:00",
+   "league": "la-liga",
+   "home": "Bilbao",
+   "away": "Sevilla",
+   "hg": 1,
+   "ag": 3
+  },
   "1570345": {
    "id": 1570345,
    "date": "2026-08-21T19:00:00+00:00",
@@ -82,6 +217,15 @@
    "hg": 1,
    "ag": 0
   },
+  "1570347": {
+   "id": 1570347,
+   "date": "2026-08-22T19:30:00+00:00",
+   "league": "la-liga",
+   "home": "Espanyol",
+   "away": "Real Madrid",
+   "hg": 1,
+   "ag": 2
+  },
   "1570351": {
    "id": 1570351,
    "date": "2026-08-20T19:00:00+00:00",
@@ -90,6 +234,15 @@
    "away": "Alaves",
    "hg": 1,
    "ag": 1
+  },
+  "1570352": {
+   "id": 1570352,
+   "date": "2026-08-22T17:30:00+00:00",
+   "league": "la-liga",
+   "home": "Valencia",
+   "away": "Celta",
+   "hg": 0,
+   "ag": 0
   }
  }
 }
