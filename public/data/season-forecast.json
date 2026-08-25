@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-24",
+ "updated": "2026-08-25",
  "license": "CC BY 4.0 — link to theopenmodel.com",
  "rows": [
   {
@@ -7,8 +7,8 @@
    "slug": "arsenal",
    "club": "Arsenal",
    "elo": 2066,
-   "title": 0.7964,
-   "top4": 0.9918,
+   "title": 0.7992,
+   "top4": 0.993,
    "releg": 0,
    "xPts": 83.5
   },
@@ -16,51 +16,61 @@
    "league": "premier-league",
    "slug": "man-city",
    "club": "Man City",
-   "elo": 1970.9,
-   "title": 0.1236,
-   "top4": 0.8296,
+   "elo": 1976.5,
+   "title": 0.1326,
+   "top4": 0.8464,
    "releg": 0,
-   "xPts": 72.1
-  },
-  {
-   "league": "premier-league",
-   "slug": "aston-villa",
-   "club": "Aston Villa",
-   "elo": 1921,
-   "title": 0.0322,
-   "top4": 0.5436,
-   "releg": 0.0004,
-   "xPts": 65.8
+   "xPts": 72.5
   },
   {
    "league": "premier-league",
    "slug": "liverpool",
    "club": "Liverpool",
-   "elo": 1910.8,
-   "title": 0.0242,
-   "top4": 0.4786,
-   "releg": 0,
-   "xPts": 64.5
+   "elo": 1910.6,
+   "title": 0.0254,
+   "top4": 0.4822,
+   "releg": 0.0006,
+   "xPts": 64.4
+  },
+  {
+   "league": "premier-league",
+   "slug": "aston-villa",
+   "club": "Aston Villa",
+   "elo": 1901.5,
+   "title": 0.0206,
+   "top4": 0.4312,
+   "releg": 0.0006,
+   "xPts": 63.3
   },
   {
    "league": "premier-league",
    "slug": "man-united",
    "club": "Man United",
    "elo": 1889.5,
-   "title": 0.0098,
-   "top4": 0.3128,
-   "releg": 0.0012,
-   "xPts": 61.5
+   "title": 0.0088,
+   "top4": 0.3358,
+   "releg": 0.0002,
+   "xPts": 61.7
   },
   {
    "league": "premier-league",
    "slug": "bournemouth",
    "club": "Bournemouth",
-   "elo": 1872,
-   "title": 0.0062,
-   "top4": 0.2254,
+   "elo": 1866.4,
+   "title": 0.0048,
+   "top4": 0.2074,
    "releg": 0.0022,
-   "xPts": 59.1
+   "xPts": 58.5
+  },
+  {
+   "league": "premier-league",
+   "slug": "brighton",
+   "club": "Brighton",
+   "elo": 1861.5,
+   "title": 0.0032,
+   "top4": 0.1766,
+   "releg": 0.0026,
+   "xPts": 57.8
   },
   {
    "league": "premier-league",
@@ -68,79 +78,69 @@
    "club": "Brentford",
    "elo": 1848.1,
    "title": 0.0022,
-   "top4": 0.1326,
-   "releg": 0.0052,
-   "xPts": 56.2
-  },
-  {
-   "league": "premier-league",
-   "slug": "brighton",
-   "club": "Brighton",
-   "elo": 1842,
-   "title": 0.0018,
-   "top4": 0.1088,
-   "releg": 0.0066,
-   "xPts": 55.4
+   "top4": 0.1334,
+   "releg": 0.006,
+   "xPts": 56.1
   },
   {
    "league": "premier-league",
    "slug": "newcastle",
    "club": "Newcastle",
-   "elo": 1837.5,
-   "title": 0.0016,
-   "top4": 0.096,
-   "releg": 0.008,
-   "xPts": 54.8
+   "elo": 1837.7,
+   "title": 0.0014,
+   "top4": 0.0988,
+   "releg": 0.0108,
+   "xPts": 54.9
   },
   {
    "league": "premier-league",
    "slug": "chelsea",
    "club": "Chelsea",
    "elo": 1831.1,
-   "title": 0.0008,
-   "top4": 0.0748,
-   "releg": 0.0116,
-   "xPts": 53.8
+   "title": 0.0002,
+   "top4": 0.0816,
+   "releg": 0.0118,
+   "xPts": 54
   },
   {
    "league": "premier-league",
    "slug": "everton",
    "club": "Everton",
    "elo": 1815.6,
-   "title": 0.0006,
-   "top4": 0.0512,
+   "title": 0.0004,
+   "top4": 0.055,
    "releg": 0.0194,
-   "xPts": 52
+   "xPts": 51.9
   },
   {
    "league": "premier-league",
    "slug": "fulham",
    "club": "Fulham",
    "elo": 1813.1,
-   "title": 0.0002,
-   "top4": 0.0472,
-   "releg": 0.022,
-   "xPts": 51.6
-  },
-  {
-   "league": "premier-league",
-   "slug": "leeds",
-   "club": "Leeds",
-   "elo": 1809.9,
    "title": 0.0004,
    "top4": 0.0406,
-   "releg": 0.0276,
-   "xPts": 51.1
+   "releg": 0.027,
+   "xPts": 51.4
   },
   {
    "league": "premier-league",
    "slug": "forest",
    "club": "Forest",
    "elo": 1809.7,
-   "title": 0,
-   "top4": 0.0368,
-   "releg": 0.0246,
-   "xPts": 50.9
+   "title": 0.0004,
+   "top4": 0.044,
+   "releg": 0.0266,
+   "xPts": 51.1
+  },
+  {
+   "league": "premier-league",
+   "slug": "leeds",
+   "club": "Leeds",
+   "elo": 1809.9,
+   "title": 0.0002,
+   "top4": 0.0386,
+   "releg": 0.0284,
+   "xPts": 50.8
   },
   {
    "league": "premier-league",
@@ -148,19 +148,19 @@
    "club": "Crystal Palace",
    "elo": 1791.6,
    "title": 0,
-   "top4": 0.022,
-   "releg": 0.0494,
-   "xPts": 48.8
+   "top4": 0.0236,
+   "releg": 0.049,
+   "xPts": 48.7
   },
   {
    "league": "premier-league",
    "slug": "tottenham",
    "club": "Tottenham",
    "elo": 1765.8,
-   "title": 0,
-   "top4": 0.0078,
-   "releg": 0.0944,
-   "xPts": 45.6
+   "title": 0.0002,
+   "top4": 0.0096,
+   "releg": 0.0956,
+   "xPts": 45.4
   },
   {
    "league": "premier-league",
@@ -168,9 +168,9 @@
    "club": "Sunderland",
    "elo": 1725,
    "title": 0,
-   "top4": 0.0004,
-   "releg": 0.266,
-   "xPts": 40.2
+   "top4": 0.0022,
+   "releg": 0.259,
+   "xPts": 40.4
   },
   {
    "league": "premier-league",
@@ -179,8 +179,8 @@
    "elo": 1659.3,
    "title": 0,
    "top4": 0,
-   "releg": 0.7204,
-   "xPts": 32.4
+   "releg": 0.7112,
+   "xPts": 32.6
   },
   {
    "league": "premier-league",
@@ -189,7 +189,7 @@
    "elo": 1650.9,
    "title": 0,
    "top4": 0,
-   "releg": 0.7578,
+   "releg": 0.7632,
    "xPts": 31.6
   },
   {
@@ -199,68 +199,68 @@
    "elo": 1558.7,
    "title": 0,
    "top4": 0,
-   "releg": 0.9832,
-   "xPts": 21.6
+   "releg": 0.9858,
+   "xPts": 21.5
   },
   {
    "league": "la-liga",
    "slug": "barcelona",
    "club": "Barcelona",
-   "elo": 1951.6,
-   "title": 0.5854,
-   "top4": 0.9974,
+   "elo": 1958.8,
+   "title": 0.6252,
+   "top4": 0.9988,
    "releg": 0,
-   "xPts": 85.5
+   "xPts": 86.3
   },
   {
    "league": "la-liga",
    "slug": "real-madrid",
    "club": "Real Madrid",
    "elo": 1927.4,
-   "title": 0.3684,
-   "top4": 0.9934,
+   "title": 0.3384,
+   "top4": 0.995,
    "releg": 0,
-   "xPts": 82.7
+   "xPts": 82.6
   },
   {
    "league": "la-liga",
    "slug": "atletico",
    "club": "Atletico",
-   "elo": 1831.7,
-   "title": 0.0418,
-   "top4": 0.8494,
+   "elo": 1827.9,
+   "title": 0.032,
+   "top4": 0.8146,
    "releg": 0,
-   "xPts": 71.1
+   "xPts": 70.3
   },
   {
    "league": "la-liga",
    "slug": "villarreal",
    "club": "Villarreal",
-   "elo": 1756.2,
-   "title": 0.001,
-   "top4": 0.3622,
-   "releg": 0.0022,
-   "xPts": 61.1
+   "elo": 1760,
+   "title": 0.0016,
+   "top4": 0.384,
+   "releg": 0.0018,
+   "xPts": 61.5
   },
   {
    "league": "la-liga",
    "slug": "betis",
    "club": "Betis",
    "elo": 1753.2,
-   "title": 0.003,
-   "top4": 0.3412,
-   "releg": 0.0042,
-   "xPts": 60.6
+   "title": 0.0024,
+   "top4": 0.351,
+   "releg": 0.0028,
+   "xPts": 60.8
   },
   {
    "league": "la-liga",
    "slug": "celta",
    "club": "Celta",
    "elo": 1702.6,
-   "title": 0,
-   "top4": 0.1036,
-   "releg": 0.0236,
-   "xPts": 53.9
+   "title": 0.0002,
+   "top4": 0.1076,
+   "releg": 0.0188,
+   "xPts": 54.1
   },
   {
    "league": "la-liga",
@@ -269,18 +269,18 @@
    "elo": 1695.6,
    "title": 0.0002,
    "top4": 0.0866,
-   "releg": 0.0272,
-   "xPts": 53
+   "releg": 0.0266,
+   "xPts": 53.2
   },
   {
    "league": "la-liga",
    "slug": "rayo-vallecano",
    "club": "Rayo Vallecano",
    "elo": 1693.7,
-   "title": 0.0002,
-   "top4": 0.0838,
+   "title": 0,
+   "top4": 0.08,
    "releg": 0.0288,
-   "xPts": 53
+   "xPts": 52.9
   },
   {
    "league": "la-liga",
@@ -288,9 +288,9 @@
    "club": "Sociedad",
    "elo": 1663.4,
    "title": 0,
-   "top4": 0.033,
+   "top4": 0.0306,
    "releg": 0.0796,
-   "xPts": 48.9
+   "xPts": 49
   },
   {
    "league": "la-liga",
@@ -298,8 +298,8 @@
    "club": "Bilbao",
    "elo": 1658.4,
    "title": 0,
-   "top4": 0.0278,
-   "releg": 0.092,
+   "top4": 0.026,
+   "releg": 0.0874,
    "xPts": 48.3
   },
   {
@@ -308,8 +308,18 @@
    "club": "Sevilla",
    "elo": 1655.8,
    "title": 0,
-   "top4": 0.0276,
-   "releg": 0.1006,
+   "top4": 0.0248,
+   "releg": 0.0924,
+   "xPts": 48.1
+  },
+  {
+   "league": "la-liga",
+   "slug": "getafe",
+   "club": "Getafe",
+   "elo": 1654.9,
+   "title": 0,
+   "top4": 0.0286,
+   "releg": 0.097,
    "xPts": 47.9
   },
   {
@@ -318,19 +328,9 @@
    "club": "Alaves",
    "elo": 1653.8,
    "title": 0,
-   "top4": 0.0216,
-   "releg": 0.1014,
+   "top4": 0.0218,
+   "releg": 0.0966,
    "xPts": 47.7
-  },
-  {
-   "league": "la-liga",
-   "slug": "getafe",
-   "club": "Getafe",
-   "elo": 1648.4,
-   "title": 0,
-   "top4": 0.0192,
-   "releg": 0.1138,
-   "xPts": 47.2
   },
   {
    "league": "la-liga",
@@ -338,8 +338,8 @@
    "club": "Osasuna",
    "elo": 1650.3,
    "title": 0,
-   "top4": 0.0216,
-   "releg": 0.1186,
+   "top4": 0.0218,
+   "releg": 0.1134,
    "xPts": 47.2
   },
   {
@@ -348,9 +348,9 @@
    "club": "Espanyol",
    "elo": 1639.7,
    "title": 0,
-   "top4": 0.013,
-   "releg": 0.1462,
-   "xPts": 46
+   "top4": 0.015,
+   "releg": 0.148,
+   "xPts": 45.7
   },
   {
    "league": "la-liga",
@@ -358,29 +358,29 @@
    "club": "Levante",
    "elo": 1624,
    "title": 0,
-   "top4": 0.009,
-   "releg": 0.2232,
+   "top4": 0.0068,
+   "releg": 0.2064,
    "xPts": 44
   },
   {
    "league": "la-liga",
    "slug": "elche",
    "club": "Elche",
-   "elo": 1623.1,
+   "elo": 1615.9,
    "title": 0,
-   "top4": 0.0074,
-   "releg": 0.218,
-   "xPts": 43.7
+   "top4": 0.0062,
+   "releg": 0.2412,
+   "xPts": 43
   },
   {
    "league": "la-liga",
    "slug": "santander",
    "club": "Santander",
-   "elo": 1585,
+   "elo": 1578.6,
    "title": 0,
-   "top4": 0.0014,
-   "releg": 0.4458,
-   "xPts": 39
+   "top4": 0.0006,
+   "releg": 0.4782,
+   "xPts": 38.1
   },
   {
    "league": "la-liga",
@@ -388,9 +388,9 @@
    "club": "Malaga",
    "elo": 1564.6,
    "title": 0,
-   "top4": 0.0006,
-   "releg": 0.5784,
-   "xPts": 36.6
+   "top4": 0.0002,
+   "releg": 0.5814,
+   "xPts": 36.5
   },
   {
    "league": "la-liga",
@@ -398,17 +398,17 @@
    "club": "Depor",
    "elo": 1546.6,
    "title": 0,
-   "top4": 0.0002,
-   "releg": 0.6964,
-   "xPts": 34.4
+   "top4": 0,
+   "releg": 0.6996,
+   "xPts": 34.3
   },
   {
    "league": "serie-a",
    "slug": "inter",
    "club": "Inter",
    "elo": 1891.6,
-   "title": 0.7098,
-   "top4": 0.9698,
+   "title": 0.6922,
+   "top4": 0.9684,
    "releg": 0,
    "xPts": 80.2
   },
@@ -417,80 +417,80 @@
    "slug": "roma",
    "club": "Roma",
    "elo": 1793.5,
-   "title": 0.0776,
-   "top4": 0.6034,
-   "releg": 0,
-   "xPts": 67.6
+   "title": 0.0796,
+   "top4": 0.5914,
+   "releg": 0.0002,
+   "xPts": 67.7
   },
   {
    "league": "serie-a",
    "slug": "napoli",
    "club": "Napoli",
    "elo": 1791.2,
-   "title": 0.0794,
-   "top4": 0.59,
-   "releg": 0,
-   "xPts": 67.4
+   "title": 0.0782,
+   "top4": 0.571,
+   "releg": 0.0002,
+   "xPts": 67.2
   },
   {
    "league": "serie-a",
    "slug": "juventus",
    "club": "Juventus",
-   "elo": 1772.3,
-   "title": 0.0464,
-   "top4": 0.4514,
-   "releg": 0.001,
-   "xPts": 64.7
+   "elo": 1778.4,
+   "title": 0.0506,
+   "top4": 0.4796,
+   "releg": 0,
+   "xPts": 65.6
   },
   {
    "league": "serie-a",
    "slug": "atalanta",
    "club": "Atalanta",
-   "elo": 1763.5,
-   "title": 0.0294,
-   "top4": 0.4038,
+   "elo": 1768.2,
+   "title": 0.0392,
+   "top4": 0.4222,
+   "releg": 0.0008,
+   "xPts": 64.5
+  },
+  {
+   "league": "serie-a",
+   "slug": "milan",
+   "club": "Milan",
+   "elo": 1758.3,
+   "title": 0.0262,
+   "top4": 0.3574,
    "releg": 0.001,
-   "xPts": 63.7
+   "xPts": 63.2
   },
   {
    "league": "serie-a",
    "slug": "como",
    "club": "Como",
    "elo": 1758.6,
-   "title": 0.0298,
-   "top4": 0.384,
-   "releg": 0.001,
-   "xPts": 63.3
-  },
-  {
-   "league": "serie-a",
-   "slug": "milan",
-   "club": "Milan",
-   "elo": 1750,
-   "title": 0.0208,
-   "top4": 0.3094,
-   "releg": 0.001,
-   "xPts": 61.8
+   "title": 0.0268,
+   "top4": 0.352,
+   "releg": 0.0002,
+   "xPts": 63
   },
   {
    "league": "serie-a",
    "slug": "lazio",
    "club": "Lazio",
    "elo": 1703.2,
-   "title": 0.0032,
-   "top4": 0.1056,
-   "releg": 0.0122,
-   "xPts": 55.8
+   "title": 0.0038,
+   "top4": 0.0956,
+   "releg": 0.0086,
+   "xPts": 55.7
   },
   {
    "league": "serie-a",
    "slug": "bologna",
    "club": "Bologna",
    "elo": 1701.3,
-   "title": 0.003,
-   "top4": 0.1022,
-   "releg": 0.0112,
-   "xPts": 55.4
+   "title": 0.0024,
+   "top4": 0.0944,
+   "releg": 0.0106,
+   "xPts": 55.6
   },
   {
    "league": "serie-a",
@@ -498,39 +498,39 @@
    "club": "Fiorentina",
    "elo": 1670.2,
    "title": 0.0006,
-   "top4": 0.0404,
-   "releg": 0.0322,
-   "xPts": 51.6
+   "top4": 0.0352,
+   "releg": 0.0424,
+   "xPts": 51.3
   },
   {
    "league": "serie-a",
    "slug": "udinese",
    "club": "Udinese",
    "elo": 1647.3,
-   "title": 0,
-   "top4": 0.0162,
-   "releg": 0.0786,
-   "xPts": 48.3
-  },
-  {
-   "league": "serie-a",
-   "slug": "torino",
-   "club": "Torino",
-   "elo": 1624.1,
-   "title": 0,
-   "top4": 0.007,
-   "releg": 0.1414,
-   "xPts": 45.3
+   "title": 0.0002,
+   "top4": 0.0164,
+   "releg": 0.0688,
+   "xPts": 48.5
   },
   {
    "league": "serie-a",
    "slug": "sassuolo",
    "club": "Sassuolo",
-   "elo": 1622,
+   "elo": 1617.3,
    "title": 0,
-   "top4": 0.0066,
-   "releg": 0.1532,
-   "xPts": 45.2
+   "top4": 0.0036,
+   "releg": 0.1676,
+   "xPts": 44.6
+  },
+  {
+   "league": "serie-a",
+   "slug": "torino",
+   "club": "Torino",
+   "elo": 1615.8,
+   "title": 0,
+   "top4": 0.0036,
+   "releg": 0.166,
+   "xPts": 44.3
   },
   {
    "league": "serie-a",
@@ -538,29 +538,19 @@
    "club": "Genoa",
    "elo": 1607.3,
    "title": 0,
-   "top4": 0.0046,
-   "releg": 0.2164,
-   "xPts": 43.2
+   "top4": 0.0028,
+   "releg": 0.206,
+   "xPts": 43.1
   },
   {
    "league": "serie-a",
    "slug": "cagliari",
    "club": "Cagliari",
    "elo": 1606.3,
-   "title": 0,
-   "top4": 0.002,
-   "releg": 0.2256,
-   "xPts": 42.8
-  },
-  {
-   "league": "serie-a",
-   "slug": "venezia",
-   "club": "Venezia",
-   "elo": 1598.8,
-   "title": 0,
-   "top4": 0.0008,
-   "releg": 0.2698,
-   "xPts": 42
+   "title": 0.0002,
+   "top4": 0.0024,
+   "releg": 0.2118,
+   "xPts": 43
   },
   {
    "league": "serie-a",
@@ -568,29 +558,39 @@
    "club": "Parma",
    "elo": 1587.9,
    "title": 0,
-   "top4": 0.0026,
-   "releg": 0.3124,
-   "xPts": 40.9
+   "top4": 0.0014,
+   "releg": 0.3106,
+   "xPts": 41
   },
   {
    "league": "serie-a",
    "slug": "lecce",
    "club": "Lecce",
-   "elo": 1568,
+   "elo": 1587,
    "title": 0,
-   "top4": 0.0002,
-   "releg": 0.4432,
-   "xPts": 38.3
+   "top4": 0.0016,
+   "releg": 0.3158,
+   "xPts": 40.6
+  },
+  {
+   "league": "serie-a",
+   "slug": "venezia",
+   "club": "Venezia",
+   "elo": 1579.8,
+   "title": 0,
+   "top4": 0.0006,
+   "releg": 0.3612,
+   "xPts": 39.8
   },
   {
    "league": "serie-a",
    "slug": "frosinone",
    "club": "Frosinone",
-   "elo": 1564.7,
+   "elo": 1558.6,
    "title": 0,
    "top4": 0,
-   "releg": 0.4758,
-   "xPts": 37.8
+   "releg": 0.5092,
+   "xPts": 36.9
   },
   {
    "league": "serie-a",
@@ -598,9 +598,9 @@
    "club": "Monza",
    "elo": 1541,
    "title": 0,
-   "top4": 0,
-   "releg": 0.624,
-   "xPts": 35.1
+   "top4": 0.0004,
+   "releg": 0.619,
+   "xPts": 35
   },
   {
    "league": "bundesliga",
@@ -786,90 +786,90 @@
    "league": "ligue-1",
    "slug": "paris-sg",
    "club": "Paris SG",
-   "elo": 1967.9,
-   "title": 0.9578,
+   "elo": 1963,
+   "title": 0.9556,
    "top4": 0.9994,
    "releg": 0,
-   "xPts": 80.7
+   "xPts": 80.1
   },
   {
    "league": "ligue-1",
    "slug": "lens",
    "club": "Lens",
    "elo": 1775.1,
-   "title": 0.018,
-   "top4": 0.67,
+   "title": 0.019,
+   "top4": 0.6456,
+   "releg": 0.0004,
+   "xPts": 60
+  },
+  {
+   "league": "ligue-1",
+   "slug": "lille",
+   "club": "Lille",
+   "elo": 1753.3,
+   "title": 0.0082,
+   "top4": 0.5066,
    "releg": 0,
-   "xPts": 60.1
+   "xPts": 57.4
   },
   {
    "league": "ligue-1",
    "slug": "lyon",
    "club": "Lyon",
    "elo": 1746,
-   "title": 0.007,
-   "top4": 0.4778,
-   "releg": 0.0012,
+   "title": 0.006,
+   "top4": 0.4692,
+   "releg": 0.001,
    "xPts": 56.6
-  },
-  {
-   "league": "ligue-1",
-   "slug": "lille",
-   "club": "Lille",
-   "elo": 1743.7,
-   "title": 0.0076,
-   "top4": 0.467,
-   "releg": 0.0012,
-   "xPts": 56.4
   },
   {
    "league": "ligue-1",
    "slug": "marseille",
    "club": "Marseille",
    "elo": 1731.7,
-   "title": 0.0046,
-   "top4": 0.399,
-   "releg": 0.0026,
-   "xPts": 55.1
+   "title": 0.0034,
+   "top4": 0.3858,
+   "releg": 0.0018,
+   "xPts": 55
   },
   {
    "league": "ligue-1",
    "slug": "monaco",
    "club": "Monaco",
-   "elo": 1717.5,
-   "title": 0.0014,
-   "top4": 0.3058,
-   "releg": 0.0062,
-   "xPts": 53.2
+   "elo": 1725.4,
+   "title": 0.0028,
+   "top4": 0.3376,
+   "releg": 0.0024,
+   "xPts": 54.2
   },
   {
    "league": "ligue-1",
    "slug": "rennes",
    "club": "Rennes",
-   "elo": 1716.1,
-   "title": 0.0022,
-   "top4": 0.3044,
-   "releg": 0.0038,
-   "xPts": 53.2
+   "elo": 1721,
+   "title": 0.0028,
+   "top4": 0.318,
+   "releg": 0.0024,
+   "xPts": 53.9
   },
   {
    "league": "ligue-1",
    "slug": "strasbourg",
    "club": "Strasbourg",
    "elo": 1695.8,
-   "title": 0.0008,
-   "top4": 0.21,
-   "releg": 0.0104,
-   "xPts": 50.9
+   "title": 0.0016,
+   "top4": 0.1828,
+   "releg": 0.0102,
+   "xPts": 50.6
   },
   {
    "league": "ligue-1",
    "slug": "lorient",
    "club": "Lorient",
    "elo": 1639.3,
-   "title": 0.0002,
-   "top4": 0.0456,
-   "releg": 0.0692,
+   "title": 0.0004,
+   "top4": 0.0396,
+   "releg": 0.0572,
    "xPts": 44.1
   },
   {
@@ -878,9 +878,9 @@
    "club": "Toulouse",
    "elo": 1637.9,
    "title": 0.0002,
-   "top4": 0.0402,
-   "releg": 0.076,
-   "xPts": 43.9
+   "top4": 0.0434,
+   "releg": 0.0712,
+   "xPts": 44
   },
   {
    "league": "ligue-1",
@@ -888,19 +888,19 @@
    "club": "Paris FC",
    "elo": 1628.1,
    "title": 0,
-   "top4": 0.0266,
-   "releg": 0.0968,
-   "xPts": 42.7
+   "top4": 0.0268,
+   "releg": 0.0894,
+   "xPts": 42.8
   },
   {
    "league": "ligue-1",
    "slug": "brest",
    "club": "Brest",
    "elo": 1619,
-   "title": 0.0002,
-   "top4": 0.0216,
-   "releg": 0.12,
-   "xPts": 41.6
+   "title": 0,
+   "top4": 0.0188,
+   "releg": 0.1064,
+   "xPts": 41.7
   },
   {
    "league": "ligue-1",
@@ -908,9 +908,9 @@
    "club": "Auxerre",
    "elo": 1616,
    "title": 0,
-   "top4": 0.0184,
-   "releg": 0.134,
-   "xPts": 41.3
+   "top4": 0.0164,
+   "releg": 0.1326,
+   "xPts": 41.2
   },
   {
    "league": "ligue-1",
@@ -918,29 +918,29 @@
    "club": "Nice",
    "elo": 1582.2,
    "title": 0,
-   "top4": 0.0052,
-   "releg": 0.2798,
-   "xPts": 37.3
+   "top4": 0.006,
+   "releg": 0.2592,
+   "xPts": 37.5
   },
   {
    "league": "ligue-1",
    "slug": "le-havre",
    "club": "Le Havre",
-   "elo": 1580.1,
+   "elo": 1572.2,
    "title": 0,
-   "top4": 0.0078,
-   "releg": 0.2894,
-   "xPts": 37.2
+   "top4": 0.0028,
+   "releg": 0.3106,
+   "xPts": 36.5
   },
   {
    "league": "ligue-1",
    "slug": "angers",
    "club": "Angers",
-   "elo": 1547.5,
+   "elo": 1537.9,
    "title": 0,
-   "top4": 0.0012,
-   "releg": 0.4788,
-   "xPts": 33.7
+   "top4": 0.0008,
+   "releg": 0.5384,
+   "xPts": 32.5
   },
   {
    "league": "ligue-1",
@@ -948,9 +948,9 @@
    "club": "Troyes",
    "elo": 1522.3,
    "title": 0,
-   "top4": 0,
-   "releg": 0.6472,
-   "xPts": 30.9
+   "top4": 0.0004,
+   "releg": 0.6372,
+   "xPts": 30.8
   },
   {
    "league": "ligue-1",
@@ -959,7 +959,7 @@
    "elo": 1494.2,
    "title": 0,
    "top4": 0,
-   "releg": 0.7834,
+   "releg": 0.7796,
    "xPts": 28.1
   }
  ]
