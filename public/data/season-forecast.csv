@@ -1,64 +1,64 @@
 league,slug,club,elo,xPts,pTitle,pTop4,pRelegation
-premier-league,arsenal,"Arsenal",2066,83.5,0.7992,0.993,0
-premier-league,man-city,"Man City",1976.5,72.5,0.1326,0.8464,0
-premier-league,liverpool,"Liverpool",1910.6,64.4,0.0254,0.4822,0.0006
-premier-league,aston-villa,"Aston Villa",1901.5,63.3,0.0206,0.4312,0.0006
-premier-league,man-united,"Man United",1889.5,61.7,0.0088,0.3358,0.0002
-premier-league,bournemouth,"Bournemouth",1866.4,58.5,0.0048,0.2074,0.0022
-premier-league,brighton,"Brighton",1861.5,57.8,0.0032,0.1766,0.0026
-premier-league,brentford,"Brentford",1848.1,56.1,0.0022,0.1334,0.006
-premier-league,newcastle,"Newcastle",1837.7,54.9,0.0014,0.0988,0.0108
-premier-league,chelsea,"Chelsea",1831.1,54,0.0002,0.0816,0.0118
-premier-league,everton,"Everton",1815.6,51.9,0.0004,0.055,0.0194
-premier-league,fulham,"Fulham",1813.1,51.4,0.0004,0.0406,0.027
-premier-league,forest,"Forest",1809.7,51.1,0.0004,0.044,0.0266
-premier-league,leeds,"Leeds",1809.9,50.8,0.0002,0.0386,0.0284
-premier-league,crystal-palace,"Crystal Palace",1791.6,48.7,0,0.0236,0.049
-premier-league,tottenham,"Tottenham",1765.8,45.4,0.0002,0.0096,0.0956
-premier-league,sunderland,"Sunderland",1725,40.4,0,0.0022,0.259
-premier-league,coventry,"Coventry",1659.3,32.6,0,0,0.7112
-premier-league,ipswich,"Ipswich",1650.9,31.6,0,0,0.7632
-premier-league,hull,"Hull",1558.7,21.5,0,0,0.9858
-la-liga,barcelona,"Barcelona",1958.8,86.3,0.6252,0.9988,0
-la-liga,real-madrid,"Real Madrid",1927.4,82.6,0.3384,0.995,0
-la-liga,atletico,"Atletico",1827.9,70.3,0.032,0.8146,0
-la-liga,villarreal,"Villarreal",1760,61.5,0.0016,0.384,0.0018
-la-liga,betis,"Betis",1753.2,60.8,0.0024,0.351,0.0028
-la-liga,celta,"Celta",1702.6,54.1,0.0002,0.1076,0.0188
-la-liga,valencia,"Valencia",1695.6,53.2,0.0002,0.0866,0.0266
-la-liga,rayo-vallecano,"Rayo Vallecano",1693.7,52.9,0,0.08,0.0288
-la-liga,sociedad,"Sociedad",1663.4,49,0,0.0306,0.0796
-la-liga,bilbao,"Bilbao",1658.4,48.3,0,0.026,0.0874
-la-liga,sevilla,"Sevilla",1655.8,48.1,0,0.0248,0.0924
-la-liga,getafe,"Getafe",1654.9,47.9,0,0.0286,0.097
-la-liga,alaves,"Alaves",1653.8,47.7,0,0.0218,0.0966
-la-liga,osasuna,"Osasuna",1650.3,47.2,0,0.0218,0.1134
-la-liga,espanyol,"Espanyol",1639.7,45.7,0,0.015,0.148
-la-liga,levante,"Levante",1624,44,0,0.0068,0.2064
-la-liga,elche,"Elche",1615.9,43,0,0.0062,0.2412
-la-liga,santander,"Santander",1578.6,38.1,0,0.0006,0.4782
-la-liga,malaga,"Malaga",1564.6,36.5,0,0.0002,0.5814
-la-liga,depor,"Depor",1546.6,34.3,0,0,0.6996
-serie-a,inter,"Inter",1891.6,80.2,0.6922,0.9684,0
-serie-a,roma,"Roma",1793.5,67.7,0.0796,0.5914,0.0002
-serie-a,napoli,"Napoli",1791.2,67.2,0.0782,0.571,0.0002
-serie-a,juventus,"Juventus",1778.4,65.6,0.0506,0.4796,0
-serie-a,atalanta,"Atalanta",1768.2,64.5,0.0392,0.4222,0.0008
-serie-a,milan,"Milan",1758.3,63.2,0.0262,0.3574,0.001
-serie-a,como,"Como",1758.6,63,0.0268,0.352,0.0002
-serie-a,lazio,"Lazio",1703.2,55.7,0.0038,0.0956,0.0086
-serie-a,bologna,"Bologna",1701.3,55.6,0.0024,0.0944,0.0106
-serie-a,fiorentina,"Fiorentina",1670.2,51.3,0.0006,0.0352,0.0424
-serie-a,udinese,"Udinese",1647.3,48.5,0.0002,0.0164,0.0688
-serie-a,sassuolo,"Sassuolo",1617.3,44.6,0,0.0036,0.1676
-serie-a,torino,"Torino",1615.8,44.3,0,0.0036,0.166
-serie-a,genoa,"Genoa",1607.3,43.1,0,0.0028,0.206
-serie-a,cagliari,"Cagliari",1606.3,43,0.0002,0.0024,0.2118
-serie-a,parma,"Parma",1587.9,41,0,0.0014,0.3106
-serie-a,lecce,"Lecce",1587,40.6,0,0.0016,0.3158
-serie-a,venezia,"Venezia",1579.8,39.8,0,0.0006,0.3612
-serie-a,frosinone,"Frosinone",1558.6,36.9,0,0,0.5092
-serie-a,monza,"Monza",1541,35,0,0.0004,0.619
+premier-league,arsenal,"Arsenal",2066,83.4,0.7974,0.9942,0
+premier-league,man-city,"Man City",1976.5,72.7,0.1366,0.8578,0
+premier-league,liverpool,"Liverpool",1910.6,64.4,0.026,0.48,0
+premier-league,aston-villa,"Aston Villa",1901.5,63.2,0.0142,0.4088,0.0004
+premier-league,man-united,"Man United",1889.5,61.5,0.0114,0.3284,0.0012
+premier-league,bournemouth,"Bournemouth",1866.4,58.6,0.0038,0.206,0.0018
+premier-league,brighton,"Brighton",1861.5,57.9,0.004,0.1808,0.003
+premier-league,brentford,"Brentford",1848.1,56.1,0.0022,0.1322,0.0054
+premier-league,chelsea,"Chelsea",1842.4,55.5,0.0006,0.1122,0.0064
+premier-league,newcastle,"Newcastle",1837.7,54.7,0.0012,0.0932,0.0088
+premier-league,everton,"Everton",1815.6,52,0.0004,0.0554,0.0214
+premier-league,leeds,"Leeds",1809.9,51.2,0.0002,0.0428,0.0256
+premier-league,forest,"Forest",1809.7,51.1,0.001,0.0446,0.026
+premier-league,fulham,"Fulham",1801.8,50.1,0.0008,0.0326,0.0304
+premier-league,crystal-palace,"Crystal Palace",1791.6,48.8,0.0002,0.0234,0.0404
+premier-league,tottenham,"Tottenham",1765.8,45.6,0,0.0064,0.0964
+premier-league,sunderland,"Sunderland",1725,40.2,0,0.0012,0.2612
+premier-league,coventry,"Coventry",1659.3,32.5,0,0,0.7146
+premier-league,ipswich,"Ipswich",1650.9,31.4,0,0,0.7724
+premier-league,hull,"Hull",1558.7,21.7,0,0,0.9846
+la-liga,barcelona,"Barcelona",1958.8,86.3,0.6224,0.9984,0
+la-liga,real-madrid,"Real Madrid",1927.4,82.6,0.3396,0.9934,0
+la-liga,atletico,"Atletico",1827.9,70.5,0.0336,0.8236,0
+la-liga,villarreal,"Villarreal",1760,61.5,0.0032,0.387,0.0032
+la-liga,betis,"Betis",1753.2,60.6,0.001,0.345,0.0016
+la-liga,celta,"Celta",1702.6,54.1,0,0.1102,0.0184
+la-liga,valencia,"Valencia",1695.6,53.1,0,0.083,0.0228
+la-liga,rayo-vallecano,"Rayo Vallecano",1693.7,52.9,0,0.0786,0.0266
+la-liga,sociedad,"Sociedad",1663.4,49,0,0.0332,0.0802
+la-liga,bilbao,"Bilbao",1658.4,48.2,0,0.0262,0.0858
+la-liga,getafe,"Getafe",1654.9,48,0,0.0236,0.0972
+la-liga,sevilla,"Sevilla",1655.8,47.9,0,0.0232,0.0952
+la-liga,alaves,"Alaves",1653.8,47.7,0,0.0204,0.1018
+la-liga,osasuna,"Osasuna",1647.7,47.2,0,0.024,0.1132
+la-liga,espanyol,"Espanyol",1639.7,45.8,0,0.0158,0.1462
+la-liga,levante,"Levante",1626.6,44.1,0.0002,0.0074,0.202
+la-liga,elche,"Elche",1615.9,42.9,0,0.0058,0.2436
+la-liga,santander,"Santander",1578.6,38.4,0,0.0002,0.4824
+la-liga,malaga,"Malaga",1562.2,36.3,0,0.001,0.5922
+la-liga,depor,"Depor",1549,34.5,0,0,0.6876
+serie-a,inter,"Inter",1891.6,79.9,0.6622,0.9648,0
+serie-a,roma,"Roma",1803,68.8,0.106,0.6424,0
+serie-a,napoli,"Napoli",1791.2,67.3,0.073,0.573,0
+serie-a,juventus,"Juventus",1778.4,65.7,0.0528,0.468,0.0004
+serie-a,atalanta,"Atalanta",1768.2,64.4,0.0426,0.4068,0.0004
+serie-a,milan,"Milan",1758.3,63.2,0.029,0.3574,0.0012
+serie-a,como,"Como",1758.6,63.1,0.0276,0.3404,0.0004
+serie-a,lazio,"Lazio",1715,57.3,0.005,0.1264,0.0058
+serie-a,bologna,"Bologna",1689.5,53.7,0.0016,0.0642,0.016
+serie-a,fiorentina,"Fiorentina",1660.7,50.3,0.0002,0.0246,0.0454
+serie-a,udinese,"Udinese",1647.3,48.3,0,0.0138,0.0748
+serie-a,sassuolo,"Sassuolo",1617.3,44.6,0,0.0046,0.1606
+serie-a,torino,"Torino",1615.8,44.4,0,0.0038,0.1608
+serie-a,genoa,"Genoa",1607.3,43.4,0,0.0042,0.2008
+serie-a,cagliari,"Cagliari",1606.3,43.3,0,0.0034,0.2028
+serie-a,parma,"Parma",1587.9,40.7,0,0.0006,0.3106
+serie-a,lecce,"Lecce",1587,40.5,0,0.0008,0.3324
+serie-a,venezia,"Venezia",1579.8,39.8,0,0.0006,0.3574
+serie-a,frosinone,"Frosinone",1558.6,36.9,0,0.0002,0.5106
+serie-a,monza,"Monza",1541,34.9,0,0,0.6196
 bundesliga,bayern,"Bayern",2000.9,82.4,0.9396,1,0
 bundesliga,dortmund,"Dortmund",1834.8,65.5,0.0352,0.8432,0
 bundesliga,leverkusen,"Leverkusen",1804,61.9,0.0162,0.705,0.0002
