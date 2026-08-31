@@ -3,38 +3,38 @@ premier-league,arsenal,"Arsenal",2066
 premier-league,man-city,"Man City",1988.2
 premier-league,aston-villa,"Aston Villa",1901.5
 premier-league,man-united,"Man United",1889.5
-premier-league,liverpool,"Liverpool",1910.6
-premier-league,bournemouth,"Bournemouth",1866.4
+premier-league,liverpool,"Liverpool",1906.1
+premier-league,bournemouth,"Bournemouth",1863.2
 premier-league,brighton,"Brighton",1861.5
-premier-league,newcastle,"Newcastle",1837.7
+premier-league,newcastle,"Newcastle",1852.4
 premier-league,brentford,"Brentford",1848.1
 premier-league,chelsea,"Chelsea",1842.4
-premier-league,forest,"Forest",1809.7
+premier-league,forest,"Forest",1814.1
 premier-league,fulham,"Fulham",1801.8
 premier-league,crystal-palace,"Crystal Palace",1779.9
-premier-league,everton,"Everton",1815.6
+premier-league,everton,"Everton",1818.9
 premier-league,leeds,"Leeds",1809.9
-premier-league,tottenham,"Tottenham",1765.8
+premier-league,tottenham,"Tottenham",1751.1
 premier-league,sunderland,"Sunderland",1725
-premier-league,coventry,"Coventry",1659.3
+premier-league,coventry,"Coventry",1644.8
 premier-league,ipswich,"Ipswich",1650.9
-premier-league,hull,"Hull",1558.7
+premier-league,hull,"Hull",1573.2
 la-liga,barcelona,"Barcelona",1962.1
 la-liga,real-madrid,"Real Madrid",1932
-la-liga,atletico,"Atletico",1827.9
+la-liga,atletico,"Atletico",1838.4
 la-liga,villarreal,"Villarreal",1748.8
-la-liga,betis,"Betis",1763.4
+la-liga,betis,"Betis",1742.4
 la-liga,rayo-vallecano,"Rayo Vallecano",1693.7
 la-liga,celta,"Celta",1689.2
 la-liga,valencia,"Valencia",1685.4
 la-liga,bilbao,"Bilbao",1655.2
-la-liga,sociedad,"Sociedad",1658.8
+la-liga,sociedad,"Sociedad",1666.4
 la-liga,getafe,"Getafe",1654.9
 la-liga,osasuna,"Osasuna",1661
-la-liga,levante,"Levante",1626.6
+la-liga,levante,"Levante",1647.6
 la-liga,alaves,"Alaves",1665
-la-liga,espanyol,"Espanyol",1639.7
-la-liga,sevilla,"Sevilla",1655.8
+la-liga,espanyol,"Espanyol",1632.1
+la-liga,sevilla,"Sevilla",1645.3
 la-liga,elche,"Elche",1606.7
 la-liga,santander,"Santander",1587.8
 la-liga,malaga,"Malaga",1562.2
@@ -42,56 +42,56 @@ la-liga,depor,"Depor",1549
 serie-a,inter,"Inter",1891.6
 serie-a,roma,"Roma",1803
 serie-a,napoli,"Napoli",1791.2
-serie-a,juventus,"Juventus",1778.4
+serie-a,juventus,"Juventus",1784
 serie-a,atalanta,"Atalanta",1768.2
 serie-a,como,"Como",1758.6
 serie-a,milan,"Milan",1764.2
 serie-a,lazio,"Lazio",1715
 serie-a,bologna,"Bologna",1689.5
-serie-a,fiorentina,"Fiorentina",1660.7
-serie-a,udinese,"Udinese",1647.3
-serie-a,torino,"Torino",1615.8
-serie-a,sassuolo,"Sassuolo",1617.3
+serie-a,fiorentina,"Fiorentina",1635.4
+serie-a,udinese,"Udinese",1656.1
+serie-a,torino,"Torino",1607.7
+serie-a,sassuolo,"Sassuolo",1625.4
 serie-a,genoa,"Genoa",1607.3
-serie-a,parma,"Parma",1587.9
+serie-a,parma,"Parma",1582.3
 serie-a,venezia,"Venezia",1573.8
 serie-a,cagliari,"Cagliari",1606.3
 serie-a,lecce,"Lecce",1587
-serie-a,frosinone,"Frosinone",1558.6
-serie-a,monza,"Monza",1541
+serie-a,frosinone,"Frosinone",1583.9
+serie-a,monza,"Monza",1532.2
 bundesliga,bayern,"Bayern",2006.5
-bundesliga,dortmund,"Dortmund",1834.8
-bundesliga,leverkusen,"Leverkusen",1804
+bundesliga,dortmund,"Dortmund",1839.4
+bundesliga,leverkusen,"Leverkusen",1788.5
 bundesliga,stuttgart,"Stuttgart",1758.2
-bundesliga,rb-leipzig,"RB Leipzig",1761.9
+bundesliga,rb-leipzig,"RB Leipzig",1770.8
 bundesliga,freiburg,"Freiburg",1724.9
-bundesliga,hoffenheim,"Hoffenheim",1700.4
-bundesliga,mainz,"Mainz",1671.9
-bundesliga,frankfurt,"Frankfurt",1663.8
-bundesliga,gladbach,"Gladbach",1640.8
+bundesliga,hoffenheim,"Hoffenheim",1688.5
+bundesliga,mainz,"Mainz",1666.5
+bundesliga,frankfurt,"Frankfurt",1664.4
+bundesliga,gladbach,"Gladbach",1631.9
 bundesliga,augsburg,"Augsburg",1636.4
-bundesliga,union-berlin,"Union Berlin",1619.4
+bundesliga,union-berlin,"Union Berlin",1618.8
 bundesliga,werder,"Werder",1606
-bundesliga,hamburg,"Hamburg",1602.1
-bundesliga,koeln,"Koeln",1568.2
-bundesliga,paderborn,"Paderborn",1525.4
-bundesliga,elversberg,"Elversberg",1523.4
+bundesliga,hamburg,"Hamburg",1597.5
+bundesliga,koeln,"Koeln",1580.1
+bundesliga,paderborn,"Paderborn",1530.8
+bundesliga,elversberg,"Elversberg",1538.9
 bundesliga,schalke,"Schalke",1519.7
 ligue-1,paris-sg,"Paris SG",1959
-ligue-1,lens,"Lens",1775.1
+ligue-1,lens,"Lens",1764.7
 ligue-1,lille,"Lille",1757.2
-ligue-1,lyon,"Lyon",1746
+ligue-1,lyon,"Lyon",1740
 ligue-1,monaco,"Monaco",1725.4
 ligue-1,marseille,"Marseille",1731.7
 ligue-1,rennes,"Rennes",1721
-ligue-1,strasbourg,"Strasbourg",1695.8
-ligue-1,toulouse,"Toulouse",1637.9
-ligue-1,lorient,"Lorient",1639.3
+ligue-1,strasbourg,"Strasbourg",1706.2
+ligue-1,toulouse,"Toulouse",1639.2
+ligue-1,lorient,"Lorient",1624.5
 ligue-1,paris-fc,"Paris FC",1628.1
-ligue-1,auxerre,"Auxerre",1616
-ligue-1,brest,"Brest",1619
+ligue-1,auxerre,"Auxerre",1595.1
+ligue-1,brest,"Brest",1617.7
 ligue-1,nice,"Nice",1582.2
-ligue-1,le-havre,"Le Havre",1572.2
-ligue-1,angers,"Angers",1537.9
-ligue-1,troyes,"Troyes",1522.3
+ligue-1,le-havre,"Le Havre",1578.1
+ligue-1,angers,"Angers",1558.8
+ligue-1,troyes,"Troyes",1537.1
 ligue-1,le-mans,"Le Mans",1494.2
