@@ -496,17 +496,6 @@
    "away": "Arsenal"
   },
   {
-   "id": 1557412,
-   "date": "2026-09-19T14:00:00+00:00",
-   "round": "Regular Season - 5",
-   "venue": "Elland Road",
-   "city": "Leeds",
-   "homeId": 63,
-   "awayId": 52,
-   "home": "Leeds",
-   "away": "Crystal Palace"
-  },
-  {
    "id": 1557415,
    "date": "2026-09-19T16:30:00+00:00",
    "round": "Regular Season - 5",
@@ -538,6 +527,17 @@
    "awayId": 746,
    "home": "Manchester City",
    "away": "Sunderland"
+  },
+  {
+   "id": 1557412,
+   "date": "2026-09-20T13:00:00+00:00",
+   "round": "Regular Season - 5",
+   "venue": "Elland Road",
+   "city": "Leeds",
+   "homeId": 63,
+   "awayId": 52,
+   "home": "Leeds",
+   "away": "Crystal Palace"
   },
   {
    "id": 1557411,
@@ -793,17 +793,6 @@
    "away": "Manchester City"
   },
   {
-   "id": 1557444,
-   "date": "2026-10-24T14:00:00+00:00",
-   "round": "Regular Season - 8",
-   "venue": "Anfield",
-   "city": "Liverpool",
-   "homeId": 40,
-   "awayId": 51,
-   "home": "Liverpool",
-   "away": "Brighton"
-  },
-  {
    "id": 1557437,
    "date": "2026-10-24T14:00:00+00:00",
    "round": "Regular Season - 8",
@@ -846,6 +835,17 @@
    "awayId": 35,
    "home": "Manchester United",
    "away": "Bournemouth"
+  },
+  {
+   "id": 1557444,
+   "date": "2026-10-25T14:00:00+00:00",
+   "round": "Regular Season - 8",
+   "venue": "Anfield",
+   "city": "Liverpool",
+   "homeId": 40,
+   "awayId": 51,
+   "home": "Liverpool",
+   "away": "Brighton"
   },
   {
    "id": 1557441,
@@ -959,7 +959,7 @@
   },
   {
    "id": 1557447,
-   "date": "2026-11-01T14:00:00+00:00",
+   "date": "2026-10-31T20:00:00+00:00",
    "round": "Regular Season - 9",
    "venue": "Villa Park",
    "city": "Birmingham",
@@ -5173,17 +5173,6 @@
    "away": "Racing Santander"
   },
   {
-   "id": 1570426,
-   "date": "2026-10-25T16:00:00+00:00",
-   "round": "Regular Season - 10",
-   "venue": "Camp Nou",
-   "city": "Barcelona",
-   "homeId": 529,
-   "awayId": 541,
-   "home": "Barcelona",
-   "away": "Real Madrid"
-  },
-  {
    "id": 1570425,
    "date": "2026-10-25T16:00:00+00:00",
    "round": "Regular Season - 10",
@@ -5281,6 +5270,17 @@
    "awayId": 540,
    "home": "Racing Santander",
    "away": "Espanyol"
+  },
+  {
+   "id": 1570426,
+   "date": "2026-10-25T20:00:00+00:00",
+   "round": "Regular Season - 10",
+   "venue": "Camp Nou",
+   "city": "Barcelona",
+   "homeId": 529,
+   "awayId": 541,
+   "home": "Barcelona",
+   "away": "Real Madrid"
   },
   {
    "id": 1570434,
@@ -16017,7 +16017,7 @@
    "id": 1552746,
    "date": "2026-08-28T18:45:00+00:00",
    "round": "Regular Season - 2",
-   "venue": "Decathlon Arena - Stade Pierre Mauroy",
+   "venue": "Stade Pierre-Mauroy",
    "city": "Lille",
    "homeId": 79,
    "awayId": 85,
@@ -16039,7 +16039,7 @@
    "id": 1552741,
    "date": "2026-08-29T18:45:00+00:00",
    "round": "Regular Season - 2",
-   "venue": "Groupama Stadium",
+   "venue": "Parc Olympique Lyonnais",
    "city": "Lyon",
    "homeId": 80,
    "awayId": 111,
@@ -16050,7 +16050,7 @@
    "id": 1552740,
    "date": "2026-08-29T18:45:00+00:00",
    "round": "Regular Season - 2",
-   "venue": "Stade Yves Allainmat-Le Moustoir",
+   "venue": "Stade du Moustoir",
    "city": "Lorient",
    "homeId": 97,
    "awayId": 110,
@@ -16311,8 +16311,30 @@
    "away": "Paris Saint Germain"
   },
   {
+   "id": 1552769,
+   "date": "2026-09-18T18:45:00+00:00",
+   "round": "Regular Season - 5",
+   "venue": "Stade Louis II",
+   "city": "Monaco",
+   "homeId": 91,
+   "awayId": 116,
+   "home": "Monaco",
+   "away": "Lens"
+  },
+  {
+   "id": 1552771,
+   "date": "2026-09-19T15:15:00+00:00",
+   "round": "Regular Season - 5",
+   "venue": "Stade Jean Bouin",
+   "city": "Paris",
+   "homeId": 114,
+   "awayId": 95,
+   "home": "Paris FC",
+   "away": "Strasbourg"
+  },
+  {
    "id": 1552765,
-   "date": "2026-09-19T15:00:00+00:00",
+   "date": "2026-09-19T18:45:00+00:00",
    "round": "Regular Season - 5",
    "venue": "Stade Raymond-Kopa",
    "city": "Angers",
@@ -16323,7 +16345,7 @@
   },
   {
    "id": 1552768,
-   "date": "2026-09-19T15:00:00+00:00",
+   "date": "2026-09-19T18:45:00+00:00",
    "round": "Regular Season - 5",
    "venue": "Parc Olympique Lyonnais",
    "city": "Lyon",
@@ -16333,30 +16355,8 @@
    "away": "Rennes"
   },
   {
-   "id": 1552770,
-   "date": "2026-09-19T15:00:00+00:00",
-   "round": "Regular Season - 5",
-   "venue": "Allianz Riviera",
-   "city": "Nice",
-   "homeId": 84,
-   "awayId": 79,
-   "home": "Nice",
-   "away": "Lille"
-  },
-  {
-   "id": 1552769,
-   "date": "2026-09-19T15:00:00+00:00",
-   "round": "Regular Season - 5",
-   "venue": "Stade Louis II",
-   "city": "Monaco",
-   "homeId": 91,
-   "awayId": 116,
-   "home": "Monaco",
-   "away": "Lens"
-  },
-  {
    "id": 1552772,
-   "date": "2026-09-19T15:00:00+00:00",
+   "date": "2026-09-19T18:45:00+00:00",
    "round": "Regular Season - 5",
    "venue": "Stadium de Toulouse",
    "city": "Toulouse",
@@ -16366,8 +16366,19 @@
    "away": "Le Havre"
   },
   {
+   "id": 1552767,
+   "date": "2026-09-19T18:45:00+00:00",
+   "round": "Regular Season - 5",
+   "venue": "Stade Marie-Marvingt",
+   "city": "Le Mans",
+   "homeId": 1298,
+   "awayId": 97,
+   "home": "Le Mans",
+   "away": "Lorient"
+  },
+  {
    "id": 1552766,
-   "date": "2026-09-19T15:00:00+00:00",
+   "date": "2026-09-20T13:00:00+00:00",
    "round": "Regular Season - 5",
    "venue": null,
    "city": "Auxerre",
@@ -16377,26 +16388,15 @@
    "away": "Stade Brestois 29"
   },
   {
-   "id": 1552771,
-   "date": "2026-09-19T15:00:00+00:00",
+   "id": 1552770,
+   "date": "2026-09-20T15:15:00+00:00",
    "round": "Regular Season - 5",
-   "venue": "Stade Jean Bouin",
-   "city": "Paris",
-   "homeId": 114,
-   "awayId": 95,
-   "home": "Paris FC",
-   "away": "Strasbourg"
-  },
-  {
-   "id": 1552767,
-   "date": "2026-09-19T15:00:00+00:00",
-   "round": "Regular Season - 5",
-   "venue": "Stade Marie-Marvingt",
-   "city": "Le Mans",
-   "homeId": 1298,
-   "awayId": 97,
-   "home": "Le Mans",
-   "away": "Lorient"
+   "venue": "Allianz Riviera",
+   "city": "Nice",
+   "homeId": 84,
+   "awayId": 79,
+   "home": "Nice",
+   "away": "Lille"
   },
   {
    "id": 1552773,
@@ -16410,8 +16410,19 @@
    "away": "Paris Saint Germain"
   },
   {
+   "id": 1552775,
+   "date": "2026-10-09T18:45:00+00:00",
+   "round": "Regular Season - 6",
+   "venue": "Stade Bollaert-Delelis",
+   "city": "Lens",
+   "homeId": 116,
+   "awayId": 80,
+   "home": "Lens",
+   "away": "Lyon"
+  },
+  {
    "id": 1552776,
-   "date": "2026-10-10T15:00:00+00:00",
+   "date": "2026-10-10T15:15:00+00:00",
    "round": "Regular Season - 6",
    "venue": "Stade Pierre-Mauroy",
    "city": null,
@@ -16421,19 +16432,8 @@
    "away": "Le Havre"
   },
   {
-   "id": 1552779,
-   "date": "2026-10-10T15:00:00+00:00",
-   "round": "Regular Season - 6",
-   "venue": "Allianz Riviera",
-   "city": "Nice",
-   "homeId": 84,
-   "awayId": 95,
-   "home": "Nice",
-   "away": "Strasbourg"
-  },
-  {
    "id": 1552780,
-   "date": "2026-10-10T15:00:00+00:00",
+   "date": "2026-10-10T18:45:00+00:00",
    "round": "Regular Season - 6",
    "venue": "Parc des Princes",
    "city": "Paris",
@@ -16444,7 +16444,7 @@
   },
   {
    "id": 1552778,
-   "date": "2026-10-10T15:00:00+00:00",
+   "date": "2026-10-10T18:45:00+00:00",
    "round": "Regular Season - 6",
    "venue": "Stade Louis II",
    "city": "Monaco",
@@ -16454,19 +16454,8 @@
    "away": "Toulouse"
   },
   {
-   "id": 1552781,
-   "date": "2026-10-10T15:00:00+00:00",
-   "round": "Regular Season - 6",
-   "venue": "Roazhon Park",
-   "city": "Rennes",
-   "homeId": 94,
-   "awayId": 108,
-   "home": "Rennes",
-   "away": "Auxerre"
-  },
-  {
    "id": 1552777,
-   "date": "2026-10-10T15:00:00+00:00",
+   "date": "2026-10-10T18:45:00+00:00",
    "round": "Regular Season - 6",
    "venue": "Stade du Moustoir",
    "city": "Lorient",
@@ -16477,7 +16466,7 @@
   },
   {
    "id": 1552774,
-   "date": "2026-10-10T15:00:00+00:00",
+   "date": "2026-10-10T18:45:00+00:00",
    "round": "Regular Season - 6",
    "venue": null,
    "city": "Brest",
@@ -16487,8 +16476,30 @@
    "away": "Angers"
   },
   {
+   "id": 1552779,
+   "date": "2026-10-11T13:00:00+00:00",
+   "round": "Regular Season - 6",
+   "venue": "Allianz Riviera",
+   "city": "Nice",
+   "homeId": 84,
+   "awayId": 95,
+   "home": "Nice",
+   "away": "Strasbourg"
+  },
+  {
+   "id": 1552781,
+   "date": "2026-10-11T15:15:00+00:00",
+   "round": "Regular Season - 6",
+   "venue": "Roazhon Park",
+   "city": "Rennes",
+   "homeId": 94,
+   "awayId": 108,
+   "home": "Rennes",
+   "away": "Auxerre"
+  },
+  {
    "id": 1552782,
-   "date": "2026-10-10T15:00:00+00:00",
+   "date": "2026-10-11T18:45:00+00:00",
    "round": "Regular Season - 6",
    "venue": null,
    "city": "Troyes",
@@ -16498,52 +16509,19 @@
    "away": "Marseille"
   },
   {
-   "id": 1552775,
-   "date": "2026-10-10T15:00:00+00:00",
-   "round": "Regular Season - 6",
-   "venue": "Stade Bollaert-Delelis",
-   "city": "Lens",
-   "homeId": 116,
-   "awayId": 80,
-   "home": "Lens",
-   "away": "Lyon"
-  },
-  {
-   "id": 1552783,
-   "date": "2026-10-17T15:00:00+00:00",
+   "id": 1552785,
+   "date": "2026-10-16T18:45:00+00:00",
    "round": "Regular Season - 7",
-   "venue": "Stade Raymond-Kopa",
-   "city": "Angers",
-   "homeId": 77,
-   "awayId": 81,
-   "home": "Angers",
-   "away": "Marseille"
-  },
-  {
-   "id": 1552786,
-   "date": "2026-10-17T15:00:00+00:00",
-   "round": "Regular Season - 7",
-   "venue": "Stade Pierre-Mauroy",
-   "city": null,
-   "homeId": 79,
-   "awayId": 106,
-   "home": "Lille",
-   "away": "Stade Brestois 29"
-  },
-  {
-   "id": 1552788,
-   "date": "2026-10-17T15:00:00+00:00",
-   "round": "Regular Season - 7",
-   "venue": "Parc Olympique Lyonnais",
-   "city": "Lyon",
-   "homeId": 80,
-   "awayId": 84,
-   "home": "Lyon",
-   "away": "Nice"
+   "venue": "Stade Marie-Marvingt",
+   "city": "Le Mans",
+   "homeId": 1298,
+   "awayId": 96,
+   "home": "Le Mans",
+   "away": "Toulouse"
   },
   {
    "id": 1552790,
-   "date": "2026-10-17T15:00:00+00:00",
+   "date": "2026-10-17T15:15:00+00:00",
    "round": "Regular Season - 7",
    "venue": "Stade de la Meinau",
    "city": "Strasbourg",
@@ -16553,19 +16531,19 @@
    "away": "Paris Saint Germain"
   },
   {
-   "id": 1552787,
-   "date": "2026-10-17T15:00:00+00:00",
+   "id": 1552786,
+   "date": "2026-10-17T18:45:00+00:00",
    "round": "Regular Season - 7",
-   "venue": "Stade du Moustoir",
-   "city": "Lorient",
-   "homeId": 97,
-   "awayId": 91,
-   "home": "Lorient",
-   "away": "Monaco"
+   "venue": "Stade Pierre-Mauroy",
+   "city": null,
+   "homeId": 79,
+   "awayId": 106,
+   "home": "Lille",
+   "away": "Stade Brestois 29"
   },
   {
    "id": 1552791,
-   "date": "2026-10-17T15:00:00+00:00",
+   "date": "2026-10-17T18:45:00+00:00",
    "round": "Regular Season - 7",
    "venue": null,
    "city": "Troyes",
@@ -16575,8 +16553,30 @@
    "away": "Lens"
   },
   {
+   "id": 1552783,
+   "date": "2026-10-18T13:00:00+00:00",
+   "round": "Regular Season - 7",
+   "venue": "Stade Raymond-Kopa",
+   "city": "Angers",
+   "homeId": 77,
+   "awayId": 81,
+   "home": "Angers",
+   "away": "Marseille"
+  },
+  {
+   "id": 1552787,
+   "date": "2026-10-18T15:15:00+00:00",
+   "round": "Regular Season - 7",
+   "venue": "Stade du Moustoir",
+   "city": "Lorient",
+   "homeId": 97,
+   "awayId": 91,
+   "home": "Lorient",
+   "away": "Monaco"
+  },
+  {
    "id": 1552784,
-   "date": "2026-10-17T15:00:00+00:00",
+   "date": "2026-10-18T15:15:00+00:00",
    "round": "Regular Season - 7",
    "venue": null,
    "city": "Le Havre",
@@ -16587,7 +16587,7 @@
   },
   {
    "id": 1552789,
-   "date": "2026-10-17T15:00:00+00:00",
+   "date": "2026-10-18T15:15:00+00:00",
    "round": "Regular Season - 7",
    "venue": "Stade Jean Bouin",
    "city": "Paris",
@@ -16597,19 +16597,63 @@
    "away": "Rennes"
   },
   {
-   "id": 1552785,
-   "date": "2026-10-17T15:00:00+00:00",
+   "id": 1552788,
+   "date": "2026-10-18T18:45:00+00:00",
    "round": "Regular Season - 7",
-   "venue": "Stade Marie-Marvingt",
-   "city": "Le Mans",
-   "homeId": 1298,
-   "awayId": 96,
-   "home": "Le Mans",
-   "away": "Toulouse"
+   "venue": "Parc Olympique Lyonnais",
+   "city": "Lyon",
+   "homeId": 80,
+   "awayId": 84,
+   "home": "Lyon",
+   "away": "Nice"
+  },
+  {
+   "id": 1552794,
+   "date": "2026-10-23T18:45:00+00:00",
+   "round": "Regular Season - 8",
+   "venue": null,
+   "city": "Brest",
+   "homeId": 106,
+   "awayId": 84,
+   "home": "Stade Brestois 29",
+   "away": "Nice"
+  },
+  {
+   "id": 1552799,
+   "date": "2026-10-24T15:15:00+00:00",
+   "round": "Regular Season - 8",
+   "venue": "Stadium de Toulouse",
+   "city": "Toulouse",
+   "homeId": 96,
+   "awayId": 110,
+   "home": "Toulouse",
+   "away": "Estac Troyes"
+  },
+  {
+   "id": 1552795,
+   "date": "2026-10-24T18:45:00+00:00",
+   "round": "Regular Season - 8",
+   "venue": "Stade Bollaert-Delelis",
+   "city": "Lens",
+   "homeId": 116,
+   "awayId": 114,
+   "home": "Lens",
+   "away": "Paris FC"
+  },
+  {
+   "id": 1552797,
+   "date": "2026-10-25T14:00:00+00:00",
+   "round": "Regular Season - 8",
+   "venue": "Stade Louis II",
+   "city": "Monaco",
+   "homeId": 91,
+   "awayId": 79,
+   "home": "Monaco",
+   "away": "Lille"
   },
   {
    "id": 1552792,
-   "date": "2026-10-24T15:00:00+00:00",
+   "date": "2026-10-25T16:15:00+00:00",
    "round": "Regular Season - 8",
    "venue": "Stade Raymond-Kopa",
    "city": "Angers",
@@ -16620,7 +16664,7 @@
   },
   {
    "id": 1552796,
-   "date": "2026-10-24T15:00:00+00:00",
+   "date": "2026-10-25T16:15:00+00:00",
    "round": "Regular Season - 8",
    "venue": null,
    "city": "Marseille",
@@ -16630,19 +16674,8 @@
    "away": "Le Havre"
   },
   {
-   "id": 1552797,
-   "date": "2026-10-24T15:00:00+00:00",
-   "round": "Regular Season - 8",
-   "venue": "Stade Louis II",
-   "city": "Monaco",
-   "homeId": 91,
-   "awayId": 79,
-   "home": "Monaco",
-   "away": "Lille"
-  },
-  {
    "id": 1552798,
-   "date": "2026-10-24T15:00:00+00:00",
+   "date": "2026-10-25T16:15:00+00:00",
    "round": "Regular Season - 8",
    "venue": "Roazhon Park",
    "city": "Rennes",
@@ -16652,30 +16685,8 @@
    "away": "Strasbourg"
   },
   {
-   "id": 1552799,
-   "date": "2026-10-24T15:00:00+00:00",
-   "round": "Regular Season - 8",
-   "venue": "Stadium de Toulouse",
-   "city": "Toulouse",
-   "homeId": 96,
-   "awayId": 110,
-   "home": "Toulouse",
-   "away": "Estac Troyes"
-  },
-  {
-   "id": 1552794,
-   "date": "2026-10-24T15:00:00+00:00",
-   "round": "Regular Season - 8",
-   "venue": null,
-   "city": "Brest",
-   "homeId": 106,
-   "awayId": 84,
-   "home": "Stade Brestois 29",
-   "away": "Nice"
-  },
-  {
    "id": 1552793,
-   "date": "2026-10-24T15:00:00+00:00",
+   "date": "2026-10-25T16:15:00+00:00",
    "round": "Regular Season - 8",
    "venue": null,
    "city": "Auxerre",
@@ -16683,17 +16694,6 @@
    "awayId": 1298,
    "home": "Auxerre",
    "away": "Le Mans"
-  },
-  {
-   "id": 1552795,
-   "date": "2026-10-24T15:00:00+00:00",
-   "round": "Regular Season - 8",
-   "venue": "Stade Bollaert-Delelis",
-   "city": "Lens",
-   "homeId": 116,
-   "awayId": 114,
-   "home": "Lens",
-   "away": "Paris FC"
   },
   {
    "id": 1552800,

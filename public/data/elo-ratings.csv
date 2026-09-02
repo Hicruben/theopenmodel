@@ -1,7 +1,7 @@
 league,slug,club,elo
-premier-league,arsenal,"Arsenal",2066
+premier-league,arsenal,"Arsenal",2073.2
 premier-league,man-city,"Man City",1988.2
-premier-league,aston-villa,"Aston Villa",1901.5
+premier-league,aston-villa,"Aston Villa",1894.3
 premier-league,man-united,"Man United",1894.7
 premier-league,liverpool,"Liverpool",1906.1
 premier-league,bournemouth,"Bournemouth",1863.2
@@ -19,18 +19,18 @@ premier-league,sunderland,"Sunderland",1735.4
 premier-league,coventry,"Coventry",1644.8
 premier-league,ipswich,"Ipswich",1645.7
 premier-league,hull,"Hull",1573.2
-la-liga,barcelona,"Barcelona",1962.1
+la-liga,barcelona,"Barcelona",1966.5
 la-liga,real-madrid,"Real Madrid",1934.8
 la-liga,atletico,"Atletico",1838.4
 la-liga,villarreal,"Villarreal",1748.8
 la-liga,betis,"Betis",1742.4
-la-liga,rayo-vallecano,"Rayo Vallecano",1693.7
+la-liga,rayo-vallecano,"Rayo Vallecano",1689.3
 la-liga,celta,"Celta",1670.1
 la-liga,valencia,"Valencia",1667.4
 la-liga,bilbao,"Bilbao",1674.3
 la-liga,sociedad,"Sociedad",1666.4
-la-liga,getafe,"Getafe",1654.9
-la-liga,osasuna,"Osasuna",1661
+la-liga,getafe,"Getafe",1646.9
+la-liga,osasuna,"Osasuna",1669
 la-liga,levante,"Levante",1647.6
 la-liga,alaves,"Alaves",1665
 la-liga,espanyol,"Espanyol",1632.1
@@ -40,14 +40,14 @@ la-liga,santander,"Santander",1587.8
 la-liga,malaga,"Malaga",1559.4
 la-liga,depor,"Depor",1567
 serie-a,inter,"Inter",1896
-serie-a,roma,"Roma",1803
+serie-a,roma,"Roma",1814.1
 serie-a,napoli,"Napoli",1778.5
 serie-a,juventus,"Juventus",1784
-serie-a,atalanta,"Atalanta",1768.2
+serie-a,atalanta,"Atalanta",1774.3
 serie-a,como,"Como",1771.3
 serie-a,milan,"Milan",1764.2
 serie-a,lazio,"Lazio",1720.4
-serie-a,bologna,"Bologna",1689.5
+serie-a,bologna,"Bologna",1683.4
 serie-a,fiorentina,"Fiorentina",1635.4
 serie-a,udinese,"Udinese",1656.1
 serie-a,torino,"Torino",1607.7
@@ -56,7 +56,7 @@ serie-a,genoa,"Genoa",1601.9
 serie-a,parma,"Parma",1582.3
 serie-a,venezia,"Venezia",1573.8
 serie-a,cagliari,"Cagliari",1601.9
-serie-a,lecce,"Lecce",1587
+serie-a,lecce,"Lecce",1576
 serie-a,frosinone,"Frosinone",1583.9
 serie-a,monza,"Monza",1532.2
 bundesliga,bayern,"Bayern",2006.5
