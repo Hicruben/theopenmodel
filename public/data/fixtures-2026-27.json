@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-02",
+ "updated": "2026-09-03",
  "license": "CC BY 4.0 — link to theopenmodel.com",
  "rows": [
   {
@@ -2138,14 +2138,14 @@
    "date": "2026-09-12T16:00:00+00:00",
    "league": "serie-a",
    "round": "Regular Season - 4",
-   "home": "Sassuolo",
-   "away": "Juventus",
-   "pHome": 0.2401,
-   "pDraw": 0.273,
-   "pAway": 0.4869,
-   "xgHome": 1.12,
-   "xgAway": 1.67,
-   "url": "https://theopenmodel.com/match/sassuolo-vs-juventus-2026-09-12/"
+   "home": "Lazio",
+   "away": "Milan",
+   "pHome": 0.3632,
+   "pDraw": 0.2849,
+   "pAway": 0.3519,
+   "xgHome": 1.4,
+   "xgAway": 1.38,
+   "url": "https://theopenmodel.com/match/lazio-vs-milan-2026-09-12/"
   },
   {
    "date": "2026-09-12T16:30:00+00:00",
@@ -2278,19 +2278,6 @@
    "url": "https://theopenmodel.com/match/real-madrid-vs-rayo-vallecano-2026-09-12/"
   },
   {
-   "date": "2026-09-13T10:30:00+00:00",
-   "league": "serie-a",
-   "round": "Regular Season - 4",
-   "home": "Torino",
-   "away": "Roma",
-   "pHome": 0.1949,
-   "pDraw": 0.2607,
-   "pAway": 0.5444,
-   "xgHome": 1,
-   "xgAway": 1.78,
-   "url": "https://theopenmodel.com/match/torino-vs-roma-2026-09-13/"
-  },
-  {
    "date": "2026-09-13T12:00:00+00:00",
    "league": "la-liga",
    "round": "Regular Season - 5",
@@ -2328,19 +2315,6 @@
    "xgHome": 1.62,
    "xgAway": 1.16,
    "url": "https://theopenmodel.com/match/lecce-vs-monza-2026-09-13/"
-  },
-  {
-   "date": "2026-09-13T13:00:00+00:00",
-   "league": "serie-a",
-   "round": "Regular Season - 4",
-   "home": "Como",
-   "away": "Parma",
-   "pHome": 0.6395,
-   "pDraw": 0.2316,
-   "pAway": 0.1289,
-   "xgHome": 1.99,
-   "xgAway": 0.8,
-   "url": "https://theopenmodel.com/match/como-vs-parma-2026-09-13/"
   },
   {
    "date": "2026-09-13T13:00:00+00:00",
@@ -2450,14 +2424,14 @@
    "date": "2026-09-13T18:45:00+00:00",
    "league": "serie-a",
    "round": "Regular Season - 4",
-   "home": "Lazio",
-   "away": "Milan",
-   "pHome": 0.3632,
-   "pDraw": 0.2849,
-   "pAway": 0.3519,
-   "xgHome": 1.4,
-   "xgAway": 1.38,
-   "url": "https://theopenmodel.com/match/lazio-vs-milan-2026-09-13/"
+   "home": "Sassuolo",
+   "away": "Juventus",
+   "pHome": 0.2401,
+   "pDraw": 0.273,
+   "pAway": 0.4869,
+   "xgHome": 1.12,
+   "xgAway": 1.67,
+   "url": "https://theopenmodel.com/match/sassuolo-vs-juventus-2026-09-13/"
   },
   {
    "date": "2026-09-13T18:45:00+00:00",
@@ -2484,6 +2458,32 @@
    "xgHome": 1.08,
    "xgAway": 1.7,
    "url": "https://theopenmodel.com/match/sociedad-vs-atletico-2026-09-13/"
+  },
+  {
+   "date": "2026-09-14T16:30:00+00:00",
+   "league": "serie-a",
+   "round": "Regular Season - 4",
+   "home": "Torino",
+   "away": "Roma",
+   "pHome": 0.1949,
+   "pDraw": 0.2607,
+   "pAway": 0.5444,
+   "xgHome": 1,
+   "xgAway": 1.78,
+   "url": "https://theopenmodel.com/match/torino-vs-roma-2026-09-14/"
+  },
+  {
+   "date": "2026-09-14T16:30:00+00:00",
+   "league": "serie-a",
+   "round": "Regular Season - 4",
+   "home": "Como",
+   "away": "Parma",
+   "pHome": 0.6395,
+   "pDraw": 0.2316,
+   "pAway": 0.1289,
+   "xgHome": 1.99,
+   "xgAway": 0.8,
+   "url": "https://theopenmodel.com/match/como-vs-parma-2026-09-14/"
   },
   {
    "date": "2026-09-14T18:45:00+00:00",

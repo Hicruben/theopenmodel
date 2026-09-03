@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-02",
+ "updated": "2026-09-03",
  "license": "CC BY 4.0 — link to theopenmodel.com",
  "description": "Every match prediction published before kickoff, with the result once played. lockedOn is the date the prediction was committed to this repository; the git history of data/snapshots/ is the independent proof it preceded the match.",
  "scored": 97,
@@ -1860,7 +1860,7 @@
     "d": 0.2802,
     "a": 0.4383
    },
-   "lockedOn": "2026-09-02",
+   "lockedOn": "2026-09-03",
    "pick": "away",
    "hg": null,
    "ag": null,
@@ -1879,7 +1879,7 @@
     "d": 0.2829,
     "a": 0.3074
    },
-   "lockedOn": "2026-09-02",
+   "lockedOn": "2026-09-03",
    "pick": "home",
    "hg": null,
    "ag": null,
@@ -1898,7 +1898,7 @@
     "d": 0.2488,
     "a": 0.1636
    },
-   "lockedOn": "2026-09-02",
+   "lockedOn": "2026-09-03",
    "pick": "home",
    "hg": null,
    "ag": null,
@@ -1917,7 +1917,7 @@
     "d": 0.2361,
     "a": 0.1371
    },
-   "lockedOn": "2026-09-02",
+   "lockedOn": "2026-09-03",
    "pick": "home",
    "hg": null,
    "ag": null,
@@ -1936,7 +1936,7 @@
     "d": 0.2706,
     "a": 0.4999
    },
-   "lockedOn": "2026-09-02",
+   "lockedOn": "2026-09-03",
    "pick": "away",
    "hg": null,
    "ag": null,
@@ -1955,7 +1955,7 @@
     "d": 0.2421,
     "a": 0.6089
    },
-   "lockedOn": "2026-09-02",
+   "lockedOn": "2026-09-03",
    "pick": "away",
    "hg": null,
    "ag": null,
@@ -1974,7 +1974,7 @@
     "d": 0.2647,
     "a": 0.5276
    },
-   "lockedOn": "2026-09-02",
+   "lockedOn": "2026-09-03",
    "pick": "away",
    "hg": null,
    "ag": null,
@@ -1993,7 +1993,7 @@
     "d": 0.2175,
     "a": 0.1062
    },
-   "lockedOn": "2026-09-02",
+   "lockedOn": "2026-09-03",
    "pick": "home",
    "hg": null,
    "ag": null,
@@ -2012,7 +2012,7 @@
     "d": 0.2835,
     "a": 0.3152
    },
-   "lockedOn": "2026-09-02",
+   "lockedOn": "2026-09-03",
    "pick": "home",
    "hg": null,
    "ag": null,
@@ -2031,7 +2031,7 @@
     "d": 0.2791,
     "a": 0.274
    },
-   "lockedOn": "2026-09-02",
+   "lockedOn": "2026-09-03",
    "pick": "home",
    "hg": null,
    "ag": null,
@@ -2050,7 +2050,7 @@
     "d": 0.2695,
     "a": 0.5052
    },
-   "lockedOn": "2026-09-02",
+   "lockedOn": "2026-09-03",
    "pick": "away",
    "hg": null,
    "ag": null,
@@ -2069,7 +2069,7 @@
     "d": 0.2652,
     "a": 0.2095
    },
-   "lockedOn": "2026-09-02",
+   "lockedOn": "2026-09-03",
    "pick": "home",
    "hg": null,
    "ag": null,
@@ -2088,7 +2088,7 @@
     "d": 0.2746,
     "a": 0.4776
    },
-   "lockedOn": "2026-09-02",
+   "lockedOn": "2026-09-03",
    "pick": "away",
    "hg": null,
    "ag": null,
@@ -2107,7 +2107,7 @@
     "d": 0.2395,
     "a": 0.1436
    },
-   "lockedOn": "2026-09-02",
+   "lockedOn": "2026-09-03",
    "pick": "home",
    "hg": null,
    "ag": null,
@@ -2126,7 +2126,7 @@
     "d": 0.2617,
     "a": 0.5405
    },
-   "lockedOn": "2026-09-02",
+   "lockedOn": "2026-09-03",
    "pick": "away",
    "hg": null,
    "ag": null,
@@ -2145,7 +2145,7 @@
     "d": 0.2813,
     "a": 0.2911
    },
-   "lockedOn": "2026-09-02",
+   "lockedOn": "2026-09-03",
    "pick": "home",
    "hg": null,
    "ag": null,
@@ -2164,7 +2164,7 @@
     "d": 0.1544,
     "a": 0.0403
    },
-   "lockedOn": "2026-09-02",
+   "lockedOn": "2026-09-03",
    "pick": "home",
    "hg": null,
    "ag": null,
@@ -2183,7 +2183,7 @@
     "d": 0.2765,
     "a": 0.2577
    },
-   "lockedOn": "2026-09-02",
+   "lockedOn": "2026-09-03",
    "pick": "home",
    "hg": null,
    "ag": null,
@@ -2202,7 +2202,7 @@
     "d": 0.2593,
     "a": 0.1908
    },
-   "lockedOn": "2026-09-02",
+   "lockedOn": "2026-09-03",
    "pick": "home",
    "hg": null,
    "ag": null,
@@ -2221,7 +2221,7 @@
     "d": 0.2726,
     "a": 0.2383
    },
-   "lockedOn": "2026-09-02",
+   "lockedOn": "2026-09-03",
    "pick": "home",
    "hg": null,
    "ag": null,
@@ -2240,7 +2240,7 @@
     "d": 0.2718,
     "a": 0.4935
    },
-   "lockedOn": "2026-09-02",
+   "lockedOn": "2026-09-03",
    "pick": "away",
    "hg": null,
    "ag": null,
@@ -2259,7 +2259,7 @@
     "d": 0.2505,
     "a": 0.1676
    },
-   "lockedOn": "2026-09-02",
+   "lockedOn": "2026-09-03",
    "pick": "home",
    "hg": null,
    "ag": null,
@@ -2278,7 +2278,7 @@
     "d": 0.258,
     "a": 0.1872
    },
-   "lockedOn": "2026-09-02",
+   "lockedOn": "2026-09-03",
    "pick": "home",
    "hg": null,
    "ag": null,
@@ -2297,7 +2297,7 @@
     "d": 0.2163,
     "a": 0.6792
    },
-   "lockedOn": "2026-09-02",
+   "lockedOn": "2026-09-03",
    "pick": "away",
    "hg": null,
    "ag": null,
@@ -2316,7 +2316,7 @@
     "d": 0.2628,
     "a": 0.2016
    },
-   "lockedOn": "2026-09-02",
+   "lockedOn": "2026-09-03",
    "pick": "home",
    "hg": null,
    "ag": null,
@@ -2335,7 +2335,7 @@
     "d": 0.1269,
     "a": 0.8494
    },
-   "lockedOn": "2026-09-02",
+   "lockedOn": "2026-09-03",
    "pick": "away",
    "hg": null,
    "ag": null,
@@ -2354,7 +2354,7 @@
     "d": 0.2771,
     "a": 0.2615
    },
-   "lockedOn": "2026-09-02",
+   "lockedOn": "2026-09-03",
    "pick": "home",
    "hg": null,
    "ag": null,
@@ -2373,7 +2373,7 @@
     "d": 0.2689,
     "a": 0.2227
    },
-   "lockedOn": "2026-09-02",
+   "lockedOn": "2026-09-03",
    "pick": "home",
    "hg": null,
    "ag": null,
@@ -2392,7 +2392,7 @@
     "d": 0.2849,
     "a": 0.3472
    },
-   "lockedOn": "2026-09-02",
+   "lockedOn": "2026-09-03",
    "pick": "home",
    "hg": null,
    "ag": null,
@@ -2411,7 +2411,7 @@
     "d": 0.2346,
     "a": 0.1343
    },
-   "lockedOn": "2026-09-02",
+   "lockedOn": "2026-09-03",
    "pick": "home",
    "hg": null,
    "ag": null,
@@ -2430,7 +2430,7 @@
     "d": 0.2842,
     "a": 0.3886
    },
-   "lockedOn": "2026-09-02",
+   "lockedOn": "2026-09-03",
    "pick": "away",
    "hg": null,
    "ag": null,
@@ -2449,7 +2449,7 @@
     "d": 0.2815,
     "a": 0.2926
    },
-   "lockedOn": "2026-09-02",
+   "lockedOn": "2026-09-03",
    "pick": "home",
    "hg": null,
    "ag": null,
@@ -2468,7 +2468,7 @@
     "d": 0.2752,
     "a": 0.2511
    },
-   "lockedOn": "2026-09-02",
+   "lockedOn": "2026-09-03",
    "pick": "home",
    "hg": null,
    "ag": null,
@@ -2487,7 +2487,7 @@
     "d": 0.2706,
     "a": 0.4995
    },
-   "lockedOn": "2026-09-02",
+   "lockedOn": "2026-09-03",
    "pick": "away",
    "hg": null,
    "ag": null,
@@ -2506,7 +2506,7 @@
     "d": 0.2845,
     "a": 0.3807
    },
-   "lockedOn": "2026-09-02",
+   "lockedOn": "2026-09-03",
    "pick": "away",
    "hg": null,
    "ag": null,
@@ -2525,7 +2525,7 @@
     "d": 0.2262,
     "a": 0.6541
    },
-   "lockedOn": "2026-09-02",
+   "lockedOn": "2026-09-03",
    "pick": "away",
    "hg": null,
    "ag": null,
@@ -2544,7 +2544,7 @@
     "d": 0.2715,
     "a": 0.4951
    },
-   "lockedOn": "2026-09-02",
+   "lockedOn": "2026-09-03",
    "pick": "away",
    "hg": null,
    "ag": null,
@@ -2563,7 +2563,7 @@
     "d": 0.217,
     "a": 0.1055
    },
-   "lockedOn": "2026-09-02",
+   "lockedOn": "2026-09-03",
    "pick": "home",
    "hg": null,
    "ag": null,
@@ -2582,7 +2582,7 @@
     "d": 0.2804,
     "a": 0.2832
    },
-   "lockedOn": "2026-09-02",
+   "lockedOn": "2026-09-03",
    "pick": "home",
    "hg": null,
    "ag": null,
@@ -2601,7 +2601,7 @@
     "d": 0.2737,
     "a": 0.2432
    },
-   "lockedOn": "2026-09-02",
+   "lockedOn": "2026-09-03",
    "pick": "home",
    "hg": null,
    "ag": null,
@@ -2620,7 +2620,7 @@
     "d": 0.2834,
     "a": 0.4031
    },
-   "lockedOn": "2026-09-02",
+   "lockedOn": "2026-09-03",
    "pick": "away",
    "hg": null,
    "ag": null,
@@ -2639,7 +2639,7 @@
     "d": 0.2829,
     "a": 0.3077
    },
-   "lockedOn": "2026-09-02",
+   "lockedOn": "2026-09-03",
    "pick": "home",
    "hg": null,
    "ag": null,
@@ -2658,7 +2658,7 @@
     "d": 0.2803,
     "a": 0.2823
    },
-   "lockedOn": "2026-09-02",
+   "lockedOn": "2026-09-03",
    "pick": "home",
    "hg": null,
    "ag": null,
@@ -2677,7 +2677,7 @@
     "d": 0.2689,
     "a": 0.2227
    },
-   "lockedOn": "2026-09-02",
+   "lockedOn": "2026-09-03",
    "pick": "home",
    "hg": null,
    "ag": null,
@@ -2696,7 +2696,7 @@
     "d": 0.2837,
     "a": 0.3178
    },
-   "lockedOn": "2026-09-02",
+   "lockedOn": "2026-09-03",
    "pick": "home",
    "hg": null,
    "ag": null,
@@ -2715,7 +2715,7 @@
     "d": 0.2794,
     "a": 0.2759
    },
-   "lockedOn": "2026-09-02",
+   "lockedOn": "2026-09-03",
    "pick": "home",
    "hg": null,
    "ag": null,
@@ -2734,7 +2734,7 @@
     "d": 0.2843,
     "a": 0.3288
    },
-   "lockedOn": "2026-09-02",
+   "lockedOn": "2026-09-03",
    "pick": "home",
    "hg": null,
    "ag": null,
@@ -2753,7 +2753,7 @@
     "d": 0.2847,
     "a": 0.3753
    },
-   "lockedOn": "2026-09-02",
+   "lockedOn": "2026-09-03",
    "pick": "away",
    "hg": null,
    "ag": null,
@@ -2772,7 +2772,7 @@
     "d": 0.2848,
     "a": 0.37
    },
-   "lockedOn": "2026-09-02",
+   "lockedOn": "2026-09-03",
    "pick": "away",
    "hg": null,
    "ag": null,
