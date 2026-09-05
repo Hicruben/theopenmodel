@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-04T08:19:33.311Z",
+ "updated": "2026-09-05T07:50:46.232Z",
  "results": {
   "1550087": {
    "id": 1550087,
@@ -181,6 +181,15 @@
    "hg": 2,
    "ag": 1
   },
+  "1550112": {
+   "id": 1550112,
+   "date": "2026-09-04T18:45:00+00:00",
+   "league": "serie-a",
+   "home": "Genoa",
+   "away": "Como",
+   "hg": 1,
+   "ag": 4
+  },
   "1552729": {
    "id": 1552729,
    "date": "2026-08-23T13:00:00+00:00",
@@ -341,6 +350,24 @@
    "home": "Lille",
    "away": "Paris SG",
    "hg": 2,
+   "ag": 2
+  },
+  "1552750": {
+   "id": 1552750,
+   "date": "2026-09-04T17:00:00+00:00",
+   "league": "ligue-1",
+   "home": "Lyon",
+   "away": "Auxerre",
+   "hg": 3,
+   "ag": 1
+  },
+  "1552753": {
+   "id": 1552753,
+   "date": "2026-09-04T19:05:00+00:00",
+   "league": "ligue-1",
+   "home": "Paris SG",
+   "away": "Monaco",
+   "hg": 1,
    "ag": 2
   },
   "1552754": {
@@ -529,6 +556,15 @@
    "league": "premier-league",
    "home": "Tottenham",
    "away": "Newcastle",
+   "hg": 0,
+   "ag": 2
+  },
+  "1557393": {
+   "id": 1557393,
+   "date": "2026-09-04T19:00:00+00:00",
+   "league": "premier-league",
+   "home": "Ipswich",
+   "away": "Liverpool",
    "hg": 0,
    "ag": 2
   },
@@ -802,6 +838,15 @@
    "hg": 1,
    "ag": 3
   },
+  "1570365": {
+   "id": 1570365,
+   "date": "2026-09-04T19:00:00+00:00",
+   "league": "la-liga",
+   "home": "Betis",
+   "away": "Real Madrid",
+   "hg": 1,
+   "ag": 0
+  },
   "1570392": {
    "id": 1570392,
    "date": "2026-09-03T19:00:00+00:00",
@@ -891,6 +936,15 @@
    "away": "Frankfurt",
    "hg": 3,
    "ag": 3
+  },
+  "1575149": {
+   "id": 1575149,
+   "date": "2026-09-04T18:30:00+00:00",
+   "league": "bundesliga",
+   "home": "Stuttgart",
+   "away": "Koeln",
+   "hg": 4,
+   "ag": 1
   }
  }
 }
