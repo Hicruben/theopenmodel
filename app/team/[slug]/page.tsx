@@ -25,6 +25,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   return {
     title: `${club.club} — Elo trend, title odds & win probabilities`,
     description: `${club.club}: Elo ${club.elo}, five-year rating trend, 2026-27 title/top-4 odds and model win probabilities vs every opponent.`,
+    alternates: { canonical: `/team/${club.slug}/` },
   };
 }
 

@@ -13,13 +13,6 @@ export function generateStaticParams() {
   return allFixtures().map((f) => ({ slug: f.slug }));
 }
 
-// Indexation policy: a fresh domain must not present Google with 1,752 templated pages on
-// day one (that's what buried cup26matches). Matches become indexable only within 30 days
-// of kickoff — content is freshest then and the index grows at a natural pace. Rebuilt daily.
-const INDEX_WINDOW_DAYS = 30;
-const isIndexable = (iso: string) =>
-  new Date(iso).getTime() - Date.now() < INDEX_WINDOW_DAYS * 86400_000;
-
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const f = fixtureBySlug(slug);
@@ -28,7 +21,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   return {
     title: `${f.home.club} vs ${f.away.club} prediction — ${f.date.slice(0, 10)}`,
     description: `${f.league.name}: ${f.home.club} win ${(p.home * 100).toFixed(0)}%, draw ${(p.draw * 100).toFixed(0)}%, ${f.away.club} win ${(p.away * 100).toFixed(0)}%. Easy-to-read result chances and possible scores.`,
-    robots: isIndexable(f.date) ? undefined : { index: false, follow: true },
+    alternates: { canonical: `/match/${f.slug}/` },
   };
 }
 

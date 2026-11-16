@@ -5,10 +5,8 @@ import { allFixtures, fixtureDates } from "@/lib/fixtures";
 import { allBriefs } from "@/lib/briefs";
 
 const SITE = "https://theopenmodel.com";
-const INDEX_WINDOW_DAYS = 30;
 
-// Sitemap mirrors the indexation policy: core pages + teams + only near-term matches.
-// Far-future match pages exist for users but are noindex and stay out of the sitemap.
+// Sitemap includes all core pages, leagues, teams, match pages and matchday pages.
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
   // The whole site re-exports every day via CI, so forecast-driven pages genuinely
@@ -44,19 +42,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${SITE}/news/`, changeFrequency: "daily", priority: 0.8, lastModified: now },
     ...allBriefs().map((b) => ({ url: `${SITE}/news/${b.slug}/`, changeFrequency: "weekly" as const, priority: 0.7 })),
   ];
-  const matches = allFixtures()
-    .filter((f) => {
-      const dt = new Date(f.date).getTime() - now.getTime();
-      return dt < INDEX_WINDOW_DAYS * 86400_000 && dt > -3 * 86400_000;
-    })
-    .map((f) => ({
-      url: `${SITE}/match/${f.slug}/`, changeFrequency: "daily" as const, priority: 0.8, lastModified: now,
-    }));
-  // Match-centre by date: only near-term days (same window as match pages).
-  const today = now.toISOString().slice(0, 10);
-  const horizon = new Date(now.getTime() + INDEX_WINDOW_DAYS * 86400_000).toISOString().slice(0, 10);
+  const matches = allFixtures().map((f) => ({
+    url: `${SITE}/match/${f.slug}/`, changeFrequency: "daily" as const, priority: 0.8, lastModified: now,
+  }));
   const matchDates = fixtureDates()
-    .filter((d) => d >= today && d <= horizon)
     .map((d) => ({ url: `${SITE}/matches/${d}/`, changeFrequency: "daily" as const, priority: 0.75, lastModified: now }));
   return [...core, ...leagues, ...news, ...teams, ...matches, ...matchDates];
 }
