@@ -18,7 +18,6 @@ function formatOdds(prob: number, fmt: OddsFormat): string {
     if (dec >= 2) return `+${Math.round((dec - 1) * 100)}`;
     return `${Math.round(-100 / (dec - 1))}`;
   }
-  // Approximate clean fractional odds
   const net = dec - 1;
   const denoms = [1, 2, 4, 5, 8, 10, 20];
   let bestNum = Math.max(1, Math.round(net * 10));
@@ -64,23 +63,13 @@ export function MatchOddsChecker({
     <section className="panel" style={{ marginTop: 22 }}>
       <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "space-between", alignItems: "center", gap: 10 }}>
         <span className="eyebrow plain">Fair odds &amp; value checker</span>
-        <div style={{ display: "inline-flex", gap: 4, border: "1px solid var(--rule-strong)", borderRadius: 8, padding: 3 }}>
+        <div className="odds-seg" role="group" aria-label="Odds format">
           {(["decimal", "american", "fractional"] as OddsFormat[]).map((f) => (
             <button
               key={f}
               type="button"
               onClick={() => setFmt(f)}
-              className="mono"
-              style={{
-                fontSize: 11,
-                padding: "4px 9px",
-                borderRadius: 6,
-                border: 0,
-                cursor: "pointer",
-                textTransform: "capitalize",
-                background: fmt === f ? "var(--ink)" : "transparent",
-                color: fmt === f ? "var(--paper)" : "var(--muted)",
-              }}
+              className={fmt === f ? "is-active" : undefined}
             >
               {f}
             </button>
@@ -89,10 +78,10 @@ export function MatchOddsChecker({
       </div>
 
       <p style={{ fontSize: 13.5, color: "var(--ink-soft)", margin: "10px 0 14px" }}>
-        Fair odds are simply <code>1 / probability</code> with zero bookmaker margin. Select an outcome and enter any market price to check mathematical edge and expected value.
+        Fair odds are simply <span className="mono">1 / probability</span> with zero bookmaker margin. Select an outcome and enter any market price to check mathematical edge and expected value.
       </p>
 
-      <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(140px, 1fr))", gap: 8 }}>
+      <div className="odds-markets">
         {markets.map((m) => {
           const isSelected = m.id === active.id;
           return (
@@ -100,19 +89,15 @@ export function MatchOddsChecker({
               key={m.id}
               type="button"
               onClick={() => setSelectedId(m.id)}
-              style={{
-                textAlign: "left",
-                padding: "10px 12px",
-                borderRadius: 10,
-                cursor: "pointer",
-                border: isSelected ? "1.5px solid var(--accent)" : "1px solid var(--rule-strong)",
-                background: isSelected ? "rgba(22, 163, 74, 0.06)" : "transparent",
-                color: "var(--ink)",
-              }}
+              className={`odds-market-btn${isSelected ? " is-selected" : ""}`}
             >
-              <div style={{ fontSize: 12, color: "var(--muted)", marginBottom: 4 }}>{m.label}</div>
+              <div className="mono" style={{ fontSize: 10.5, color: "var(--muted)", marginBottom: 4, textTransform: "uppercase", letterSpacing: ".04em" }}>
+                {m.label}
+              </div>
               <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", gap: 6 }}>
-                <strong className="mono tnum" style={{ fontSize: 17 }}>{formatOdds(m.prob, fmt)}</strong>
+                <strong className="mono tnum" style={{ fontSize: 17, color: isSelected ? "var(--accent)" : "var(--ink)" }}>
+                  {formatOdds(m.prob, fmt)}
+                </strong>
                 <span className="mono tnum" style={{ fontSize: 11.5, color: "var(--ink-soft)" }}>
                   {(m.prob * 100).toFixed(1)}%
                 </span>
@@ -137,7 +122,7 @@ export function MatchOddsChecker({
           <label
             htmlFor="bookmaker-odds-input"
             className="mono"
-            style={{ display: "block", fontSize: 11.5, color: "var(--muted)", marginBottom: 6 }}
+            style={{ display: "block", fontSize: 10.5, letterSpacing: ".05em", color: "var(--muted)", marginBottom: 6 }}
           >
             COMPARE BOOKMAKER DECIMAL ODDS FOR &ldquo;{active.label.toUpperCase()}&rdquo;
           </label>
@@ -150,31 +135,14 @@ export function MatchOddsChecker({
               placeholder={`Fair: ${fairDec.toFixed(2)}`}
               value={bookOddsInput}
               onChange={(e) => setBookOddsInput(e.target.value)}
-              className="mono tnum"
-              style={{
-                width: 140,
-                padding: "8px 10px",
-                fontSize: 14,
-                borderRadius: 8,
-                border: "1px solid var(--rule-strong)",
-                background: "var(--paper)",
-                color: "var(--ink)",
-              }}
+              className="parlay-input tnum"
+              style={{ width: 150 }}
             />
             {bookOddsInput && (
               <button
                 type="button"
                 onClick={() => setBookOddsInput("")}
-                className="mono"
-                style={{
-                  fontSize: 11,
-                  padding: "6px 10px",
-                  borderRadius: 7,
-                  border: "1px solid var(--rule-strong)",
-                  background: "transparent",
-                  color: "var(--muted)",
-                  cursor: "pointer",
-                }}
+                className="parlay-clear-btn"
               >
                 Reset
               </button>
@@ -183,31 +151,21 @@ export function MatchOddsChecker({
         </div>
 
         {hasBook && impliedProb != null && edge != null && ev != null ? (
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "repeat(3, 1fr)",
-              gap: 10,
-              padding: "10px 12px",
-              borderRadius: 10,
-              border: `1px solid ${ev > 0 ? "var(--win)" : "var(--rule-strong)"}`,
-              background: ev > 0 ? "rgba(22, 163, 74, 0.06)" : "transparent",
-            }}
-          >
+          <div className={`odds-ev-box${ev > 0 ? " is-pos" : ""}`}>
             <div>
-              <div className="mono" style={{ fontSize: 10.5, color: "var(--muted)" }}>IMPLIED / EDGE</div>
+              <div className="mono" style={{ fontSize: 10, letterSpacing: ".05em", color: "var(--muted)" }}>IMPLIED / EDGE</div>
               <div className="mono tnum" style={{ fontSize: 14, fontWeight: 600, color: edge >= 0 ? "var(--win)" : "var(--loss)" }}>
                 {(impliedProb * 100).toFixed(1)}% ({edge >= 0 ? "+" : ""}{(edge * 100).toFixed(1)}%)
               </div>
             </div>
             <div>
-              <div className="mono" style={{ fontSize: 10.5, color: "var(--muted)" }}>EXPECTED VALUE</div>
+              <div className="mono" style={{ fontSize: 10, letterSpacing: ".05em", color: "var(--muted)" }}>EXPECTED VALUE</div>
               <div className="mono tnum" style={{ fontSize: 14, fontWeight: 700, color: ev > 0 ? "var(--win)" : "var(--loss)" }}>
                 {ev >= 0 ? "+" : ""}{(ev * 100).toFixed(1)}%
               </div>
             </div>
             <div>
-              <div className="mono" style={{ fontSize: 10.5, color: "var(--muted)" }}>HALF-KELLY</div>
+              <div className="mono" style={{ fontSize: 10, letterSpacing: ".05em", color: "var(--muted)" }}>HALF-KELLY</div>
               <div className="mono tnum" style={{ fontSize: 14, fontWeight: 600 }}>
                 {ev > 0 ? `${(halfKelly * 100).toFixed(2)}%` : "0% (Pass)"}
               </div>
@@ -215,7 +173,7 @@ export function MatchOddsChecker({
           </div>
         ) : (
           <div style={{ fontSize: 12.5, color: "var(--muted)" }}>
-            Enter a bookmaker&apos;s decimal price (e.g. <b className="mono tnum">{(fairDec * 1.05).toFixed(2)}</b>) to see whether the odds beat the model&apos;s break-even price of <b className="mono tnum">{fairDec.toFixed(2)}</b>.
+            Enter a bookmaker&apos;s decimal price (e.g. <b className="mono tnum" style={{ color: "var(--ink)" }}>{(fairDec * 1.05).toFixed(2)}</b>) to see whether the odds beat the model&apos;s break-even price of <b className="mono tnum" style={{ color: "var(--accent)" }}>{fairDec.toFixed(2)}</b>.
           </div>
         )}
       </div>

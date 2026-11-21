@@ -33,19 +33,31 @@ export default function ParlayToolPage() {
   });
 
   return (
-    <main className="wrap" style={{ maxWidth: 1120 }}>
-      <p className="crumbs">
-        <Link href="/">Home</Link> › <Link href="/tools/">Tools</Link> › Parlay reality check
-      </p>
-      <section style={{ marginBottom: 22 }}>
-        <span className="eyebrow plain">Accumulator calculator</span>
-        <h1 style={{ margin: "6px 0 8px" }}>Parlay &amp; accumulator reality check</h1>
-        <p style={{ fontSize: 15, color: "var(--ink-soft)", maxWidth: 720, margin: 0 }}>
-          Pick outcomes from upcoming matches to see the true combined probability from our Elo → Dixon-Coles model, the break-even fair odds, and whether a bookmaker&apos;s parlay price offers positive mathematical value.
-        </p>
+    <main className="scenario-page">
+      <div className="wrap">
+        <p className="crumbs"><Link href="/tools/">Tools</Link> › Parlay reality check</p>
+        <div className="scenario-page-intro">
+          <p className="tool-kicker">Accumulator math, without the hype</p>
+          <h1>Combine fixtures.<br />Check the true odds.</h1>
+          <p>
+            Pick outcomes from upcoming matches across Europe&apos;s top five leagues.
+            The calculator multiplies our Elo → Dixon-Coles probabilities to show the real hit rate,
+            break-even fair parlay odds, and whether a bookmaker&apos;s price has mathematical value.
+          </p>
+        </div>
+      </div>
+
+      <section className="scenario-stage">
+        <div className="wrap">
+          <ParlayBuilder fixtures={fixtures} />
+        </div>
       </section>
 
-      <ParlayBuilder fixtures={fixtures} />
+      <div className="scenario-foot wrap mono">
+        <span>Assumes independent match outcomes</span>
+        <span>Useful estimates, never guarantees</span>
+        <Link href="/guide/">How to read the percentages ↗</Link>
+      </div>
     </main>
   );
 }

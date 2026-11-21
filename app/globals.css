@@ -3208,3 +3208,234 @@ a.portal-live-row:hover { background: var(--accent-dim); }
   margin: 0 0 16px; padding: 9px 12px; font-size: 13px; color: var(--ink-soft);
   border-left: 2px solid var(--rule); background: var(--paper-warm);
 }
+
+
+/* ── Parlay Reality Check & Fair-Odds Checker ───────────── */
+.parlay-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.55fr) minmax(300px, 1fr);
+  gap: 24px;
+  align-items: start;
+}
+.parlay-list {
+  display: grid;
+  border-top: 1px solid var(--rule-strong);
+}
+.parlay-row {
+  padding: 16px 0;
+  border-bottom: 1px solid var(--rule);
+}
+.parlay-row-head {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 6px 14px;
+  margin-bottom: 10px;
+}
+.parlay-row-title {
+  font-family: var(--font-head);
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: -.01em;
+  text-decoration: none;
+  color: var(--ink);
+}
+.parlay-row-title:hover { color: var(--accent); text-decoration: none; }
+.parlay-row-meta {
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.parlay-picks {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 1px;
+  background: var(--rule-strong);
+  border: 1px solid var(--rule-strong);
+}
+.parlay-pick-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 6px;
+  padding: 9px 10px;
+  border: 0;
+  background: var(--panel);
+  color: var(--ink-soft);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  cursor: pointer;
+  transition: background .14s ease, color .14s ease;
+}
+.parlay-pick-btn:hover { background: var(--panel-2); color: var(--ink); }
+.parlay-pick-btn.is-selected {
+  background: var(--accent);
+  color: var(--button-ink);
+}
+.parlay-pick-btn b { font-weight: 600; }
+
+.parlay-slip {
+  position: sticky;
+  top: 76px;
+  border: 1px solid var(--rule-strong);
+  border-radius: 2px;
+  background: var(--panel);
+  padding: 20px;
+}
+.parlay-slip-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--rule);
+}
+.parlay-clear-btn {
+  border: 0;
+  background: transparent;
+  padding: 0;
+  color: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.parlay-clear-btn:hover { color: var(--accent); }
+.parlay-legs {
+  display: grid;
+  margin-top: 4px;
+}
+.parlay-leg {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--rule);
+}
+.parlay-leg-label {
+  display: block;
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--ink);
+}
+.parlay-leg-match {
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  color: var(--muted);
+}
+.parlay-summary {
+  margin-top: 16px;
+  padding: 14px 16px;
+  border: 1px solid var(--rule-strong);
+  background: var(--paper);
+  display: grid;
+  gap: 10px;
+}
+.parlay-kpi {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+}
+.parlay-kpi-label {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.parlay-kpi-big {
+  font-family: var(--font-head);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: .9;
+  color: var(--accent);
+}
+.parlay-kpi-val {
+  font-family: var(--font-mono);
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--ink);
+}
+.parlay-input {
+  width: 100%;
+  padding: 9px 11px;
+  border: 1px solid var(--rule-strong);
+  border-radius: 2px;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-mono);
+  font-size: 14px;
+}
+.parlay-input:focus { outline: none; border-color: var(--accent); }
+
+.odds-seg {
+  display: inline-flex;
+  border: 1px solid var(--rule-strong);
+  background: var(--paper);
+}
+.odds-seg button {
+  padding: 6px 11px;
+  border: 0;
+  border-right: 1px solid var(--rule);
+  background: transparent;
+  color: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.odds-seg button:last-child { border-right: 0; }
+.odds-seg button.is-active {
+  background: var(--accent);
+  color: var(--button-ink);
+  font-weight: 600;
+}
+.odds-markets {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(145px, 1fr));
+  gap: 1px;
+  background: var(--rule-strong);
+  border: 1px solid var(--rule-strong);
+}
+.odds-market-btn {
+  text-align: left;
+  padding: 11px 13px;
+  border: 0;
+  background: var(--paper);
+  color: var(--ink);
+  cursor: pointer;
+  transition: background .14s ease;
+}
+.odds-market-btn:hover { background: var(--panel-2); }
+.odds-market-btn.is-selected {
+  background: var(--accent-dim);
+  box-shadow: inset 0 -2px 0 var(--accent);
+}
+.odds-ev-box {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  padding: 11px 14px;
+  border: 1px solid var(--rule-strong);
+  background: var(--paper);
+}
+.odds-ev-box.is-pos {
+  border-color: var(--win);
+}
+
+@media (max-width: 900px) {
+  .parlay-grid { grid-template-columns: 1fr; }
+  .parlay-slip { position: static; }
+  .parlay-picks { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+@media (max-width: 560px) {
+  .parlay-picks { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .odds-ev-box { grid-template-columns: 1fr; }
+}

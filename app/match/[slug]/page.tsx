@@ -180,7 +180,8 @@ export default async function MatchPage({ params }: { params: Promise<{ slug: st
                 key={club.slug}
                 style={{
                   border: "1px solid var(--rule-strong)",
-                  borderRadius: 10,
+                  borderRadius: 2,
+                  background: "var(--paper)",
                   padding: "12px 14px",
                   display: "flex",
                   justifyContent: "space-between",
@@ -366,9 +367,11 @@ export default async function MatchPage({ params }: { params: Promise<{ slug: st
               <Link
                 key={nx.slug}
                 href={`/match/${nx.slug}/`}
+                className="panel-link"
                 style={{
                   border: "1px solid var(--rule-strong)",
-                  borderRadius: 10,
+                  borderRadius: 2,
+                  background: "var(--paper)",
                   padding: "11px 14px",
                   textDecoration: "none",
                   display: "flex",
