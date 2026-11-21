@@ -1,13 +1,16 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { allFixtures, fixtureBySlug } from "@/lib/fixtures";
+import { allFixtures, clubFixtures, fixtureBySlug } from "@/lib/fixtures";
 import { matchProb, scoreGrid, marketProbs } from "@/lib/model";
 import { seasonOdds } from "@/lib/season";
 import { leagueClubs, flagUrl } from "@/lib/data";
 import { squadOf } from "@/lib/players";
+import { eloHistory, eloDelta, tinySpark } from "@/lib/history";
+import { resultByFixtureId } from "@/lib/record";
 import { pct, shade } from "@/lib/ui";
 import { Crest } from "../../components/Crest";
 import { Kickoff } from "../../components/Kickoff";
+import { MatchOddsChecker } from "../../components/MatchOddsChecker";
 
 export function generateStaticParams() {
   return allFixtures().map((f) => ({ slug: f.slug }));
@@ -40,7 +43,37 @@ export default async function MatchPage({ params }: { params: Promise<{ slug: st
   const attackers = (id?: number) => squadOf(id).filter((x) => x.position === "Attacker").slice(0, 3);
   const pickTxt = p.home > p.away && p.home > p.draw ? f.home.club
     : p.away > p.home && p.away > p.draw ? f.away.club : "Draw";
+  const pickSide = p.home > p.away && p.home > p.draw ? "home"
+    : p.away > p.home && p.away > p.draw ? "away" : "draw";
   const best = top[0];
+  const finalResult = resultByFixtureId(f.id);
+  const actualSide = finalResult
+    ? finalResult.hg > finalResult.ag ? "home" : finalResult.ag > finalResult.hg ? "away" : "draw"
+    : null;
+  const pickHit = actualSide != null ? actualSide === pickSide : null;
+
+  // Recent 6-month Elo momentum for both clubs
+  const sixMonthsAgo = new Date(Date.now() - 180 * 86400_000).toISOString().slice(0, 10);
+  const histH = eloHistory(f.home.slug).filter((pt) => pt.date >= sixMonthsAgo);
+  const histA = eloHistory(f.away.slug).filter((pt) => pt.date >= sixMonthsAgo);
+  const deltaH = eloDelta(f.home.slug, 60);
+  const deltaA = eloDelta(f.away.slug, 60);
+  const sparkH = tinySpark(histH, 160, 36);
+  const sparkA = tinySpark(histA, 160, 36);
+
+  // Next upcoming fixture for each club (after this match)
+  const nowIso = new Date().toISOString();
+  const nextH = clubFixtures(f.home.slug).find((x) => x.slug !== f.slug && x.date > nowIso);
+  const nextA = clubFixtures(f.away.slug).find((x) => x.slug !== f.slug && x.date > nowIso);
+
+  const oddsMarkets = [
+    { id: "home", label: `${f.home.club} win`, prob: p.home },
+    { id: "draw", label: "Draw", prob: p.draw },
+    { id: "away", label: `${f.away.club} win`, prob: p.away },
+    { id: "btts", label: "Both teams score", prob: mk.btts },
+    { id: "over25", label: "Over 2.5 goals", prob: mk.over25 },
+    { id: "under25", label: "Under 2.5 goals", prob: Math.max(0.001, 1 - mk.over25) },
+  ];
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -103,6 +136,89 @@ export default async function MatchPage({ params }: { params: Promise<{ slug: st
           These three percentages add to 100%. They show what may happen, not what will happen.
         </p>
       </section>
+
+      {finalResult && (
+        <section
+          className="panel"
+          style={{
+            marginTop: 18,
+            borderLeft: `3px solid ${pickHit ? "var(--win)" : "var(--loss)"}`,
+            display: "flex",
+            flexWrap: "wrap",
+            justifyContent: "space-between",
+            alignItems: "center",
+            gap: 12,
+          }}
+        >
+          <div>
+            <span className="eyebrow plain">Final result vs model</span>
+            <p style={{ margin: "6px 0 0", fontSize: 15, color: "var(--ink)" }}>
+              Full time: <b className="mono tnum">{f.home.club} {finalResult.hg}–{finalResult.ag} {f.away.club}</b>{" "}
+              · Top pick ({pickTxt}) was{" "}
+              <b style={{ color: pickHit ? "var(--win)" : "var(--loss)" }}>
+                {pickHit ? "correct" : "a miss"}
+              </b>.
+            </p>
+          </div>
+          <Link href="/record/" className="mono" style={{ fontSize: 12, textDecoration: "underline" }}>
+            See full public track record →
+          </Link>
+        </section>
+      )}
+
+      <MatchOddsChecker markets={oddsMarkets} defaultId={pickSide} />
+
+      {(sparkH || sparkA) && (
+        <section className="panel" style={{ marginTop: 22 }}>
+          <span className="eyebrow plain">Recent form &amp; 6-month Elo momentum</span>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: 18, marginTop: 14 }}>
+            {[
+              { club: f.home, rank: rankH, delta: deltaH, spark: sparkH },
+              { club: f.away, rank: rankA, delta: deltaA, spark: sparkA },
+            ].map(({ club, rank, delta, spark }) => (
+              <div
+                key={club.slug}
+                style={{
+                  border: "1px solid var(--rule-strong)",
+                  borderRadius: 10,
+                  padding: "12px 14px",
+                  display: "flex",
+                  justifyContent: "space-between",
+                  alignItems: "center",
+                  gap: 12,
+                }}
+              >
+                <div>
+                  <Link href={`/team/${club.slug}/`} style={{ fontWeight: 600, fontSize: 15 }}>
+                    {club.club}
+                  </Link>
+                  <div className="mono tnum" style={{ fontSize: 12, color: "var(--muted)", marginTop: 4 }}>
+                    Elo {club.elo} · Proj. #{rank}
+                  </div>
+                  {delta != null && (
+                    <div
+                      className="mono tnum"
+                      style={{
+                        fontSize: 12,
+                        fontWeight: 600,
+                        marginTop: 4,
+                        color: delta > 0 ? "var(--win)" : delta < 0 ? "var(--loss)" : "var(--muted)",
+                      }}
+                    >
+                      {delta > 0 ? `+${delta}` : delta} Elo (last 60d)
+                    </div>
+                  )}
+                </div>
+                {spark && (
+                  <svg width="160" height="36" viewBox="0 0 160 36" aria-label={`${club.club} 6-month Elo trend`}>
+                    <path d={spark} fill="none" stroke="var(--accent)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                  </svg>
+                )}
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
 
       <p style={{ fontSize: 14.5, color: "var(--ink-soft)", margin: "22px 0 0", maxWidth: 760 }}>
         <b>Why does {pickTxt} have the highest number?</b>{" "}
@@ -241,6 +357,39 @@ export default async function MatchPage({ params }: { params: Promise<{ slug: st
             ))}
           </div>
         </div>
+      )}
+      {(nextH || nextA) && (
+        <section className="panel" style={{ marginTop: 26 }}>
+          <span className="eyebrow plain">Upcoming matches for these clubs</span>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: 12, marginTop: 12 }}>
+            {[nextH, nextA].filter((x): x is NonNullable<typeof x> => Boolean(x)).map((nx) => (
+              <Link
+                key={nx.slug}
+                href={`/match/${nx.slug}/`}
+                style={{
+                  border: "1px solid var(--rule-strong)",
+                  borderRadius: 10,
+                  padding: "11px 14px",
+                  textDecoration: "none",
+                  display: "flex",
+                  justifyContent: "space-between",
+                  alignItems: "center",
+                  gap: 10,
+                }}
+              >
+                <span>
+                  <b style={{ display: "block", fontSize: 14, color: "var(--ink)" }}>
+                    {nx.home.club} vs {nx.away.club}
+                  </b>
+                  <span className="mono" style={{ fontSize: 11.5, color: "var(--muted)" }}>
+                    {nx.league.name} · {nx.date.slice(0, 10)}
+                  </span>
+                </span>
+                <span className="mono" style={{ fontSize: 12, color: "var(--accent)" }}>Preview →</span>
+              </Link>
+            ))}
+          </div>
+        </section>
       )}
     </main>
   );

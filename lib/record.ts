@@ -101,6 +101,15 @@ export interface ClubRecord {
   lastChecked: string | null;
 }
 
+let resultsMapCache: Map<number, MatchResult> | null = null;
+
+export function resultByFixtureId(id: number): MatchResult | null {
+  if (!resultsMapCache) {
+    resultsMapCache = new Map(loadResults().map((r) => [r.id, r]));
+  }
+  return resultsMapCache.get(id) ?? null;
+}
+
 function loadResults(): MatchResult[] {
   const p = join(process.cwd(), "data", "results-2026.json");
   if (!existsSync(p)) return [];

@@ -17,6 +17,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${SITE}/scores/`, changeFrequency: "daily", priority: 0.85, lastModified: now },
     { url: `${SITE}/tools/`, changeFrequency: "weekly", priority: 0.8 },
     { url: `${SITE}/tools/scenario/`, changeFrequency: "weekly", priority: 0.75 },
+    { url: `${SITE}/tools/parlay/`, changeFrequency: "daily", priority: 0.8, lastModified: now },
     { url: `${SITE}/leagues/`, changeFrequency: "weekly", priority: 0.7, lastModified: now },
     { url: `${SITE}/movers/`, changeFrequency: "weekly", priority: 0.7, lastModified: now },
     { url: `${SITE}/clearest-calls/`, changeFrequency: "daily", priority: 0.8, lastModified: now },

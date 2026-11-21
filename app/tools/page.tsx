@@ -18,6 +18,14 @@ const utilityLinks = [
   },
   {
     index: "02",
+    href: "/tools/parlay/",
+    label: "Parlay reality check",
+    title: "Calculate true accumulator hit rates and fair odds.",
+    detail: "Combine upcoming fixtures to check combined model probability and bookmaker EV.",
+    status: "Interactive",
+  },
+  {
+    index: "03",
     href: "/matches/",
     label: "Match predictions",
     title: "See what may happen in the next matches.",
@@ -25,7 +33,7 @@ const utilityLinks = [
     status: "Updated daily",
   },
   {
-    index: "03",
+    index: "04",
     href: "/movers/",
     label: "Team form tracker",
     title: "See which teams are getting stronger.",
@@ -33,7 +41,7 @@ const utilityLinks = [
     status: "96 clubs",
   },
   {
-    index: "04",
+    index: "05",
     href: "/snapshots/",
     label: "Saved forecasts",
     title: "See how the numbers changed over time.",
@@ -41,7 +49,7 @@ const utilityLinks = [
     status: "Dated",
   },
   {
-    index: "05",
+    index: "06",
     href: "/data/",
     label: "Download data",
     title: "Use the numbers in your own project.",
