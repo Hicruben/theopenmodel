@@ -1,9 +1,9 @@
 {
- "updated": "2026-11-20",
+ "updated": "2026-11-21",
  "license": "CC BY 4.0 — link to theopenmodel.com",
  "description": "Every match prediction published before kickoff, with the result once played. lockedOn is the date the prediction was committed to this repository; the git history of data/snapshots/ is the independent proof it preceded the match.",
- "scored": 146,
- "pending": 103,
+ "scored": 201,
+ "pending": 76,
  "rows": [
   {
    "id": 1570333,
@@ -2793,10 +2793,10 @@
    },
    "lockedOn": "2026-09-09",
    "pick": "home",
-   "hg": null,
-   "ag": null,
-   "actual": null,
-   "correct": null
+   "hg": 1,
+   "ag": 3,
+   "actual": "away",
+   "correct": false
   },
   {
    "id": 1550126,
@@ -2812,10 +2812,10 @@
    },
    "lockedOn": "2026-09-09",
    "pick": "away",
-   "hg": null,
-   "ag": null,
-   "actual": null,
-   "correct": null
+   "hg": 2,
+   "ag": 4,
+   "actual": "away",
+   "correct": true
   },
   {
    "id": 1552763,
@@ -2831,10 +2831,10 @@
    },
    "lockedOn": "2026-09-09",
    "pick": "home",
-   "hg": null,
-   "ag": null,
-   "actual": null,
-   "correct": null
+   "hg": 1,
+   "ag": 0,
+   "actual": "home",
+   "correct": true
   },
   {
    "id": 1570381,
@@ -2850,10 +2850,10 @@
    },
    "lockedOn": "2026-09-09",
    "pick": "home",
-   "hg": null,
-   "ag": null,
-   "actual": null,
-   "correct": null
+   "hg": 1,
+   "ag": 0,
+   "actual": "home",
+   "correct": true
   },
   {
    "id": 1570378,
@@ -2869,10 +2869,10 @@
    },
    "lockedOn": "2026-09-09",
    "pick": "away",
-   "hg": null,
-   "ag": null,
-   "actual": null,
-   "correct": null
+   "hg": 2,
+   "ag": 1,
+   "actual": "home",
+   "correct": false
   },
   {
    "id": 1550119,
@@ -2888,10 +2888,10 @@
    },
    "lockedOn": "2026-09-09",
    "pick": "home",
-   "hg": null,
-   "ag": null,
-   "actual": null,
-   "correct": null
+   "hg": 1,
+   "ag": 1,
+   "actual": "draw",
+   "correct": false
   },
   {
    "id": 1575161,
@@ -2907,10 +2907,10 @@
    },
    "lockedOn": "2026-09-09",
    "pick": "home",
-   "hg": null,
-   "ag": null,
-   "actual": null,
-   "correct": null
+   "hg": 5,
+   "ag": 0,
+   "actual": "home",
+   "correct": true
   },
   {
    "id": 1575163,
@@ -2926,10 +2926,10 @@
    },
    "lockedOn": "2026-09-09",
    "pick": "home",
-   "hg": null,
-   "ag": null,
-   "actual": null,
-   "correct": null
+   "hg": 1,
+   "ag": 3,
+   "actual": "away",
+   "correct": false
   },
   {
    "id": 1575158,
@@ -2945,10 +2945,10 @@
    },
    "lockedOn": "2026-09-09",
    "pick": "home",
-   "hg": null,
-   "ag": null,
-   "actual": null,
-   "correct": null
+   "hg": 3,
+   "ag": 0,
+   "actual": "home",
+   "correct": true
   },
   {
    "id": 1575160,
@@ -2964,10 +2964,10 @@
    },
    "lockedOn": "2026-09-09",
    "pick": "away",
-   "hg": null,
-   "ag": null,
-   "actual": null,
-   "correct": null
+   "hg": 2,
+   "ag": 1,
+   "actual": "home",
+   "correct": false
   },
   {
    "id": 1575162,
@@ -2983,10 +2983,10 @@
    },
    "lockedOn": "2026-09-09",
    "pick": "away",
-   "hg": null,
-   "ag": null,
-   "actual": null,
-   "correct": null
+   "hg": 2,
+   "ag": 2,
+   "actual": "draw",
+   "correct": false
   },
   {
    "id": 1557398,
@@ -3002,10 +3002,10 @@
    },
    "lockedOn": "2026-09-09",
    "pick": "home",
-   "hg": null,
-   "ag": null,
-   "actual": null,
-   "correct": null
+   "hg": 2,
+   "ag": 2,
+   "actual": "draw",
+   "correct": false
   },
   {
    "id": 1557403,
@@ -3021,10 +3021,10 @@
    },
    "lockedOn": "2026-09-09",
    "pick": "home",
-   "hg": null,
-   "ag": null,
-   "actual": null,
-   "correct": null
+   "hg": 0,
+   "ag": 0,
+   "actual": "draw",
+   "correct": false
   },
   {
    "id": 1557399,
@@ -3040,10 +3040,10 @@
    },
    "lockedOn": "2026-09-09",
    "pick": "home",
-   "hg": null,
-   "ag": null,
-   "actual": null,
-   "correct": null
+   "hg": 2,
+   "ag": 2,
+   "actual": "draw",
+   "correct": false
   },
   {
    "id": 1557401,
@@ -3059,10 +3059,10 @@
    },
    "lockedOn": "2026-09-09",
    "pick": "home",
-   "hg": null,
-   "ag": null,
-   "actual": null,
-   "correct": null
+   "hg": 2,
+   "ag": 3,
+   "actual": "away",
+   "correct": false
   },
   {
    "id": 1557397,
@@ -3078,10 +3078,10 @@
    },
    "lockedOn": "2026-09-09",
    "pick": "home",
-   "hg": null,
-   "ag": null,
-   "actual": null,
-   "correct": null
+   "hg": 1,
+   "ag": 2,
+   "actual": "away",
+   "correct": false
   },
   {
    "id": 1570377,
@@ -3097,10 +3097,10 @@
    },
    "lockedOn": "2026-09-09",
    "pick": "home",
-   "hg": null,
-   "ag": null,
-   "actual": null,
-   "correct": null
+   "hg": 0,
+   "ag": 2,
+   "actual": "away",
+   "correct": false
   },
   {
    "id": 1552764,
@@ -3116,10 +3116,10 @@
    },
    "lockedOn": "2026-09-09",
    "pick": "home",
-   "hg": null,
-   "ag": null,
-   "actual": null,
-   "correct": null
+   "hg": 1,
+   "ag": 1,
+   "actual": "draw",
+   "correct": false
   },
   {
    "id": 1550121,
@@ -3135,10 +3135,10 @@
    },
    "lockedOn": "2026-09-09",
    "pick": "home",
-   "hg": null,
-   "ag": null,
-   "actual": null,
-   "correct": null
+   "hg": 2,
+   "ag": 2,
+   "actual": "draw",
+   "correct": false
   },
   {
    "id": 1557406,
@@ -3154,10 +3154,10 @@
    },
    "lockedOn": "2026-09-09",
    "pick": "away",
-   "hg": null,
-   "ag": null,
-   "actual": null,
-   "correct": null
+   "hg": 0,
+   "ag": 0,
+   "actual": "draw",
+   "correct": false
   },
   {
    "id": 1570373,
@@ -3173,10 +3173,10 @@
    },
    "lockedOn": "2026-09-09",
    "pick": "home",
-   "hg": null,
-   "ag": null,
-   "actual": null,
-   "correct": null
+   "hg": 1,
+   "ag": 1,
+   "actual": "draw",
+   "correct": false
   },
   {
    "id": 1575165,
@@ -3192,10 +3192,10 @@
    },
    "lockedOn": "2026-09-09",
    "pick": "home",
-   "hg": null,
-   "ag": null,
-   "actual": null,
-   "correct": null
+   "hg": 1,
+   "ag": 1,
+   "actual": "draw",
+   "correct": false
   },
   {
    "id": 1550117,
@@ -3211,10 +3211,10 @@
    },
    "lockedOn": "2026-09-09",
    "pick": "home",
-   "hg": null,
-   "ag": null,
-   "actual": null,
-   "correct": null
+   "hg": 1,
+   "ag": 2,
+   "actual": "away",
+   "correct": false
   },
   {
    "id": 1552761,
@@ -3230,10 +3230,10 @@
    },
    "lockedOn": "2026-09-09",
    "pick": "home",
-   "hg": null,
-   "ag": null,
-   "actual": null,
-   "correct": null
+   "hg": 2,
+   "ag": 2,
+   "actual": "draw",
+   "correct": false
   },
   {
    "id": 1552756,
@@ -3249,10 +3249,10 @@
    },
    "lockedOn": "2026-09-09",
    "pick": "home",
-   "hg": null,
-   "ag": null,
-   "actual": null,
-   "correct": null
+   "hg": 1,
+   "ag": 0,
+   "actual": "home",
+   "correct": true
   },
   {
    "id": 1552758,
@@ -3268,10 +3268,10 @@
    },
    "lockedOn": "2026-09-09",
    "pick": "home",
-   "hg": null,
-   "ag": null,
-   "actual": null,
-   "correct": null
+   "hg": 0,
+   "ag": 0,
+   "actual": "draw",
+   "correct": false
   },
   {
    "id": 1552762,
@@ -3287,10 +3287,10 @@
    },
    "lockedOn": "2026-09-09",
    "pick": "away",
-   "hg": null,
-   "ag": null,
-   "actual": null,
-   "correct": null
+   "hg": 0,
+   "ag": 0,
+   "actual": "draw",
+   "correct": false
   },
   {
    "id": 1557405,
@@ -3306,10 +3306,10 @@
    },
    "lockedOn": "2026-09-09",
    "pick": "away",
-   "hg": null,
-   "ag": null,
-   "actual": null,
-   "correct": null
+   "hg": 0,
+   "ag": 2,
+   "actual": "away",
+   "correct": true
   },
   {
    "id": 1570379,
@@ -3325,10 +3325,10 @@
    },
    "lockedOn": "2026-09-09",
    "pick": "home",
-   "hg": null,
-   "ag": null,
-   "actual": null,
-   "correct": null
+   "hg": 4,
+   "ag": 1,
+   "actual": "home",
+   "correct": true
   },
   {
    "id": 1570374,
@@ -3344,10 +3344,10 @@
    },
    "lockedOn": "2026-09-09",
    "pick": "home",
-   "hg": null,
-   "ag": null,
-   "actual": null,
-   "correct": null
+   "hg": 1,
+   "ag": 1,
+   "actual": "draw",
+   "correct": false
   },
   {
    "id": 1557400,
@@ -3363,10 +3363,10 @@
    },
    "lockedOn": "2026-09-09",
    "pick": "away",
-   "hg": null,
-   "ag": null,
-   "actual": null,
-   "correct": null
+   "hg": 0,
+   "ag": 5,
+   "actual": "away",
+   "correct": true
   },
   {
    "id": 1550122,
@@ -3382,10 +3382,10 @@
    },
    "lockedOn": "2026-09-09",
    "pick": "home",
-   "hg": null,
-   "ag": null,
-   "actual": null,
-   "correct": null
+   "hg": 3,
+   "ag": 2,
+   "actual": "home",
+   "correct": true
   },
   {
    "id": 1552760,
@@ -3401,10 +3401,10 @@
    },
    "lockedOn": "2026-09-09",
    "pick": "home",
-   "hg": null,
-   "ag": null,
-   "actual": null,
-   "correct": null
+   "hg": 2,
+   "ag": 0,
+   "actual": "home",
+   "correct": true
   },
   {
    "id": 1575159,
@@ -3420,10 +3420,10 @@
    },
    "lockedOn": "2026-09-09",
    "pick": "home",
-   "hg": null,
-   "ag": null,
-   "actual": null,
-   "correct": null
+   "hg": 5,
+   "ag": 0,
+   "actual": "home",
+   "correct": true
   },
   {
    "id": 1570376,
@@ -3439,10 +3439,10 @@
    },
    "lockedOn": "2026-09-09",
    "pick": "away",
-   "hg": null,
-   "ag": null,
-   "actual": null,
-   "correct": null
+   "hg": 2,
+   "ag": 4,
+   "actual": "away",
+   "correct": true
   },
   {
    "id": 1552759,
@@ -3458,10 +3458,10 @@
    },
    "lockedOn": "2026-09-09",
    "pick": "away",
-   "hg": null,
-   "ag": null,
-   "actual": null,
-   "correct": null
+   "hg": 2,
+   "ag": 2,
+   "actual": "draw",
+   "correct": false
   },
   {
    "id": 1557404,
@@ -3477,10 +3477,10 @@
    },
    "lockedOn": "2026-09-09",
    "pick": "away",
-   "hg": null,
-   "ag": null,
-   "actual": null,
-   "correct": null
+   "hg": 0,
+   "ag": 1,
+   "actual": "away",
+   "correct": true
   },
   {
    "id": 1575166,
@@ -3496,10 +3496,10 @@
    },
    "lockedOn": "2026-09-09",
    "pick": "away",
-   "hg": null,
-   "ag": null,
-   "actual": null,
-   "correct": null
+   "hg": 1,
+   "ag": 2,
+   "actual": "away",
+   "correct": true
   },
   {
    "id": 1550123,
@@ -3515,10 +3515,10 @@
    },
    "lockedOn": "2026-09-09",
    "pick": "home",
-   "hg": null,
-   "ag": null,
-   "actual": null,
-   "correct": null
+   "hg": 1,
+   "ag": 0,
+   "actual": "home",
+   "correct": true
   },
   {
    "id": 1570375,
@@ -3534,10 +3534,10 @@
    },
    "lockedOn": "2026-09-09",
    "pick": "home",
-   "hg": null,
-   "ag": null,
-   "actual": null,
-   "correct": null
+   "hg": 1,
+   "ag": 1,
+   "actual": "draw",
+   "correct": false
   },
   {
    "id": 1550124,
@@ -3553,10 +3553,10 @@
    },
    "lockedOn": "2026-09-09",
    "pick": "away",
-   "hg": null,
-   "ag": null,
-   "actual": null,
-   "correct": null
+   "hg": 3,
+   "ag": 2,
+   "actual": "home",
+   "correct": false
   },
   {
    "id": 1552757,
@@ -3572,10 +3572,10 @@
    },
    "lockedOn": "2026-09-09",
    "pick": "away",
-   "hg": null,
-   "ag": null,
-   "actual": null,
-   "correct": null
+   "hg": 0,
+   "ag": 1,
+   "actual": "away",
+   "correct": true
   },
   {
    "id": 1570380,
@@ -3591,10 +3591,10 @@
    },
    "lockedOn": "2026-09-09",
    "pick": "away",
-   "hg": null,
-   "ag": null,
-   "actual": null,
-   "correct": null
+   "hg": 0,
+   "ag": 3,
+   "actual": "away",
+   "correct": true
   },
   {
    "id": 1550125,
@@ -3610,10 +3610,10 @@
    },
    "lockedOn": "2026-09-09",
    "pick": "away",
-   "hg": null,
-   "ag": null,
-   "actual": null,
-   "correct": null
+   "hg": 0,
+   "ag": 2,
+   "actual": "away",
+   "correct": true
   },
   {
    "id": 1550118,
@@ -3629,10 +3629,10 @@
    },
    "lockedOn": "2026-09-09",
    "pick": "home",
-   "hg": null,
-   "ag": null,
-   "actual": null,
-   "correct": null
+   "hg": 2,
+   "ag": 1,
+   "actual": "home",
+   "correct": true
   },
   {
    "id": 1550120,
@@ -3648,10 +3648,10 @@
    },
    "lockedOn": "2026-09-09",
    "pick": "home",
-   "hg": null,
-   "ag": null,
-   "actual": null,
-   "correct": null
+   "hg": 5,
+   "ag": 3,
+   "actual": "home",
+   "correct": true
   },
   {
    "id": 1557402,
@@ -3667,10 +3667,10 @@
    },
    "lockedOn": "2026-09-09",
    "pick": "home",
-   "hg": null,
-   "ag": null,
-   "actual": null,
-   "correct": null
+   "hg": 4,
+   "ag": 1,
+   "actual": "home",
+   "correct": true
   },
   {
    "id": 1570382,
@@ -3686,10 +3686,10 @@
    },
    "lockedOn": "2026-09-09",
    "pick": "home",
-   "hg": null,
-   "ag": null,
-   "actual": null,
-   "correct": null
+   "hg": 1,
+   "ag": 2,
+   "actual": "away",
+   "correct": false
   },
   {
    "id": 1570391,
@@ -3705,10 +3705,10 @@
    },
    "lockedOn": "2026-09-09",
    "pick": "home",
-   "hg": null,
-   "ag": null,
-   "actual": null,
-   "correct": null
+   "hg": 2,
+   "ag": 1,
+   "actual": "home",
+   "correct": true
   },
   {
    "id": 1570383,
@@ -3724,10 +3724,10 @@
    },
    "lockedOn": "2026-09-09",
    "pick": "home",
-   "hg": null,
-   "ag": null,
-   "actual": null,
-   "correct": null
+   "hg": 0,
+   "ag": 1,
+   "actual": "away",
+   "correct": false
   },
   {
    "id": 1570388,
@@ -3743,10 +3743,10 @@
    },
    "lockedOn": "2026-09-09",
    "pick": "away",
-   "hg": null,
-   "ag": null,
-   "actual": null,
-   "correct": null
+   "hg": 2,
+   "ag": 3,
+   "actual": "away",
+   "correct": true
   },
   {
    "id": 1570384,
@@ -3762,10 +3762,10 @@
    },
    "lockedOn": "2026-09-09",
    "pick": "home",
-   "hg": null,
-   "ag": null,
-   "actual": null,
-   "correct": null
+   "hg": 4,
+   "ag": 0,
+   "actual": "home",
+   "correct": true
   },
   {
    "id": 1570387,
@@ -3781,10 +3781,10 @@
    },
    "lockedOn": "2026-09-09",
    "pick": "away",
-   "hg": null,
-   "ag": null,
-   "actual": null,
-   "correct": null
+   "hg": 0,
+   "ag": 1,
+   "actual": "away",
+   "correct": true
   },
   {
    "id": 1570385,
@@ -3800,10 +3800,10 @@
    },
    "lockedOn": "2026-09-09",
    "pick": "home",
-   "hg": null,
-   "ag": null,
-   "actual": null,
-   "correct": null
+   "hg": 7,
+   "ag": 2,
+   "actual": "home",
+   "correct": true
   },
   {
    "id": 1570389,
@@ -3819,10 +3819,10 @@
    },
    "lockedOn": "2026-09-09",
    "pick": "away",
-   "hg": null,
-   "ag": null,
-   "actual": null,
-   "correct": null
+   "hg": 3,
+   "ag": 1,
+   "actual": "home",
+   "correct": false
   },
   {
    "id": 1550202,
@@ -3832,11 +3832,11 @@
    "home": "Lazio",
    "away": "Lecce",
    "p": {
-    "h": 0.6077,
-    "d": 0.2425,
-    "a": 0.1498
+    "h": 0.6929,
+    "d": 0.2106,
+    "a": 0.0966
    },
-   "lockedOn": "2026-11-20",
+   "lockedOn": "2026-11-21",
    "pick": "home",
    "hg": null,
    "ag": null,
@@ -3851,11 +3851,11 @@
    "home": "Como",
    "away": "Cagliari",
    "p": {
-    "h": 0.6223,
-    "d": 0.2377,
-    "a": 0.14
+    "h": 0.6375,
+    "d": 0.2323,
+    "a": 0.1302
    },
-   "lockedOn": "2026-11-20",
+   "lockedOn": "2026-11-21",
    "pick": "home",
    "hg": null,
    "ag": null,
@@ -3870,11 +3870,11 @@
    "home": "Bayern",
    "away": "Koeln",
    "p": {
-    "h": 0.857,
-    "d": 0.1207,
-    "a": 0.0223
+    "h": 0.8628,
+    "d": 0.116,
+    "a": 0.0213
    },
-   "lockedOn": "2026-11-20",
+   "lockedOn": "2026-11-21",
    "pick": "home",
    "hg": null,
    "ag": null,
@@ -3889,11 +3889,11 @@
    "home": "Werder",
    "away": "Hamburg",
    "p": {
-    "h": 0.4601,
-    "d": 0.2773,
-    "a": 0.2626
+    "h": 0.4776,
+    "d": 0.2746,
+    "a": 0.2478
    },
-   "lockedOn": "2026-11-20",
+   "lockedOn": "2026-11-21",
    "pick": "home",
    "hg": null,
    "ag": null,
@@ -3908,11 +3908,11 @@
    "home": "Gladbach",
    "away": "Dortmund",
    "p": {
-    "h": 0.1746,
-    "d": 0.2533,
-    "a": 0.572
+    "h": 0.1332,
+    "d": 0.234,
+    "a": 0.6327
    },
-   "lockedOn": "2026-11-20",
+   "lockedOn": "2026-11-21",
    "pick": "away",
    "hg": null,
    "ag": null,
@@ -3927,11 +3927,11 @@
    "home": "Leverkusen",
    "away": "Paderborn",
    "p": {
-    "h": 0.7321,
-    "d": 0.1929,
-    "a": 0.075
+    "h": 0.6897,
+    "d": 0.2119,
+    "a": 0.0984
    },
-   "lockedOn": "2026-11-20",
+   "lockedOn": "2026-11-21",
    "pick": "home",
    "hg": null,
    "ag": null,
@@ -3946,11 +3946,11 @@
    "home": "Frankfurt",
    "away": "Hoffenheim",
    "p": {
-    "h": 0.3696,
-    "d": 0.2848,
-    "a": 0.3456
+    "h": 0.3925,
+    "d": 0.284,
+    "a": 0.3235
    },
-   "lockedOn": "2026-11-20",
+   "lockedOn": "2026-11-21",
    "pick": "home",
    "hg": null,
    "ag": null,
@@ -3965,11 +3965,11 @@
    "home": "Augsburg",
    "away": "Mainz",
    "p": {
-    "h": 0.3916,
-    "d": 0.2841,
-    "a": 0.3243
+    "h": 0.4052,
+    "d": 0.2832,
+    "a": 0.3116
    },
-   "lockedOn": "2026-11-20",
+   "lockedOn": "2026-11-21",
    "pick": "home",
    "hg": null,
    "ag": null,
@@ -3984,11 +3984,11 @@
    "home": "Schalke",
    "away": "Stuttgart",
    "p": {
-    "h": 0.1607,
-    "d": 0.2475,
-    "a": 0.5918
+    "h": 0.1699,
+    "d": 0.2514,
+    "a": 0.5787
    },
-   "lockedOn": "2026-11-20",
+   "lockedOn": "2026-11-21",
    "pick": "away",
    "hg": null,
    "ag": null,
@@ -4003,11 +4003,11 @@
    "home": "Union Berlin",
    "away": "RB Leipzig",
    "p": {
-    "h": 0.2586,
-    "d": 0.2766,
-    "a": 0.4648
+    "h": 0.2138,
+    "d": 0.2665,
+    "a": 0.5198
    },
-   "lockedOn": "2026-11-20",
+   "lockedOn": "2026-11-21",
    "pick": "away",
    "hg": null,
    "ag": null,
@@ -4022,11 +4022,11 @@
    "home": "Elversberg",
    "away": "Freiburg",
    "p": {
-    "h": 0.2129,
-    "d": 0.2662,
-    "a": 0.521
+    "h": 0.2126,
+    "d": 0.2661,
+    "a": 0.5213
    },
-   "lockedOn": "2026-11-20",
+   "lockedOn": "2026-11-21",
    "pick": "away",
    "hg": null,
    "ag": null,
@@ -4041,11 +4041,11 @@
    "home": "Newcastle",
    "away": "Arsenal",
    "p": {
-    "h": 0.1779,
-    "d": 0.2546,
-    "a": 0.5675
+    "h": 0.1435,
+    "d": 0.2394,
+    "a": 0.6171
    },
-   "lockedOn": "2026-11-20",
+   "lockedOn": "2026-11-21",
    "pick": "away",
    "hg": null,
    "ag": null,
@@ -4060,11 +4060,11 @@
    "home": "Bournemouth",
    "away": "Forest",
    "p": {
-    "h": 0.4785,
-    "d": 0.2745,
-    "a": 0.2471
+    "h": 0.5125,
+    "d": 0.268,
+    "a": 0.2195
    },
-   "lockedOn": "2026-11-20",
+   "lockedOn": "2026-11-21",
    "pick": "home",
    "hg": null,
    "ag": null,
@@ -4079,11 +4079,11 @@
    "home": "Liverpool",
    "away": "Man United",
    "p": {
-    "h": 0.4367,
-    "d": 0.2803,
-    "a": 0.2829
+    "h": 0.5154,
+    "d": 0.2674,
+    "a": 0.2172
    },
-   "lockedOn": "2026-11-20",
+   "lockedOn": "2026-11-21",
    "pick": "home",
    "hg": null,
    "ag": null,
@@ -4098,11 +4098,11 @@
    "home": "Tottenham",
    "away": "Ipswich",
    "p": {
-    "h": 0.5533,
-    "d": 0.2584,
-    "a": 0.1883
+    "h": 0.5699,
+    "d": 0.2539,
+    "a": 0.1762
    },
-   "lockedOn": "2026-11-20",
+   "lockedOn": "2026-11-21",
    "pick": "home",
    "hg": null,
    "ag": null,
@@ -4117,11 +4117,11 @@
    "home": "Chelsea",
    "away": "Leeds",
    "p": {
-    "h": 0.4564,
-    "d": 0.2778,
-    "a": 0.2657
+    "h": 0.4389,
+    "d": 0.2801,
+    "a": 0.281
    },
-   "lockedOn": "2026-11-20",
+   "lockedOn": "2026-11-21",
    "pick": "home",
    "hg": null,
    "ag": null,
@@ -4136,11 +4136,11 @@
    "home": "Man City",
    "away": "Fulham",
    "p": {
-    "h": 0.6645,
-    "d": 0.2222,
-    "a": 0.1133
+    "h": 0.6338,
+    "d": 0.2337,
+    "a": 0.1326
    },
-   "lockedOn": "2026-11-20",
+   "lockedOn": "2026-11-21",
    "pick": "home",
    "hg": null,
    "ag": null,
@@ -4155,11 +4155,11 @@
    "home": "Brentford",
    "away": "Everton",
    "p": {
-    "h": 0.4435,
-    "d": 0.2795,
-    "a": 0.277
+    "h": 0.4488,
+    "d": 0.2789,
+    "a": 0.2724
    },
-   "lockedOn": "2026-11-20",
+   "lockedOn": "2026-11-21",
    "pick": "home",
    "hg": null,
    "ag": null,
@@ -4174,11 +4174,11 @@
    "home": "Hull",
    "away": "Brighton",
    "p": {
-    "h": 0.1412,
-    "d": 0.2383,
-    "a": 0.6205
+    "h": 0.0973,
+    "d": 0.2111,
+    "a": 0.6915
    },
-   "lockedOn": "2026-11-20",
+   "lockedOn": "2026-11-21",
    "pick": "away",
    "hg": null,
    "ag": null,
@@ -4193,11 +4193,11 @@
    "home": "Aston Villa",
    "away": "Sunderland",
    "p": {
-    "h": 0.5911,
-    "d": 0.2477,
-    "a": 0.1611
+    "h": 0.6367,
+    "d": 0.2326,
+    "a": 0.1307
    },
-   "lockedOn": "2026-11-20",
+   "lockedOn": "2026-11-21",
    "pick": "home",
    "hg": null,
    "ag": null,
@@ -4212,11 +4212,11 @@
    "home": "Coventry",
    "away": "Crystal Palace",
    "p": {
-    "h": 0.2498,
-    "d": 0.275,
-    "a": 0.4752
+    "h": 0.3202,
+    "d": 0.2838,
+    "a": 0.396
    },
-   "lockedOn": "2026-11-20",
+   "lockedOn": "2026-11-21",
    "pick": "away",
    "hg": null,
    "ag": null,
@@ -4231,11 +4231,11 @@
    "home": "Lille",
    "away": "Lyon",
    "p": {
-    "h": 0.4363,
-    "d": 0.2804,
-    "a": 0.2834
+    "h": 0.4568,
+    "d": 0.2778,
+    "a": 0.2654
    },
-   "lockedOn": "2026-11-20",
+   "lockedOn": "2026-11-21",
    "pick": "home",
    "hg": null,
    "ag": null,
@@ -4250,11 +4250,11 @@
    "home": "Marseille",
    "away": "Le Mans",
    "p": {
-    "h": 0.664,
-    "d": 0.2224,
-    "a": 0.1136
+    "h": 0.707,
+    "d": 0.2044,
+    "a": 0.0886
    },
-   "lockedOn": "2026-11-20",
+   "lockedOn": "2026-11-21",
    "pick": "home",
    "hg": null,
    "ag": null,
@@ -4269,11 +4269,11 @@
    "home": "Nice",
    "away": "Paris SG",
    "p": {
-    "h": 0.0711,
-    "d": 0.1892,
-    "a": 0.7397
+    "h": 0.0916,
+    "d": 0.2068,
+    "a": 0.7017
    },
-   "lockedOn": "2026-11-20",
+   "lockedOn": "2026-11-21",
    "pick": "away",
    "hg": null,
    "ag": null,
@@ -4288,11 +4288,11 @@
    "home": "Monaco",
    "away": "Auxerre",
    "p": {
-    "h": 0.6131,
-    "d": 0.2407,
-    "a": 0.1461
+    "h": 0.5805,
+    "d": 0.2509,
+    "a": 0.1686
    },
-   "lockedOn": "2026-11-20",
+   "lockedOn": "2026-11-21",
    "pick": "home",
    "hg": null,
    "ag": null,
@@ -4307,11 +4307,11 @@
    "home": "Strasbourg",
    "away": "Brest",
    "p": {
-    "h": 0.523,
-    "d": 0.2657,
-    "a": 0.2113
+    "h": 0.4353,
+    "d": 0.2805,
+    "a": 0.2842
    },
-   "lockedOn": "2026-11-20",
+   "lockedOn": "2026-11-21",
    "pick": "home",
    "hg": null,
    "ag": null,
@@ -4326,11 +4326,11 @@
    "home": "Lorient",
    "away": "Rennes",
    "p": {
-    "h": 0.3099,
-    "d": 0.2831,
-    "a": 0.407
+    "h": 0.3411,
+    "d": 0.2847,
+    "a": 0.3742
    },
-   "lockedOn": "2026-11-20",
+   "lockedOn": "2026-11-21",
    "pick": "away",
    "hg": null,
    "ag": null,
@@ -4345,11 +4345,11 @@
    "home": "Troyes",
    "away": "Le Havre",
    "p": {
-    "h": 0.3634,
-    "d": 0.2849,
-    "a": 0.3517
+    "h": 0.4032,
+    "d": 0.2834,
+    "a": 0.3134
    },
-   "lockedOn": "2026-11-20",
+   "lockedOn": "2026-11-21",
    "pick": "home",
    "hg": null,
    "ag": null,
@@ -4364,11 +4364,11 @@
    "home": "Paris FC",
    "away": "Angers",
    "p": {
-    "h": 0.5367,
-    "d": 0.2626,
-    "a": 0.2007
+    "h": 0.6114,
+    "d": 0.2413,
+    "a": 0.1473
    },
-   "lockedOn": "2026-11-20",
+   "lockedOn": "2026-11-21",
    "pick": "home",
    "hg": null,
    "ag": null,
@@ -4383,11 +4383,11 @@
    "home": "Lens",
    "away": "Toulouse",
    "p": {
-    "h": 0.5562,
-    "d": 0.2577,
-    "a": 0.1861
+    "h": 0.5113,
+    "d": 0.2683,
+    "a": 0.2204
    },
-   "lockedOn": "2026-11-20",
+   "lockedOn": "2026-11-21",
    "pick": "home",
    "hg": null,
    "ag": null,
@@ -4402,11 +4402,11 @@
    "home": "Parma",
    "away": "Roma",
    "p": {
-    "h": 0.164,
-    "d": 0.249,
-    "a": 0.5871
+    "h": 0.1368,
+    "d": 0.236,
+    "a": 0.6272
    },
-   "lockedOn": "2026-11-20",
+   "lockedOn": "2026-11-21",
    "pick": "away",
    "hg": null,
    "ag": null,
@@ -4421,11 +4421,11 @@
    "home": "Napoli",
    "away": "Torino",
    "p": {
-    "h": 0.5972,
-    "d": 0.2459,
-    "a": 0.157
+    "h": 0.5878,
+    "d": 0.2488,
+    "a": 0.1635
    },
-   "lockedOn": "2026-11-20",
+   "lockedOn": "2026-11-21",
    "pick": "home",
    "hg": null,
    "ag": null,
@@ -4440,11 +4440,11 @@
    "home": "Sassuolo",
    "away": "Genoa",
    "p": {
-    "h": 0.4607,
-    "d": 0.2772,
-    "a": 0.2621
+    "h": 0.3703,
+    "d": 0.2848,
+    "a": 0.3449
    },
-   "lockedOn": "2026-11-20",
+   "lockedOn": "2026-11-21",
    "pick": "home",
    "hg": null,
    "ag": null,
@@ -4459,11 +4459,11 @@
    "home": "Milan",
    "away": "Frosinone",
    "p": {
-    "h": 0.6229,
-    "d": 0.2375,
-    "a": 0.1397
+    "h": 0.5981,
+    "d": 0.2456,
+    "a": 0.1563
    },
-   "lockedOn": "2026-11-20",
+   "lockedOn": "2026-11-21",
    "pick": "home",
    "hg": null,
    "ag": null,
@@ -4478,11 +4478,11 @@
    "home": "Barcelona",
    "away": "Villarreal",
    "p": {
-    "h": 0.6999,
-    "d": 0.2075,
-    "a": 0.0926
+    "h": 0.7238,
+    "d": 0.1968,
+    "a": 0.0794
    },
-   "lockedOn": "2026-11-20",
+   "lockedOn": "2026-11-21",
    "pick": "home",
    "hg": null,
    "ag": null,
@@ -4497,11 +4497,11 @@
    "home": "Bilbao",
    "away": "Espanyol",
    "p": {
-    "h": 0.4929,
-    "d": 0.2719,
-    "a": 0.2352
+    "h": 0.5075,
+    "d": 0.2691,
+    "a": 0.2235
    },
-   "lockedOn": "2026-11-20",
+   "lockedOn": "2026-11-21",
    "pick": "home",
    "hg": null,
    "ag": null,
@@ -4516,11 +4516,11 @@
    "home": "Sevilla",
    "away": "Betis",
    "p": {
-    "h": 0.291,
-    "d": 0.2813,
-    "a": 0.4277
+    "h": 0.2693,
+    "d": 0.2784,
+    "a": 0.4523
    },
-   "lockedOn": "2026-11-20",
+   "lockedOn": "2026-11-21",
    "pick": "away",
    "hg": null,
    "ag": null,
@@ -4535,11 +4535,11 @@
    "home": "Levante",
    "away": "Elche",
    "p": {
-    "h": 0.4741,
-    "d": 0.2752,
-    "a": 0.2507
+    "h": 0.4268,
+    "d": 0.2814,
+    "a": 0.2918
    },
-   "lockedOn": "2026-11-20",
+   "lockedOn": "2026-11-21",
    "pick": "home",
    "hg": null,
    "ag": null,
@@ -4554,11 +4554,11 @@
    "home": "Real Madrid",
    "away": "Celta",
    "p": {
-    "h": 0.7067,
-    "d": 0.2045,
-    "a": 0.0887
+    "h": 0.7458,
+    "d": 0.1862,
+    "a": 0.068
    },
-   "lockedOn": "2026-11-20",
+   "lockedOn": "2026-11-21",
    "pick": "home",
    "hg": null,
    "ag": null,
@@ -4573,11 +4573,11 @@
    "home": "Alaves",
    "away": "Depor",
    "p": {
-    "h": 0.5293,
-    "d": 0.2643,
-    "a": 0.2064
+    "h": 0.4783,
+    "d": 0.2745,
+    "a": 0.2472
    },
-   "lockedOn": "2026-11-20",
+   "lockedOn": "2026-11-21",
    "pick": "home",
    "hg": null,
    "ag": null,
@@ -4592,11 +4592,11 @@
    "home": "Getafe",
    "away": "Atletico",
    "p": {
-    "h": 0.2287,
-    "d": 0.2704,
-    "a": 0.501
+    "h": 0.1737,
+    "d": 0.253,
+    "a": 0.5733
    },
-   "lockedOn": "2026-11-20",
+   "lockedOn": "2026-11-21",
    "pick": "away",
    "hg": null,
    "ag": null,
@@ -4611,11 +4611,11 @@
    "home": "Osasuna",
    "away": "Malaga",
    "p": {
-    "h": 0.5271,
-    "d": 0.2648,
-    "a": 0.2081
+    "h": 0.5177,
+    "d": 0.2669,
+    "a": 0.2154
    },
-   "lockedOn": "2026-11-20",
+   "lockedOn": "2026-11-21",
    "pick": "home",
    "hg": null,
    "ag": null,
@@ -4630,11 +4630,11 @@
    "home": "Rayo Vallecano",
    "away": "Valencia",
    "p": {
-    "h": 0.4564,
-    "d": 0.2778,
-    "a": 0.2657
+    "h": 0.455,
+    "d": 0.278,
+    "a": 0.267
    },
-   "lockedOn": "2026-11-20",
+   "lockedOn": "2026-11-21",
    "pick": "home",
    "hg": null,
    "ag": null,
@@ -4649,11 +4649,11 @@
    "home": "Santander",
    "away": "Sociedad",
    "p": {
-    "h": 0.3086,
-    "d": 0.283,
-    "a": 0.4084
+    "h": 0.283,
+    "d": 0.2804,
+    "a": 0.4366
    },
-   "lockedOn": "2026-11-20",
+   "lockedOn": "2026-11-21",
    "pick": "away",
    "hg": null,
    "ag": null,
@@ -4668,11 +4668,11 @@
    "home": "Bologna",
    "away": "Udinese",
    "p": {
-    "h": 0.4543,
-    "d": 0.2781,
-    "a": 0.2676
+    "h": 0.5946,
+    "d": 0.2467,
+    "a": 0.1588
    },
-   "lockedOn": "2026-11-20",
+   "lockedOn": "2026-11-21",
    "pick": "home",
    "hg": null,
    "ag": null,
@@ -4687,11 +4687,11 @@
    "home": "Atalanta",
    "away": "Inter",
    "p": {
-    "h": 0.2649,
-    "d": 0.2777,
-    "a": 0.4574
+    "h": 0.199,
+    "d": 0.262,
+    "a": 0.539
    },
-   "lockedOn": "2026-11-20",
+   "lockedOn": "2026-11-21",
    "pick": "away",
    "hg": null,
    "ag": null,
@@ -4706,11 +4706,11 @@
    "home": "Monza",
    "away": "Fiorentina",
    "p": {
-    "h": 0.3144,
-    "d": 0.2835,
-    "a": 0.4022
+    "h": 0.2915,
+    "d": 0.2814,
+    "a": 0.4271
    },
-   "lockedOn": "2026-11-20",
+   "lockedOn": "2026-11-21",
    "pick": "away",
    "hg": null,
    "ag": null,
@@ -4725,12 +4725,544 @@
    "home": "Juventus",
    "away": "Venezia",
    "p": {
-    "h": 0.6701,
-    "d": 0.22,
-    "a": 0.1099
+    "h": 0.668,
+    "d": 0.2208,
+    "a": 0.1112
    },
-   "lockedOn": "2026-11-20",
+   "lockedOn": "2026-11-21",
    "pick": "home",
+   "hg": null,
+   "ag": null,
+   "actual": null,
+   "correct": null
+  },
+  {
+   "id": 1575233,
+   "slug": "freiburg-vs-rb-leipzig-2026-11-28",
+   "league": "bundesliga",
+   "date": "2026-11-28T14:30:00+00:00",
+   "home": "Freiburg",
+   "away": "RB Leipzig",
+   "p": {
+    "h": 0.3863,
+    "d": 0.2843,
+    "a": 0.3294
+   },
+   "lockedOn": "2026-11-21",
+   "pick": "home",
+   "hg": null,
+   "ag": null,
+   "actual": null,
+   "correct": null
+  },
+  {
+   "id": 1575237,
+   "slug": "werder-vs-gladbach-2026-11-28",
+   "league": "bundesliga",
+   "date": "2026-11-28T14:30:00+00:00",
+   "home": "Werder",
+   "away": "Gladbach",
+   "p": {
+    "h": 0.5004,
+    "d": 0.2705,
+    "a": 0.2292
+   },
+   "lockedOn": "2026-11-21",
+   "pick": "home",
+   "hg": null,
+   "ag": null,
+   "actual": null,
+   "correct": null
+  },
+  {
+   "id": 1575234,
+   "slug": "mainz-vs-union-berlin-2026-11-28",
+   "league": "bundesliga",
+   "date": "2026-11-28T14:30:00+00:00",
+   "home": "Mainz",
+   "away": "Union Berlin",
+   "p": {
+    "h": 0.4708,
+    "d": 0.2757,
+    "a": 0.2535
+   },
+   "lockedOn": "2026-11-21",
+   "pick": "home",
+   "hg": null,
+   "ag": null,
+   "actual": null,
+   "correct": null
+  },
+  {
+   "id": 1575230,
+   "slug": "dortmund-vs-leverkusen-2026-11-28",
+   "league": "bundesliga",
+   "date": "2026-11-28T14:30:00+00:00",
+   "home": "Dortmund",
+   "away": "Leverkusen",
+   "p": {
+    "h": 0.5045,
+    "d": 0.2697,
+    "a": 0.2259
+   },
+   "lockedOn": "2026-11-21",
+   "pick": "home",
+   "hg": null,
+   "ag": null,
+   "actual": null,
+   "correct": null
+  },
+  {
+   "id": 1575232,
+   "slug": "hoffenheim-vs-augsburg-2026-11-28",
+   "league": "bundesliga",
+   "date": "2026-11-28T14:30:00+00:00",
+   "home": "Hoffenheim",
+   "away": "Augsburg",
+   "p": {
+    "h": 0.4695,
+    "d": 0.2759,
+    "a": 0.2546
+   },
+   "lockedOn": "2026-11-21",
+   "pick": "home",
+   "hg": null,
+   "ag": null,
+   "actual": null,
+   "correct": null
+  },
+  {
+   "id": 1575231,
+   "slug": "stuttgart-vs-frankfurt-2026-11-28",
+   "league": "bundesliga",
+   "date": "2026-11-28T14:30:00+00:00",
+   "home": "Stuttgart",
+   "away": "Frankfurt",
+   "p": {
+    "h": 0.5232,
+    "d": 0.2657,
+    "a": 0.2111
+   },
+   "lockedOn": "2026-11-21",
+   "pick": "home",
+   "hg": null,
+   "ag": null,
+   "actual": null,
+   "correct": null
+  },
+  {
+   "id": 1575235,
+   "slug": "hamburg-vs-bayern-2026-11-28",
+   "league": "bundesliga",
+   "date": "2026-11-28T14:30:00+00:00",
+   "home": "Hamburg",
+   "away": "Bayern",
+   "p": {
+    "h": 0.054,
+    "d": 0.1715,
+    "a": 0.7745
+   },
+   "lockedOn": "2026-11-21",
+   "pick": "away",
+   "hg": null,
+   "ag": null,
+   "actual": null,
+   "correct": null
+  },
+  {
+   "id": 1575238,
+   "slug": "paderborn-vs-schalke-2026-11-28",
+   "league": "bundesliga",
+   "date": "2026-11-28T14:30:00+00:00",
+   "home": "Paderborn",
+   "away": "Schalke",
+   "p": {
+    "h": 0.4531,
+    "d": 0.2783,
+    "a": 0.2686
+   },
+   "lockedOn": "2026-11-21",
+   "pick": "home",
+   "hg": null,
+   "ag": null,
+   "actual": null,
+   "correct": null
+  },
+  {
+   "id": 1575236,
+   "slug": "koeln-vs-elversberg-2026-11-28",
+   "league": "bundesliga",
+   "date": "2026-11-28T14:30:00+00:00",
+   "home": "Koeln",
+   "away": "Elversberg",
+   "p": {
+    "h": 0.4061,
+    "d": 0.2832,
+    "a": 0.3107
+   },
+   "lockedOn": "2026-11-21",
+   "pick": "home",
+   "hg": null,
+   "ag": null,
+   "actual": null,
+   "correct": null
+  },
+  {
+   "id": 1557484,
+   "slug": "man-united-vs-brentford-2026-11-28",
+   "league": "premier-league",
+   "date": "2026-11-28T15:00:00+00:00",
+   "home": "Man United",
+   "away": "Brentford",
+   "p": {
+    "h": 0.41,
+    "d": 0.2829,
+    "a": 0.3071
+   },
+   "lockedOn": "2026-11-21",
+   "pick": "home",
+   "hg": null,
+   "ag": null,
+   "actual": null,
+   "correct": null
+  },
+  {
+   "id": 1557481,
+   "slug": "fulham-vs-bournemouth-2026-11-28",
+   "league": "premier-league",
+   "date": "2026-11-28T15:00:00+00:00",
+   "home": "Fulham",
+   "away": "Bournemouth",
+   "p": {
+    "h": 0.3088,
+    "d": 0.283,
+    "a": 0.4081
+   },
+   "lockedOn": "2026-11-21",
+   "pick": "away",
+   "hg": null,
+   "ag": null,
+   "actual": null,
+   "correct": null
+  },
+  {
+   "id": 1557477,
+   "slug": "arsenal-vs-man-city-2026-11-28",
+   "league": "premier-league",
+   "date": "2026-11-28T15:00:00+00:00",
+   "home": "Arsenal",
+   "away": "Man City",
+   "p": {
+    "h": 0.5383,
+    "d": 0.2622,
+    "a": 0.1995
+   },
+   "lockedOn": "2026-11-21",
+   "pick": "home",
+   "hg": null,
+   "ag": null,
+   "actual": null,
+   "correct": null
+  },
+  {
+   "id": 1557480,
+   "slug": "everton-vs-liverpool-2026-11-28",
+   "league": "premier-league",
+   "date": "2026-11-28T15:00:00+00:00",
+   "home": "Everton",
+   "away": "Liverpool",
+   "p": {
+    "h": 0.2893,
+    "d": 0.2811,
+    "a": 0.4296
+   },
+   "lockedOn": "2026-11-21",
+   "pick": "away",
+   "hg": null,
+   "ag": null,
+   "actual": null,
+   "correct": null
+  },
+  {
+   "id": 1557478,
+   "slug": "brighton-vs-newcastle-2026-11-28",
+   "league": "premier-league",
+   "date": "2026-11-28T15:00:00+00:00",
+   "home": "Brighton",
+   "away": "Newcastle",
+   "p": {
+    "h": 0.5479,
+    "d": 0.2598,
+    "a": 0.1923
+   },
+   "lockedOn": "2026-11-21",
+   "pick": "home",
+   "hg": null,
+   "ag": null,
+   "actual": null,
+   "correct": null
+  },
+  {
+   "id": 1557479,
+   "slug": "crystal-palace-vs-hull-2026-11-28",
+   "league": "premier-league",
+   "date": "2026-11-28T15:00:00+00:00",
+   "home": "Crystal Palace",
+   "away": "Hull",
+   "p": {
+    "h": 0.5978,
+    "d": 0.2457,
+    "a": 0.1566
+   },
+   "lockedOn": "2026-11-21",
+   "pick": "home",
+   "hg": null,
+   "ag": null,
+   "actual": null,
+   "correct": null
+  },
+  {
+   "id": 1557482,
+   "slug": "ipswich-vs-aston-villa-2026-11-28",
+   "league": "premier-league",
+   "date": "2026-11-28T15:00:00+00:00",
+   "home": "Ipswich",
+   "away": "Aston Villa",
+   "p": {
+    "h": 0.1642,
+    "d": 0.2491,
+    "a": 0.5867
+   },
+   "lockedOn": "2026-11-21",
+   "pick": "away",
+   "hg": null,
+   "ag": null,
+   "actual": null,
+   "correct": null
+  },
+  {
+   "id": 1557483,
+   "slug": "leeds-vs-coventry-2026-11-28",
+   "league": "premier-league",
+   "date": "2026-11-28T15:00:00+00:00",
+   "home": "Leeds",
+   "away": "Coventry",
+   "p": {
+    "h": 0.6018,
+    "d": 0.2444,
+    "a": 0.1538
+   },
+   "lockedOn": "2026-11-21",
+   "pick": "home",
+   "hg": null,
+   "ag": null,
+   "actual": null,
+   "correct": null
+  },
+  {
+   "id": 1557485,
+   "slug": "forest-vs-chelsea-2026-11-28",
+   "league": "premier-league",
+   "date": "2026-11-28T15:00:00+00:00",
+   "home": "Forest",
+   "away": "Chelsea",
+   "p": {
+    "h": 0.3682,
+    "d": 0.2849,
+    "a": 0.3469
+   },
+   "lockedOn": "2026-11-21",
+   "pick": "home",
+   "hg": null,
+   "ag": null,
+   "actual": null,
+   "correct": null
+  },
+  {
+   "id": 1557486,
+   "slug": "sunderland-vs-tottenham-2026-11-28",
+   "league": "premier-league",
+   "date": "2026-11-28T15:00:00+00:00",
+   "home": "Sunderland",
+   "away": "Tottenham",
+   "p": {
+    "h": 0.328,
+    "d": 0.2843,
+    "a": 0.3877
+   },
+   "lockedOn": "2026-11-21",
+   "pick": "away",
+   "hg": null,
+   "ag": null,
+   "actual": null,
+   "correct": null
+  },
+  {
+   "id": 1552828,
+   "slug": "angers-vs-lens-2026-11-28",
+   "league": "ligue-1",
+   "date": "2026-11-28T16:00:00+00:00",
+   "home": "Angers",
+   "away": "Lens",
+   "p": {
+    "h": 0.1846,
+    "d": 0.2571,
+    "a": 0.5583
+   },
+   "lockedOn": "2026-11-21",
+   "pick": "away",
+   "hg": null,
+   "ag": null,
+   "actual": null,
+   "correct": null
+  },
+  {
+   "id": 1552833,
+   "slug": "lyon-vs-monaco-2026-11-28",
+   "league": "ligue-1",
+   "date": "2026-11-28T16:00:00+00:00",
+   "home": "Lyon",
+   "away": "Monaco",
+   "p": {
+    "h": 0.4309,
+    "d": 0.281,
+    "a": 0.2881
+   },
+   "lockedOn": "2026-11-21",
+   "pick": "home",
+   "hg": null,
+   "ag": null,
+   "actual": null,
+   "correct": null
+  },
+  {
+   "id": 1552834,
+   "slug": "nice-vs-troyes-2026-11-28",
+   "league": "ligue-1",
+   "date": "2026-11-28T16:00:00+00:00",
+   "home": "Nice",
+   "away": "Troyes",
+   "p": {
+    "h": 0.5593,
+    "d": 0.2568,
+    "a": 0.1838
+   },
+   "lockedOn": "2026-11-21",
+   "pick": "home",
+   "hg": null,
+   "ag": null,
+   "actual": null,
+   "correct": null
+  },
+  {
+   "id": 1552835,
+   "slug": "paris-sg-vs-lorient-2026-11-28",
+   "league": "ligue-1",
+   "date": "2026-11-28T16:00:00+00:00",
+   "home": "Paris SG",
+   "away": "Lorient",
+   "p": {
+    "h": 0.7927,
+    "d": 0.1616,
+    "a": 0.0457
+   },
+   "lockedOn": "2026-11-21",
+   "pick": "home",
+   "hg": null,
+   "ag": null,
+   "actual": null,
+   "correct": null
+  },
+  {
+   "id": 1552836,
+   "slug": "toulouse-vs-rennes-2026-11-28",
+   "league": "ligue-1",
+   "date": "2026-11-28T16:00:00+00:00",
+   "home": "Toulouse",
+   "away": "Rennes",
+   "p": {
+    "h": 0.3601,
+    "d": 0.2849,
+    "a": 0.355
+   },
+   "lockedOn": "2026-11-21",
+   "pick": "home",
+   "hg": null,
+   "ag": null,
+   "actual": null,
+   "correct": null
+  },
+  {
+   "id": 1552830,
+   "slug": "brest-vs-paris-fc-2026-11-28",
+   "league": "ligue-1",
+   "date": "2026-11-28T16:00:00+00:00",
+   "home": "Brest",
+   "away": "Paris FC",
+   "p": {
+    "h": 0.3798,
+    "d": 0.2846,
+    "a": 0.3356
+   },
+   "lockedOn": "2026-11-21",
+   "pick": "home",
+   "hg": null,
+   "ag": null,
+   "actual": null,
+   "correct": null
+  },
+  {
+   "id": 1552829,
+   "slug": "auxerre-vs-marseille-2026-11-28",
+   "league": "ligue-1",
+   "date": "2026-11-28T16:00:00+00:00",
+   "home": "Auxerre",
+   "away": "Marseille",
+   "p": {
+    "h": 0.2424,
+    "d": 0.2735,
+    "a": 0.4841
+   },
+   "lockedOn": "2026-11-21",
+   "pick": "away",
+   "hg": null,
+   "ag": null,
+   "actual": null,
+   "correct": null
+  },
+  {
+   "id": 1552831,
+   "slug": "le-havre-vs-strasbourg-2026-11-28",
+   "league": "ligue-1",
+   "date": "2026-11-28T16:00:00+00:00",
+   "home": "Le Havre",
+   "away": "Strasbourg",
+   "p": {
+    "h": 0.2418,
+    "d": 0.2734,
+    "a": 0.4848
+   },
+   "lockedOn": "2026-11-21",
+   "pick": "away",
+   "hg": null,
+   "ag": null,
+   "actual": null,
+   "correct": null
+  },
+  {
+   "id": 1552832,
+   "slug": "le-mans-vs-lille-2026-11-28",
+   "league": "ligue-1",
+   "date": "2026-11-28T16:00:00+00:00",
+   "home": "Le Mans",
+   "away": "Lille",
+   "p": {
+    "h": 0.1326,
+    "d": 0.2337,
+    "a": 0.6336
+   },
+   "lockedOn": "2026-11-21",
+   "pick": "away",
    "hg": null,
    "ag": null,
    "actual": null,
