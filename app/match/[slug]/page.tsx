@@ -7,6 +7,7 @@ import { leagueClubs, flagUrl } from "@/lib/data";
 import { squadOf } from "@/lib/players";
 import { eloHistory, eloDelta, tinySpark } from "@/lib/history";
 import { resultByFixtureId } from "@/lib/record";
+import { matchEditorialTags } from "@/lib/editorial";
 import { pct, shade } from "@/lib/ui";
 import { Crest } from "../../components/Crest";
 import { Kickoff } from "../../components/Kickoff";
@@ -46,6 +47,7 @@ export default async function MatchPage({ params }: { params: Promise<{ slug: st
   const pickSide = p.home > p.away && p.home > p.draw ? "home"
     : p.away > p.home && p.away > p.draw ? "away" : "draw";
   const best = top[0];
+  const editorialTags = matchEditorialTags(p, mk);
   const finalResult = resultByFixtureId(f.id);
   const actualSide = finalResult
     ? finalResult.hg > finalResult.ag ? "home" : finalResult.ag > finalResult.hg ? "away" : "draw"
@@ -135,6 +137,27 @@ export default async function MatchPage({ params }: { params: Promise<{ slug: st
         <p className="match-probability-note">
           These three percentages add to 100%. They show what may happen, not what will happen.
         </p>
+        {editorialTags.length > 0 && (
+          <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: 8, marginTop: 12 }}>
+            {editorialTags.map((tag) => (
+              <span
+                key={tag.label}
+                className="mono"
+                style={{
+                  fontSize: 10.5,
+                  letterSpacing: ".06em",
+                  textTransform: "uppercase",
+                  padding: "4px 9px",
+                  border: `1px solid ${tag.tone === "accent" ? "var(--accent)" : tag.tone === "win" ? "var(--win)" : "var(--rule-strong)"}`,
+                  color: tag.tone === "accent" ? "var(--accent)" : tag.tone === "win" ? "var(--win)" : "var(--ink-soft)",
+                  background: "var(--paper)",
+                }}
+              >
+                {tag.label}
+              </span>
+            ))}
+          </div>
+        )}
       </section>
 
       {finalResult && (

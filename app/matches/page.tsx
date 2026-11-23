@@ -25,9 +25,15 @@ export default function Matches() {
         The percentages add to 100% and show what may happen, not what will happen.{" "}
         <Link href="/guide/">Read the simple guide →</Link>
       </p>
-      <p style={{ margin: "4px 0 0" }}>
+      <p style={{ margin: "4px 0 0", display: "flex", flexWrap: "wrap", gap: 10 }}>
+        <Link href="/predictions/today/" className="btn" style={{ fontSize: 12.5, padding: "9px 16px" }}>
+          Today&apos;s predictions →
+        </Link>
+        <Link href="/predictions/weekend/" className="btn" style={{ fontSize: 12.5, padding: "9px 16px" }}>
+          Weekend predictions →
+        </Link>
         <Link href={`/matches/${centreDate}/`} className="btn" style={{ fontSize: 12.5, padding: "9px 16px" }}>
-          Open match centre — browse by date →
+          Browse by date →
         </Link>
       </p>
       {[...byDate.entries()].map(([date, list]) => (

@@ -6,8 +6,9 @@ import { Crest } from "../components/Crest";
 import { Kickoff } from "../components/Kickoff";
 
 export const metadata = {
-  title: "The clearest calls — where the model is most confident",
-  description: "Upcoming matches ranked by how confident the model is, with plain-language goal and scoring probabilities. Statistical forecasts, not betting tips — no edge over bookmakers is claimed.",
+  title: "Top 10 Football Predictions Today — Highest Win Probabilities & Fair Odds",
+  description: "Upcoming top-five-league matches ranked by highest win probability, Over 2.5 goals, and BTTS chances from our open-source Elo → Dixon-Coles model.",
+  alternates: { canonical: "/clearest-calls/" },
 };
 
 export default function ClearestCalls() {

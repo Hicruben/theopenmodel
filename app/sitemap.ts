@@ -13,6 +13,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // change daily — surface that with lastModified so crawlers revisit the fresh numbers.
   const core: MetadataRoute.Sitemap = [
     { url: `${SITE}/`, changeFrequency: "daily", priority: 1, lastModified: now },
+    { url: `${SITE}/predictions/today/`, changeFrequency: "daily", priority: 0.95, lastModified: now },
+    { url: `${SITE}/predictions/weekend/`, changeFrequency: "daily", priority: 0.95, lastModified: now },
     { url: `${SITE}/matches/`, changeFrequency: "daily", priority: 0.9, lastModified: now },
     { url: `${SITE}/scores/`, changeFrequency: "daily", priority: 0.85, lastModified: now },
     { url: `${SITE}/tools/`, changeFrequency: "weekly", priority: 0.8 },

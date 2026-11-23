@@ -2,6 +2,7 @@ import Link from "next/link";
 import { LEAGUES } from "@/lib/data";
 import { upcomingFixtures } from "@/lib/fixtures";
 import { matchProb } from "@/lib/model";
+import { clubRecord } from "@/lib/record";
 import { MatchExplorer, type MatchExplorerMatch } from "./components/MatchExplorer";
 import { TodayPortal } from "./components/TodayPortal";
 import { LiveTicker } from "./components/LiveTicker";
@@ -22,6 +23,8 @@ function explainFixture(home: string, homeElo: number, away: string, awayElo: nu
 
 export default function Home() {
   const fixturePool = upcomingFixtures(180);
+  const rec = clubRecord();
+  const hasLiveClubRecord = rec.n >= 20;
   const challengeFixtures = LEAGUES
     .map((league) => fixturePool.find((fixture) => fixture.league.slug === league.slug))
     .filter((fixture): fixture is NonNullable<typeof fixture> => Boolean(fixture))
@@ -60,17 +63,25 @@ export default function Home() {
           <div className="record-copy">
             <h2>Every forecast stays on the record.</h2>
             <p>
-              The model&apos;s top outcome matched the final result in 70 of 102 completed World Cup matches through 15 July 2026. Every call was published before kickoff.
+              {hasLiveClubRecord
+                ? `In the live 2026–27 European club season, the model's pre-kickoff top outcome has matched ${rec.hits} of ${rec.n} completed matches (${(rec.accuracy * 100).toFixed(1)}%) — following 70 of 102 in the 2026 World Cup. Every call is locked before kickoff.`
+                : "The model's top outcome matched the final result in 70 of 102 completed World Cup matches through 15 July 2026. Every call was published before kickoff."}
             </p>
             <div className="record-actions">
               <Link href="/record/" className="signal-button">View the public record <span aria-hidden>→</span></Link>
-              <Link href="/methodology/" className="text-action">How forecasts are checked <span aria-hidden>→</span></Link>
+              <Link href="/predictions/today/" className="text-action">Today&apos;s predictions <span aria-hidden>→</span></Link>
+              <Link href="/predictions/weekend/" className="text-action">Weekend slate <span aria-hidden>→</span></Link>
             </div>
           </div>
           <dl className="record-facts">
             <div>
-              <dt>Top outcome matched</dt>
-              <dd><strong className="tnum"><CountUp end={70} duration={1000} /> of 102</strong><span>completed matches</span></dd>
+              <dt>{hasLiveClubRecord ? "2026–27 club season matched" : "Top outcome matched"}</dt>
+              <dd>
+                <strong className="tnum">
+                  <CountUp end={hasLiveClubRecord ? rec.hits : 70} duration={1000} /> of {hasLiveClubRecord ? rec.n : 102}
+                </strong>
+                <span>{hasLiveClubRecord ? "locked pre-kickoff matches" : "completed matches"}</span>
+              </dd>
             </div>
             <div>
               <dt>How misses are counted</dt>

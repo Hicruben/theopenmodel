@@ -23,9 +23,12 @@ export async function generateMetadata({ params }: { params: Promise<{ date: str
   const { date } = await params;
   if (!ISO.test(date)) return {};
   const n = fixturesOn(date).length;
+  const weekday = new Date(`${date}T12:00:00Z`).toLocaleDateString("en-GB", { weekday: "long", timeZone: "UTC" });
+  const dayLabel = new Date(`${date}T12:00:00Z`).toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric", timeZone: "UTC" });
   return {
-    title: `Football matches ${date} — fixtures & predictions`,
-    description: `All ${n} top-five-league fixtures on ${longDate(date)} with the model's home-win, draw and away-win probability. Kick-off times and result forecasts.`,
+    title: `${weekday} Football Predictions (${dayLabel}): ${n} Matches, Win % & Fair Odds`,
+    description: `All ${n} top-five-league fixtures on ${longDate(date)} with Elo → Dixon-Coles win probabilities, expected goals, and break-even fair odds.`,
+    alternates: { canonical: `/matches/${date}/` },
   };
 }
 
