@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 
 export interface MarketOption {
   id: string;
@@ -38,9 +39,13 @@ function formatOdds(prob: number, fmt: OddsFormat): string {
 export function MatchOddsChecker({
   markets,
   defaultId,
+  fixtureId,
+  isUpcoming,
 }: {
   markets: MarketOption[];
   defaultId?: string;
+  fixtureId?: number;
+  isUpcoming?: boolean;
 }) {
   const [fmt, setFmt] = useState<OddsFormat>("decimal");
   const [selectedId, setSelectedId] = useState<string>(defaultId || markets[0]?.id || "");
@@ -178,9 +183,29 @@ export function MatchOddsChecker({
         )}
       </div>
 
-      <p className="foot-src" style={{ marginTop: 12 }}>
-        For mathematical comparison only. Model probabilities are estimates and carry uncertainty; positive EV does not guarantee a winning outcome.
-      </p>
+      <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "space-between", alignItems: "center", gap: 10, marginTop: 14 }}>
+        <p className="foot-src" style={{ margin: 0 }}>
+          For mathematical comparison only. Model probabilities are estimates and carry uncertainty; positive EV does not guarantee a winning outcome.
+        </p>
+        {isUpcoming && fixtureId && ["home", "draw", "away", "over25", "btts"].includes(active.id) && (
+          <Link
+            href={`/tools/parlay/?add=${fixtureId}:${active.id}`}
+            className="mono"
+            style={{
+              fontSize: 11,
+              letterSpacing: ".05em",
+              textTransform: "uppercase",
+              padding: "7px 12px",
+              border: "1px solid var(--accent)",
+              color: "var(--accent)",
+              textDecoration: "none",
+              whiteSpace: "nowrap",
+            }}
+          >
+            + Add &ldquo;{active.label}&rdquo; to parlay →
+          </Link>
+        )}
+      </div>
     </section>
   );
 }

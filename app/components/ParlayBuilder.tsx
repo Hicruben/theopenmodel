@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 
 export interface ParlayFixture {
@@ -37,10 +37,57 @@ interface SelectedLeg {
   prob: number;
 }
 
+const PARLAY_STORAGE_KEY = "tom_parlay_legs_v1";
+const VALID_PICKS = new Set<PickKey>(["home", "draw", "away", "over25", "btts"]);
+
 export function ParlayBuilder({ fixtures }: { fixtures: ParlayFixture[] }) {
   const [leagueFilter, setLeagueFilter] = useState<string>("all");
   const [legs, setLegs] = useState<SelectedLeg[]>([]);
+  const [hydrated, setHydrated] = useState(false);
   const [bookParlayOdds, setBookParlayOdds] = useState<string>("");
+
+  useEffect(() => {
+    const byId = new Map(fixtures.map((f) => [f.id, f]));
+    const restored: SelectedLeg[] = [];
+    try {
+      const raw = localStorage.getItem(PARLAY_STORAGE_KEY);
+      if (raw) {
+        const parsed = JSON.parse(raw) as { id: number; pick: PickKey }[];
+        for (const item of parsed) {
+          const fx = byId.get(item.id);
+          if (fx && VALID_PICKS.has(item.pick) && !restored.some((l) => l.fixture.id === fx.id)) {
+            restored.push({ fixture: fx, pick: item.pick, label: PICK_LABELS[item.pick](fx), prob: fx.probs[item.pick] });
+          }
+        }
+      }
+    } catch { /* ignore storage errors */ }
+
+    const params = new URLSearchParams(window.location.search);
+    const addParam = params.get("add");
+    if (addParam) {
+      const [idStr, pickStr] = addParam.split(":");
+      const fx = byId.get(Number(idStr));
+      const pick = pickStr as PickKey;
+      if (fx && VALID_PICKS.has(pick)) {
+        const idx = restored.findIndex((l) => l.fixture.id === fx.id);
+        const leg: SelectedLeg = { fixture: fx, pick, label: PICK_LABELS[pick](fx), prob: fx.probs[pick] };
+        if (idx >= 0) restored[idx] = leg;
+        else if (restored.length < 8) restored.push(leg);
+      }
+    }
+    if (restored.length > 0) setLegs(restored);
+    setHydrated(true);
+  }, [fixtures]);
+
+  useEffect(() => {
+    if (!hydrated) return;
+    try {
+      localStorage.setItem(
+        PARLAY_STORAGE_KEY,
+        JSON.stringify(legs.map((l) => ({ id: l.fixture.id, pick: l.pick })))
+      );
+    } catch { /* ignore storage errors */ }
+  }, [legs, hydrated]);
 
   const leagues = useMemo(() => {
     const map = new Map<string, string>();

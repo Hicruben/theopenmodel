@@ -189,7 +189,12 @@ export default async function MatchPage({ params }: { params: Promise<{ slug: st
         </section>
       )}
 
-      <MatchOddsChecker markets={oddsMarkets} defaultId={pickSide} />
+      <MatchOddsChecker
+        markets={oddsMarkets}
+        defaultId={pickSide}
+        fixtureId={f.id}
+        isUpcoming={!finalResult && f.date > nowIso}
+      />
 
       {(sparkH || sparkA) && (
         <section className="panel" style={{ marginTop: 22 }}>

@@ -148,6 +148,13 @@ for (const league of LEAGUES) {
   const iAway = header.indexOf("AwayTeam");
   const iFTHG = header.indexOf("FTHG");
   const iFTAG = header.indexOf("FTAG");
+  // Prefer market average closing odds (AvgCH/D/A), fallback to pre-match average (AvgH/D/A)
+  const iAvgCH = header.indexOf("AvgCH");
+  const iAvgCD = header.indexOf("AvgCD");
+  const iAvgCA = header.indexOf("AvgCA");
+  const iAvgH = header.indexOf("AvgH");
+  const iAvgD = header.indexOf("AvgD");
+  const iAvgA = header.indexOf("AvgA");
   if (iDate < 0 || iHome < 0 || iAway < 0 || iFTHG < 0 || iFTAG < 0) continue;
 
   const fxList = fixturesByLeague[league.slug] || [];
@@ -181,6 +188,13 @@ for (const league of LEAGUES) {
     const fx = candidates[0];
     lMatched++;
     const key = String(fx.id);
+    const oh = Number(cols[iAvgCH] || cols[iAvgH]);
+    const od = Number(cols[iAvgCD] || cols[iAvgD]);
+    const oa = Number(cols[iAvgCA] || cols[iAvgA]);
+    const odds = (Number.isFinite(oh) && oh > 1 && Number.isFinite(od) && od > 1 && Number.isFinite(oa) && oa > 1)
+      ? { h: +oh.toFixed(2), d: +od.toFixed(2), a: +oa.toFixed(2) }
+      : undefined;
+
     if (!resultsFile.results[key]) {
       resultsFile.results[key] = {
         id: fx.id,
@@ -190,8 +204,12 @@ for (const league of LEAGUES) {
         away: clubByApi.get(fx.awayId) || fx.away,
         hg,
         ag,
+        ...(odds ? { odds } : {}),
       };
       lAdded++;
+      added++;
+    } else if (odds && !resultsFile.results[key].odds) {
+      resultsFile.results[key].odds = odds;
       added++;
     }
   }

@@ -63,6 +63,40 @@ export default function Record() {
               are too noisy to be meaningful.
             </p>
           )}
+          {club.marketBenchmark && (
+            <div className="panel" style={{ margin: "20px 0 28px" }}>
+              <span className="eyebrow plain">Live 2026–27 benchmark — model vs closing market line</span>
+              <p style={{ fontSize: 13.5, color: "var(--ink-soft)", margin: "8px 0 14px" }}>
+                On the <b>{club.marketBenchmark.n}</b> locked 2026–27 matches with recorded bookmaker closing odds
+                (margin-removed market average), here is how The Open Model compares head-to-head:
+              </p>
+              <table className="data">
+                <thead>
+                  <tr>
+                    <th>Forecast source</th>
+                    <th className="r">Top-pick accuracy</th>
+                    <th className="r">3-outcome Brier (lower = better)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><b>The Open Model (locked pre-kickoff)</b></td>
+                    <td className="num r" style={{ color: "var(--accent)", fontWeight: 700 }}>
+                      {club.marketBenchmark.modelHits}/{club.marketBenchmark.n} ({pct(club.marketBenchmark.modelHits / club.marketBenchmark.n)})
+                    </td>
+                    <td className="num r"><b>{f3(club.marketBenchmark.modelBrier)}</b></td>
+                  </tr>
+                  <tr>
+                    <td>Market average closing odds</td>
+                    <td className="num r">
+                      {club.marketBenchmark.marketHits}/{club.marketBenchmark.n} ({pct(club.marketBenchmark.marketHits / club.marketBenchmark.n)})
+                    </td>
+                    <td className="num r">{f3(club.marketBenchmark.marketBrier)}</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          )}
         </>
       )}
 

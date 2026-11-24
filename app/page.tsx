@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { LEAGUES } from "@/lib/data";
+import { LEAGUES, leagueClubs } from "@/lib/data";
 import { upcomingFixtures } from "@/lib/fixtures";
 import { matchProb } from "@/lib/model";
 import { clubRecord } from "@/lib/record";
@@ -9,6 +9,7 @@ import { LiveTicker } from "./components/LiveTicker";
 import { CountUp } from "./components/CountUp";
 import { NewsletterSignup } from "./components/NewsletterSignup";
 import { SeasonRaces } from "./components/SeasonRaces";
+import { MyClubsBar, type ClubBrief } from "./components/MyClubsBar";
 
 function explainFixture(home: string, homeElo: number, away: string, awayElo: number) {
   const gap = Math.round(Math.abs(homeElo - awayElo));
@@ -25,6 +26,28 @@ export default function Home() {
   const fixturePool = upcomingFixtures(180);
   const rec = clubRecord();
   const hasLiveClubRecord = rec.n >= 20;
+
+  // Build compact next-match lookup for MyClubsBar
+  const nextByClub = new Map<string, ClubBrief["nextMatch"]>();
+  for (const fx of fixturePool) {
+    if (!nextByClub.has(fx.home.slug)) {
+      const pr = matchProb(fx.home.elo, fx.away.elo);
+      nextByClub.set(fx.home.slug, { slug: fx.slug, date: fx.date.slice(5, 10), opponent: fx.away.club, isHome: true, winProb: pr.home });
+    }
+    if (!nextByClub.has(fx.away.slug)) {
+      const pr = matchProb(fx.home.elo, fx.away.elo);
+      nextByClub.set(fx.away.slug, { slug: fx.slug, date: fx.date.slice(5, 10), opponent: fx.home.club, isHome: false, winProb: pr.away });
+    }
+  }
+  const clubBriefs: ClubBrief[] = LEAGUES.flatMap((l) =>
+    leagueClubs(l).map((c) => ({
+      slug: c.slug,
+      club: c.club,
+      league: l.name,
+      elo: c.elo,
+      nextMatch: nextByClub.get(c.slug),
+    }))
+  ).sort((a, b) => a.club.localeCompare(b.club));
   const challengeFixtures = LEAGUES
     .map((league) => fixturePool.find((fixture) => fixture.league.slug === league.slug))
     .filter((fixture): fixture is NonNullable<typeof fixture> => Boolean(fixture))
@@ -55,6 +78,8 @@ export default function Home() {
   return (
     <main className="home-page portal-page portal-page-home">
       <TodayPortal predictionSlot={predictionLab} tickerSlot={<LiveTicker fixtures={fixturePool.slice(0, 12)} />} />
+
+      <MyClubsBar clubs={clubBriefs} />
 
       <SeasonRaces />
 

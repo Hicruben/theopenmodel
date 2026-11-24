@@ -78,6 +78,7 @@ export interface MatchResult {
   away: string;
   hg: number;
   ag: number;
+  odds?: { h: number; d: number; a: number };
 }
 
 export interface ScoredMatch extends MatchResult {
@@ -86,6 +87,14 @@ export interface ScoredMatch extends MatchResult {
   pick: "home" | "draw" | "away";
   actual: "home" | "draw" | "away";
   correct: boolean;
+}
+
+export interface MarketBenchmark {
+  n: number;
+  modelHits: number;
+  marketHits: number;
+  modelBrier: number;
+  marketBrier: number;
 }
 
 export interface ClubRecord {
@@ -99,6 +108,7 @@ export interface ClubRecord {
   ece: number;
   bins: CalibBin[];
   lastChecked: string | null;
+  marketBenchmark: MarketBenchmark | null;
 }
 
 let resultsMapCache: Map<number, MatchResult> | null = null;
@@ -240,6 +250,34 @@ export function clubRecord(): ClubRecord {
     ? outBins.reduce((s, b) => s + (b.n / total) * Math.abs(b.avgPred - b.obsFreq), 0)
     : 0;
 
+  // Head-to-head benchmark vs bookmaker average closing line (margin-removed)
+  let mkN = 0, mkModelHits = 0, mkMarketHits = 0, mkModelBrier = 0, mkMarketBrier = 0;
+  for (const m of matches) {
+    if (!m.odds || m.odds.h <= 1 || m.odds.d <= 1 || m.odds.a <= 1) continue;
+    const invH = 1 / m.odds.h, invD = 1 / m.odds.d, invA = 1 / m.odds.a;
+    const invSum = invH + invD + invA;
+    const mp = [invH / invSum, invD / invSum, invA / invSum];
+    const mPick = mp[0] >= mp[1] && mp[0] >= mp[2] ? "home" : mp[2] >= mp[0] && mp[2] >= mp[1] ? "away" : "draw";
+    const y = [m.actual === "home" ? 1 : 0, m.actual === "draw" ? 1 : 0, m.actual === "away" ? 1 : 0];
+    const pArr = [m.p.h, m.p.d, m.p.a];
+    mkN++;
+    if (m.correct) mkModelHits++;
+    if (mPick === m.actual) mkMarketHits++;
+    for (let k = 0; k < 3; k++) {
+      mkModelBrier += (pArr[k] - y[k]) ** 2;
+      mkMarketBrier += (mp[k] - y[k]) ** 2;
+    }
+  }
+  const marketBenchmark: MarketBenchmark | null = mkN >= 10
+    ? {
+        n: mkN,
+        modelHits: mkModelHits,
+        marketHits: mkMarketHits,
+        modelBrier: mkModelBrier / mkN,
+        marketBrier: mkMarketBrier / mkN,
+      }
+    : null;
+
   return {
     matches,
     n,
@@ -251,5 +289,6 @@ export function clubRecord(): ClubRecord {
     ece,
     bins: outBins,
     lastChecked: n ? matches[matches.length - 1].date.slice(0, 10) : null,
+    marketBenchmark,
   };
 }

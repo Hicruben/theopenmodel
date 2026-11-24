@@ -12,6 +12,7 @@ import { clubFixtures } from "@/lib/fixtures";
 import { latestNews, timeAgo } from "@/lib/news";
 import { Crest } from "../../components/Crest";
 import { MatchCard } from "../../components/MatchCard";
+import { FollowClubButton } from "../../components/FollowClubButton";
 
 export function generateStaticParams() {
   // Every club that appears in a league table gets a page.
@@ -59,7 +60,7 @@ export default async function TeamPage({ params }: { params: Promise<{ slug: str
         <p className="crumbs">
           <Link href="/">Home</Link> › {league ? <Link href={`/league/${league.slug}/`}>{league.name}</Link> : club.country} › {club.club}
         </p>
-        <div style={{ display: "flex", alignItems: "center", gap: 14, margin: "10px 0 4px" }}>
+        <div style={{ display: "flex", alignItems: "center", gap: 14, margin: "10px 0 4px", flexWrap: "wrap" }}>
           <Crest club={club.club} slug={club.slug} size="xl" />
           <div>
             <h1 className="pagetitle" style={{ margin: 0 }}>{club.club}</h1>
@@ -73,6 +74,7 @@ export default async function TeamPage({ params }: { params: Promise<{ slug: str
               {" "}· updated {BUILT}
             </p>
           </div>
+          <FollowClubButton slug={club.slug} clubName={club.club} />
         </div>
         <p style={{ fontSize: 14, color: "var(--ink-soft)", margin: "10px 0 0" }} className="tnum">
           <b>Elo {club.elo}</b>
